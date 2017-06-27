@@ -194,4 +194,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+90.down_apps/
+eclipse/
+
 # End of https://www.gitignore.io/api/macos,eclipse,windows,intellij,java

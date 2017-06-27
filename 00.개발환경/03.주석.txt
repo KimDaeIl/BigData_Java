@@ -1,0 +1,17 @@
+// 한 줄 주석
+
+/*
+ * 여러 줄 주석
+ */
+
+/**
+ * java docs
+ * 선언위취: 클래스, 멤버변수, 메소드, 생성자
+ * 내용: 문자열Plain Text, html tag, api 문서 전용 어노테이션@ 태그
+ * 		@version
+ * 		@author
+ * 		@see
+ * 		@param
+ * 		@return
+ * 		@exception
+ */

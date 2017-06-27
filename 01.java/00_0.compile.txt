@@ -1,0 +1,21 @@
+##자바 개발 절차##
+
+1. 소스코드 작성
+	Hello.java
+		
+2. 컴파일
+	doc> javac(.exe) Hello.java
+	*.class 파일 생성
+
+3. 생성된 .class 파일 실행
+	byte code >> JVM(Java Virtural Machine)에서 돌아가는 파일
+	.class 생략
+	doc> java(.exe) {파일명}
+	doc> java Hello
+
+
+**자바 실행 주의 사항
+	1. 대소문자 구분
+	2. 확장자 표기하지 않음
+	3. 시작 메소드가 존재해야함(main)
+		public static void main(String[])

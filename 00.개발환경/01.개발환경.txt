@@ -1,0 +1,61 @@
+1. 환경구축
+	jdk		http://oracle.com
+	editplus	http://editplus.com
+	eclipse 	http://eclipse.org
+	
+	java SE API Doc => 
+
+2. 수업진행 폴더구조
+	기본폴더 => c:\00.practice\
+	프로그램 다운로드 => c:\00.practice\90.down_apps
+
+3. 설치
+	jdk
+	editplus
+	eclipse
+
+4. jdk 설치
+	java version check
+ 		dos> java -version (JRE 실행환경 확인)
+
+	java compiler version check
+		dos> javac -version (JDK 개발환경 확인
+
+	path 확인
+		dos> path
+	
+	jdk 설치 경로 => C:\Program Files\Java\jdk1.8.0_131
+		bin\javac.exe	자바 컴파일러
+		bin\java.exe	자바 실행 명령어
+		bin\javadoc.exe	자바 문서 생성 명령어
+		bin\jar.exe	자바 클래스 압축 명령어
+	
+	jdk 환경 설정		
+		자바 설치 폴더 추가	JAVA_HOME={설치 파일 폴더}
+		자바 패스 추가 설정
+			=>	%JAVA_HOME%\bin; (기존패스)
+			=>	JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
+
+
+5. 윈도우 명령 프롬프트 실행
+	시작 - cmd
+
+6. eclipse
+	압축 해제 설치
+		C:\00.practice\90.down_apps\03. eclipse
+		
+
+	인스톨 설치
+		안해
+
+7. dos 명령어
+	cd: Change directory (경로 이동)
+		dos> cd {절대|상대경로 폴더명}
+
+	dir: 현재 폴더 목록(linux lㄴ)
+		dos> dir
+		dir .확장자 >> 해당 확장자 목록
+	del: 삭제(linux rm)
+		del {파일명.확장자}
+		del *.확장자 >> 해당 확장자 파일 모두 삭제
+		del . >> 전체 삭제

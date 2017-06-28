@@ -1,0 +1,11 @@
+import
+	다른
+
+class 선언문
+	1. rt.jar
+		java SE default api
+		C:\Program Files\Java\jdk1.8.0_131\jre\lib >>rt.jar
+		C:\Program Files\Java\jdk1.8.0_131\jre\lib >>ext
+		
+	set classpath = 클래스 경로 검색
+	classpath 환경변수가 설정되지 않은 경우 현재폴더(working directory)

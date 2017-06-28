@@ -1,0 +1,24 @@
+memberId			String(8~30)	default="Guest"
+memberPw			String(8~20)
+memberName			String(10)
+mobile				String(13)		###-####-####
+email				String(30)
+entryDate			String(10)		YYYY/MM/DD
+grade				char(1)			enum{G(老馆), S(快荐), A(包府磊)}
+mileage				int(6)
+managerName			String(10)
+
+
+====================================================
+<Class Diagram>
+----------
+Class Name
+---------
+[+|#|(default)|-] variable: type = value;
+	ex) - userId:String="Guest"
+----------
+[+|#|(default)|-] method(arg1:type, arg2:type, ....): return type
+	ex1) + getId():String
+	ex2) + setId(id:String):void
+ 
+====================================================

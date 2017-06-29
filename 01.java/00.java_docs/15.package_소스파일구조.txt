@@ -1,0 +1,48 @@
+
+## 자바 소스코드 파일의 구조 : 선언 순서
+	1. package 선언문
+	2. import 선언문
+	3. class 선언문
+		
+		
+## package 선언문
+
+-- 같은 종류의 클래스를 그룹으로 관리
+-- 권한 관리, 클래스이름 충돌 문제등 해결
+-- 논리적으로는 패키지, 물리적으로는 폴더개념 비슷
+
+1. 선언 : 소스파일의 첫번째 수행문 단일선언(0, 1)
+	package ucamp.test;
+
+2. 컴파일 옵션지정 : -d output폴더명 : 
+	1) class output 폴더지정(선택), 
+	2) 패키지 컴파일 (필수) : output폴더명\패키지명\패키지명\*.class
+	
+	-- output폴더는 사전에 폴더가 존재해야함
+	-- 컴파일방법 : javac -d . Test1.java  => 현재폴더\\ucamp\\test\\Test1.class, Test2.class
+	
+3. 실행방법 : 패키지명.패키지명.실행클래스이름
+	java ucamp.test.Test1
+	
+
+## import 선언문
+
+-- 사용한 클래스의 경로 선언 : 다중선언 (0 ~ n)
+-- 생략 가능 : java.lang , same package
+-- 방법:
+		1) import java.util.Date;
+		2) import java.util.*; 	
+		3) java.util.Date today = new java.util.Date();
+			 
+					
+## class 선언문
+
+	방법:
+		1) public class 클래스이름{}
+		2) class 클래스이름{}
+	
+	-- 하나의 소스코드 파일에는 1개 이상의 여러개의 클래스 다중선언이 가능하다.(권장하지않음. 테스트목적사용)	
+	-- 하나의 소스코드 파일에는 public 권한의 클래스는 1나만 가능
+	-- 만약, public으로 선언한 클래스가 존재하는 경우에는 파일명은 public클래스이름.java
+	-- 만약, public으로 선언한 클래스가 존재하지 않으면 파일명은 상관없으나, 
+	   보통 main이 되는 클래스이름.java

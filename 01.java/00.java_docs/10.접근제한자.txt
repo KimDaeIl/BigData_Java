@@ -1,0 +1,17 @@
+
+## Modifier (제한자, 제어자)
+1. Access Modifier (접근 제한자)
+		1) + public : universe (누구나 접근가능)
+		2) # protected : sub class(상속 받으면 접근 가능)
+		3)   생략 : same package (다른 패키지 접근불가)
+		4) - private : same class (다른 클래스 접근불가)
+		
+		-- 클래스 : public, 생략(default)
+		-- 멤버변수, 메서드, 생성자 : public, protected, 생략, private
+		-- 지역변수 : 생략
+		
+2. Usage Modifier (사용 제한자)
+		1) static
+		2) final
+		3) abstract
+		4) ...

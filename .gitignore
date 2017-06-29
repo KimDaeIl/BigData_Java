@@ -197,5 +197,7 @@ $RECYCLE.BIN/
 
 90.down_apps/
 eclipse/
+01.java/00.official_api_docs/
+*.ucls
 
 # End of https://www.gitignore.io/api/macos,eclipse,windows,intellij,java

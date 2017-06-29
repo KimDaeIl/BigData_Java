@@ -4,7 +4,7 @@ public class GeneralMember extends Member {
 
 	/**
 	 * <pre>
-	 * º¸À¯ ¸¶ÀÏ¸®Áö 
+	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ 
 	 * type: 	int
 	 * length: 	6
 	 * default: 0
@@ -59,7 +59,7 @@ public class GeneralMember extends Member {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see work.model.dto.Member#init()
+	 * @see work.model.dto.work.model.dto.Member#init()
 	 */
 	@Override
 	public void init() {

@@ -1,13 +1,13 @@
 package work.model.dto;
 
-import sun.security.util.Length;
+import work.Util;
 
 /**
  * <pre>
- * È¸¿ø DTO
+ * È¸ï¿½ï¿½ DTO
  * </pre>
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ï¿½â¤¿ï¿½ï¿½;ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -17,80 +17,80 @@ public abstract class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ¾ÆÀÌµð
+	 * È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½
 	 * type: 	String
 	 * length: 	8-30
 	 * default: DEFAULT_USER_ID
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberId = "Guest"; // È¸¿ø ¾ÆÀÌµð
+	private String memberId = "Guest"; // È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½
 
 	/**
 	 * <pre>
-	 * È¸¿ø ºñ¹Ð¹øÈ£
+	 * È¸ï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£
 	 * type: 	String
 	 * length: 	8-20
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberPw = ""; // È¸¿ø ºñ¹Ð¹øÈ£
+	private String memberPw = ""; // È¸ï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£
 
 	/**
 	 * <pre>
-	 * È¸¿ø ÀÌ¸§
+	 * È¸ï¿½ï¿½ ï¿½Ì¸ï¿½
 	 * type: 	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberName = ""; // È¸¿ø ÀÌ¸§
+	private String memberName = ""; // È¸ï¿½ï¿½ ï¿½Ì¸ï¿½
 
 	/**
 	 * <pre>
-	 * ¸ð¹ÙÀÏ ¿¬¶ôÃ³
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³
 	 * type: 	String
 	 * length: 	13
 	 * default: DEFAULT_STRING
 	 * format: 	"123-1234-1234"
 	 * </pre>
 	 */
-	private String mobile = ""; // ¸ð¹ÙÀÏ ¿¬¶ôÃ³
+	private String mobile = ""; // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³
 
 	/**
 	 * <pre>
-	 * ÀÌ¸ÞÀÏ ÁÖ¼Ò
+	 * ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½
 	 * type: 	String
 	 * length: 	30
 	 * default: DEFAULT_STRING
 	 * format: 	-@-.[com|co.kr|...]
 	 * </pre>
 	 */
-	private String email = ""; // ÀÌ¸ÞÀÏ ÁÖ¼Ò
+	private String email = ""; // ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½
 
 	/**
 	 * <pre>
-	 * °¡ÀÔ ³¯Â¥
+	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥
 	 * type: 	String
 	 * length: 	10
 	 * default: "1900/01/01"
 	 * format: 	"YYYY/MM/DD"
 	 * </pre>
 	 */
-	private String entryDate = "1900/01/01"; // °¡ÀÔ ³¯Â¥
+	private String entryDate = "1900/01/01"; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥
 
 	/**
 	 * <pre>
-	 * °í°´ µî±Þ 
+	 * ï¿½ï¿½ ï¿½ï¿½ï¿½ 
 	 * type: 	char
 	 * length: 	1
 	 * default: 'G' 
-	 * format: 	{'G': ÀÏ¹Ý, 'S': ¿ì¼ö, 'A': °ü¸®ÀÚ}
+	 * format: 	{'G': ï¿½Ï¹ï¿½, 'S': ï¿½ï¿½ï¿½, 'A': ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
 	 * </pre>
 	 */
-	private char grade = 'G'; // µî±Þ
+	private char grade = 'G'; // ï¿½ï¿½ï¿½
 
 	public Member() {
 		this("Guest", "pw", "no named", "num", "email");
@@ -125,7 +125,7 @@ public abstract class Member {
 	 *            the memberId to set
 	 */
 	public void setMemberId(String memberId) {
-		if (isValidString(memberId, 8, 30)) {
+		if (Util.isValidString(memberId, 8, 30)) {
 			this.memberId = memberId;
 		}
 	}
@@ -142,7 +142,7 @@ public abstract class Member {
 	 *            the memberPw to set
 	 */
 	public void setMemberPw(String memberPw) {
-		if (isValidString(memberPw, 8, 20)) {
+		if (Util.isValidString(memberPw, 8, 20)) {
 			this.memberPw = memberPw;
 		}
 	}
@@ -159,7 +159,7 @@ public abstract class Member {
 	 *            the memberName to set
 	 */
 	public void setMemberName(String memberName) {
-		if (isValidString(memberName, 10)) {
+		if (Util.isValidString(memberName, 10)) {
 			this.memberName = memberName;
 		}
 	}
@@ -176,7 +176,7 @@ public abstract class Member {
 	 *            the mobile to set
 	 */
 	public void setMobile(String mobile) {
-		if (isValidStaticString(mobile, 13)) {
+		if (Util.isValidStaticString(mobile, 13)) {
 			this.mobile = mobile;
 		}
 	}
@@ -193,7 +193,7 @@ public abstract class Member {
 	 *            the email to set
 	 */
 	public void setEmail(String email) {
-		if (isValidString(email, 30)) {
+		if (Util.isValidString(email, 30)) {
 			this.email = email;
 		}
 	}
@@ -210,7 +210,7 @@ public abstract class Member {
 	 *            the entryDate to set
 	 */
 	public void setEntryDate(String entryDate) {
-		if (isValidStaticString(entryDate, 10)) {
+		if (Util.isValidStaticString(entryDate, 10)) {
 			this.entryDate = entryDate;
 		}
 	}
@@ -232,58 +232,7 @@ public abstract class Member {
 		}
 	}
 
-	/**
-	 * <pre>
-	 * ¿ÀºêÁ§Æ® °´Ã¼ null Ã¼Å©
-	 * </pre>
-	 * 
-	 * @return objÀÇ null ¿©ºÎ ¤Ð
-	 */
-	protected boolean isNull(Object obj) {
-		return obj == null;
-	}
 
-	protected boolean isValidStaticString(String str, int length) {
-		return isValidString(str, length, length);
-	}
-
-	/**
-	 * <pre>
-	 * ¹®ÀÚ¿­ÀÇ À¯È¿¼º Ã¼Å©
-	 * </pre>
-	 * 
-	 * @param str
-	 *            À¯È¿¼º Ã¼Å©ÇÒ String °´Ã¼
-	 * @param length
-	 *            str°´Ã¼ÀÇ À¯È¿ ±æÀÌ °ª
-	 * @return str String °´Ã¼ÀÇ ±æÀÌ¿Í null Ã¼Å©
-	 */
-	protected boolean isValidString(String str, int length) {
-		return isValidString(str, 1, length);
-	}
-
-	/**
-	 * <pre>
-	 * ¹®ÀÚ¿­ÀÇ À¯È¿¼º Ã¼Å©
-	 * </pre>
-	 * 
-	 * @param str
-	 *            À¯È¿¼º Ã¼Å©ÇÒ String °´Ã¼
-	 * @param minLen
-	 *            str°´Ã¼ÀÇ À¯È¿ ÃÖ¼Ò ±æÀÌ °ª
-	 * @param mamLen
-	 *            str°´Ã¼ÀÇ À¯È¿ ÃÖ´ë ±æÀÌ °ª
-	 * @return str:String °´Ã¼ÀÇ À¯È¿¼º Ã¼Å© °á°ú
-	 */
-	protected boolean isValidString(String str, int minLen, int maxLen) {
-		if (!isNull(str)) {
-			if (minLen <= str.length() && str.length() <= maxLen) {
-				return true;
-			}
-		}
-
-		return false;
-	}
 
 	private boolean isValidGrade(char grade) {
 		switch (grade) {
@@ -298,7 +247,7 @@ public abstract class Member {
 
 	/**
 	 * <pre>
-	 * ÀÚ½Ä Å¬·¡½º ÃÊ±âÈ­ ºí·° ¸Þ¼Òµå
+	 * ï¿½Ú½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½Þ¼Òµï¿½
 	 * + init(): void
 	 * </pre>
 	 */

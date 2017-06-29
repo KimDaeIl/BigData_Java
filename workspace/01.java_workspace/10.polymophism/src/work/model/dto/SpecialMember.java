@@ -1,9 +1,12 @@
 package work.model.dto;
 
+import work.Util;
+import work.model.dto.Member;
+
 public class SpecialMember extends Member {
 	/**
 	 * <pre>
-	 * ´ã´çÀÚ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * type: 	String
 	 * length: 	10
 	 * default: ""
@@ -40,7 +43,7 @@ public class SpecialMember extends Member {
 	 * @return the managerName
 	 */
 	public String getManagerName() {
-		if (isNull(this.managerName))
+		if (Util.isNull(this.managerName))
 			this.managerName = "";
 		return this.managerName;
 	}
@@ -50,7 +53,7 @@ public class SpecialMember extends Member {
 	 *            the managerName to set
 	 */
 	public void setManagerName(String managerName) {
-		if (isValidString(managerName, 10)) {
+		if (Util.isValidString(managerName, 10)) {
 			this.managerName = managerName;
 		}
 	}
@@ -58,7 +61,7 @@ public class SpecialMember extends Member {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see work.model.dto.Member#init()
+	 * @see work.model.dto.work.model.dto.Member#init()
 	 */
 	@Override
 	public void init() {

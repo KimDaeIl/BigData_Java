@@ -1,140 +1,238 @@
 package work.model.service;
 
+import work.model.dto.GeneralMember;
 import work.model.dto.Member;
 
 /**
  * <pre>
- * ¸â¹ö Á¤º¸ CRUD ±â´É Á¤ÀÇ Å¬·¡½º
+ * It defines CRUD operation for the user information.
  * </pre>
- * 
- * @author cse
- * @since
  *
+ * @author cse
  */
 public class MemberService {
 
-	/**
-	 * ¸â¹ö °´Ã¼ ¹è¿­
-	 */
-	private Member members[];
+    /**
+     * ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½è¿­
+     */
+    private Member members[];
 
-	/**
-	 * members ¹è¿­ À§Ä¡, ÇÒ´ç °´Ã¼ °ü¸®¿¡ ÇÊ¿äÇÑ º¯¼ö
-	 */
-	private int count;
+    /**
+     * the position for last valid member index of members
+     */
+    private int count;
 
-	/**
-	 * ±âº» »ý¼ºÀÚ
-	 */
-	public MemberService() {
-		this(10);
-	}
+    /**
+     * ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     */
+    public MemberService() {
+        this(10);
+    }
 
-	/**
-	 * ¸â¹ö ¼ö¸¦ ¸Å°³º¯¼ö·Î ¹Þ´Â »ý¼ºÀÚ
-	 * 
-	 * @param memberCount
-	 *            °ü¸®ÇÒ ¸â¹öÀÇ ¼ö
-	 */
-	public MemberService(int memberCount) {
-		members = new Member[memberCount];
-	}
+    /**
+     * ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     *
+     * @param memberCount ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+     */
+    public MemberService(int memberCount) {
+        members = new Member[memberCount];
+    }
 
-	/**
-	 * »õ·Î¿î ¸â¹ö Ãß°¡ ¸Þ¼Òµå
-	 * 
-	 * @param member
-	 *            Ãß°¡ÇÒ ¸â¹ö °´Ã¼
-	 */
-	// public <T extends Member> void addMember(T member) {
-	public void addMember(Member member) {
+    /**
+     * ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½Þ¼Òµï¿½
+     *
+     * @param member ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼
+     */
+    // public <T extends work.model.dto.Member> void addMember(T member) {
+    public void addMember(Member member) {
 
-		if (member != null) {
-			if (!isFull()) {
-				members[count++] = member;
-			} else {
-				System.out.println("members are full");
-			}
+        if (member != null) {
+            if (!isFull()) {
+                members[count++] = member;
+            } else {
+                System.out.println("members are full");
+            }
 
-		} else {
-			System.out.println("null Çã¿ë ¤¤¤¤");
-		}
-	}
+        } else {
+            System.out.println("the null can't be member.");
+        }
+    }
 
-	/**
-	 * Æ¯Á¤ À§Ä¡ÀÇ ¸â¹ö °´Ã¼ ¿äÃ»
-	 * 
-	 * @param position
-	 *            ¿äÃ»ÇÒ ¸â¹öÀÇ À§Ä¡
-	 * @return position¿¡ À§Ä¡ÇÑ ¸â¹ö °´Ã¼ ¹ÝÈ¯
-	 */
-	public Member getMemberAt(int position) {
-		if (0 <= position && position < count) {
-			return this.members[position];
-		}
-		return null;
-	}
+    /**
+     * get member information by index for array.
+     *
+     * @param position ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
+     * @return positionï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¯
+     */
+    public Member getMemberAt(int position) {
+        if (0 <= position && position < count) {
+            return this.members[position];
+        }
+        System.out.println("nullPoint~~");
+        return null;
+    }
 
-	// ³» Á¤º¸ Á¶È¸(¾ÆÀÌµð): È¸¿ø ºÎ¸ð Å¸ÀÔ
-	public Member getMember(String id) {
-		if (id == null) {
-			return null;
-		}
 
-		Member tempMember = null;
-		for (int i = 0; i < count; i++) {
-			tempMember = members[i];
+    ////////////////////////HOMEWORK////////////////////////
+    // find a member by user id.
+    public Member getMember(String id) {
+        if (id == null) {
+            return null;
+        }
 
-			if (tempMember.getMemberId().equals(id)) {
-				return tempMember;
-			}
-		}
+        Member tempMember = null;
+        for (int i = 0; i < count; i++) {
+            tempMember = members[i];
 
-		System.out.println(id + " È¸¿ø ¤¤¤¤");
-		return null;
-	}
+            if (tempMember.getMemberId().equals(id)) {
+                return tempMember;
+            }
+        }
 
-	// ³» Á¤º¸ º¯°æ
-	public void updateMember(Member member) {
-		if (member == null) {
-			return;
-		}
+        System.out.println(id + " user is not found.");
+        return null;
+    }
 
-		for (int i = 0; i < count; i++) {
-			if (members[i] == member) {
-				members[i] = member;
-				break;
-			}
-		}
-	}
+    //update member information.
+    public boolean updateMember(Member member) {
+        if (member == null) {
+            System.out.println("the member is null");
+            return false;
+        }
 
-	// ¾ÏÈ£ º¯°æ(id, pw, newPw)
+        for (int i = 0; i < count; i++) {
+            if (members[i] == member) {
+                members[i] = member;
+                System.out.println("finish to update user information.");
+                return true;
+            }
+        }
 
-	// È¸¿ø Å»Åð(id, pw)
+        return false;
+    }
 
-	// ÀüÃ¼È¸¿ø()
-	public Member[] getAllMembers() {
-		return this.members;
-	}
+    //update member pw(id, pw, newPw)
+    public boolean updateMemberPw(String id, String pw, String newPw) {
+        Member tempMember = getMember(id);
 
-	// ¸¶ÀÏ¸®Áö º¯°æ(id, newMileage)
+        if (tempMember == null) {
+            return false;
+        }
 
-	/**
-	 * members ¹è¿­ »óÅÂ Ã¼Å© ¸Þ¼Òµå
-	 * 
-	 * @return members À¯ÈÞ ¿©ºÎ
-	 */
-	public boolean isFull() {
-		return this.count == this.members.length;
-	}
 
-	/**
-	 * count º¯¼ö¿¡ Á¢±ÙÇÏ±â À§ÇÑ ÇÁ·ÎÆÛÆ¼
-	 * 
-	 * @return membersÀÇ ÇöÀç À§Ä¡ ¹× ÀÎ¿ø¼ö
-	 */
-	public int getCount() {
-		return this.count;
-	}
+        if (pw == null || newPw == null) {
+            System.out.println("check pw and newPw, one of them is null");
+            return false;
+
+        } else if (pw.equals(newPw)) {
+            System.out.println("new Password you inputted is equals with current password.");
+            return false;
+
+        }
+
+
+        if (tempMember.getMemberPw().equals(pw)) {
+            tempMember.setMemberPw(newPw);
+            return updateMember(tempMember);
+
+        }
+
+
+        return false;
+    }
+
+    // delete member information(id, pw)
+    public boolean deleteMember(String id, String pw) {
+
+
+        Member tempMember = getMember(id);
+
+        if (tempMember == null) {
+            return false;
+        }
+
+        if (tempMember.getMemberPw().equals(pw)) {
+            for (int i = 0; i < count; i++) {
+                if (members[i] == tempMember) {
+                    members[i] = null;
+                    System.arraycopy(members, i + 1, members, i, count - i - 2);
+                    members[count - 1] = null;
+                    count--;
+                    System.out.println(String.format("delete completely a member in %dth, now members are %d of %d", i, count, members.length));
+                    return true;
+                }
+            }
+
+        }
+
+        return false;
+    }
+
+    // getAllMembers()
+    public Member[] getAllMembers() {
+        return this.members;
+    }
+
+    public void getAllMembers2() {
+        Member member = null;
+        for (int i = 0; i < count; i++) {
+            member = getMemberAt(i);
+
+            if (member != null) {
+                System.out.println(member);
+            }
+
+        }
+    }
+
+    //	update member mileage information(id, mileage)
+    public boolean updateMileage(String id, int mileage) {
+
+        Member tempMember = getMember(id);
+        GeneralMember generalMember = null;
+
+        if (tempMember instanceof GeneralMember) {
+            generalMember = (GeneralMember) tempMember;
+
+        } else {
+            System.out.println(String.format("This id(%s) is not GeneralMember. Mileage is only for GeneralMembers", id));
+            return false;
+
+        }
+
+
+        if (generalMember == null) {
+            System.out.println("check your id inputted.");
+            return false;
+        }
+
+        if (generalMember.getGrade() == 'G') {
+            generalMember.setMileage(mileage);
+
+            return updateMember(tempMember);
+
+        }
+
+        return false;
+    }
+
+
+    /**
+     * check members to be full.
+     *
+     * @return members ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+     */
+    public boolean isFull() {
+        return this.count == this.members.length;
+    }
+
+    /**
+     * get count for members array.
+     *
+     * @return members
+     */
+    public int getCount() {
+        return this.count;
+    }
 
 }

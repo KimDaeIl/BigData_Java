@@ -1,10 +1,12 @@
 package work.model.dto;
 
+import work.Util;
+
 public class AdminMember extends Member {
 
 	/**
 	 * <pre>
-	 * Á÷Ã¥¸í
+	 * ï¿½ï¿½Ã¥ï¿½ï¿½
 	 * type: 	String
 	 * length: 	8-30
 	 * default: ""
@@ -40,7 +42,7 @@ public class AdminMember extends Member {
 	 *            the position to set
 	 */
 	public void setPosition(String position) {
-		if (isValidString(position, 2, 10)) {
+		if (Util.isValidString(position, 2, 10)) {
 			this.position = position;
 		}
 	}
@@ -48,7 +50,7 @@ public class AdminMember extends Member {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see work.model.dto.Member#init()
+	 * @see work.model.dto.work.model.dto.Member#init()
 	 */
 	@Override
 	public void init() {

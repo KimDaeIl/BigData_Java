@@ -7,42 +7,84 @@ import work.model.dto.SpecialMember;
 import work.model.service.MemberService;
 
 /**
- * ¸â¹ö Å×½ºÆ® Å¬·¡½º
- * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
- * @since JDK 1.8.0
- * @version 1.0.0
+ * ï¿½ï¿½ï¿½ ï¿½×½ï¿½Æ® Å¬ï¿½ï¿½ï¿½ï¿½
  *
+ * @author ï¿½â¤¿ï¿½ï¿½;ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @version 1.0.0
+ * @since JDK 1.8.0
  */
 public class MemberTest {
 
-	/**
-	 * ¸ŞÀÎ ¸Ş¼Òµå
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		MemberService ms = new MemberService();
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember("user00001", "", "", "", ""));
-		ms.addMember(null);
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new SpecialMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
-		ms.addMember(new AdminMember());
+    /**
+     * ï¿½ï¿½ï¿½ï¿½ ï¿½Ş¼Òµï¿½
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        MemberService ms = new MemberService();
+        ms.addMember(new AdminMember());
+        ms.addMember(new GeneralMember("user00001", "password001", "", "", ""));
+        ms.addMember(new AdminMember());
+        ms.addMember(new AdminMember());
+        ms.addMember(new AdminMember());
+        ms.addMember(new SpecialMember());
+        ms.addMember(new AdminMember());
+        ms.addMember(new AdminMember());
+        ms.addMember(new AdminMember());
+        ms.addMember(new AdminMember());
 
-		System.out.println(ms.isFull());
-		System.out.println(ms.getCount());
-		System.out.println(ms.getMember("user001"));
+        System.out.println(ms.isFull() ? "unavailable" : "available");
+        System.out.println(ms.getCount());
+        System.out.println();
 
-	}
+        Member user01 = ms.getMember("user00001");
+
+        if (user01 == null) {
+            System.out.println("user is not existing.");
+            return;
+        }
+
+        System.out.println(user01);
+        user01.setMemberName("name0101");
+        System.out.println();
+
+        if (ms.updateMember(user01)) {
+            System.out.println(ms.getMember("user00001"));
+        }
+        System.out.println();
+
+
+        if (ms.updateMemberPw("user00001", "password001", "newPassowrd001")) {
+            System.out.println(user01);
+        }
+        System.out.println();
+
+        ms.getAllMembers2();
+        System.out.println();
+
+        if (ms.updateMileage("user00001", 99999999)) {
+            System.out.println(((GeneralMember) ms.getMember("user00001")).getMileage());
+        }
+        System.out.println();
+
+
+        if (ms.deleteMember("user00001", "newPassowrd001")) {
+            Member tempMember = ms.getMember("user00001");
+            System.out.println(tempMember == null ? "ì—†ìŒ" : tempMember);
+            System.out.println();
+        }
+        System.out.println();
+
+        ms.getAllMembers2();
+        Member members[] = ms.getAllMembers();
+        System.out.println();
+
+        for(Member m:members){
+            System.out.println(m);
+        }
+
+
+        //
+
+    }
 }

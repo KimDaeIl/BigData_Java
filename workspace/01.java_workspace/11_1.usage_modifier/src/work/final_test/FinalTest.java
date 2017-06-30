@@ -1,5 +1,9 @@
 package work.final_test;
 
+import java.util.ArrayList;
+
+import com.sun.glass.ui.Cursor;
+
 /**
  * @author cse
  *
@@ -16,23 +20,24 @@ public class FinalTest {
 
 		new Member();
 		System.out.println();
-		
+
 		new Member();
 		System.out.println();
-		
+
 		new Member();
 		System.out.println();
-		
+
 		new Member();
 		System.out.println();
-		
+
 		new Member();
 		System.out.println();
-		
+
 		new Member();
 		System.out.println();
-		
+
 		new Member();
+
 	}
 }
 

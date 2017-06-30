@@ -3,6 +3,7 @@
  */
 package work.interface_test;
 
+
 import work.interface_test.Cat;
 import work.interface_test.Dog;
 import work.interface_test.Pet;
@@ -31,6 +32,8 @@ public class InterfaceTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+
+		
 		Pet[] pets = new Pet[3];
 
 		pets[0] = new Cat();
@@ -41,7 +44,7 @@ public class InterfaceTest {
 
 		// 인터페이스의 멤버변수는 모두 상수
 		// 상수는 변경할 수 없다.
-		pets[0].name = "노랑이";
+		// pets[0].name = "노랑이";
 
 		pets[1].eat("참사료");
 		pets[2].eat("냠냠샤로");

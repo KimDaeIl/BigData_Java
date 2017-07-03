@@ -66,28 +66,28 @@ local.properties
 
 # User-specific stuff:
 */.idea
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
+*/.idea/**/workspace.xml
+*/.idea/**/tasks.xml
+*/.idea/dictionaries
 
 # Sensitive or high-churn files:
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.xml
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
+*/.idea/**/dataSources/
+*/.idea/**/dataSources.ids
+*/.idea/**/dataSources.xml
+*/.idea/**/dataSources.local.xml
+*/.idea/**/sqlDataSources.xml
+*/.idea/**/dynamic.xml
+*/.idea/**/uiDesigner.xml
 
 # Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
+*/.idea/**/gradle.xml
+*/.idea/**/libraries
 
 # CMake
 cmake-build-debug/
 
 # Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
+*/.idea/**/mongoSettings.xml
 
 ## File-based project format:
 *.iws
@@ -98,13 +98,13 @@ cmake-build-debug/
 /out/
 
 # mpeltonen/sbt-idea plugin
-.idea_modules/
+*/.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-.idea/replstate.xml
+*/.idea/replstate.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
@@ -115,13 +115,13 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-# *.iml
+# */*.iml
 # modules.xml
-# .idea/misc.xml
+# */.idea/misc.xml
 # *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+*/.idea/sonarlint
 
 ### Java ###
 # Compiled class file

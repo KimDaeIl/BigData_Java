@@ -1,0 +1,19 @@
+
+## 개발시 프로젝트 폴더 구조
+
+프로젝트명
+	\src  => 자바 소스코드
+	\clasees => 바이트코드 .class
+	\bin => 컴파일배치파일, 실행배치파일, api도움말배치파일
+	\docs => 문서파일
+
+컴파일배치파일 : compile.bat					
+javac [options] *.java					
+
+실행배치파일 : run.bat
+
+java [options] 실행클래스이름
+
+api도움말배치파일 : doitapi.bat
+
+

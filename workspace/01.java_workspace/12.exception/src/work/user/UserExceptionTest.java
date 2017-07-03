@@ -26,7 +26,7 @@ public class UserExceptionTest {
 			System.out.println("error: " + e.getMessage());
 		}
 
-		try {
+		try { 
 			u.setKey("GuESt");
 
 		} catch (UserException e) {
@@ -34,6 +34,14 @@ public class UserExceptionTest {
 		}
 	}
 
+
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		
+		super.finalize();
+		System.out.println("GC");
+	}
 }
 
 class User {

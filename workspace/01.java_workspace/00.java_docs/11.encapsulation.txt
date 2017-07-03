@@ -1,0 +1,33 @@
+
+## Encapsulation (은닉성)
+
+1. 목적 : 정보 및 알고리즘 보호 (Information hiding)
+
+2. 장점 : 안정성, 편리성, 유지보수성
+
+3. 형식 :
+1) private 멤버변수 선언  : private xxx;
+2) public setter() / getter() 메서드 선언
+
+	 -- setter() 메서드 형식 :
+			public void setXxx(xxx타입 xxx) {
+				// xxx 검증규칙에 올바른지 비교
+				// 올바르면 값을 변경
+				// 올바르지않으면 오류처리
+			}
+			
+	 -- getter() 메서드 형식 :
+			public xxx타입 getXxx() { 
+				return xxx;
+			}
+	 
+3) private 데이터변경전에 올바른 데이터인지 검증 메서드 선언
+	-- setter() 메서드 내부에서 호출사용
+	-- 검증규칙 메서드 형식 :
+	private boolean isXxx(xxx타입 xxx) {
+		if(검증조건) {
+			return true;
+		} else {
+			return false;
+		}
+	}

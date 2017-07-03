@@ -1,0 +1,80 @@
+
+/* 자바 개발시 유의사항 */
+
+1. 자바 대소문자 구분 : String , string
+2. {} 반드시 짝을 이루어야함
+3. 실행클래스에는 반드시 시작메서드가 존재해야함
+4. 시작메서드(entry point) 형식(spec): 반드시 형식 준수해야함
+	public void main(String[] args) { 수행문; }
+5. 모든 명령어의 끝은 ";" 세미콜론 
+6. 하나의 명령어가 여러줄에 걸쳐서 사용가능
+
+
+/* 자바의 식별자 : identifier */
+
+1. 식별자 정의 : 이름 (클래스이름, 변수이름, 메서드이름, 패캐지이름)
+2. 규칙:
+	- 영문자, $, _(밑줄) 시작
+	- 두번째 숫자를 조합해서 사용가능 (숫자는 처음시작은 불가)
+	- 이름사이에는 공백불가
+	- 미리사용목적이 정해져있는 키워드(예약어)는 식별자 사용불가 
+		: public, class, static,void(키워드)
+	- 길이 제한없음 
+		: 의미있는 이름으로 지정	
+		: MH - ModelHouse, ManHour, 몽헌 (누구나 이해할수있도록 의미있게지정권장)
+	- 대소문자 구분
+	- 이름명명규칙 준수할것을 권장 (강력한권장)
+	- 자바는 unicode 지원
+	  (하나의 문자를 2바이트로 표현 => 전세계 어떠한 언어표현가능)
+
+	
+/* 자바의 이름명명규칙 : Naming Convension */			
+	1. 클래스이름 	: 대문자 시작 + 대문자 시작
+		- HelloWorld, String, System, StringBuffer
+		
+	2. 변수이름 	  	: 소문자 시작 + 대문자 시작
+		- name, companName, address
+		
+	3. 메서드이름  	: 소문자 시작 + 대문자 시작()
+		- length(), charAt(), printInfo()
+		
+	4. 패키지이름  	: 모두소문자.서브패키지명 (패키지 구분자 . 점)
+		- java.lang, java.sql, java.io, java.net, ucamp.model
+		
+	5. 상수이름	   	: 모두대문자_모두대문자 (상수 구분자 _ 밑줄)
+		- PI, E, MAX_VALUE, MIN_VALUE, NORM_VALUE
+	
+
+/* 자바의 키워드 (keyword) */
+- 자바언어에서 미리 사용목적이 정해져있는 예약어 목록
+- 모두 소문자 : public, static, void, class, if, for, do, while
+- const, goto : 키워드이지만(식별자로 사용불가), 하지만 해당 기능을 제공하지는 않음 	
+- sizeof 키워드가 아님 (식별자로 사용가능) 
+	==> 식별자로 사용하지말것 권장. 이유는 C에서 사용하는예약어
+	
+/* 상수 */
+- true (참) / false (거짓)
+- null : 어떠한 객체도 참조하지 않음
+- 주의 : 식별자로 사용불가
+
+
+/* 자바의 주석 */
+
+1) 한줄 주석 :  // 주석문
+	
+2) 여러줄 주석 : /* 여러줄 주석문 */
+
+3) 자바 문서(api) 주석 :
+	- 클래스, 멤버변수, 멤버메서드, 생성자 앞에 주석문 위치
+	- /** api에 대한 주석문 */
+	- javadoc Hello.java => *.html api 문서가 자동으로 생성
+
+
+/* 컴파일 방법 */
+1) javac [options] Hello.java ==> Hello.class
+
+2) javac  [options] *.java 
+	==> 현재폴더에 있는 모든클래스에대해서 컴파일
+
+3) javac  [options] MainMethodClass.java 
+	=> dependency 관계의 모든 클래스에 대해서 컴파일

@@ -1,0 +1,13 @@
+
+## javac / java 사용한 클래스를 찾아가는 경로 ##
+
+1. rt.jar  : JavaSE 표준 API
+2. %TOMCAT_HOME%\jar\lib\ext > 폴더에 존재하는 모든 *.jar
+3. set classpath 환경변수로 설정된 경로
+4. 단, set classpath 환경변수가 설정되어 있지 않으면 현재폴더 검색
+
+
+## 자바 소스코드 파일 
+import top.sub.클래스이름;
+import top.sub.*;
+

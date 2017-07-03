@@ -1,0 +1,11 @@
+
+	## main() 메서드
+ 	
+ 	-- 자바 어플리케이션의 시작점(entry point)
+ 	-- 형식 : public static void main(String[] args) {}
+ 	-- 실행 : 
+ 			1) java Test 
+ 			2) java Test 아규먼트0 아규먼트1 아규먼트2 
+ 			
+ 	-- main 메서드에 아규먼트 전달방법  
+ 			: 실행클래스이름 뒤에 공백을 구분자로 여러개의 parameter-list 지정

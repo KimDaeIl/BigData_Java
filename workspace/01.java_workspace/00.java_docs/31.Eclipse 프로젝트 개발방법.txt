@@ -1,0 +1,10 @@
+
+## Eclipse 프로젝트 개발방법 
+
+1. new 새로운 프로젝트 생성해서 개발
+
+2. eclipse 프로젝트를 import 해서 개발
+
+3. workspace 전체를 받아서 workspace 지정해서 개발
+
+4. 프로젝트에 외부에서 작성된 특정파일을 import 해서 사용개발

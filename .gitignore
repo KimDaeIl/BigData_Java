@@ -200,5 +200,6 @@ $RECYCLE.BIN/
 eclipse/
 01.java/00.official_api_docs/
 *.ucls
+*.buf
 
 # End of https://www.gitignore.io/api/macos,eclipse,windows,intellij,java

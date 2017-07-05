@@ -1,11 +1,11 @@
 import
-	´Ù¸¥
+	ë‹¤ë¥¸
 
-class ¼±¾ğ¹®
+class ì„ ì–¸ë¬¸
 	1. rt.jar
 		java SE default api
 		C:\Program Files\Java\jdk1.8.0_131\jre\lib >>rt.jar
 		C:\Program Files\Java\jdk1.8.0_131\jre\lib >>ext
 		
-	set classpath = Å¬·¡½º °æ·Î °Ë»ö
-	classpath È¯°æº¯¼ö°¡ ¼³Á¤µÇÁö ¾ÊÀº °æ¿ì ÇöÀçÆú´õ(working directory)
+	set classpath = í´ë˜ìŠ¤ ê²½ë¡œ ê²€ìƒ‰
+	classpath í™˜ê²½ë³€ìˆ˜ê°€ ì„¤ì •ë˜ì§€ ì•Šì€ ê²½ìš° í˜„ì¬í´ë”(working directory)

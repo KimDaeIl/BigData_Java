@@ -1,32 +1,32 @@
 <convention>
- 1. 30ÀÚ ÀÌ³»
- 2. ¿µ¹®ÀÚ, ¼ýÀÚ, _ »ç¿ë °¡´É
- 3. ±âº»ÀûÀ¸·Î DBMS¿¡¼­ ´ë¹®ÀÚ·Î Ä¡È¯
-    * ÇÕ¼º¾î´Â _·Î ±¸ºÐ ex) MEMBER_ID
- 4. ¿¹¾à¾î(Å°¿öµå) »ç¿ë ºÒ°¡
- 5. ÀÛ¸í ½Ã ¸í»ç »ç¿ë
-    * Å×ÀÌºí: º¹¼ö
+ 1. 30ìž ì´ë‚´
+ 2. ì˜ë¬¸ìž, ìˆ«ìž, _ ì‚¬ìš© ê°€ëŠ¥
+ 3. ê¸°ë³¸ì ìœ¼ë¡œ DBMSì—ì„œ ëŒ€ë¬¸ìžë¡œ ì¹˜í™˜
+    * í•©ì„±ì–´ëŠ” _ë¡œ êµ¬ë¶„ ex) MEMBER_ID
+ 4. ì˜ˆì•½ì–´(í‚¤ì›Œë“œ) ì‚¬ìš© ë¶ˆê°€
+ 5. ìž‘ëª… ì‹œ ëª…ì‚¬ ì‚¬ìš©
+    * í…Œì´ë¸”: ë³µìˆ˜
 
 <data type>
-Âü°í: https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT1837
-- ¹®ÀÚ¿­
-   1. °¡º¯: varchar2(length) (1~4000byte)
-   2. ºÒº¯: char(length) (1~2000byte, default 1byte)
-   3. À¯´ÏÄÚµå: nchar, nvarchar(1~2000byte, 2byte per char)
+ì°¸ê³ : https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT1837
+- ë¬¸ìžì—´
+   1. ê°€ë³€: varchar2(length) (1~4000byte)
+   2. ë¶ˆë³€: char(length) (1~2000byte, default 1byte)
+   3. ìœ ë‹ˆì½”ë“œ: nchar, nvarchar(1~2000byte, 2byte per char)
 
-- ¼ýÀÚ
-   1. Á¤¼ö, ½Ç¼ö(data, ¼Ò¼öÁ¡ ÀÌÇÏ): number
-      ex) number(9) >> Á¤¼ö 9ÀÚ¸®·Î Ç¥Çö >> 9ÀÚ¸® ÀÌ»ó ÀÔ·Â½Ã ¿¡·¯
-	  number(*,1) >> ½Ç¼ö ¼Ò¼öÁ¡ ÀÌÇÏ 1ÀÚ¸®
+- ìˆ«ìž
+   1. ì •ìˆ˜, ì‹¤ìˆ˜(data, ì†Œìˆ˜ì  ì´í•˜): number
+      ex) number(9) >> ì •ìˆ˜ 9ìžë¦¬ë¡œ í‘œí˜„ >> 9ìžë¦¬ ì´ìƒ ìž…ë ¥ì‹œ ì—ëŸ¬
+	  number(*,1) >> ì‹¤ìˆ˜ ì†Œìˆ˜ì  ì´í•˜ 1ìžë¦¬
 	  number(9,1) >> 123456789.1
-	  number(9,-n) >> 10^n ¸¸Å­ ¹Ý¿Ã¸² >> 7,456,123.89  NUMBER(7,-2)  7456100 >> 23.89 ¹ö¸²
-- ³¯Â¥
-   1.  date: ±æÀÌ Ç¥±âx
+	  number(9,-n) >> 10^n ë§Œí¼ ë°˜ì˜¬ë¦¼ >> 7,456,123.89  NUMBER(7,-2)  7456100 >> 23.89 ë²„ë¦¼
+- ë‚ ì§œ
+   1.  date: ê¸¸ì´ í‘œê¸°x
   
 <unique>
- - primary key: unieque + not null, index »ý¼º
-   * °³Ã¼ ¹«°á¼º Á¦¾àÁ¶°Ç: ½Äº°ÀÚ´Â nullÀ» °¡Áú ¼ö ¾ø´Ù.
- - unieque: Áßº¹ºÒ°¡, nullable
- - foreign key: ´Ù¸¥ Å×ÀÌºíÀÇ pkÂüÁ¶, null Çã¿ë, null ÂüÁ¶x
-   * ÂüÁ¶ ¹«°á¼º Á¦¾àÁ¶°Ç: nullÀº ÂüÁ¶ÇÒ ¼ö ¾ø´Ù.
+ - primary key: unieque + not null, index ìƒì„±
+   * ê°œì²´ ë¬´ê²°ì„± ì œì•½ì¡°ê±´: ì‹ë³„ìžëŠ” nullì„ ê°€ì§ˆ ìˆ˜ ì—†ë‹¤.
+ - unieque: ì¤‘ë³µë¶ˆê°€, nullable
+ - foreign key: ë‹¤ë¥¸ í…Œì´ë¸”ì˜ pkì°¸ì¡°, null í—ˆìš©, null ì°¸ì¡°x
+   * ì°¸ì¡° ë¬´ê²°ì„± ì œì•½ì¡°ê±´: nullì€ ì°¸ì¡°í•  ìˆ˜ ì—†ë‹¤.
  - 

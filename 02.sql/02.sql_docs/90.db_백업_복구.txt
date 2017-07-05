@@ -1,29 +1,29 @@
 
-## µ¥ÀÌÅÍ º£ÀÌ½º ¹é¾÷ ##
+## ë°ì´í„° ë² ì´ìŠ¤ ë°±ì—… ##
 
-1. °èÁ¤ ÀüÃ¼ ¹é¾÷ : DB DUMP
-¸í·ÉÃ¢> exp scott/tiger file=20140707.dmp
+1. ê³„ì • ì „ì²´ ë°±ì—… : DB DUMP
+ëª…ë ¹ì°½> exp scott/tiger file=20140707.dmp
 
-2. °èÁ¤ÀÇ Æ¯Á¤ Å×ÀÌºí ¼±ÅÃ ¹é¾÷
-¸í·ÉÃ¢> exp scott/tiger tables=table1 tablex file=20130708.dmp
+2. ê³„ì •ì˜ íŠ¹ì • í…Œì´ë¸” ì„ íƒ ë°±ì—…
+ëª…ë ¹ì°½> exp scott/tiger tables=table1 tablex file=20130708.dmp
 
 
-## µ¥ÀÌÅÍ º£ÀÌ½º º¹±¸  ##
+## ë°ì´í„° ë² ì´ìŠ¤ ë³µêµ¬  ##
 
-¸í·ÉÃ¢> 
+ëª…ë ¹ì°½> 
 imp scott/tiger touser=scott fromuser=scott file=20140707.dmp
 imp hr/tiger touser=hr fromuser=scott file=emp_0707.dmp
 
 
 
-## ½Ç½À :
+## ì‹¤ìŠµ :
 
--- °ü¸®ÀÚ °èÁ¤ ·Î±×ÀÎ
+-- ê´€ë¦¬ìž ê³„ì • ë¡œê·¸ì¸
 
--- °èÁ¤ »ý¼º : test_user / tiger
--- ±ÇÇÑ ºÎ¿© : connect, resource, create view
+-- ê³„ì • ìƒì„± : test_user / tiger
+-- ê¶Œí•œ ë¶€ì—¬ : connect, resource, create view
 
--- hr/hr °èÁ¤ÀÇ dump ÆÄÀÏ => test_user °èÁ¤ import 
+-- hr/hr ê³„ì •ì˜ dump íŒŒì¼ => test_user ê³„ì • import 
 
 ////////////////////////////////////
 sqlplus system/oracle

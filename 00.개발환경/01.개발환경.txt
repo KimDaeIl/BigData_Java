@@ -1,64 +1,64 @@
-1. È¯°æ±¸Ãà
+1. í™˜ê²½êµ¬ì¶•
 	jdk		http://oracle.com
 	editplus	http://editplus.com
 	eclipse 	http://eclipse.org
 	
 	java SE API Doc => 
 
-2. ¼ö¾÷ÁøÇà Æú´õ±¸Á¶
-	±âº»Æú´õ => c:\practice\
-	ÇÁ·Î±×·¥ ´Ù¿î·Îµå => c:\practice\90.down_apps
+2. ìˆ˜ì—…ì§„í–‰ í´ë”êµ¬ì¡°
+	ê¸°ë³¸í´ë” => c:\practice\
+	í”„ë¡œê·¸ëž¨ ë‹¤ìš´ë¡œë“œ => c:\practice\90.down_apps
 
-3. ¼³Ä¡
+3. ì„¤ì¹˜
 	jdk
 	editplus
 	eclipse
 
-4. jdk ¼³Ä¡
+4. jdk ì„¤ì¹˜
 	java version check
- 		dos> java -version (JRE ½ÇÇàÈ¯°æ È®ÀÎ)
+ 		dos> java -version (JRE ì‹¤í–‰í™˜ê²½ í™•ì¸)
 
 	java compiler version check
-		dos> javac -version (JDK °³¹ßÈ¯°æ È®ÀÎ
+		dos> javac -version (JDK ê°œë°œí™˜ê²½ í™•ì¸
 
-	path È®ÀÎ
+	path í™•ì¸
 		dos> path
 	
-	jdk ¼³Ä¡ °æ·Î => C:\Program Files\Java\jdk1.8.0_131
-		bin\javac.exe	ÀÚ¹Ù ÄÄÆÄÀÏ·¯
-		bin\java.exe	ÀÚ¹Ù ½ÇÇà ¸í·É¾î
-		bin\javadoc.exe	ÀÚ¹Ù ¹®¼­ »ý¼º ¸í·É¾î
-		bin\jar.exe	ÀÚ¹Ù Å¬·¡½º ¾ÐÃà ¸í·É¾î
+	jdk ì„¤ì¹˜ ê²½ë¡œ => C:\Program Files\Java\jdk1.8.0_131
+		bin\javac.exe	ìžë°” ì»´íŒŒì¼ëŸ¬
+		bin\java.exe	ìžë°” ì‹¤í–‰ ëª…ë ¹ì–´
+		bin\javadoc.exe	ìžë°” ë¬¸ì„œ ìƒì„± ëª…ë ¹ì–´
+		bin\jar.exe	ìžë°” í´ëž˜ìŠ¤ ì••ì¶• ëª…ë ¹ì–´
 	
-	jdk È¯°æ ¼³Á¤		
-		ÀÚ¹Ù ¼³Ä¡ Æú´õ Ãß°¡	JAVA_HOME={¼³Ä¡ ÆÄÀÏ Æú´õ}
-		ÀÚ¹Ù ÆÐ½º Ãß°¡ ¼³Á¤
-			=>	%JAVA_HOME%\bin; (±âÁ¸ÆÐ½º)
+	jdk í™˜ê²½ ì„¤ì •		
+		ìžë°” ì„¤ì¹˜ í´ë” ì¶”ê°€	JAVA_HOME={ì„¤ì¹˜ íŒŒì¼ í´ë”}
+		ìžë°” íŒ¨ìŠ¤ ì¶”ê°€ ì„¤ì •
+			=>	%JAVA_HOME%\bin; (ê¸°ì¡´íŒ¨ìŠ¤)
 			=>	JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
 
 
-5. À©µµ¿ì ¸í·É ÇÁ·ÒÇÁÆ® ½ÇÇà
-	½ÃÀÛ - cmd
+5. ìœˆë„ìš° ëª…ë ¹ í”„ë¡¬í”„íŠ¸ ì‹¤í–‰
+	ì‹œìž‘ - cmd
 
 6. eclipse
-	¾ÐÃà ÇØÁ¦ ¼³Ä¡
+	ì••ì¶• í•´ì œ ì„¤ì¹˜
 		C:\practice\90.down_apps\03. eclipse
 		
 
-	ÀÎ½ºÅç ¼³Ä¡
-		¾ÈÇØ
+	ì¸ìŠ¤í†¨ ì„¤ì¹˜
+		ì•ˆí•´
 
-7. dos ¸í·É¾î
-	cd: Change directory (°æ·Î ÀÌµ¿)
-		dos> cd {Àý´ë|»ó´ë°æ·Î Æú´õ¸í}
+7. dos ëª…ë ¹ì–´
+	cd: Change directory (ê²½ë¡œ ì´ë™)
+		dos> cd {ì ˆëŒ€|ìƒëŒ€ê²½ë¡œ í´ë”ëª…}
 
-	dir: ÇöÀç Æú´õ ¸ñ·Ï(linux l¤¤)
+	dir: í˜„ìž¬ í´ë” ëª©ë¡(linux lã„´)
 		dos> dir
-		dir .È®ÀåÀÚ >> ÇØ´ç È®ÀåÀÚ ¸ñ·Ï
-	del: »èÁ¦(linux rm)
-		del {ÆÄÀÏ¸í.È®ÀåÀÚ}
-		del *.È®ÀåÀÚ >> ÇØ´ç È®ÀåÀÚ ÆÄÀÏ ¸ðµÎ »èÁ¦
-		del . >> ÀüÃ¼ »èÁ¦
+		dir .í™•ìž¥ìž >> í•´ë‹¹ í™•ìž¥ìž ëª©ë¡
+	del: ì‚­ì œ(linux rm)
+		del {íŒŒì¼ëª….í™•ìž¥ìž}
+		del *.í™•ìž¥ìž >> í•´ë‹¹ í™•ìž¥ìž íŒŒì¼ ëª¨ë‘ ì‚­ì œ
+		del . >> ì „ì²´ ì‚­ì œ
 
 8. eclipse
 	workspcae >> C:\practice\workspace\01.java_workspace

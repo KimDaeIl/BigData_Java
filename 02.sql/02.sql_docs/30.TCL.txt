@@ -1,26 +1,26 @@
 
 ## ========================
 TCL (Transaction Control Languange)
-    - Æ®·£Àè¼Ç : ¾÷¹«Ã³¸®ÀÇ ÃÖ¼Ò ÀÛ¾÷ ´ÜÀ§
-    - commit   : Ã³¸®¸¦ µ¥ÀÌÅÍº£ÀÌ½º¿¡ ¿µ¼Ó ÀúÀå
-    - rollback  : ¾÷¹«Ã³¸® ÀÛ¾÷ Ãë¼Ò (º¹±¸)
-    - savepoint : Æ®·£Àè¼Ç Æ÷ÀÎÆ® ÁöÁ¤
+    - íŠ¸ëœì­ì…˜ : ì—…ë¬´ì²˜ë¦¬ì˜ ìµœì†Œ ì‘ì—… ë‹¨ìœ„
+    - commit   : ì²˜ë¦¬ë¥¼ ë°ì´í„°ë² ì´ìŠ¤ì— ì˜ì† ì €ì¥
+    - rollback  : ì—…ë¬´ì²˜ë¦¬ ì‘ì—… ì·¨ì†Œ (ë³µêµ¬)
+    - savepoint : íŠ¸ëœì­ì…˜ í¬ì¸íŠ¸ ì§€ì •
 
-    DDL : auto commit ON ¼³Á¤
-    DML : auto commint OFF ¼³Á¤, 
-              µû¶ó¼­ ¸í½ÃÀûÀ¸·Î commit, rollback ÁöÁ¤
-              SQL*PLUS Á¾·á½Ã¿¡ auto commit ¼öÇàµÊ
+    DDL : auto commit ON ì„¤ì •
+    DML : auto commint OFF ì„¤ì •, 
+              ë”°ë¼ì„œ ëª…ì‹œì ìœ¼ë¡œ commit, rollback ì§€ì •
+              SQL*PLUS ì¢…ë£Œì‹œì— auto commit ìˆ˜í–‰ë¨
 ## ========================
 
 /* savepoint */
 
--- ÀúÀåÁ¡ ÁöÁ¤
-savepoint Æ÷ÀÎÆ®¸í;
+-- ì €ì¥ì  ì§€ì •
+savepoint í¬ì¸íŠ¸ëª…;
 
--- ÀúÀåÁ¡ º¹±¸ 
-rollback to Æ÷ÀÎÆ®¸í;
+-- ì €ì¥ì  ë³µêµ¬ 
+rollback to í¬ì¸íŠ¸ëª…;
 
--- ÀúÀåÁ¡ Àû¿ë
-commit to Æ÷ÀÎÆ®¸í;
+-- ì €ì¥ì  ì ìš©
+commit to í¬ì¸íŠ¸ëª…;
 
 

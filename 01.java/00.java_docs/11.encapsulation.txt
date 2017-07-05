@@ -1,31 +1,31 @@
 
-## Encapsulation (Àº´Ğ¼º)
+## Encapsulation (ì€ë‹‰ì„±)
 
-1. ¸ñÀû : Á¤º¸ ¹× ¾Ë°í¸®Áò º¸È£ (Information hiding)
+1. ëª©ì  : ì •ë³´ ë° ì•Œê³ ë¦¬ì¦˜ ë³´í˜¸ (Information hiding)
 
-2. ÀåÁ¡ : ¾ÈÁ¤¼º, Æí¸®¼º, À¯Áöº¸¼ö¼º
+2. ì¥ì  : ì•ˆì •ì„±, í¸ë¦¬ì„±, ìœ ì§€ë³´ìˆ˜ì„±
 
-3. Çü½Ä :
-1) private ¸â¹öº¯¼ö ¼±¾ğ  : private xxx;
-2) public setter() / getter() ¸Ş¼­µå ¼±¾ğ
+3. í˜•ì‹ :
+1) private ë©¤ë²„ë³€ìˆ˜ ì„ ì–¸  : private xxx;
+2) public setter() / getter() ë©”ì„œë“œ ì„ ì–¸
 
-	 -- setter() ¸Ş¼­µå Çü½Ä :
-			public void setXxx(xxxÅ¸ÀÔ xxx) {
-				// xxx °ËÁõ±ÔÄ¢¿¡ ¿Ã¹Ù¸¥Áö ºñ±³
-				// ¿Ã¹Ù¸£¸é °ªÀ» º¯°æ
-				// ¿Ã¹Ù¸£Áö¾ÊÀ¸¸é ¿À·ùÃ³¸®
+	 -- setter() ë©”ì„œë“œ í˜•ì‹ :
+			public void setXxx(xxxíƒ€ì… xxx) {
+				// xxx ê²€ì¦ê·œì¹™ì— ì˜¬ë°”ë¥¸ì§€ ë¹„êµ
+				// ì˜¬ë°”ë¥´ë©´ ê°’ì„ ë³€ê²½
+				// ì˜¬ë°”ë¥´ì§€ì•Šìœ¼ë©´ ì˜¤ë¥˜ì²˜ë¦¬
 			}
 			
-	 -- getter() ¸Ş¼­µå Çü½Ä :
-			public xxxÅ¸ÀÔ getXxx() { 
+	 -- getter() ë©”ì„œë“œ í˜•ì‹ :
+			public xxxíƒ€ì… getXxx() { 
 				return xxx;
 			}
 	 
-3) private µ¥ÀÌÅÍº¯°æÀü¿¡ ¿Ã¹Ù¸¥ µ¥ÀÌÅÍÀÎÁö °ËÁõ ¸Ş¼­µå ¼±¾ğ
-	-- setter() ¸Ş¼­µå ³»ºÎ¿¡¼­ È£Ãâ»ç¿ë
-	-- °ËÁõ±ÔÄ¢ ¸Ş¼­µå Çü½Ä :
-	private boolean isXxx(xxxÅ¸ÀÔ xxx) {
-		if(°ËÁõÁ¶°Ç) {
+3) private ë°ì´í„°ë³€ê²½ì „ì— ì˜¬ë°”ë¥¸ ë°ì´í„°ì¸ì§€ ê²€ì¦ ë©”ì„œë“œ ì„ ì–¸
+	-- setter() ë©”ì„œë“œ ë‚´ë¶€ì—ì„œ í˜¸ì¶œì‚¬ìš©
+	-- ê²€ì¦ê·œì¹™ ë©”ì„œë“œ í˜•ì‹ :
+	private boolean isXxx(xxxíƒ€ì… xxx) {
+		if(ê²€ì¦ì¡°ê±´) {
 			return true;
 		} else {
 			return false;

@@ -4,7 +4,7 @@ memberName			String(10)
 mobile				String(13)		###-####-####
 email				String(30)
 entryDate			String(10)		YYYY/MM/DD
-grade				char(1)			enum{G(老馆), S(快荐), A(包府磊)}
+grade				char(1)			enum{G(鞚茧皹), S(鞖办垬), A(甏�毽瀽)}
 mileage				int(6)
 managerName			String(10)
 

@@ -12,7 +12,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user01                                                                          
 password01                                                                      
-È«±æµ¿                                   010-1234-1111                          
+í™ê¸¸ë™                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -40,7 +40,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user02                                                                          
 password01                                                                      
-°­°¨Âù                                   010-1234-1112                          
+ê°•ê°ì°¬                                   010-1234-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -68,7 +68,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user03                                                                          
 password01                                                                      
-ÀÌ¼ø½Å                                   010-1234-1113                          
+ì´ìˆœì‹                                    010-1234-1113                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -96,7 +96,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser01                                                                         
 password01                                                                      
-À¯°ü¼ø                                   010-1111-1111                          
+ìœ ê´€ìˆœ                                   010-1111-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -109,7 +109,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser01@work.com                                                                
-2017/03/01           S           0 ¼ÛÁß±â                                       
+2017/03/01           S           0 ì†¡ì¤‘ê¸°                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -124,7 +124,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser02                                                                         
 password02                                                                      
-±èÀ¯½Å                                   010-1111-1112                          
+ê¹€ìœ ì‹                                    010-1111-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -137,7 +137,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser02@work.com                                                                
-2017/03/02           S           0 ¼ÛÇý±³                                       
+2017/03/02           S           0 ì†¡í˜œêµ                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -152,7 +152,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 auser01                                                                         
 password01                                                                      
-¹ÚÀçÇü                                   010-1234-1111                          
+ë°•ìž¬í˜•                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -170,7 +170,7 @@ auser01@work.com
 
 6 rows selected.
 
-SQL> -- members Å×ÀÌºíÀÇ ¸ðµç Æ©ÇÃ Á¶È¸
+SQL> -- members í…Œì´ë¸”ì˜ ëª¨ë“  íŠœí”Œ ì¡°íšŒ
 SQL> select * from members;
 
 MEMBER_ID                                                                       
@@ -185,7 +185,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user01                                                                          
 password01                                                                      
-È«±æµ¿                                   010-1234-1111                          
+í™ê¸¸ë™                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -213,7 +213,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user02                                                                          
 password01                                                                      
-°­°¨Âù                                   010-1234-1112                          
+ê°•ê°ì°¬                                   010-1234-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -241,7 +241,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user03                                                                          
 password01                                                                      
-ÀÌ¼ø½Å                                   010-1234-1113                          
+ì´ìˆœì‹                                    010-1234-1113                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -269,7 +269,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser01                                                                         
 password01                                                                      
-À¯°ü¼ø                                   010-1111-1111                          
+ìœ ê´€ìˆœ                                   010-1111-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -282,7 +282,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser01@work.com                                                                
-2017/03/01           S           0 ¼ÛÁß±â                                       
+2017/03/01           S           0 ì†¡ì¤‘ê¸°                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -297,7 +297,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser02                                                                         
 password02                                                                      
-±èÀ¯½Å                                   010-1111-1112                          
+ê¹€ìœ ì‹                                    010-1111-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -310,7 +310,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser02@work.com                                                                
-2017/03/02           S           0 ¼ÛÇý±³                                       
+2017/03/02           S           0 ì†¡í˜œêµ                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -325,7 +325,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 auser01                                                                         
 password01                                                                      
-¹ÚÀçÇü                                   010-1234-1111                          
+ë°•ìž¬í˜•                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -350,13 +350,13 @@ MEMBER_ID
 MOBILE                     MEMBER_NAME                                          
 -------------------------- ----------------------------------------             
 user01                                                                          
-010-1234-1111              È«±æµ¿                                               
+010-1234-1111              í™ê¸¸ë™                                               
                                                                                 
 user02                                                                          
-010-1234-1112              °­°¨Âù                                               
+010-1234-1112              ê°•ê°ì°¬                                               
                                                                                 
 user03                                                                          
-010-1234-1113              ÀÌ¼ø½Å                                               
+010-1234-1113              ì´ìˆœì‹                                                
                                                                                 
 
 MEMBER_ID                                                                       
@@ -364,25 +364,25 @@ MEMBER_ID
 MOBILE                     MEMBER_NAME                                          
 -------------------------- ----------------------------------------             
 suser01                                                                         
-010-1111-1111              À¯°ü¼ø                                               
+010-1111-1111              ìœ ê´€ìˆœ                                               
                                                                                 
 suser02                                                                         
-010-1111-1112              ±èÀ¯½Å                                               
+010-1111-1112              ê¹€ìœ ì‹                                                
                                                                                 
 auser01                                                                         
-010-1234-1111              ¹ÚÀçÇü                                               
+010-1234-1111              ë°•ìž¬í˜•                                               
                                                                                 
 
 6 rows selected.
 
 SQL> 
 SQL> 
-SQL>  -- select ½Ã ÄÃ·³¿¡ º°¸í(alias) {ÄÃ·³¸í ["ÄÃ·³ alias"]
-SQL> select member_id "È¸¿ø ¾ÆÀÌµð", mobile "¿¬¶ôÃ³" from members;
+SQL>  -- select ì‹œ ì»¬ëŸ¼ì— ë³„ëª…(alias) {ì»¬ëŸ¼ëª… ["ì»¬ëŸ¼ alias"]
+SQL> select member_id "íšŒì› ì•„ì´ë””", mobile "ì—°ë½ì²˜" from members;
 
-È¸¿ø ¾ÆÀÌµð                                                                     
+íšŒì› ì•„ì´ë””                                                                     
 ------------------------------------------------------------                    
-¿¬¶ôÃ³                                                                          
+ì—°ë½ì²˜                                                                          
 --------------------------                                                      
 user01                                                                          
 010-1234-1111                                                                   
@@ -394,9 +394,9 @@ user03
 010-1234-1113                                                                   
                                                                                 
 
-È¸¿ø ¾ÆÀÌµð                                                                     
+íšŒì› ì•„ì´ë””                                                                     
 ------------------------------------------------------------                    
-¿¬¶ôÃ³                                                                          
+ì—°ë½ì²˜                                                                          
 --------------------------                                                      
 suser01                                                                         
 010-1111-1111                                                                   
@@ -410,11 +410,11 @@ auser01
 
 6 rows selected.
 
-SQL> select member_id as "È¸¿ø ¾ÆÀÌµð", mobile "¿¬¶ôÃ³" from members;
+SQL> select member_id as "íšŒì› ì•„ì´ë””", mobile "ì—°ë½ì²˜" from members;
 
-È¸¿ø ¾ÆÀÌµð                                                                     
+íšŒì› ì•„ì´ë””                                                                     
 ------------------------------------------------------------                    
-¿¬¶ôÃ³                                                                          
+ì—°ë½ì²˜                                                                          
 --------------------------                                                      
 user01                                                                          
 010-1234-1111                                                                   
@@ -426,9 +426,9 @@ user03
 010-1234-1113                                                                   
                                                                                 
 
-È¸¿ø ¾ÆÀÌµð                                                                     
+íšŒì› ì•„ì´ë””                                                                     
 ------------------------------------------------------------                    
-¿¬¶ôÃ³                                                                          
+ì—°ë½ì²˜                                                                          
 --------------------------                                                      
 suser01                                                                         
 010-1111-1111                                                                   
@@ -456,7 +456,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user01                                                                          
 password01                                                                      
-È«±æµ¿                                   010-1234-1111                          
+í™ê¸¸ë™                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -484,7 +484,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user02                                                                          
 password01                                                                      
-°­°¨Âù                                   010-1234-1112                          
+ê°•ê°ì°¬                                   010-1234-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -512,7 +512,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 user03                                                                          
 password01                                                                      
-ÀÌ¼ø½Å                                   010-1234-1113                          
+ì´ìˆœì‹                                    010-1234-1113                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -540,7 +540,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser01                                                                         
 password01                                                                      
-À¯°ü¼ø                                   010-1111-1111                          
+ìœ ê´€ìˆœ                                   010-1111-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -553,7 +553,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser01@work.com                                                                
-2017/03/01           S           0 ¼ÛÁß±â                                       
+2017/03/01           S           0 ì†¡ì¤‘ê¸°                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -568,7 +568,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 suser02                                                                         
 password02                                                                      
-±èÀ¯½Å                                   010-1111-1112                          
+ê¹€ìœ ì‹                                    010-1111-1112                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -581,7 +581,7 @@ EMAIL
 ENTRY_DATE           GR    MILEAGE MANAGER                                      
 -------------------- -- ---------- ----------------------------------------     
 suser02@work.com                                                                
-2017/03/02           S           0 ¼ÛÇý±³                                       
+2017/03/02           S           0 ì†¡í˜œêµ                                       
                                                                                 
 
 MEMBER_ID                                                                       
@@ -596,7 +596,7 @@ ENTRY_DATE           GR    MILEAGE MANAGER
 -------------------- -- ---------- ----------------------------------------     
 auser01                                                                         
 password01                                                                      
-¹ÚÀçÇü                                   010-1234-1111                          
+ë°•ìž¬í˜•                                   010-1234-1111                          
 
 MEMBER_ID                                                                       
 ------------------------------------------------------------                    
@@ -755,9 +755,9 @@ MILLER               ACCOUNTING
 
 14 rows selected.
 
-SQL> select e.ename "Á÷¿ø¸í", d.dname as "ºÎ¼­¸í" from emp e, dept d where e.deptno = d.deptno;
+SQL> select e.ename "ì§ì›ëª…", d.dname as "ë¶€ì„œëª…" from emp e, dept d where e.deptno = d.deptno;
 
-Á÷¿ø¸í               ºÎ¼­¸í                                                     
+ì§ì›ëª…               ë¶€ì„œëª…                                                     
 -------------------- ----------------------------                               
 SMITH                RESEARCH                                                   
 ALLEN                SALES                                                      
@@ -771,7 +771,7 @@ KING                 ACCOUNTING
 TURNER               SALES                                                      
 ADAMS                RESEARCH                                                   
 
-Á÷¿ø¸í               ºÎ¼­¸í                                                     
+ì§ì›ëª…               ë¶€ì„œëª…                                                     
 -------------------- ----------------------------                               
 JAMES                SALES                                                      
 FORD                 RESEARCH                                                   
@@ -1437,9 +1437,9 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 from emp;
 
 14 rows selected.
 
-SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp;
+SQL> select empno, ename cal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp;
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7369 SMITH                                                                
       7499 ALLEN                       300        570                           
@@ -1453,7 +1453,7 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp;
       7844 TURNER                        0        450                           
       7876 ADAMS                                                                
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7900 JAMES                                                                
       7902 FORD                                                                 
@@ -1462,9 +1462,9 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp;
 14 rows selected.
 
 SQL> 
-SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order by "Æ¯º°»ó¿©±Ý";
+SQL> select empno, ename cal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp order by "íŠ¹ë³„ìƒì—¬ê¸ˆ";
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7844 TURNER                        0        450                           
       7521 WARD                        500        525                           
@@ -1478,7 +1478,7 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order
       7934 MILLER                                                               
       7698 BLAKE                                                                
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7566 JONES                                                                
       7369 SMITH                                                                
@@ -1486,9 +1486,9 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order
 
 14 rows selected.
 
-SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename cal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7369 SMITH                                                                
       7782 CLARK                                                                
@@ -1502,7 +1502,7 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order
       7839 KING                                                                 
       7654 MARTIN                     1400        795                           
 
-     EMPNO CAL                        COMM Æ¯º°»ó¿©±Ý                           
+     EMPNO CAL                        COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                           
 ---------- -------------------- ---------- ----------                           
       7499 ALLEN                       300        570                           
       7521 WARD                        500        525                           
@@ -1510,16 +1510,16 @@ SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp order
 
 14 rows selected.
 
-SQL> select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where "Æ¯º°»ó¿©±Ý" is not null order by "Æ¯º°»ó¿©±Ý" desc;
-select empno, ename cal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where "Æ¯º°»ó¿©±Ý" is not null order by "Æ¯º°»ó¿©±Ý" desc
+SQL> select empno, ename cal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where "íŠ¹ë³„ìƒì—¬ê¸ˆ" is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
+select empno, ename cal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where "íŠ¹ë³„ìƒì—¬ê¸ˆ" is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc
                                                                                  *
 ERROR at line 1:
-ORA-00904: "Æ¯º°»ó¿©±Ý": invalid identifier 
+ORA-00904: "íŠ¹ë³„ìƒì—¬ê¸ˆ": invalid identifier 
 
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where 5 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where 5 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7369 SMITH                       800                                      
       7782 CLARK                      2450                                      
@@ -1533,7 +1533,7 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7839 KING                       5000                                      
       7654 MARTIN                     1250       1400        795                
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
@@ -1541,16 +1541,16 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
 
 14 rows selected.
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where "Æ¯º°»ó¿©±Ý" is not null order by "Æ¯º°»ó¿©±Ý" desc;
-select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where "Æ¯º°»ó¿©±Ý" is not null order by "Æ¯º°»ó¿©±Ý" desc
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where "íŠ¹ë³„ìƒì—¬ê¸ˆ" is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
+select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where "íŠ¹ë³„ìƒì—¬ê¸ˆ" is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc
                                                                                   *
 ERROR at line 1:
-ORA-00904: "Æ¯º°»ó¿©±Ý": invalid identifier 
+ORA-00904: "íŠ¹ë³„ìƒì—¬ê¸ˆ": invalid identifier 
 
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where 4 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where 4 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7369 SMITH                       800                                      
       7782 CLARK                      2450                                      
@@ -1564,7 +1564,7 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7839 KING                       5000                                      
       7654 MARTIN                     1250       1400        795                
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
@@ -1572,9 +1572,9 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
 
 14 rows selected.
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where (sal+comm)*.3 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where (sal+comm)*.3 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7654 MARTIN                     1250       1400        795                
       7499 ALLEN                      1600        300        570                
@@ -1582,10 +1582,10 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7844 TURNER                     1500          0        450                
 
 SQL> 
-SQL> -- db´Â one-base
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where 5 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> -- dbëŠ” one-base
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where 5 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7369 SMITH                       800                                      
       7782 CLARK                      2450                                      
@@ -1599,7 +1599,7 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7839 KING                       5000                                      
       7654 MARTIN                     1250       1400        795                
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
@@ -1607,18 +1607,18 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
 
 14 rows selected.
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where (sal+comm)*.3 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where (sal+comm)*.3 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7654 MARTIN                     1250       1400        795                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
       7844 TURNER                     1500          0        450                
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where 5 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where 5 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7369 SMITH                       800                                      
       7782 CLARK                      2450                                      
@@ -1632,7 +1632,7 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7839 KING                       5000                                      
       7654 MARTIN                     1250       1400        795                
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
@@ -1640,9 +1640,9 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
 
 14 rows selected.
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3  "Æ¯º°»ó¿©±Ý" from emp where 5 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3  "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where 5 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7369 SMITH                       800                                      
       7782 CLARK                      2450                                      
@@ -1656,7 +1656,7 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3  "Æ¯º°»ó¿©±Ý" from emp where 
       7839 KING                       5000                                      
       7654 MARTIN                     1250       1400        795                
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7499 ALLEN                      1600        300        570                
       7521 WARD                       1250        500        525                
@@ -1664,9 +1664,9 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3  "Æ¯º°»ó¿©±Ý" from emp where 
 
 14 rows selected.
 
-SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp where (sal+comm)*.3 is not null order by "Æ¯º°»ó¿©±Ý" desc;
+SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "íŠ¹ë³„ìƒì—¬ê¸ˆ" from emp where (sal+comm)*.3 is not null order by "íŠ¹ë³„ìƒì—¬ê¸ˆ" desc;
 
-     EMPNO ENAME                       SAL       COMM Æ¯º°»ó¿©±Ý                
+     EMPNO ENAME                       SAL       COMM íŠ¹ë³„ìƒì—¬ê¸ˆ                
 ---------- -------------------- ---------- ---------- ----------                
       7654 MARTIN                     1250       1400        795                
       7499 ALLEN                      1600        300        570                
@@ -1674,24 +1674,24 @@ SQL> select empno, ename, sal, comm, (sal+comm)*.3 as "Æ¯º°»ó¿©±Ý" from emp wher
       7844 TURNER                     1500          0        450                
 
 SQL> 
-SQL> -- ¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ
-SQL> select lengthb("abc def") "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('abc def') ±æÀÌ from dummy;
-select lengthb("abc def") "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('abc def') ±æÀÌ from dummy
+SQL> -- ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´
+SQL> select lengthb("abc def") "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('abc def') ê¸¸ì´ from dummy;
+select lengthb("abc def") "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('abc def') ê¸¸ì´ from dummy
                *
 ERROR at line 1:
 ORA-00904: "abc def": invalid identifier 
 
 
-SQL> select lengthb('abc def') "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('abc def') ±æÀÌ from dual;
+SQL> select lengthb('abc def') "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('abc def') ê¸¸ì´ from dual;
 
-¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ       ±æÀÌ                                                     
+ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´       ê¸¸ì´                                                     
 ---------------- ----------                                                     
                7          7                                                     
 
-SQL> -- dual Å×ÀÌºíÀº ¿À¶óÅ¬ ÇÊ¼ö±¸¹® È£ÃâÀ» À§ÇÑ °¡»óÅ×ÀÌºí
-SQL> select lengthb('abc def') "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('abc def') ±æÀÌ from dual;
+SQL> -- dual í…Œì´ë¸”ì€ ì˜¤ë¼í´ í•„ìˆ˜êµ¬ë¬¸ í˜¸ì¶œì„ ìœ„í•œ ê°€ìƒí…Œì´ë¸”
+SQL> select lengthb('abc def') "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('abc def') ê¸¸ì´ from dual;
 
-¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ       ±æÀÌ                                                     
+ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´       ê¸¸ì´                                                     
 ---------------- ----------                                                     
                7          7                                                     
 
@@ -1743,16 +1743,16 @@ SQL>
 SQL> 
 SQL> 
 SQL> 
-SQL> select lengthb("¤¡¤¤¤§") "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('¤¡¤¤¤§') ±æÀÌ from dummy;
-select lengthb("¤¡¤¤¤§") "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('¤¡¤¤¤§') ±æÀÌ from dummy
+SQL> select lengthb("ã„±ã„´ã„·") "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('ã„±ã„´ã„·') ê¸¸ì´ from dummy;
+select lengthb("ã„±ã„´ã„·") "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('ã„±ã„´ã„·') ê¸¸ì´ from dummy
                *
 ERROR at line 1:
-ORA-00904: "¤¡¤¤¤§": invalid identifier 
+ORA-00904: "ã„±ã„´ã„·": invalid identifier 
 
 
-SQL> select lengthb('¤¡¤¤¤§') "¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ", length('¤¡¤¤¤§') ±æÀÌ from dummy;
+SQL> select lengthb('ã„±ã„´ã„·') "ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´", length('ã„±ã„´ã„·') ê¸¸ì´ from dummy;
 
-¹ÙÀÌÆ® ´ÜÀ§ ±æÀÌ       ±æÀÌ                                                     
+ë°”ì´íŠ¸ ë‹¨ìœ„ ê¸¸ì´       ê¸¸ì´                                                     
 ---------------- ----------                                                     
                9          3                                                     
 

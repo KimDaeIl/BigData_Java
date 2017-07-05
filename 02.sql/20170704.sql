@@ -1,9 +1,9 @@
-SQL> --ÇÑÁÙÁÖ¼®
-SQL> /* ¿©·¯ÁÙ ÁÖ¼®*/
-SQL> --sql> cl scr È­¸é Áö¿ì±â
+SQL> --í•œì¤„ì£¼ì„
+SQL> /* ì—¬ëŸ¬ì¤„ ì£¼ì„*/
+SQL> --sql> cl scr í™”ë©´ ì§€ìš°ê¸°
 SQL> cl scr
 
-SQL> --sqlplus È¯°æ ¼³Á¤
+SQL> --sqlplus í™˜ê²½ ì„¤ì •
 SQL> show all
 appinfo is OFF and set to "SQL*Plus"
 arraysize 15
@@ -80,15 +80,15 @@ verify ON
 wrap : lines will be wrapped
 xmloptimizationcheck OFF
 errorlogging is OFF
-SQL> --sqlplus ¶óÀÎ»çÀÌÁî Á¶È¸
+SQL> --sqlplus ë¼ì¸ì‚¬ì´ì¦ˆ ì¡°íšŒ
 SQL> show linesize
 linesize 80
-SQL> --sqlplus ÆäÀÌÁö»çÀÌÁî
+SQL> --sqlplus íŽ˜ì´ì§€ì‚¬ì´ì¦ˆ
 SQL> show pagesize
 pagesize 14
-SQL> --¶óÀÎ»çÀÌÁî º¯°æ
+SQL> --ë¼ì¸ì‚¬ì´ì¦ˆ ë³€ê²½
 SQL> set linesize 300
-SQL> --ÆäÀÌÁö »çÀÌÁî º¯°æ
+SQL> --íŽ˜ì´ì§€ ì‚¬ì´ì¦ˆ ë³€ê²½
 SQL> set pagesize 300
 SQL> show pagesize, linesize
 pagesize 300
@@ -97,7 +97,7 @@ linesize 300
 SQL> show pagesize linesize
 pagesize 300
 linesize 300
-SQL> --ÆäÀÌÁö, ¶óÀÎ »çÀÌÁî µ¿½Ã Á¶È¸
+SQL> --íŽ˜ì´ì§€, ë¼ì¸ ì‚¬ì´ì¦ˆ ë™ì‹œ ì¡°íšŒ
 SQL> show pagesize linesize
 pagesize 300
 linesize 300
@@ -283,7 +283,7 @@ TABQUOTAS                                                    SYNONYM
 
 174 rows selected.
 
-SQL> --sql ³¡Àº ;À¸·Î ³¡³²
+SQL> --sql ëì€ ;ìœ¼ë¡œ ëë‚¨
 SQL> select
   2  	*
   3  	from
@@ -468,7 +468,7 @@ TABQUOTAS                                                    SYNONYM
 
 174 rows selected.
 
-SQL> -- system °ü¸®ÀÚ °èÁ¤¿¡¼­ »ç¿ëÀÚ °èÁ¤ »ý¼º
+SQL> -- system ê´€ë¦¬ìž ê³„ì •ì—ì„œ ì‚¬ìš©ìž ê³„ì • ìƒì„±
 SQL> -- id: scott/ password: tiger
 SQL> -- CREATE [USER_ID] IDENTIFIED BY [USER_PASSWORD];
 SQL> create user scott identified by tiger;
@@ -484,7 +484,7 @@ User created.
 
 SQL> spool
 currently spooling to 20170704.sql
-SQL> -- scott »ç¿ëÀÚ ±ÇÇÑ
+SQL> -- scott ì‚¬ìš©ìž ê¶Œí•œ
 SQL> grant connect, resource, create view to scott;
 
 Grant succeeded.
@@ -507,17 +507,17 @@ SQL> show user
 USER is "SCOTT"
 SQL> show spool
 spool ON
-SQL> -- scott °èÁ¤ÀÇ ¸ðµç Å×ÀÌºí ¸ñ·Ï Á¶È¸
+SQL> -- scott ê³„ì •ì˜ ëª¨ë“  í…Œì´ë¸” ëª©ë¡ ì¡°íšŒ
 SQL> select * from tab;
 
 no rows selected
 
-SQL> -- sql ½ºÅ©¸³Æ® ÆÄÀÏ ¼öÇà
-SQL> -- @½ºÅ©¸³Æ®ÆÄÀÏ.sql
-SQL> -- start ½ºÅ©¸³Æ®ÆÄÀÏ.sql
+SQL> -- sql ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ ìˆ˜í–‰
+SQL> -- @ìŠ¤í¬ë¦½íŠ¸íŒŒì¼.sql
+SQL> -- start ìŠ¤í¬ë¦½íŠ¸íŒŒì¼.sql
 SQL> 
 SQL> 
-SQL> -- scott ÆÄÀÏ ½ºÅ©¸³Æ® ½ÇÇà
+SQL> -- scott íŒŒì¼ ìŠ¤í¬ë¦½íŠ¸ ì‹¤í–‰
 SQL> @C:\practice\02.sql\demo_scott\scott.sql
 GRANT CONNECT,RESOURCE,UNLIMITED TABLESPACE TO SCOTT IDENTIFIED BY TIGER
                                                *
@@ -1410,8 +1410,8 @@ SQL> select * from dept;
         30 SALES                        CHICAGO                                                                                                                                                                                                                                                             
         40 OPERATIONS                   BOSTON                                                                                                                                                                                                                                                              
 
-SQL> -- ºÎ¼­ Á¤º¸ Å×ÀÌºí dept
-SQL> -- ºÎ¼­ Á¤º¸ ÀüÃ¼ Á¶È¸
+SQL> -- ë¶€ì„œ ì •ë³´ í…Œì´ë¸” dept
+SQL> -- ë¶€ì„œ ì •ë³´ ì „ì²´ ì¡°íšŒ
 SQL> select * from dept;
 
     DEPTNO DNAME                        LOC                                                                                                                                                                                                                                                                 
@@ -1427,14 +1427,14 @@ SQL> conn system/admin1004
 Connected.
 SQL> show user;
 USER is "SYSTEM"
-SQL> -- »ç¿ëÀÚ °èÁ¤ Àá±Ý ÇØÁ¦: hr °èÁ¤ ÇØÁ¦
+SQL> -- ì‚¬ìš©ìž ê³„ì • ìž ê¸ˆ í•´ì œ: hr ê³„ì • í•´ì œ
 SQL> -- ALTER USER [user_id] account (un)lock;
 SQL> alter user hr
   2  	account unlock;
 
 User altered.
 
-SQL> -- °èÁ¤ ¾ÏÈ£ º¯°æ
+SQL> -- ê³„ì • ì•”í˜¸ ë³€ê²½
 SQL> -- ALTER USER [user_id] IDENTIFIED BY [user_password];
 SQL> alter user hr identified by tiger;
 
@@ -1457,7 +1457,7 @@ REGIONS                                                      TABLE
 
 8 rows selected.
 
-SQL> -- hr °èÁ¤ÀÇ ÀüÃ¼ Á÷¿ø Á¤º¸ Á¶È¸: employees
+SQL> -- hr ê³„ì •ì˜ ì „ì²´ ì§ì› ì •ë³´ ì¡°íšŒ: employees
 SQL> select count(*) from employees;
 
   COUNT(*)                                                                                                                                                                                                                                                                                                  

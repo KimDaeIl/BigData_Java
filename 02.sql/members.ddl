@@ -1,13 +1,13 @@
 
 rem CREATE TABLE table_name(
-rem 	column_name type(length) [Á¦¾àÁ¶°Ç],
+rem 	column_name type(length) [ì œì•½ì¡°ê±´],
 rem );
-rem ## Á¦¾àÁ¶°Ç ÁöÁ¤
-rem  1. ÄÃ·³ ·¹º§: Å×ÀÌºí »ý¼º DDL ³»ºÎ¿¡ Á¦¾àÁ¶°Ç ¼³Á¤(ÄÃ·³, º°µµ)
-rem  2. Å×ÀÌºí ·¹º§: Å×ÀÌºí »ý¼º ÈÄ º°µµ·Î Á¦¾àÁ¶°Ç ¼³Á¤
-rem  3. Å×ÀÌºí º¯°æ ½Ã Á¦¾à Ãß°¡
+rem ## ì œì•½ì¡°ê±´ ì§€ì •
+rem  1. ì»¬ëŸ¼ ë ˆë²¨: í…Œì´ë¸” ìƒì„± DDL ë‚´ë¶€ì— ì œì•½ì¡°ê±´ ì„¤ì •(ì»¬ëŸ¼, ë³„ë„)
+rem  2. í…Œì´ë¸” ë ˆë²¨: í…Œì´ë¸” ìƒì„± í›„ ë³„ë„ë¡œ ì œì•½ì¡°ê±´ ì„¤ì •
+rem  3. í…Œì´ë¸” ë³€ê²½ ì‹œ ì œì•½ ì¶”ê°€
 rem
-rem ## Á¦¾à ÁöÁ¤ ½Ã Á¦¾à¸í »ý·«, Á¦¾à¸í º°µµ ÁöÁ¤
+rem ## ì œì•½ ì§€ì • ì‹œ ì œì•½ëª… ìƒëžµ, ì œì•½ëª… ë³„ë„ ì§€ì •
 rem CREATE TABLE table_name(
 rem 	column_name type(length) not null,
 rem .
@@ -50,5 +50,5 @@ SELECT TABLE_NAME, CONSTRAINT_TYPE, CONSTRAINT_NAME FROM USER_CONSTRAINTS WHERE 
  
  
  
-rem ## Á¦¾à ÁöÁ¤½Ã Á¦¾àÀÌ¸§ ÁöÁ¤ ¶Ç´Â Á¦¾àÀÌ¸§ »ý·«
-	-- Á¦¾àÀÌ¸§ ÁöÁ¤¹æ¹ý: constraint Á¦¾àÀÌ¸§ Á¦¾à»çÇ× expr
+rem ## ì œì•½ ì§€ì •ì‹œ ì œì•½ì´ë¦„ ì§€ì • ë˜ëŠ” ì œì•½ì´ë¦„ ìƒëžµ
+	-- ì œì•½ì´ë¦„ ì§€ì •ë°©ë²•: constraint ì œì•½ì´ë¦„ ì œì•½ì‚¬í•­ expr

@@ -1,0 +1,97 @@
+
+/*================================================ */
+
+	## 함수 종류:
+	1. ANSI 표준 함수
+	2. PL/SQL 사용자 정의 함수
+	3. DBMS 지원 함수
+
+	### Function 함수 
+
+	1. 단일행 함수 : 
+		-- 하나의 레코드에 대하여 하나의 결과를 반환 함수
+	
+	2. 복수행(그룹) 함수 : 
+		-- 여러개의 레코드에 대하여 하나의 결과를 반환 함수
+
+
+	### 1. 단일행 함수 : 하나의 레코드에 대하여 하나의 결과를 반환 함수
+	
+	1) 문자형 함수 : 
+		-- concat(), length(), lengthb(), lpad(), rpad(), trim(), ltrim(), rtrim()
+		-- 결합연산자 : ||
+
+	2) 숫자형 함수 : round(), trunc(), ceil(), floor(), mod()
+	
+	3) 날짜형 함수 : 
+		-- sysdate : date
+		-- last_day(sysdate) : int
+		-- next_day(sysdate, 4) : date
+		-- add_months(sysdate, 3) : date
+		-- months_between(startDate, endDate) : int
+	
+	4) 변환 함수
+		-- to_date() : 날짜형식의 문자열을 지정한형식의 날짜타입으로 변환
+		-- to_char() : 날짜타입, 숫자를 지정한 형식의 문자열로 변환
+		-- to_number() : 숫자형식의문자열을 숫자로 변환 => '10' => 자동형변환
+
+	5) 기타 함수
+		-- nvl(컬럼명, NULL인경우대체값)
+		-- nvl2(컬럼명, NULL이아닌경우대체값, NULL인경우대체값)
+		-- decode()
+		-- case()
+
+
+	### 2. 복수행 함수 : 
+		-- count(*) 	  : null 포함 전체 레코드 수 반환
+		-- count(컬럼명)  : null을 제외한 해당컬럼의 값이 있는 레코드 수반환
+		-- max()  : 최대값 , 숫자, 문자 데이터
+		-- min()  : 최소값, 숫자 , 문자 데이터
+		-- sum() : 합계, 숫자데이터
+		-- avg()  : 평균 , 숫자데이터
+
+		-- null은 연산 수행하지 않음(수행처리에서 제외됨)
+
+	## Pattern
+
+	## 요일 : 일요일 1, 월요일2, 화요일 3, .... , 토요일 7
+	
+	## 날짜형식
+	yyyy : 년도
+	mm : 월
+	dd : 일
+
+	hh : 시간
+	mi : 분
+	ss : 초
+
+	## 숫자형식
+	숫자 : 9999999
+	천단위마다 컴마: 999,999
+	소수이하자리수 : 999,999.99
+	전체자리수 지정 : 099,999
+	통화단위 : $,
+	로케일로 설정된 통화단위 : L999,999
+
+/*================================================ */
+
+## 통계 함수
+
+1. decode()
+	-- 오라클 전용함수
+	-- switch ~ case 구문 개념 : 값 조건 비교
+	-- 형식 :
+	decode(expr, search-1, result-1, search-x, result-x, result-default)
+
+2. case()
+	-- if () ~ else if() 구문 개념 : 범위 조건 비교
+	-- 조건 : 산술, 비교 등 다양한 조건 사용
+	-- 형식 :
+		case 
+			when search-1 then result-1
+			when search-x then result-x
+			else result-default
+		end "alias명"
+
+
+

@@ -1,0 +1,112 @@
+
+## 테이블 생성 및 레코드 참조 생성 방법
+
+1. 새로운 구조의 테이블 생성
+	create table 테이블명 (
+		컬럼명 타입(길이) 제약타입,
+		컬럼명 타입(길이) 제약타입
+	)
+
+
+2. 기존 테이블의 구조를 참조해서 테이블 생성 : 테이블 구조만 참조 생성, not null 제약만 전이됨
+	-- 형식 :
+	create table 테이블명	
+	AS
+	select 구문;
+
+	-- select 구문에 레코드가 조회되지 않도록 조건문 작성
+
+3. 기존 테이블의 구조 + 데이터포함 참조해서 테이블 생성 : 테이블 구조 + 데이터 참조 생성 : 백업 
+
+	-- select 구문에 원하는 레코드가 조회되도록 조건문 작성
+
+
+////////////////////////////////////////////////////
+
+-- 직원테이블의 사번, 이름, 급여 속성만을 갖는 테이블 생성
+-- 테이블명 : emp1
+
+create table emp1
+as
+select empno, ename, sal from emp where 1=2
+;
+
+-- emp1 테이블의 제약 조회
+select constraint_name, constraint_type from user_constraints
+where table_name in ('EMP1');
+
+
+-- 직원의 사번, 이름, 급여, 10, 20번 부서원의 데이터도 함께 참조해서 테이블생성
+-- 테이블명 : emp2
+
+create table emp2
+as
+select deptno, empno, ename, sal from emp where deptno in (10, 20)
+;
+
+create table emp3
+as
+select deptno department_no, empno employee_no, ename employee_name, sal salary
+from emp where deptno in (10, 20)
+;
+
+
+-- non equi-join
+SELECT E1.EMPNO, E1.ENAME, E2.SAL, E2.SAL
+FROM EMP E1, EMP E2
+WHERE E1.EMPNO != E2.EMPNO
+;
+
+-- cross join
+SELECT E1.EMPNO, E1.ENAME, E1.JOB, E2.SAL
+FROM EMP E1, EMP E2
+;
+
+-- join 참조 레코드 생성
+CREATE TABLE EMP_TEST
+AS
+SELECT E1.EMPNO, E1.ENAME, E1.JOB, E2.SAL
+FROM EMP E1, EMP E2
+;
+
+-- 다중행 레코드 추가 
+INSERT INTO EMP_TEST 
+(
+	SELECT E1.EMPNO, E1.ENAME, E1.JOB, E2.SAL
+	FROM EMP E1, EMP E2
+)
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

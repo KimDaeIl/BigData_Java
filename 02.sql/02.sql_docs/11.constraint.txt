@@ -1,0 +1,38 @@
+
+/* -----------------------------------------------------
+	레코드에 대한 제약 사항 :
+---------------------------------------------------------
+제약사항 종류 :
+		1. PRIMARY KEY = UNIQUE + NOT NULL
+		2. FOREIGN KEY ( NULL 허용,참조 테이블의 PK 이어야함)
+		3. NOT NULL : 필수 데이터
+		4. UNIQUE : 중복 불가
+		5. CHECK  : 값검증
+		6. 컬럼 선언시에 기본초기값 설정 방법:
+		    컬럼명 DEFAULT '기본초기값' [NOT NULL];
+
+제약사항 선언 방법:
+	1.	컬럼 선언시에 함께 제약사항에 대한 이름없이 선언 : 
+		ID varchar2(5) PRIMARY KEY,
+		NICKNAME varchar2(10) NOT NULL,
+		MID varchar2(5) REFERENCES MASTER(MID)
+
+	2. 컬럼 선언시에 함께 제약사항에 대한 이름부여하여 선언
+		MID varchar2(5) CONSTRAINT pk_mid primary key,
+		NICKNAME varchar2(10) CONSTRAINT nn_nick NOT NULL,
+		MID varchar2(5) CONSTRAINT mid_fk REFERENCES MASTER(MID)
+
+	3. 테이블 정의시에 컬럼 선언후에 별도의  제약사항에 대한 이름부여하여 선언 : 
+		-- NOT NULL 제약사항은 컬럼선언시에만 가능함.
+		-- 여러 컬럼을 조합한 primary key에 대한 제약은 별도의 제약으로만 가능
+
+		CONSTRAINT detail_pk PRIMARY KEY (MID, DCODE),
+		CONSTRAINT detail_fk FOREIGN KEY (MID) REFERENCES MASTER(MID)
+
+	4. 테이블 정의후에 ALTER TABLE ADD를 이용하여 제약사항 추가	선언
+		ALTER TABLE detail ADD(CONSTRAINT detail_pk PRIMARY KEY (MID, DCODE))
+
+제약사항 사용자 Dictionary : user_constraints
+
+*/
+

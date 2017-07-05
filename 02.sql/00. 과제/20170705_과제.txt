@@ -1,0 +1,82 @@
+SELECT ROWNUM, ENAME, JOB, SAL FROM (SELECT * FROM EMP ORDER BY SAL DESC) WHERE ROWNUM <= 5;
+
+<<  과제  >>
+쿼리 시나리오
+ex) 정리해고 대상자 필터링 
+	>> 급여 많은 인간 
+	>> 급여 내림차순
+
+팀당 12개 >> 팀원 *3
+제출명: YYYYMMDD_n팀_팀장.zip
+
+
+팀원은 팀장에게 YYYMMDD_팀원.sql
+
+팀장은 취합하고
+취합된 것을 제출하면 그것을 문제로 출제
+
+<< 테이블 설계 >>
+공지 테이블 설계
+스크립트(.sql)로 작성...ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+
+<</=== 과제 ===>>
+
+1. 직원들의 봉급에 따른 등급을 알고 싶다.
+
+<QUERY>
+SELECT (SELECT SG.GRADE FROM SALGRADE SG WHERE E.SAL BETWEEN  SG.LOSAL AND SG.HISAL) "SAL_GRADE", ENAME, JOB, SAL FROM EMP E
+ORDER BY "SAL_GRADE" DESC;
+
+<결과>
+ SAL_GRADE ENAME      JOB              SAL
+---------- ---------- --------- ----------
+         5 KING       PRESIDENT       5000
+         4 CLARK      MANAGER         2450
+         4 FORD       ANALYST         3000
+         4 SCOTT      ANALYST         3000
+         4 BLAKE      MANAGER         2850
+         4 JONES      MANAGER         2975
+         3 TURNER     SALESMAN        1500
+         3 ALLEN      SALESMAN        1600
+         2 MILLER     CLERK           1300
+         2 MARTIN     SALESMAN        1250
+         2 WARD       SALESMAN        1250
+
+ SAL_GRADE ENAME      JOB              SAL
+---------- ---------- --------- ----------
+         1 JAMES      CLERK            950
+         1 SMITH      CLERK            800
+         1 ADAMS      CLERK           1100
+
+
+
+2. 회사가 살림이 풍족해져 직급별 평균이 되지 않는 직원들의 연봉을 평균까지 올려주기로 했다.그래서 직급별 연봉에 대한 통계치가 필요하다.ㄱㄱ
+
+<QUERY>
+SELECT JOB "직책", COUNT(*) "인원수", MIN(SAL) "최소", MAX(SAL) "최대", ROUND(AVG(SAL), 2) "평균" FROM EMP GROUP BY JOB;
+
+<결과>
+직책          인원수       최소       최대       평균
+--------- ---------- ---------- ---------- ----------
+CLERK              4        800       1300     1037.5
+SALESMAN           4       1250       1600       1400
+PRESIDENT          1       5000       5000       5000
+MANAGER            3       2450       2975    2758.33
+ANALYST            2       3000       3000       3000
+
+
+
+
+3. 2에서 구한 데이터를 기준으로 개인 연봉이 직책의 평균 연봉보다 작은 인원의 누구인지 찾아야 올려줄 수 있다. 해당 인원 리스트를 주세요.
+
+<QUERY>
+SELECT ROWNUM "순번", E.ENAME "사원명", S."직책",E.SAL "연봉", S."평균" FROM EMP E, (SELECT JOB "직책", ROUND(AVG(SAL), 2) "평균" FROM EMP GROUP BY JOB) S WHERE E.JOB =S."직책" AND E.SAL < S."평균";
+
+<결과>
+      순번 사원명     직책            연봉       평균
+---------- ---------- --------- ---------- ----------
+         1 JAMES      CLERK            950     1037.5
+         2 SMITH      CLERK            800     1037.5
+         3 MARTIN     SALESMAN        1250       1400
+         4 WARD       SALESMAN        1250       1400
+         5 CLARK      MANAGER         2450    2758.33

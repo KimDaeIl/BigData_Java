@@ -1,0 +1,22 @@
+
+/* 
+	## rownum / rowid 
+
+	1. rownum : 
+		-- select 결과에 대한 일련번호
+		-- read only, 동적으로 부여
+
+	2. rowid
+		-- 레코드가 저장된 물리적인 위치에 대한 id
+*/
+
+SELECT ROWNUM, EMPNO, ENAME, SAL FROM (SELECT * FROM EMP ORDER BY SAL DESC);
+
+
+SELECT (SELECT SG.GRADE FROM SALGRADE SG WHERE E.SAL BETWEEN  SG.LOSAL AND SG.HISAL) ENAME, ENA
+ME, JOB FROM EMP E;
+
+1. 직원의 SAL에 따라 등급을 확인하고 시프다. DESC
+SELECT (SELECT SG.GRADE FROM SALGRADE SG WHERE E.SAL BETWEEN  SG.LOSAL AND SG.HISAL) "SAL_GRADE
+", ENAME, JOB, SAL FROM EMP E ORDER BY "SAL_GRADE" DESC;
+

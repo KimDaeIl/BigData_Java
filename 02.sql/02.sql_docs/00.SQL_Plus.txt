@@ -1,0 +1,73 @@
+
+## SQL*Plus ##
+
+-- 오라클 설치시에 자동으로 제공되는 sql editor
+-- dbms와 sql 구문을 위한 interface tool(s/w)
+-- 시작 : sqlplus 계정아이디/암호
+-- 종료 : exit;   또는 quit;
+-- 연결종료 : discon
+-- 계정연결 : conn 계정아이디/암호
+-- 화면 지우기 : cl scr
+-- SQL 구문의 종료는 ; (세미콜론) 표기
+-- SQL 구문은 대소문자를 구분하지않음(기본)
+-- SQL 구문은 가독성 있게 여러줄에 분리해서 작성함
+
+
+## sql 스키마 스크립트 파일 주석
+-- 한줄주석
+/*  여러줄 주석 */
+
+## SQL 스크립트 파일 수행방법
+-- 파일명.sql  , 파일명.ddl, 파일명.dml
+-- 1. @파일명.sql (현재경로)  , @c:\temp\a.sql  (절대경로)
+-- 2. start 파일명.sql (현재경로)
+
+
+## sql*plus 환경설정
+-- 구동하면 초기화됨
+-- show all : 전체환경설정 조회
+-- show 환경설정명 : 해당 환경설정 조회
+-- 현재 로그인 계정아이디 : show user
+
+-- set 환경설정명 값  : 해당 환경설정을 변경
+
+-- 한줄크기 변경 : set linesize 300
+-- 페이지크기 : set pagesize  300
+
+-- 콘솔창출력모드 변경 (PL/SQL 콘솔창출력): 
+	set serveroutput on
+
+## 관리자 계정 (system/oracle)
+-- 사용자 계정 lock 해제
+alter user hr account unlock;
+
+-- 사용자 계정 lock 설정
+alter user hr account lock;
+
+-- 사용자 계정 암호 변경
+alter user hr identified by hr;
+
+-- 사용자 계정 추가
+create user 계정아이디 identified by 암호;
+create user scott identified by tiger;
+
+-- 사용자 계정 권한 부여
+grant connect, resource, dba to 아이디;
+grant connect, resource, dba to scott;
+grant connect, resource, create view to scott;
+
+-- 사용자 계정 삭제
+drop user 계정아이디 cascade;
+drop user scott cascade;
+
+
+
+
+
+
+
+
+
+
+
+

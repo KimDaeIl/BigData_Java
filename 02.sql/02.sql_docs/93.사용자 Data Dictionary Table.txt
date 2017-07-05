@@ -1,0 +1,9 @@
+
+## 사용자 Data Dictionary Table ##
+
+-- 뷰 데이터 딕셔너리 테이블 : user_views;
+-- 제약 : user_constraints;
+-- 테이블 : user_tables;
+-- 시퀀스 : user_sequences;
+-- 인덱스 : user_indexes;
+-- 프로시저 : user_procedures;

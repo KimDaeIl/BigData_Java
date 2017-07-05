@@ -1,0 +1,39 @@
+
+/* 
+	### oracle charset 변경 
+	-- 10g 한글 한글자 3바이트 => 2바이트 변경 설정
+	
+	1. sysdba 계정 권한으로 charset 변경
+
+*/
+
+## Oracle system / sys 암호 분실 재설정 ##
+명령창 > sqlplus "/as sysdba"
+
+## sys 계정 암호 변경
+SQL> alter user sys identified by tiger;
+
+## SYS(SYSDBA) 계정 로그인
+conn sys/ as sysdba
+암호 : tiger
+
+## 한글 charset 변경
+SQL>
+SHUTDOWN IMMEDIATE;
+startup mount;
+alter system enable restricted session;
+alter system set JOB_QUEUE_PROCESSES=0;
+alter database open;
+alter database character set internal_use KO16MSWIN949;
+shutdown immediate;
+startup;
+
+## 한글 바이트 길이 조회
+
+select lengthb('가') from dual;
+
+
+## system 계정 로그인 후 hr 계정 lock 해제 및 암호변경지정
+conn system/tiger
+alter user hr account unlock;
+alter user hr identified by tiger;

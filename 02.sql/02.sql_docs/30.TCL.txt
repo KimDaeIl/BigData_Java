@@ -1,0 +1,26 @@
+
+## ========================
+TCL (Transaction Control Languange)
+    - 트랜잭션 : 업무처리의 최소 작업 단위
+    - commit   : 처리를 데이터베이스에 영속 저장
+    - rollback  : 업무처리 작업 취소 (복구)
+    - savepoint : 트랜잭션 포인트 지정
+
+    DDL : auto commit ON 설정
+    DML : auto commint OFF 설정, 
+              따라서 명시적으로 commit, rollback 지정
+              SQL*PLUS 종료시에 auto commit 수행됨
+## ========================
+
+/* savepoint */
+
+-- 저장점 지정
+savepoint 포인트명;
+
+-- 저장점 복구 
+rollback to 포인트명;
+
+-- 저장점 적용
+commit to 포인트명;
+
+

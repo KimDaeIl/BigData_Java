@@ -1,0 +1,55 @@
+
+## 데이터 베이스 백업 ##
+
+1. 계정 전체 백업 : DB DUMP
+명령창> exp scott/tiger file=20140707.dmp
+
+2. 계정의 특정 테이블 선택 백업
+명령창> exp scott/tiger tables=table1 tablex file=20130708.dmp
+
+
+## 데이터 베이스 복구  ##
+
+명령창> 
+imp scott/tiger touser=scott fromuser=scott file=20140707.dmp
+imp hr/tiger touser=hr fromuser=scott file=emp_0707.dmp
+
+
+
+## 실습 :
+
+-- 관리자 계정 로그인
+
+-- 계정 생성 : test_user / tiger
+-- 권한 부여 : connect, resource, create view
+
+-- hr/hr 계정의 dump 파일 => test_user 계정 import 
+
+////////////////////////////////////
+sqlplus system/oracle
+
+create user test_user identified by tiger;
+grannt connect, resource, create view to test_user;
+
+dos> imp test_user/tiger touser=test_user fromuser=hr file=emp_0707.dmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

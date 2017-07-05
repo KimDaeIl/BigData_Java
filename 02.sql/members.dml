@@ -6,3 +6,5 @@ INSERT INTO members values('suser01', 'password01', '유관순', '010-1111-1111', '
 INSERT INTO members values('suser02', 'password02', '김유신', '010-1111-1112', 'suser02@work.com', '2017/03/02', 'S', 0, '송혜교');
 
 INSERT INTO members values('auser01', 'password01', '박재형', '010-1234-1111', 'auser01@work.com', '2017/04/21', 'A', 0, null);
+
+COMMIT;

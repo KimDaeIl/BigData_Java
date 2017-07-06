@@ -1,10 +1,10 @@
-INSERT INTO members values('user01', 'password01', 'È«±æµ¿', '010-1234-1111', 'user01@work.com', '2017/05/10', 'G', 1000, null);
-INSERT INTO members values('user02', 'password01', '°­°¨Âù', '010-1234-1112', 'user02@work.com', '2017/05/11', 'G', 1000, null);
-INSERT INTO members values('user03', 'password01', 'ÀÌ¼ø½Å', '010-1234-1113', 'user03@work.com', '2017/05/12', 'G', 1000, null);
+INSERT INTO members values('user01', 'password01', 'í™ê¸¸ë™', '010-1234-1111', 'user01@work.com', '2017/05/10', 'G', 1000, null);
+INSERT INTO members values('user02', 'password01', 'ê°•ê°ì°¬', '010-1234-1112', 'user02@work.com', '2017/05/11', 'G', 1000, null);
+INSERT INTO members values('user03', 'password01', 'ì´ìˆœì‹ ', '010-1234-1113', 'user03@work.com', '2017/05/12', 'G', 1000, null);
 
-INSERT INTO members values('suser01', 'password01', 'À¯°ü¼ø', '010-1111-1111', 'suser01@work.com', '2017/03/01', 'S', 0, '¼ÛÁß±â');
-INSERT INTO members values('suser02', 'password02', '±èÀ¯½Å', '010-1111-1112', 'suser02@work.com', '2017/03/02', 'S', 0, '¼ÛÇı±³');
+INSERT INTO members values('suser01', 'password01', 'ìœ ê´€ìˆœ', '010-1111-1111', 'suser01@work.com', '2017/03/01', 'S', 0, 'ì†¡ì¤‘ê¸°');
+INSERT INTO members values('suser02', 'password02', 'ê¹€ìœ ì‹ ', '010-1111-1112', 'suser02@work.com', '2017/03/02', 'S', 0, 'ì†¡í˜œêµ');
 
-INSERT INTO members values('auser01', 'password01', '¹ÚÀçÇü', '010-1234-1111', 'auser01@work.com', '2017/04/21', 'A', 0, null);
+INSERT INTO members values('auser01', 'password01', 'ë°•ì¬í˜•', '010-1234-1111', 'auser01@work.com', '2017/04/21', 'A', 0, null);
 
 COMMIT;

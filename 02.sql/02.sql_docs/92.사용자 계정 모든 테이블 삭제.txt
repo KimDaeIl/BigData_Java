@@ -1,10 +1,10 @@
 
-## »ç¿ëÀÚ °èÁ¤ ¸ğµç Å×ÀÌºí »èÁ¦
-	-- »ç¿ëÀÚ Å×ÀÌºí user dictionary : user_tables
+## ì‚¬ìš©ì ê³„ì • ëª¨ë“  í…Œì´ë¸” ì‚­ì œ
+	-- ì‚¬ìš©ì í…Œì´ë¸” user dictionary : user_tables
 
 	select table_name from user_tables;
 	
-	-- anyonmous procedure »ı¼º 
+	-- anyonmous procedure ìƒì„± 
 	begin
 		for c in (select table_name from user_tables) loop
 			execute immediate('drop table ' || c.table_name || ' cascade constraints');

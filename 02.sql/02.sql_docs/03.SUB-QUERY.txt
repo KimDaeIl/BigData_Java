@@ -1,7 +1,7 @@
 
 ### SUB-QUERY 
 
--- SQL ±¸¹®¿¡ Æ÷ÇÔµÇ¾î ¼öÇàµÇ´Â QUERY
--- ¼öÇà¼ø¼­ : SUB-QUERY ¼öÇà°á°ú¸¦ ¿ÜºÎ(MAIN-QUERY)¿¡ ¹ÝÈ¯
+-- SQL êµ¬ë¬¸ì— í¬í•¨ë˜ì–´ ìˆ˜í–‰ë˜ëŠ” QUERY
+-- ìˆ˜í–‰ìˆœì„œ : SUB-QUERY ìˆ˜í–‰ê²°ê³¼ë¥¼ ì™¸ë¶€(MAIN-QUERY)ì— ë°˜í™˜
 
--- »ç¿ë À§Ä¡: select, where, from µî
+-- ì‚¬ìš© ìœ„ì¹˜: select, where, from ë“±

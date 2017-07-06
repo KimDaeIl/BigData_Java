@@ -1,9 +1,9 @@
 
-## »ç¿ëÀÚ Data Dictionary Table ##
+## ì‚¬ìš©ì Data Dictionary Table ##
 
--- ºä µ¥ÀÌÅÍ µñ¼Å³Ê¸® Å×ÀÌºí : user_views;
--- Á¦¾à : user_constraints;
--- Å×ÀÌºí : user_tables;
--- ½ÃÄö½º : user_sequences;
--- ÀÎµ¦½º : user_indexes;
--- ÇÁ·Î½ÃÀú : user_procedures;
+-- ë·° ë°ì´í„° ë”•ì…”ë„ˆë¦¬ í…Œì´ë¸” : user_views;
+-- ì œì•½ : user_constraints;
+-- í…Œì´ë¸” : user_tables;
+-- ì‹œí€€ìŠ¤ : user_sequences;
+-- ì¸ë±ìŠ¤ : user_indexes;
+-- í”„ë¡œì‹œì € : user_procedures;

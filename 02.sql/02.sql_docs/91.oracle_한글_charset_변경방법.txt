@@ -1,23 +1,23 @@
 
 /* 
-	### oracle charset º¯°æ 
-	-- 10g ÇÑ±Û ÇÑ±ÛÀÚ 3¹ÙÀÌÆ® => 2¹ÙÀÌÆ® º¯°æ ¼³Á¤
+	### oracle charset ë³€ê²½ 
+	-- 10g í•œê¸€ í•œê¸€ì 3ë°”ì´íŠ¸ => 2ë°”ì´íŠ¸ ë³€ê²½ ì„¤ì •
 	
-	1. sysdba °èÁ¤ ±ÇÇÑÀ¸·Î charset º¯°æ
+	1. sysdba ê³„ì • ê¶Œí•œìœ¼ë¡œ charset ë³€ê²½
 
 */
 
-## Oracle system / sys ¾ÏÈ£ ºĞ½Ç Àç¼³Á¤ ##
-¸í·ÉÃ¢ > sqlplus "/as sysdba"
+## Oracle system / sys ì•”í˜¸ ë¶„ì‹¤ ì¬ì„¤ì • ##
+ëª…ë ¹ì°½ > sqlplus "/as sysdba"
 
-## sys °èÁ¤ ¾ÏÈ£ º¯°æ
+## sys ê³„ì • ì•”í˜¸ ë³€ê²½
 SQL> alter user sys identified by tiger;
 
-## SYS(SYSDBA) °èÁ¤ ·Î±×ÀÎ
+## SYS(SYSDBA) ê³„ì • ë¡œê·¸ì¸
 conn sys/ as sysdba
-¾ÏÈ£ : tiger
+ì•”í˜¸ : tiger
 
-## ÇÑ±Û charset º¯°æ
+## í•œê¸€ charset ë³€ê²½
 SQL>
 SHUTDOWN IMMEDIATE;
 startup mount;
@@ -28,12 +28,12 @@ alter database character set internal_use KO16MSWIN949;
 shutdown immediate;
 startup;
 
-## ÇÑ±Û ¹ÙÀÌÆ® ±æÀÌ Á¶È¸
+## í•œê¸€ ë°”ì´íŠ¸ ê¸¸ì´ ì¡°íšŒ
 
-select lengthb('°¡') from dual;
+select lengthb('ê°€') from dual;
 
 
-## system °èÁ¤ ·Î±×ÀÎ ÈÄ hr °èÁ¤ lock ÇØÁ¦ ¹× ¾ÏÈ£º¯°æÁöÁ¤
+## system ê³„ì • ë¡œê·¸ì¸ í›„ hr ê³„ì • lock í•´ì œ ë° ì•”í˜¸ë³€ê²½ì§€ì •
 conn system/tiger
 alter user hr account unlock;
 alter user hr identified by tiger;

@@ -1,16 +1,16 @@
 
-## Modifier (Á¦ÇÑÀÚ, Á¦¾îÀÚ)
-1. Access Modifier (Á¢±Ù Á¦ÇÑÀÚ)
-		1) + public : universe (´©±¸³ª Á¢±Ù°¡´É)
-		2) # protected : sub class(»ó¼Ó ¹ŞÀ¸¸é Á¢±Ù °¡´É)
-		3)   »ı·« : same package (´Ù¸¥ ÆĞÅ°Áö Á¢±ÙºÒ°¡)
-		4) - private : same class (´Ù¸¥ Å¬·¡½º Á¢±ÙºÒ°¡)
+## Modifier (ì œí•œì, ì œì–´ì)
+1. Access Modifier (ì ‘ê·¼ ì œí•œì)
+		1) + public : universe (ëˆ„êµ¬ë‚˜ ì ‘ê·¼ê°€ëŠ¥)
+		2) # protected : sub class(ìƒì† ë°›ìœ¼ë©´ ì ‘ê·¼ ê°€ëŠ¥)
+		3)   ìƒëµ : same package (ë‹¤ë¥¸ íŒ¨í‚¤ì§€ ì ‘ê·¼ë¶ˆê°€)
+		4) - private : same class (ë‹¤ë¥¸ í´ë˜ìŠ¤ ì ‘ê·¼ë¶ˆê°€)
 		
-		-- Å¬·¡½º : public, »ı·«(default)
-		-- ¸â¹öº¯¼ö, ¸Ş¼­µå, »ı¼ºÀÚ : public, protected, »ı·«, private
-		-- Áö¿ªº¯¼ö : »ı·«
+		-- í´ë˜ìŠ¤ : public, ìƒëµ(default)
+		-- ë©¤ë²„ë³€ìˆ˜, ë©”ì„œë“œ, ìƒì„±ì : public, protected, ìƒëµ, private
+		-- ì§€ì—­ë³€ìˆ˜ : ìƒëµ
 		
-2. Usage Modifier (»ç¿ë Á¦ÇÑÀÚ)
+2. Usage Modifier (ì‚¬ìš© ì œí•œì)
 		1) static
 		2) final
 		3) abstract

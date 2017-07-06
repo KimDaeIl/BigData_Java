@@ -3,17 +3,17 @@
  
 	## INDEX Object 
 
-	--	¸í·É¹®ÀÇ Ã³¸®¼Óµµ¸¦ Çâ»óÇÏ±â À§È÷ ÄÃ·³¿¡ Àû¿ëÇÏ´Â Object
-	--	Primry key ÄÃ·³¿¡´Â ±âº»ÀûÀ¸·Î ÀÎµ¦½º °´Ã¼ »ý¼ºµÊ
+	--	ëª…ë ¹ë¬¸ì˜ ì²˜ë¦¬ì†ë„ë¥¼ í–¥ìƒí•˜ê¸° ìœ„ížˆ ì»¬ëŸ¼ì— ì ìš©í•˜ëŠ” Object
+	--	Primry key ì»¬ëŸ¼ì—ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ ì¸ë±ìŠ¤ ê°ì²´ ìƒì„±ë¨
 
 
-	1. »ý¼º:
-		CREATE INDEX ÀÎµ¦½º¸í
-		ON Å×ÀÌºí¸í (ÄÃ·³¸í Á¤·Ä¹æ¹ý, ÄÃ·³¸íN Á¤·Ä¹æ¹ý)
+	1. ìƒì„±:
+		CREATE INDEX ì¸ë±ìŠ¤ëª…
+		ON í…Œì´ë¸”ëª… (ì»¬ëŸ¼ëª… ì •ë ¬ë°©ë²•, ì»¬ëŸ¼ëª…N ì •ë ¬ë°©ë²•)
 		;
 
-	2. »èÁ¦ 
-		DROP INDEX ÀÎµ¦½º¸í;
+	2. ì‚­ì œ 
+		DROP INDEX ì¸ë±ìŠ¤ëª…;
 
 	3. DICTIONARY
 		DESC USER_INDEXES;

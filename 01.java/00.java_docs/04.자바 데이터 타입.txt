@@ -1,35 +1,35 @@
 
-/* ÀÚ¹Ù µ¥ÀÌÅÍ Å¸ÀÔ */
+/* ìžë°” ë°ì´í„° íƒ€ìž… */
 
-1. ±âº»Çü Å¸ÀÔ (Primitive Data Type)
-	1) Á¤¼öÇü
+1. ê¸°ë³¸í˜• íƒ€ìž… (Primitive Data Type)
+	1) ì •ìˆ˜í˜•
 		byte(8bit) => short(16bit) => int(32bit, default) => long(64bit)
-		5 => int Å¸ÀÔ
-		5L, 5l => long Å¸ÀÔ
+		5 => int íƒ€ìž…
+		5L, 5l => long íƒ€ìž…
 					
-	2) ½Ç¼öÇü
+	2) ì‹¤ìˆ˜í˜•
 		float(32bit) => double(64bit, default)
-		5.0D, 5.0d, 5.0 (»ý·«°¡´É) => double
+		5.0D, 5.0d, 5.0 (ìƒëžµê°€ëŠ¥) => double
 		5.0F, 5.0f  => float 
 	
-	3) ³í¸®Çü
-		boolean - true, false °ª¸¸ ¿Ã¼ö ÀÖÀ½
+	3) ë…¼ë¦¬í˜•
+		boolean - true, false ê°’ë§Œ ì˜¬ìˆ˜ ìžˆìŒ
 	
-	4) ´ÜÀÏ¹®ÀÚÇü
-		char : 16bit (2byte À¯´ÏÄÚµå)
-		¹Ýµå½Ã 'a', '°¡'  ´ÜÀÏ ÀÎ¿ëºÎÈ£·Î °¨½Î¾ßÇÔ
+	4) ë‹¨ì¼ë¬¸ìží˜•
+		char : 16bit (2byte ìœ ë‹ˆì½”ë“œ)
+		ë°˜ë“œì‹œ 'a', 'ê°€'  ë‹¨ì¼ ì¸ìš©ë¶€í˜¸ë¡œ ê°ì‹¸ì•¼í•¨
 
-2. ÂüÁ¶Çü Å¸ÀÔ (Reference Data Type) / °´Ã¼Çü Å¸ÀÔ(Object Data Type)
-	- ¸ðµç Å¬·¡½º(Ç¥ÁØapi, º¥´õapi, »ç¿ëÀÚÁ¤ÀÇ api), ¹è¿­(array)
-	- ¹®ÀÚ¿­ ¸ðµ¨¸µ Å¬·¡½º : String, ¹Ýµå½Ã "a", "°¡", "È«±æµ¿", ÀÌÁß ÀÎ¿äºÎÈ£·Î °¨½Î¾ßÇÔ
+2. ì°¸ì¡°í˜• íƒ€ìž… (Reference Data Type) / ê°ì²´í˜• íƒ€ìž…(Object Data Type)
+	- ëª¨ë“  í´ëž˜ìŠ¤(í‘œì¤€api, ë²¤ë”api, ì‚¬ìš©ìžì •ì˜ api), ë°°ì—´(array)
+	- ë¬¸ìžì—´ ëª¨ë¸ë§ í´ëž˜ìŠ¤ : String, ë°˜ë“œì‹œ "a", "ê°€", "í™ê¸¸ë™", ì´ì¤‘ ì¸ìš”ë¶€í˜¸ë¡œ ê°ì‹¸ì•¼í•¨
 	
-3. escape ¹®ÀÚ
-	- \n  	¶óÀÎ ÀÌµ¿
-	- \t		ÀÏÁ¤°£°Ý ¼öÆò ÀÌµ¿
-	- \'		' ´ÜÀÏ ÀÎ¿ëºÎÈ£ »ç¿ë
-	- \"		" ÀÌÁß ÀÎ¿ëºÎÈ£ »ç¿ë
-	- \\		\ »ç¿ë (Æú´õ ÁöÁ¤½Ã »ç¿ë : c:\\temp ¶Ç´Â c:/temp )
-	- \u0000	À¯´ÏÄÚµå¹øÈ£ ÁöÁ¤½Ã ÇØ´ç ¹®ÀÚ »ç¿ë°¡´É 
+3. escape ë¬¸ìž
+	- \n  	ë¼ì¸ ì´ë™
+	- \t		ì¼ì •ê°„ê²© ìˆ˜í‰ ì´ë™
+	- \'		' ë‹¨ì¼ ì¸ìš©ë¶€í˜¸ ì‚¬ìš©
+	- \"		" ì´ì¤‘ ì¸ìš©ë¶€í˜¸ ì‚¬ìš©
+	- \\		\ ì‚¬ìš© (í´ë” ì§€ì •ì‹œ ì‚¬ìš© : c:\\temp ë˜ëŠ” c:/temp )
+	- \u0000	ìœ ë‹ˆì½”ë“œë²ˆí˜¸ ì§€ì •ì‹œ í•´ë‹¹ ë¬¸ìž ì‚¬ìš©ê°€ëŠ¥ 
 	
 	
 

@@ -9,14 +9,14 @@ drop user scott cascade;
 -- user create
 create user scott identified by tiger;
 
--- user ±ÇÇÑºÎ¿©
+-- user ê¶Œí•œë¶€ì—¬
 grant connect, resource to scott;
 
--- scott ¿¬°á
+-- scott ì—°ê²°
 discon
 conn scott/tiger;
 
--- init table script ¼öÇà
+-- init table script ìˆ˜í–‰
 -- @demo_table.sql
 
 

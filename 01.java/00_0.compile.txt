@@ -1,21 +1,21 @@
-##ÀÚ¹Ù °³¹ß ÀýÂ÷##
+##ìžë°” ê°œë°œ ì ˆì°¨##
 
-1. ¼Ò½ºÄÚµå ÀÛ¼º
+1. ì†ŒìŠ¤ì½”ë“œ ìž‘ì„±
 	Hello.java
 		
-2. ÄÄÆÄÀÏ
+2. ì»´íŒŒì¼
 	doc> javac(.exe) Hello.java
-	*.class ÆÄÀÏ »ý¼º
+	*.class íŒŒì¼ ìƒì„±
 
-3. »ý¼ºµÈ .class ÆÄÀÏ ½ÇÇà
-	byte code >> JVM(Java Virtural Machine)¿¡¼­ µ¹¾Æ°¡´Â ÆÄÀÏ
-	.class »ý·«
-	doc> java(.exe) {ÆÄÀÏ¸í}
+3. ìƒì„±ëœ .class íŒŒì¼ ì‹¤í–‰
+	byte code >> JVM(Java Virtural Machine)ì—ì„œ ëŒì•„ê°€ëŠ” íŒŒì¼
+	.class ìƒëžµ
+	doc> java(.exe) {íŒŒì¼ëª…}
 	doc> java Hello
 
 
-**ÀÚ¹Ù ½ÇÇà ÁÖÀÇ »çÇ×
-	1. ´ë¼Ò¹®ÀÚ ±¸ºÐ
-	2. È®ÀåÀÚ Ç¥±âÇÏÁö ¾ÊÀ½
-	3. ½ÃÀÛ ¸Þ¼Òµå°¡ Á¸ÀçÇØ¾ßÇÔ(main)
+**ìžë°” ì‹¤í–‰ ì£¼ì˜ ì‚¬í•­
+	1. ëŒ€ì†Œë¬¸ìž êµ¬ë¶„
+	2. í™•ìž¥ìž í‘œê¸°í•˜ì§€ ì•ŠìŒ
+	3. ì‹œìž‘ ë©”ì†Œë“œê°€ ì¡´ìž¬í•´ì•¼í•¨(main)
 		public static void main(String[])

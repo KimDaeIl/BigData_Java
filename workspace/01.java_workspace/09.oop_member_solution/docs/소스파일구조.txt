@@ -1,35 +1,35 @@
-## ÀÚ¹Ù ¼Ò½ºÄÚµå ÆÄÀÏ ±¸Á¶ ##
+## ìë°” ì†ŒìŠ¤ì½”ë“œ íŒŒì¼ êµ¬ì¡° ##
 
-1. package ¼±¾ğ¹®
--- ¼±¾ğÈ¸¼ö : 0, 1
--- Çü½Ä: pacakage top.sub;
+1. package ì„ ì–¸ë¬¸
+-- ì„ ì–¸íšŒìˆ˜ : 0, 1
+-- í˜•ì‹: pacakage top.sub;
 
-2. import ¼±¾ğ¹®
--- ´Ù¸¥ ÆĞÅ°Áö Å¬·¡½º¸¦ »ç¿ëÇÑ °æ¿ì¿¡´Â ¼±¾ğ
--- »ı·«°¡´É ÆĞÅ°Áö : 
-	=> java.lang.* Å¬·¡½º : java.lang.String, java.lang.System
-	=> same package Å¬·¡½º 
--- Çü½Ä 
-	1. import java.util.Date; (±ÇÀå)
-	2. import java.util.*; (¼±È£)
+2. import ì„ ì–¸ë¬¸
+-- ë‹¤ë¥¸ íŒ¨í‚¤ì§€ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•œ ê²½ìš°ì—ëŠ” ì„ ì–¸
+-- ìƒëµê°€ëŠ¥ íŒ¨í‚¤ì§€ : 
+	=> java.lang.* í´ë˜ìŠ¤ : java.lang.String, java.lang.System
+	=> same package í´ë˜ìŠ¤ 
+-- í˜•ì‹ 
+	1. import java.util.Date; (ê¶Œì¥)
+	2. import java.util.*; (ì„ í˜¸)
 	
 	3. java.util.Date today = new java.util.Date();	
 	   java.sql.Date date = new java.sql.Date();
-	   (import ¼±¾ğ´ë½Å¿¡ Å¬·¡½º¸í¿¡ ÆĞÅ°Áö¸í±îÁö Ç¥±â)
-	   (°°Àº Å¬·¡½º¿¡ ÆĞÅ°Áö°¡ ´Ù¸¥ µ¿ÀÏÇÑ Å¬·¡½º¸í »ç¿ë½Ã¿¡´Â Á¤È®ÇÏ°Ô ÁöÁ¤)	
-	   Date date;  // ¾î´ÀÆĞÅ°ÁöÀÇ Date Å¬·¡½ºÀÎÁö ¾Ë¼ö°¡ ¾øÀ½
+	   (import ì„ ì–¸ëŒ€ì‹ ì— í´ë˜ìŠ¤ëª…ì— íŒ¨í‚¤ì§€ëª…ê¹Œì§€ í‘œê¸°)
+	   (ê°™ì€ í´ë˜ìŠ¤ì— íŒ¨í‚¤ì§€ê°€ ë‹¤ë¥¸ ë™ì¼í•œ í´ë˜ìŠ¤ëª… ì‚¬ìš©ì‹œì—ëŠ” ì •í™•í•˜ê²Œ ì§€ì •)	
+	   Date date;  // ì–´ëŠíŒ¨í‚¤ì§€ì˜ Date í´ë˜ìŠ¤ì¸ì§€ ì•Œìˆ˜ê°€ ì—†ìŒ
 			
-3. class ¼±¾ğ¹®
+3. class ì„ ì–¸ë¬¸
 
-## javac / jvm »ç¿ëÇÑ Å¬·¡½º °Ë»ö°æ·Î
+## javac / jvm ì‚¬ìš©í•œ í´ë˜ìŠ¤ ê²€ìƒ‰ê²½ë¡œ
 1. rt.jar : 
-	=> Java SE ±âº» api
+	=> Java SE ê¸°ë³¸ api
 	=> C:\Program Files\Java\jdk1.8.0_131\jre\lib > rt.jar
 	
 2. C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext> *.jar	
 
-3. set classpath=Å¬·¡½º°Ë»ö°æ·Î
+3. set classpath=í´ë˜ìŠ¤ê²€ìƒ‰ê²½ë¡œ
 
-4. classpath È¯°æº¯¼ö°¡ ¼³Á¤µÇÁö ¾ÊÀº °æ¿ì´Â ÇöÀçÆú´õ(working direcotroy)
+4. classpath í™˜ê²½ë³€ìˆ˜ê°€ ì„¤ì •ë˜ì§€ ì•Šì€ ê²½ìš°ëŠ” í˜„ì¬í´ë”(working direcotroy)
 
 ## 

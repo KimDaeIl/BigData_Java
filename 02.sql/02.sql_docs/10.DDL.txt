@@ -2,81 +2,91 @@
 /*================================================ */
 	
 	DDL (Data Definition Languange)
-    - °´Ã¼ Á¤ÀÇ , º¯°æ, »èÁ¦ SQL ±¸¹®
-    - °´Ã¼ : table, view, sequence, index, trigger µî
+    - ê°ì²´ ì •ì˜ , ë³€ê²½, ì‚­ì œ SQL êµ¬ë¬¸
+    - ê°ì²´ : table, view, sequence, index, trigger ë“±
         
-    - ±¸¹® :
-    Á¤ÀÇ: create table Å×ÀÌºí¸í();
-    º¯°æ: alter table Å×ÀÌºí¸í xxx;
-    »èÁ¦: drop table Å×ÀÌºí¸í;
+    - êµ¬ë¬¸ :
+    ì •ì˜: create table í…Œì´ë¸”ëª…();
+    ë³€ê²½: alter table í…Œì´ë¸”ëª… xxx;
+    ì‚­ì œ: drop table í…Œì´ë¸”ëª…;
 
-    - SQL µ¥ÀÌÅÍ Å¸ÀÔ
-    1) ¹®ÀÚ¿­
-        °íÁ¤±æÀÌ : char(±æÀÌÁöÁ¤)
-        °¡º¯±æÀÌ : varchar2(±æÀÌÁöÁ¤)
-    2) Á¤¼öÇü : number(¼ýÀÚ±æÀÌÁöÁ¤)
-    3) ½Ç¼öÇü : number(ÀüÃ¼±æÀÌ, ¼Ò¼öÀÌÇÏ±æÀÌ)
-        ÀüÃ¼±æÀÌ¿¡´Â ¼Ò¼öÁ¡, ¼Ò¼öÀÌÇÏ±æÀÌ¸¦ Æ÷ÇÔÇÑ ÀüÃ¼±æÀÌ
-    4) ³¯Â¥Çü: DATE, TIMESTAMP        
+    - SQL ë°ì´í„° íƒ€ìž…
+    1) ë¬¸ìžì—´
+        ê³ ì •ê¸¸ì´ : char(ê¸¸ì´ì§€ì •)
+        ê°€ë³€ê¸¸ì´ : varchar2(ê¸¸ì´ì§€ì •)
+    2) ì •ìˆ˜í˜• : number(ìˆ«ìžê¸¸ì´ì§€ì •)
+    3) ì‹¤ìˆ˜í˜• : number(ì „ì²´ê¸¸ì´, ì†Œìˆ˜ì´í•˜ê¸¸ì´)
+        ì „ì²´ê¸¸ì´ì—ëŠ” ì†Œìˆ˜ì , ì†Œìˆ˜ì´í•˜ê¸¸ì´ë¥¼ í¬í•¨í•œ ì „ì²´ê¸¸ì´
+    4) ë‚ ì§œí˜•: DATE, TIMESTAMP        
 
-## Å×ÀÌºí »ý¼º : CREATE
+## í…Œì´ë¸” ìƒì„± : CREATE
 
-    1) »õ·Î¿î ±¸Á¶ÀÇ Å×ÀÌºí »ý¼º
-    CREATE TABLE Å×ÀÌºí¸í (
-        ÄÃ·³¸í1 Å¸ÀÔ(±æÀÌ) [Á¦¾à»çÇ×],
-        ÄÃ·³¸íN Å¸ÀÔ(±æÀÌ) [Á¦¾à»çÇ×],
-	constraint Á¦¾àÀÌ¸§ Á¦¾à»çÇ× expr
+    1) ìƒˆë¡œìš´ êµ¬ì¡°ì˜ í…Œì´ë¸” ìƒì„±
+    CREATE TABLE í…Œì´ë¸”ëª… (
+        ì»¬ëŸ¼ëª…1 íƒ€ìž…(ê¸¸ì´) [ì œì•½ì‚¬í•­],
+        ì»¬ëŸ¼ëª…N íƒ€ìž…(ê¸¸ì´) [ì œì•½ì‚¬í•­],
+	constraint ì œì•½ì´ë¦„ ì œì•½ì‚¬í•­ expr
     )
 
-   2) ±âÁ¸ Å×ÀÌºíÀÇ ±¸Á¶¸¦ ÂüÁ¶ÇÑ Å×ÀÌºí »ý¼º
+   2) ê¸°ì¡´ í…Œì´ë¸”ì˜ êµ¬ì¡°ë¥¼ ì°¸ì¡°í•œ í…Œì´ë¸” ìƒì„±
 
-   3) ±âÁ¸ Å×ÀÌºíÀÇ ±¸Á¶ ¹× ·¹ÄÚµåµµ ÇÔ²² ÂüÁ¶ÇÑ Å×ÀÌºí »ý¼º
+   3) ê¸°ì¡´ í…Œì´ë¸”ì˜ êµ¬ì¡° ë° ë ˆì½”ë“œë„ í•¨ê»˜ ì°¸ì¡°í•œ í…Œì´ë¸” ìƒì„±
 	
 
-## Å×ÀÌºí »èÁ¦ : DROP
-    DROP TABLE Å×ÀÌºí¸í;
-    DROP TABLE Å×ÀÌºí¸í CASCADE CONSTRAINTS;
+## í…Œì´ë¸” ì‚­ì œ : DROP
+    DROP TABLE í…Œì´ë¸”ëª…;
+    DROP TABLE í…Œì´ë¸”ëª… CASCADE CONSTRAINTS;
     
 
-## Å×ÀÌºí º¯°æ : ALTER
-    1) ÄÃ·³, Á¦¾à»çÇ× Ãß°¡
-    2) ÄÃ·³, Á¦¾à»çÇ× »èÁ¦ 
-    3) ÄÃ·³ º¯°æ : Å¸ÀÔ, ±æÀÌ, Á¦¾à
+## í…Œì´ë¸” ë³€ê²½ : ALTER
+    1) ì»¬ëŸ¼, ì œì•½ì‚¬í•­ ì¶”ê°€
+    2) ì»¬ëŸ¼, ì œì•½ì‚¬í•­ ì‚­ì œ 
+    3) ì»¬ëŸ¼ ë³€ê²½ : íƒ€ìž…, ê¸¸ì´, ì œì•½
     
+<<<<<<< HEAD
 	ALTER TABLE Å×ÀÌºí¸í ADD (ÄÃ·³Ãß°¡Á¤ÀÇ);
 	ALTER TABLE Å×ÀÌºí¸í ADD (CONSTRAINTÃß°¡Á¤ÀÇ);
 		ALTER TABLE {table_name} ADD (CONSTRAINT {pk_Á¦¾àÀÌ¸§} PRIMARY KEY({column_name}));
 		ALTER TABLE {table_name} ADD (COLUMN {column_name} {type} {column_name});
+=======
+	ALTER TABLE í…Œì´ë¸”ëª… ADD (ì»¬ëŸ¼ì¶”ê°€ì •ì˜);
+	ALTER TABLE í…Œì´ë¸”ëª… ADD (CONSTRAINTì¶”ê°€ì •ì˜);
+>>>>>>> 5df33d80dde8ca73d90f30759f5c5540b47c22d1
 	
-	ALTER TABLE Å×ÀÌºí¸í DROP COLUMN »èÁ¦ÇÒÄÃ·³¸í;
-	ALTER TABLE Å×ÀÌºí¸í DROP CONSTRAINT »èÁ¦ÇÒÁ¦¾àÀÌ¸§;
+	ALTER TABLE í…Œì´ë¸”ëª… DROP COLUMN ì‚­ì œí• ì»¬ëŸ¼ëª…;
+	ALTER TABLE í…Œì´ë¸”ëª… DROP CONSTRAINT ì‚­ì œí• ì œì•½ì´ë¦„;
 
+<<<<<<< HEAD
 	ALTER TABLE Å×ÀÌºí¸í MODIFY (º¯°æÄÃ·³Á¤ÀÇ);
 	
 	col rename
 		ALTER TABLE {table_name} RENAME COLUMN {current_col_name} TO {new_col_name};
 d
+=======
+	ALTER TABLE í…Œì´ë¸”ëª… MODIFY (ë³€ê²½ì»¬ëŸ¼ì •ì˜);
 
-## Á¦¾à»çÇ× Á¾·ù :
+>>>>>>> 5df33d80dde8ca73d90f30759f5c5540b47c22d1
+
+## ì œì•½ì‚¬í•­ ì¢…ë¥˜ :
     1. PRIMARY KEY = UNIQUE + NOT NULL
-    2. FOREIGN KEY ( NULL Çã¿ë,ÂüÁ¶ Å×ÀÌºíÀÇ PK ÀÌ¾î¾ßÇÔ)
-    3. NOT NULL : ÇÊ¼ö µ¥ÀÌÅÍ  ==> Å×ÀÌºí »ý¼º½Ã¿¡¸¸ ÄÃ·³Á¤ÀÇ½Ã¿¡ Á¦¾à ºÎ¿©°¡´É
-    4. UNIQUE : Áßº¹ ºÒ°¡ , NULL Çã¿ë
-    5. CHECK  : °ª°ËÁõ
-    6. ÄÃ·³ ¼±¾ð½Ã¿¡ ±âº»ÃÊ±â°ª ¼³Á¤ ¹æ¹ý:
-        ÄÃ·³¸í DEFAULT '±âº»ÃÊ±â°ª' [NOT NULL];
+    2. FOREIGN KEY ( NULL í—ˆìš©,ì°¸ì¡° í…Œì´ë¸”ì˜ PK ì´ì–´ì•¼í•¨)
+    3. NOT NULL : í•„ìˆ˜ ë°ì´í„°  ==> í…Œì´ë¸” ìƒì„±ì‹œì—ë§Œ ì»¬ëŸ¼ì •ì˜ì‹œì— ì œì•½ ë¶€ì—¬ê°€ëŠ¥
+    4. UNIQUE : ì¤‘ë³µ ë¶ˆê°€ , NULL í—ˆìš©
+    5. CHECK  : ê°’ê²€ì¦
+    6. ì»¬ëŸ¼ ì„ ì–¸ì‹œì— ê¸°ë³¸ì´ˆê¸°ê°’ ì„¤ì • ë°©ë²•:
+        ì»¬ëŸ¼ëª… DEFAULT 'ê¸°ë³¸ì´ˆê¸°ê°’' [NOT NULL];
 
-## Á¦¾à ÁöÁ¤½Ã Á¦¾àÀÌ¸§ ÁöÁ¤ ¶Ç´Â Á¦¾àÀÌ¸§ »ý·«
-	-- Á¦¾àÀÌ¸§ ÁöÁ¤¹æ¹ý: constraint Á¦¾àÀÌ¸§ Á¦¾à»çÇ× expr
+## ì œì•½ ì§€ì •ì‹œ ì œì•½ì´ë¦„ ì§€ì • ë˜ëŠ” ì œì•½ì´ë¦„ ìƒëžµ
+	-- ì œì•½ì´ë¦„ ì§€ì •ë°©ë²•: constraint ì œì•½ì´ë¦„ ì œì•½ì‚¬í•­ expr
 
-## Á¦¾à ÁöÁ¤ À§Ä¡ 
-	-- 1. ÄÃ·³ ·¹º§ : ÄÃ·³¸í µÚ¿¡ Á¦¾àÁöÁ¤
-	-- 2. Å×ÀÌºí ·¹º§ : PK ´ÙÁßÄÃ·³
-	-- 3. Å×ÀÌºí º¯°æ½Ã Á¦¾àÃß°¡ : Å×ÀÌºí ·¹º§, ÄÃ·³ ·¹º§	
+## ì œì•½ ì§€ì • ìœ„ì¹˜ 
+	-- 1. ì»¬ëŸ¼ ë ˆë²¨ : ì»¬ëŸ¼ëª… ë’¤ì— ì œì•½ì§€ì •
+	-- 2. í…Œì´ë¸” ë ˆë²¨ : PK ë‹¤ì¤‘ì»¬ëŸ¼
+	-- 3. í…Œì´ë¸” ë³€ê²½ì‹œ ì œì•½ì¶”ê°€ : í…Œì´ë¸” ë ˆë²¨, ì»¬ëŸ¼ ë ˆë²¨	
 	
 
-## Á¦¾à Data Dictionary : 
-	--  Å×ÀÌºí ÀÌ¸§ >> user_constraints
+## ì œì•½ Data Dictionary : 
+	--  í…Œì´ë¸” ì´ë¦„ >> user_constraints
 	--  CONSTRAINT_NAME,  CONSTRAINT_TYPE, TABLE_NAME
 
 ## CONSTRAINT_TYPE
@@ -85,17 +95,17 @@ d
 	-- U : UNIQUE
 	-- C : NOT NULL, CHECK
 
-## Á¦¾àÀÌ¸§ ±ÇÀå :  
--- PK_Å×ÀÌºí¸í
--- FK_ÄÃ·³¸í
+## ì œì•½ì´ë¦„ ê¶Œìž¥ :  
+-- PK_í…Œì´ë¸”ëª…
+-- FK_ì»¬ëŸ¼ëª…
 
 /*================================================ */
 
--- Å×ÀÌºí¿¡ ´ëÇÑ Á¦¾àÀÌ¸§, Á¦¾àÅ¸ÀÔ, Å×ÀÌºí¸í Á¶È¸
+-- í…Œì´ë¸”ì— ëŒ€í•œ ì œì•½ì´ë¦„, ì œì•½íƒ€ìž…, í…Œì´ë¸”ëª… ì¡°íšŒ
 SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE, TABLE_NAME
 FROM USER_CONSTRAINTS;
 
--- emp, dept Å×ÀÌºí¿¡ ´ëÇÑ Á¦¾àÀÌ¸§, Á¦¾àÅ¸ÀÔ, Å×ÀÌºí¸í Á¶È¸
+-- emp, dept í…Œì´ë¸”ì— ëŒ€í•œ ì œì•½ì´ë¦„, ì œì•½íƒ€ìž…, í…Œì´ë¸”ëª… ì¡°íšŒ
 SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE, TABLE_NAME
 FROM USER_CONSTRAINTS
 where table_name in ('EMP', 'DEPT')

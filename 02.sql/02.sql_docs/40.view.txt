@@ -2,31 +2,31 @@
 # -----------------------------------------------
 	## VIEW OBJECT
 
-	-- °¡»óÀÇ Å×ÀÌºí
-	-- ÀåÁ¡ : º¸¾È, »ç¿ëÀÚ Æí¸®¼º Çâ»ó
+	-- ê°€ìƒì˜ í…Œì´ë¸”
+	-- ìž¥ì  : ë³´ì•ˆ, ì‚¬ìš©ìž íŽ¸ë¦¬ì„± í–¥ìƒ
 
-	1.»ý¼º / º¯°æ
-		CREATE [or replace] VIEW ºäÀÌ¸§
+	1.ìƒì„± / ë³€ê²½
+		CREATE [or replace] VIEW ë·°ì´ë¦„
 		AS
-		SELECT ±¸¹®
+		SELECT êµ¬ë¬¸
 		[WITH READ ONLY]
 		;
 	
-	2. »èÁ¦ 
-		DROP VIEW ºäÀÌ¸§;
+	2. ì‚­ì œ 
+		DROP VIEW ë·°ì´ë¦„;
 
 	3. DICTIONARY
 		DESC USER_VIEWS
 		SELECT VIEW_NAME, TEXT FROM USER_VIEWS;
 
 
-	## VIEW ÀÛ¼º¿¡ µû¶ó¼­ DML °¡´É ¿©ºÎ ´Þ¶óÁü
+	## VIEW ìž‘ì„±ì— ë”°ë¼ì„œ DML ê°€ëŠ¥ ì—¬ë¶€ ë‹¬ë¼ì§
 
 	## INLINE VIEW
-		select Á÷¿ø.employee_id, Á÷¿ø.last_name, ºÎ¼­Àå.employee_id, ºÎ¼­Àå.last_name
-		from (select * from employees) Á÷¿ø,
-		employees ºÎ¼­Àå
-		where Á÷¿ø.manager_id=ºÎ¼­Àå.employee_id
+		select ì§ì›.employee_id, ì§ì›.last_name, ë¶€ì„œìž¥.employee_id, ë¶€ì„œìž¥.last_name
+		from (select * from employees) ì§ì›,
+		employees ë¶€ì„œìž¥
+		where ì§ì›.manager_id=ë¶€ì„œìž¥.employee_id
 
 # -----------------------------------------------
 

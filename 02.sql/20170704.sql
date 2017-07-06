@@ -1,9 +1,9 @@
-SQL> --ÇÑÁÙÁÖ¼®
-SQL> /* ¿©·¯ÁÙ ÁÖ¼®*/
-SQL> --sql> cl scr È­¸é Áö¿ì±â
+SQL> --í•œì¤„ì£¼ì„
+SQL> /* ì—¬ëŸ¬ì¤„ ì£¼ì„*/
+SQL> --sql> cl scr í™”ë©´ ì§€ìš°ê¸°
 SQL> cl scr
 
-SQL> --sqlplus È¯°æ ¼³Á¤
+SQL> --sqlplus í™˜ê²½ ì„¤ì •
 SQL> show all
 appinfo is OFF and set to "SQL*Plus"
 arraysize 15
@@ -80,15 +80,15 @@ verify ON
 wrap : lines will be wrapped
 xmloptimizationcheck OFF
 errorlogging is OFF
-SQL> --sqlplus ¶óÀÎ»çÀÌÁî Á¶È¸
+SQL> --sqlplus ë¼ì¸ì‚¬ì´ì¦ˆ ì¡°íšŒ
 SQL> show linesize
 linesize 80
-SQL> --sqlplus ÆäÀÌÁö»çÀÌÁî
+SQL> --sqlplus íŽ˜ì´ì§€ì‚¬ì´ì¦ˆ
 SQL> show pagesize
 pagesize 14
-SQL> --¶óÀÎ»çÀÌÁî º¯°æ
+SQL> --ë¼ì¸ì‚¬ì´ì¦ˆ ë³€ê²½
 SQL> set linesize 300
-SQL> --ÆäÀÌÁö »çÀÌÁî º¯°æ
+SQL> --íŽ˜ì´ì§€ ì‚¬ì´ì¦ˆ ë³€ê²½
 SQL> set pagesize 300
 SQL> show pagesize, linesize
 pagesize 300
@@ -97,385 +97,385 @@ linesize 300
 SQL> show pagesize linesize
 pagesize 300
 linesize 300
-SQL> --ÆäÀÌÁö, ¶óÀÎ »çÀÌÁî µ¿½Ã Á¶È¸
+SQL> --íŽ˜ì´ì§€, ë¼ì¸ ì‚¬ì´ì¦ˆ ë™ì‹œ ì¡°íšŒ
 SQL> show pagesize linesize
 pagesize 300
 linesize 300
 SQL> -- select All table
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-AQ$DEF$_AQCALL                                               VIEW                                                                                                                                                                                                                                           
-AQ$DEF$_AQERROR                                              VIEW                                                                                                                                                                                                                                           
-AQ$_DEF$_AQCALL_F                                            VIEW                                                                                                                                                                                                                                           
-AQ$_DEF$_AQERROR_F                                           VIEW                                                                                                                                                                                                                                           
-AQ$_INTERNET_AGENTS                                          TABLE                                                                                                                                                                                                                                          
-AQ$_INTERNET_AGENT_PRIVS                                     TABLE                                                                                                                                                                                                                                          
-AQ$_QUEUES                                                   TABLE                                                                                                                                                                                                                                          
-AQ$_QUEUE_TABLES                                             TABLE                                                                                                                                                                                                                                          
-AQ$_SCHEDULES                                                TABLE                                                                                                                                                                                                                                          
-CATALOG                                                      SYNONYM                                                                                                                                                                                                                                        
-COL                                                          SYNONYM                                                                                                                                                                                                                                        
-DEF$_AQCALL                                                  TABLE                                                                                                                                                                                                                                          
-DEF$_AQERROR                                                 TABLE                                                                                                                                                                                                                                          
-DEF$_CALLDEST                                                TABLE                                                                                                                                                                                                                                          
-DEF$_DEFAULTDEST                                             TABLE                                                                                                                                                                                                                                          
-DEF$_DESTINATION                                             TABLE                                                                                                                                                                                                                                          
-DEF$_ERROR                                                   TABLE                                                                                                                                                                                                                                          
-DEF$_LOB                                                     TABLE                                                                                                                                                                                                                                          
-DEF$_ORIGIN                                                  TABLE                                                                                                                                                                                                                                          
-DEF$_PROPAGATOR                                              TABLE                                                                                                                                                                                                                                          
-DEF$_PUSHED_TRANSACTIONS                                     TABLE                                                                                                                                                                                                                                          
-HELP                                                         TABLE                                                                                                                                                                                                                                          
-LOGMNRC_DBNAME_UID_MAP                                       TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GSBA                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GSII                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GTCS                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GTLO                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRP_CTAS_PART_MAP                                        TABLE                                                                                                                                                                                                                                          
-LOGMNRT_MDDL$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_AGE_SPILL$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_ATTRCOL$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_ATTRIBUTE$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_CCOL$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_CDEF$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_COL$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_COLTYPE$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_DICTIONARY$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_DICTSTATE$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_ENC$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_ERROR$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_FILTER$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_GLOBAL$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_TAB_INCLUDE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_USER_INCLUDE$                                      TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_XID_INCLUDE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_ICOL$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_IND$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDCOMPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDPART$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDSUBPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_INTEGRATED_SPILL$                                     TABLE                                                                                                                                                                                                                                          
-LOGMNR_KOPM$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOB$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOBFRAG$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOG$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOGMNR_BUILDLOG                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_NTAB$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_OBJ$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_OPQTYPE$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_PARAMETER$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_PARTOBJ$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_PROCESSED_LOG$                                        TABLE                                                                                                                                                                                                                                          
-LOGMNR_PROPS$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_REFCON$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_RESTART_CKPT$                                         TABLE                                                                                                                                                                                                                                          
-LOGMNR_RESTART_CKPT_TXINFO$                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_SEED$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION_ACTIONS$                                      TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION_EVOLVE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_SPILL$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_SUBCOLTYPE$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TAB$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABCOMPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABPART$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABSUBPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TS$                                                   TABLE                                                                                                                                                                                                                                          
-LOGMNR_TYPE$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_UID$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_USER$                                                 TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$APPLY_MILESTONE                                     TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$APPLY_PROGRESS                                      TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$EDS_TABLES                                          TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$EVENTS                                              TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$FLASHBACK_SCN                                       TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$HISTORY                                             TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$PARAMETERS                                          TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$PLSQL                                               TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SCN                                                 TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP                                                TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP_SUPPORT                                        TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP_TRANSACTION                                    TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_AJG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_BASETABLE                                         TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_CLIQUE                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_ELIGIBLE                                          TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_EXCEPTIONS                                        TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FILTER                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FILTERINSTANCE                                    TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FJG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_GC                                                TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_INFO                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_JOURNAL                                           TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_LEVEL                                             TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_LOG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_OUTPUT                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PARAMETERS                                        TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PLAN                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PRETTY                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_ROLLUP                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_SQLDEPEND                                         TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_TEMP                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_WORKLOAD                                          TABLE                                                                                                                                                                                                                                          
-MVIEW_EVALUATIONS                                            VIEW                                                                                                                                                                                                                                           
-MVIEW_EXCEPTIONS                                             VIEW                                                                                                                                                                                                                                           
-MVIEW_FILTER                                                 VIEW                                                                                                                                                                                                                                           
-MVIEW_FILTERINSTANCE                                         VIEW                                                                                                                                                                                                                                           
-MVIEW_LOG                                                    VIEW                                                                                                                                                                                                                                           
-MVIEW_RECOMMENDATIONS                                        VIEW                                                                                                                                                                                                                                           
-MVIEW_WORKLOAD                                               VIEW                                                                                                                                                                                                                                           
-OL$                                                          TABLE                                                                                                                                                                                                                                          
-OL$HINTS                                                     TABLE                                                                                                                                                                                                                                          
-OL$NODES                                                     TABLE                                                                                                                                                                                                                                          
-PRODUCT_PRIVS                                                VIEW                                                                                                                                                                                                                                           
-PRODUCT_USER_PROFILE                                         SYNONYM                                                                                                                                                                                                                                        
-PUBLICSYN                                                    SYNONYM                                                                                                                                                                                                                                        
-REPCAT$_AUDIT_ATTRIBUTE                                      TABLE                                                                                                                                                                                                                                          
-REPCAT$_AUDIT_COLUMN                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_COLUMN_GROUP                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_CONFLICT                                             TABLE                                                                                                                                                                                                                                          
-REPCAT$_DDL                                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_EXCEPTIONS                                           TABLE                                                                                                                                                                                                                                          
-REPCAT$_EXTENSION                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_FLAVORS                                              TABLE                                                                                                                                                                                                                                          
-REPCAT$_FLAVOR_OBJECTS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_GENERATED                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_GROUPED_COLUMN                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_INSTANTIATION_DDL                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_KEY_COLUMNS                                          TABLE                                                                                                                                                                                                                                          
-REPCAT$_OBJECT_PARMS                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_OBJECT_TYPES                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_PARAMETER_COLUMN                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_PRIORITY                                             TABLE                                                                                                                                                                                                                                          
-REPCAT$_PRIORITY_GROUP                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_REFRESH_TEMPLATES                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCAT                                               TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCATLOG                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCOLUMN                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPGROUP_PRIVS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPOBJECT                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPPROP                                              TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPSCHEMA                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION                                           TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION_METHOD                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION_STATISTICS                                TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOL_STATS_CONTROL                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_RUNTIME_PARMS                                        TABLE                                                                                                                                                                                                                                          
-REPCAT$_SITES_NEW                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_SITE_OBJECTS                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_SNAPGROUP                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_OBJECTS                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_PARMS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_REFGROUPS                                   TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_SITES                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_STATUS                                      TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_TARGETS                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_TYPES                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_USER_AUTHORIZATIONS                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_USER_PARM_VALUES                                     TABLE                                                                                                                                                                                                                                          
-SQLPLUS_PRODUCT_PROFILE                                      TABLE                                                                                                                                                                                                                                          
-SYSCATALOG                                                   SYNONYM                                                                                                                                                                                                                                        
-SYSFILES                                                     SYNONYM                                                                                                                                                                                                                                        
-TAB                                                          SYNONYM                                                                                                                                                                                                                                        
-TABQUOTAS                                                    SYNONYM                                                                                                                                                                                                                                        
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+AQ$DEF$_AQCALL                                               VIEW
+AQ$DEF$_AQERROR                                              VIEW
+AQ$_DEF$_AQCALL_F                                            VIEW
+AQ$_DEF$_AQERROR_F                                           VIEW
+AQ$_INTERNET_AGENTS                                          TABLE
+AQ$_INTERNET_AGENT_PRIVS                                     TABLE
+AQ$_QUEUES                                                   TABLE
+AQ$_QUEUE_TABLES                                             TABLE
+AQ$_SCHEDULES                                                TABLE
+CATALOG                                                      SYNONYM
+COL                                                          SYNONYM
+DEF$_AQCALL                                                  TABLE
+DEF$_AQERROR                                                 TABLE
+DEF$_CALLDEST                                                TABLE
+DEF$_DEFAULTDEST                                             TABLE
+DEF$_DESTINATION                                             TABLE
+DEF$_ERROR                                                   TABLE
+DEF$_LOB                                                     TABLE
+DEF$_ORIGIN                                                  TABLE
+DEF$_PROPAGATOR                                              TABLE
+DEF$_PUSHED_TRANSACTIONS                                     TABLE
+HELP                                                         TABLE
+LOGMNRC_DBNAME_UID_MAP                                       TABLE
+LOGMNRC_GSBA                                                 TABLE
+LOGMNRC_GSII                                                 TABLE
+LOGMNRC_GTCS                                                 TABLE
+LOGMNRC_GTLO                                                 TABLE
+LOGMNRP_CTAS_PART_MAP                                        TABLE
+LOGMNRT_MDDL$                                                TABLE
+LOGMNR_AGE_SPILL$                                            TABLE
+LOGMNR_ATTRCOL$                                              TABLE
+LOGMNR_ATTRIBUTE$                                            TABLE
+LOGMNR_CCOL$                                                 TABLE
+LOGMNR_CDEF$                                                 TABLE
+LOGMNR_COL$                                                  TABLE
+LOGMNR_COLTYPE$                                              TABLE
+LOGMNR_DICTIONARY$                                           TABLE
+LOGMNR_DICTSTATE$                                            TABLE
+LOGMNR_ENC$                                                  TABLE
+LOGMNR_ERROR$                                                TABLE
+LOGMNR_FILTER$                                               TABLE
+LOGMNR_GLOBAL$                                               TABLE
+LOGMNR_GT_TAB_INCLUDE$                                       TABLE
+LOGMNR_GT_USER_INCLUDE$                                      TABLE
+LOGMNR_GT_XID_INCLUDE$                                       TABLE
+LOGMNR_ICOL$                                                 TABLE
+LOGMNR_IND$                                                  TABLE
+LOGMNR_INDCOMPART$                                           TABLE
+LOGMNR_INDPART$                                              TABLE
+LOGMNR_INDSUBPART$                                           TABLE
+LOGMNR_INTEGRATED_SPILL$                                     TABLE
+LOGMNR_KOPM$                                                 TABLE
+LOGMNR_LOB$                                                  TABLE
+LOGMNR_LOBFRAG$                                              TABLE
+LOGMNR_LOG$                                                  TABLE
+LOGMNR_LOGMNR_BUILDLOG                                       TABLE
+LOGMNR_NTAB$                                                 TABLE
+LOGMNR_OBJ$                                                  TABLE
+LOGMNR_OPQTYPE$                                              TABLE
+LOGMNR_PARAMETER$                                            TABLE
+LOGMNR_PARTOBJ$                                              TABLE
+LOGMNR_PROCESSED_LOG$                                        TABLE
+LOGMNR_PROPS$                                                TABLE
+LOGMNR_REFCON$                                               TABLE
+LOGMNR_RESTART_CKPT$                                         TABLE
+LOGMNR_RESTART_CKPT_TXINFO$                                  TABLE
+LOGMNR_SEED$                                                 TABLE
+LOGMNR_SESSION$                                              TABLE
+LOGMNR_SESSION_ACTIONS$                                      TABLE
+LOGMNR_SESSION_EVOLVE$                                       TABLE
+LOGMNR_SPILL$                                                TABLE
+LOGMNR_SUBCOLTYPE$                                           TABLE
+LOGMNR_TAB$                                                  TABLE
+LOGMNR_TABCOMPART$                                           TABLE
+LOGMNR_TABPART$                                              TABLE
+LOGMNR_TABSUBPART$                                           TABLE
+LOGMNR_TS$                                                   TABLE
+LOGMNR_TYPE$                                                 TABLE
+LOGMNR_UID$                                                  TABLE
+LOGMNR_USER$                                                 TABLE
+LOGSTDBY$APPLY_MILESTONE                                     TABLE
+LOGSTDBY$APPLY_PROGRESS                                      TABLE
+LOGSTDBY$EDS_TABLES                                          TABLE
+LOGSTDBY$EVENTS                                              TABLE
+LOGSTDBY$FLASHBACK_SCN                                       TABLE
+LOGSTDBY$HISTORY                                             TABLE
+LOGSTDBY$PARAMETERS                                          TABLE
+LOGSTDBY$PLSQL                                               TABLE
+LOGSTDBY$SCN                                                 TABLE
+LOGSTDBY$SKIP                                                TABLE
+LOGSTDBY$SKIP_SUPPORT                                        TABLE
+LOGSTDBY$SKIP_TRANSACTION                                    TABLE
+MVIEW$_ADV_AJG                                               TABLE
+MVIEW$_ADV_BASETABLE                                         TABLE
+MVIEW$_ADV_CLIQUE                                            TABLE
+MVIEW$_ADV_ELIGIBLE                                          TABLE
+MVIEW$_ADV_EXCEPTIONS                                        TABLE
+MVIEW$_ADV_FILTER                                            TABLE
+MVIEW$_ADV_FILTERINSTANCE                                    TABLE
+MVIEW$_ADV_FJG                                               TABLE
+MVIEW$_ADV_GC                                                TABLE
+MVIEW$_ADV_INFO                                              TABLE
+MVIEW$_ADV_JOURNAL                                           TABLE
+MVIEW$_ADV_LEVEL                                             TABLE
+MVIEW$_ADV_LOG                                               TABLE
+MVIEW$_ADV_OUTPUT                                            TABLE
+MVIEW$_ADV_PARAMETERS                                        TABLE
+MVIEW$_ADV_PLAN                                              TABLE
+MVIEW$_ADV_PRETTY                                            TABLE
+MVIEW$_ADV_ROLLUP                                            TABLE
+MVIEW$_ADV_SQLDEPEND                                         TABLE
+MVIEW$_ADV_TEMP                                              TABLE
+MVIEW$_ADV_WORKLOAD                                          TABLE
+MVIEW_EVALUATIONS                                            VIEW
+MVIEW_EXCEPTIONS                                             VIEW
+MVIEW_FILTER                                                 VIEW
+MVIEW_FILTERINSTANCE                                         VIEW
+MVIEW_LOG                                                    VIEW
+MVIEW_RECOMMENDATIONS                                        VIEW
+MVIEW_WORKLOAD                                               VIEW
+OL$                                                          TABLE
+OL$HINTS                                                     TABLE
+OL$NODES                                                     TABLE
+PRODUCT_PRIVS                                                VIEW
+PRODUCT_USER_PROFILE                                         SYNONYM
+PUBLICSYN                                                    SYNONYM
+REPCAT$_AUDIT_ATTRIBUTE                                      TABLE
+REPCAT$_AUDIT_COLUMN                                         TABLE
+REPCAT$_COLUMN_GROUP                                         TABLE
+REPCAT$_CONFLICT                                             TABLE
+REPCAT$_DDL                                                  TABLE
+REPCAT$_EXCEPTIONS                                           TABLE
+REPCAT$_EXTENSION                                            TABLE
+REPCAT$_FLAVORS                                              TABLE
+REPCAT$_FLAVOR_OBJECTS                                       TABLE
+REPCAT$_GENERATED                                            TABLE
+REPCAT$_GROUPED_COLUMN                                       TABLE
+REPCAT$_INSTANTIATION_DDL                                    TABLE
+REPCAT$_KEY_COLUMNS                                          TABLE
+REPCAT$_OBJECT_PARMS                                         TABLE
+REPCAT$_OBJECT_TYPES                                         TABLE
+REPCAT$_PARAMETER_COLUMN                                     TABLE
+REPCAT$_PRIORITY                                             TABLE
+REPCAT$_PRIORITY_GROUP                                       TABLE
+REPCAT$_REFRESH_TEMPLATES                                    TABLE
+REPCAT$_REPCAT                                               TABLE
+REPCAT$_REPCATLOG                                            TABLE
+REPCAT$_REPCOLUMN                                            TABLE
+REPCAT$_REPGROUP_PRIVS                                       TABLE
+REPCAT$_REPOBJECT                                            TABLE
+REPCAT$_REPPROP                                              TABLE
+REPCAT$_REPSCHEMA                                            TABLE
+REPCAT$_RESOLUTION                                           TABLE
+REPCAT$_RESOLUTION_METHOD                                    TABLE
+REPCAT$_RESOLUTION_STATISTICS                                TABLE
+REPCAT$_RESOL_STATS_CONTROL                                  TABLE
+REPCAT$_RUNTIME_PARMS                                        TABLE
+REPCAT$_SITES_NEW                                            TABLE
+REPCAT$_SITE_OBJECTS                                         TABLE
+REPCAT$_SNAPGROUP                                            TABLE
+REPCAT$_TEMPLATE_OBJECTS                                     TABLE
+REPCAT$_TEMPLATE_PARMS                                       TABLE
+REPCAT$_TEMPLATE_REFGROUPS                                   TABLE
+REPCAT$_TEMPLATE_SITES                                       TABLE
+REPCAT$_TEMPLATE_STATUS                                      TABLE
+REPCAT$_TEMPLATE_TARGETS                                     TABLE
+REPCAT$_TEMPLATE_TYPES                                       TABLE
+REPCAT$_USER_AUTHORIZATIONS                                  TABLE
+REPCAT$_USER_PARM_VALUES                                     TABLE
+SQLPLUS_PRODUCT_PROFILE                                      TABLE
+SYSCATALOG                                                   SYNONYM
+SYSFILES                                                     SYNONYM
+TAB                                                          SYNONYM
+TABQUOTAS                                                    SYNONYM
 
 174 rows selected.
 
-SQL> --sql ³¡Àº ;À¸·Î ³¡³²
+SQL> --sql ëì€ ;ìœ¼ë¡œ ëë‚¨
 SQL> select
   2  	*
   3  	from
   4  	tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-AQ$DEF$_AQCALL                                               VIEW                                                                                                                                                                                                                                           
-AQ$DEF$_AQERROR                                              VIEW                                                                                                                                                                                                                                           
-AQ$_DEF$_AQCALL_F                                            VIEW                                                                                                                                                                                                                                           
-AQ$_DEF$_AQERROR_F                                           VIEW                                                                                                                                                                                                                                           
-AQ$_INTERNET_AGENTS                                          TABLE                                                                                                                                                                                                                                          
-AQ$_INTERNET_AGENT_PRIVS                                     TABLE                                                                                                                                                                                                                                          
-AQ$_QUEUES                                                   TABLE                                                                                                                                                                                                                                          
-AQ$_QUEUE_TABLES                                             TABLE                                                                                                                                                                                                                                          
-AQ$_SCHEDULES                                                TABLE                                                                                                                                                                                                                                          
-CATALOG                                                      SYNONYM                                                                                                                                                                                                                                        
-COL                                                          SYNONYM                                                                                                                                                                                                                                        
-DEF$_AQCALL                                                  TABLE                                                                                                                                                                                                                                          
-DEF$_AQERROR                                                 TABLE                                                                                                                                                                                                                                          
-DEF$_CALLDEST                                                TABLE                                                                                                                                                                                                                                          
-DEF$_DEFAULTDEST                                             TABLE                                                                                                                                                                                                                                          
-DEF$_DESTINATION                                             TABLE                                                                                                                                                                                                                                          
-DEF$_ERROR                                                   TABLE                                                                                                                                                                                                                                          
-DEF$_LOB                                                     TABLE                                                                                                                                                                                                                                          
-DEF$_ORIGIN                                                  TABLE                                                                                                                                                                                                                                          
-DEF$_PROPAGATOR                                              TABLE                                                                                                                                                                                                                                          
-DEF$_PUSHED_TRANSACTIONS                                     TABLE                                                                                                                                                                                                                                          
-HELP                                                         TABLE                                                                                                                                                                                                                                          
-LOGMNRC_DBNAME_UID_MAP                                       TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GSBA                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GSII                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GTCS                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRC_GTLO                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNRP_CTAS_PART_MAP                                        TABLE                                                                                                                                                                                                                                          
-LOGMNRT_MDDL$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_AGE_SPILL$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_ATTRCOL$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_ATTRIBUTE$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_CCOL$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_CDEF$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_COL$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_COLTYPE$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_DICTIONARY$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_DICTSTATE$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_ENC$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_ERROR$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_FILTER$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_GLOBAL$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_TAB_INCLUDE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_USER_INCLUDE$                                      TABLE                                                                                                                                                                                                                                          
-LOGMNR_GT_XID_INCLUDE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_ICOL$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_IND$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDCOMPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDPART$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_INDSUBPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_INTEGRATED_SPILL$                                     TABLE                                                                                                                                                                                                                                          
-LOGMNR_KOPM$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOB$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOBFRAG$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOG$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_LOGMNR_BUILDLOG                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_NTAB$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_OBJ$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_OPQTYPE$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_PARAMETER$                                            TABLE                                                                                                                                                                                                                                          
-LOGMNR_PARTOBJ$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_PROCESSED_LOG$                                        TABLE                                                                                                                                                                                                                                          
-LOGMNR_PROPS$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_REFCON$                                               TABLE                                                                                                                                                                                                                                          
-LOGMNR_RESTART_CKPT$                                         TABLE                                                                                                                                                                                                                                          
-LOGMNR_RESTART_CKPT_TXINFO$                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_SEED$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION_ACTIONS$                                      TABLE                                                                                                                                                                                                                                          
-LOGMNR_SESSION_EVOLVE$                                       TABLE                                                                                                                                                                                                                                          
-LOGMNR_SPILL$                                                TABLE                                                                                                                                                                                                                                          
-LOGMNR_SUBCOLTYPE$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TAB$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABCOMPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABPART$                                              TABLE                                                                                                                                                                                                                                          
-LOGMNR_TABSUBPART$                                           TABLE                                                                                                                                                                                                                                          
-LOGMNR_TS$                                                   TABLE                                                                                                                                                                                                                                          
-LOGMNR_TYPE$                                                 TABLE                                                                                                                                                                                                                                          
-LOGMNR_UID$                                                  TABLE                                                                                                                                                                                                                                          
-LOGMNR_USER$                                                 TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$APPLY_MILESTONE                                     TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$APPLY_PROGRESS                                      TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$EDS_TABLES                                          TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$EVENTS                                              TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$FLASHBACK_SCN                                       TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$HISTORY                                             TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$PARAMETERS                                          TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$PLSQL                                               TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SCN                                                 TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP                                                TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP_SUPPORT                                        TABLE                                                                                                                                                                                                                                          
-LOGSTDBY$SKIP_TRANSACTION                                    TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_AJG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_BASETABLE                                         TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_CLIQUE                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_ELIGIBLE                                          TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_EXCEPTIONS                                        TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FILTER                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FILTERINSTANCE                                    TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_FJG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_GC                                                TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_INFO                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_JOURNAL                                           TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_LEVEL                                             TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_LOG                                               TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_OUTPUT                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PARAMETERS                                        TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PLAN                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_PRETTY                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_ROLLUP                                            TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_SQLDEPEND                                         TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_TEMP                                              TABLE                                                                                                                                                                                                                                          
-MVIEW$_ADV_WORKLOAD                                          TABLE                                                                                                                                                                                                                                          
-MVIEW_EVALUATIONS                                            VIEW                                                                                                                                                                                                                                           
-MVIEW_EXCEPTIONS                                             VIEW                                                                                                                                                                                                                                           
-MVIEW_FILTER                                                 VIEW                                                                                                                                                                                                                                           
-MVIEW_FILTERINSTANCE                                         VIEW                                                                                                                                                                                                                                           
-MVIEW_LOG                                                    VIEW                                                                                                                                                                                                                                           
-MVIEW_RECOMMENDATIONS                                        VIEW                                                                                                                                                                                                                                           
-MVIEW_WORKLOAD                                               VIEW                                                                                                                                                                                                                                           
-OL$                                                          TABLE                                                                                                                                                                                                                                          
-OL$HINTS                                                     TABLE                                                                                                                                                                                                                                          
-OL$NODES                                                     TABLE                                                                                                                                                                                                                                          
-PRODUCT_PRIVS                                                VIEW                                                                                                                                                                                                                                           
-PRODUCT_USER_PROFILE                                         SYNONYM                                                                                                                                                                                                                                        
-PUBLICSYN                                                    SYNONYM                                                                                                                                                                                                                                        
-REPCAT$_AUDIT_ATTRIBUTE                                      TABLE                                                                                                                                                                                                                                          
-REPCAT$_AUDIT_COLUMN                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_COLUMN_GROUP                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_CONFLICT                                             TABLE                                                                                                                                                                                                                                          
-REPCAT$_DDL                                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_EXCEPTIONS                                           TABLE                                                                                                                                                                                                                                          
-REPCAT$_EXTENSION                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_FLAVORS                                              TABLE                                                                                                                                                                                                                                          
-REPCAT$_FLAVOR_OBJECTS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_GENERATED                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_GROUPED_COLUMN                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_INSTANTIATION_DDL                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_KEY_COLUMNS                                          TABLE                                                                                                                                                                                                                                          
-REPCAT$_OBJECT_PARMS                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_OBJECT_TYPES                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_PARAMETER_COLUMN                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_PRIORITY                                             TABLE                                                                                                                                                                                                                                          
-REPCAT$_PRIORITY_GROUP                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_REFRESH_TEMPLATES                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCAT                                               TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCATLOG                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPCOLUMN                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPGROUP_PRIVS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPOBJECT                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPPROP                                              TABLE                                                                                                                                                                                                                                          
-REPCAT$_REPSCHEMA                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION                                           TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION_METHOD                                    TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOLUTION_STATISTICS                                TABLE                                                                                                                                                                                                                                          
-REPCAT$_RESOL_STATS_CONTROL                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_RUNTIME_PARMS                                        TABLE                                                                                                                                                                                                                                          
-REPCAT$_SITES_NEW                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_SITE_OBJECTS                                         TABLE                                                                                                                                                                                                                                          
-REPCAT$_SNAPGROUP                                            TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_OBJECTS                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_PARMS                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_REFGROUPS                                   TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_SITES                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_STATUS                                      TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_TARGETS                                     TABLE                                                                                                                                                                                                                                          
-REPCAT$_TEMPLATE_TYPES                                       TABLE                                                                                                                                                                                                                                          
-REPCAT$_USER_AUTHORIZATIONS                                  TABLE                                                                                                                                                                                                                                          
-REPCAT$_USER_PARM_VALUES                                     TABLE                                                                                                                                                                                                                                          
-SQLPLUS_PRODUCT_PROFILE                                      TABLE                                                                                                                                                                                                                                          
-SYSCATALOG                                                   SYNONYM                                                                                                                                                                                                                                        
-SYSFILES                                                     SYNONYM                                                                                                                                                                                                                                        
-TAB                                                          SYNONYM                                                                                                                                                                                                                                        
-TABQUOTAS                                                    SYNONYM                                                                                                                                                                                                                                        
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+AQ$DEF$_AQCALL                                               VIEW
+AQ$DEF$_AQERROR                                              VIEW
+AQ$_DEF$_AQCALL_F                                            VIEW
+AQ$_DEF$_AQERROR_F                                           VIEW
+AQ$_INTERNET_AGENTS                                          TABLE
+AQ$_INTERNET_AGENT_PRIVS                                     TABLE
+AQ$_QUEUES                                                   TABLE
+AQ$_QUEUE_TABLES                                             TABLE
+AQ$_SCHEDULES                                                TABLE
+CATALOG                                                      SYNONYM
+COL                                                          SYNONYM
+DEF$_AQCALL                                                  TABLE
+DEF$_AQERROR                                                 TABLE
+DEF$_CALLDEST                                                TABLE
+DEF$_DEFAULTDEST                                             TABLE
+DEF$_DESTINATION                                             TABLE
+DEF$_ERROR                                                   TABLE
+DEF$_LOB                                                     TABLE
+DEF$_ORIGIN                                                  TABLE
+DEF$_PROPAGATOR                                              TABLE
+DEF$_PUSHED_TRANSACTIONS                                     TABLE
+HELP                                                         TABLE
+LOGMNRC_DBNAME_UID_MAP                                       TABLE
+LOGMNRC_GSBA                                                 TABLE
+LOGMNRC_GSII                                                 TABLE
+LOGMNRC_GTCS                                                 TABLE
+LOGMNRC_GTLO                                                 TABLE
+LOGMNRP_CTAS_PART_MAP                                        TABLE
+LOGMNRT_MDDL$                                                TABLE
+LOGMNR_AGE_SPILL$                                            TABLE
+LOGMNR_ATTRCOL$                                              TABLE
+LOGMNR_ATTRIBUTE$                                            TABLE
+LOGMNR_CCOL$                                                 TABLE
+LOGMNR_CDEF$                                                 TABLE
+LOGMNR_COL$                                                  TABLE
+LOGMNR_COLTYPE$                                              TABLE
+LOGMNR_DICTIONARY$                                           TABLE
+LOGMNR_DICTSTATE$                                            TABLE
+LOGMNR_ENC$                                                  TABLE
+LOGMNR_ERROR$                                                TABLE
+LOGMNR_FILTER$                                               TABLE
+LOGMNR_GLOBAL$                                               TABLE
+LOGMNR_GT_TAB_INCLUDE$                                       TABLE
+LOGMNR_GT_USER_INCLUDE$                                      TABLE
+LOGMNR_GT_XID_INCLUDE$                                       TABLE
+LOGMNR_ICOL$                                                 TABLE
+LOGMNR_IND$                                                  TABLE
+LOGMNR_INDCOMPART$                                           TABLE
+LOGMNR_INDPART$                                              TABLE
+LOGMNR_INDSUBPART$                                           TABLE
+LOGMNR_INTEGRATED_SPILL$                                     TABLE
+LOGMNR_KOPM$                                                 TABLE
+LOGMNR_LOB$                                                  TABLE
+LOGMNR_LOBFRAG$                                              TABLE
+LOGMNR_LOG$                                                  TABLE
+LOGMNR_LOGMNR_BUILDLOG                                       TABLE
+LOGMNR_NTAB$                                                 TABLE
+LOGMNR_OBJ$                                                  TABLE
+LOGMNR_OPQTYPE$                                              TABLE
+LOGMNR_PARAMETER$                                            TABLE
+LOGMNR_PARTOBJ$                                              TABLE
+LOGMNR_PROCESSED_LOG$                                        TABLE
+LOGMNR_PROPS$                                                TABLE
+LOGMNR_REFCON$                                               TABLE
+LOGMNR_RESTART_CKPT$                                         TABLE
+LOGMNR_RESTART_CKPT_TXINFO$                                  TABLE
+LOGMNR_SEED$                                                 TABLE
+LOGMNR_SESSION$                                              TABLE
+LOGMNR_SESSION_ACTIONS$                                      TABLE
+LOGMNR_SESSION_EVOLVE$                                       TABLE
+LOGMNR_SPILL$                                                TABLE
+LOGMNR_SUBCOLTYPE$                                           TABLE
+LOGMNR_TAB$                                                  TABLE
+LOGMNR_TABCOMPART$                                           TABLE
+LOGMNR_TABPART$                                              TABLE
+LOGMNR_TABSUBPART$                                           TABLE
+LOGMNR_TS$                                                   TABLE
+LOGMNR_TYPE$                                                 TABLE
+LOGMNR_UID$                                                  TABLE
+LOGMNR_USER$                                                 TABLE
+LOGSTDBY$APPLY_MILESTONE                                     TABLE
+LOGSTDBY$APPLY_PROGRESS                                      TABLE
+LOGSTDBY$EDS_TABLES                                          TABLE
+LOGSTDBY$EVENTS                                              TABLE
+LOGSTDBY$FLASHBACK_SCN                                       TABLE
+LOGSTDBY$HISTORY                                             TABLE
+LOGSTDBY$PARAMETERS                                          TABLE
+LOGSTDBY$PLSQL                                               TABLE
+LOGSTDBY$SCN                                                 TABLE
+LOGSTDBY$SKIP                                                TABLE
+LOGSTDBY$SKIP_SUPPORT                                        TABLE
+LOGSTDBY$SKIP_TRANSACTION                                    TABLE
+MVIEW$_ADV_AJG                                               TABLE
+MVIEW$_ADV_BASETABLE                                         TABLE
+MVIEW$_ADV_CLIQUE                                            TABLE
+MVIEW$_ADV_ELIGIBLE                                          TABLE
+MVIEW$_ADV_EXCEPTIONS                                        TABLE
+MVIEW$_ADV_FILTER                                            TABLE
+MVIEW$_ADV_FILTERINSTANCE                                    TABLE
+MVIEW$_ADV_FJG                                               TABLE
+MVIEW$_ADV_GC                                                TABLE
+MVIEW$_ADV_INFO                                              TABLE
+MVIEW$_ADV_JOURNAL                                           TABLE
+MVIEW$_ADV_LEVEL                                             TABLE
+MVIEW$_ADV_LOG                                               TABLE
+MVIEW$_ADV_OUTPUT                                            TABLE
+MVIEW$_ADV_PARAMETERS                                        TABLE
+MVIEW$_ADV_PLAN                                              TABLE
+MVIEW$_ADV_PRETTY                                            TABLE
+MVIEW$_ADV_ROLLUP                                            TABLE
+MVIEW$_ADV_SQLDEPEND                                         TABLE
+MVIEW$_ADV_TEMP                                              TABLE
+MVIEW$_ADV_WORKLOAD                                          TABLE
+MVIEW_EVALUATIONS                                            VIEW
+MVIEW_EXCEPTIONS                                             VIEW
+MVIEW_FILTER                                                 VIEW
+MVIEW_FILTERINSTANCE                                         VIEW
+MVIEW_LOG                                                    VIEW
+MVIEW_RECOMMENDATIONS                                        VIEW
+MVIEW_WORKLOAD                                               VIEW
+OL$                                                          TABLE
+OL$HINTS                                                     TABLE
+OL$NODES                                                     TABLE
+PRODUCT_PRIVS                                                VIEW
+PRODUCT_USER_PROFILE                                         SYNONYM
+PUBLICSYN                                                    SYNONYM
+REPCAT$_AUDIT_ATTRIBUTE                                      TABLE
+REPCAT$_AUDIT_COLUMN                                         TABLE
+REPCAT$_COLUMN_GROUP                                         TABLE
+REPCAT$_CONFLICT                                             TABLE
+REPCAT$_DDL                                                  TABLE
+REPCAT$_EXCEPTIONS                                           TABLE
+REPCAT$_EXTENSION                                            TABLE
+REPCAT$_FLAVORS                                              TABLE
+REPCAT$_FLAVOR_OBJECTS                                       TABLE
+REPCAT$_GENERATED                                            TABLE
+REPCAT$_GROUPED_COLUMN                                       TABLE
+REPCAT$_INSTANTIATION_DDL                                    TABLE
+REPCAT$_KEY_COLUMNS                                          TABLE
+REPCAT$_OBJECT_PARMS                                         TABLE
+REPCAT$_OBJECT_TYPES                                         TABLE
+REPCAT$_PARAMETER_COLUMN                                     TABLE
+REPCAT$_PRIORITY                                             TABLE
+REPCAT$_PRIORITY_GROUP                                       TABLE
+REPCAT$_REFRESH_TEMPLATES                                    TABLE
+REPCAT$_REPCAT                                               TABLE
+REPCAT$_REPCATLOG                                            TABLE
+REPCAT$_REPCOLUMN                                            TABLE
+REPCAT$_REPGROUP_PRIVS                                       TABLE
+REPCAT$_REPOBJECT                                            TABLE
+REPCAT$_REPPROP                                              TABLE
+REPCAT$_REPSCHEMA                                            TABLE
+REPCAT$_RESOLUTION                                           TABLE
+REPCAT$_RESOLUTION_METHOD                                    TABLE
+REPCAT$_RESOLUTION_STATISTICS                                TABLE
+REPCAT$_RESOL_STATS_CONTROL                                  TABLE
+REPCAT$_RUNTIME_PARMS                                        TABLE
+REPCAT$_SITES_NEW                                            TABLE
+REPCAT$_SITE_OBJECTS                                         TABLE
+REPCAT$_SNAPGROUP                                            TABLE
+REPCAT$_TEMPLATE_OBJECTS                                     TABLE
+REPCAT$_TEMPLATE_PARMS                                       TABLE
+REPCAT$_TEMPLATE_REFGROUPS                                   TABLE
+REPCAT$_TEMPLATE_SITES                                       TABLE
+REPCAT$_TEMPLATE_STATUS                                      TABLE
+REPCAT$_TEMPLATE_TARGETS                                     TABLE
+REPCAT$_TEMPLATE_TYPES                                       TABLE
+REPCAT$_USER_AUTHORIZATIONS                                  TABLE
+REPCAT$_USER_PARM_VALUES                                     TABLE
+SQLPLUS_PRODUCT_PROFILE                                      TABLE
+SYSCATALOG                                                   SYNONYM
+SYSFILES                                                     SYNONYM
+TAB                                                          SYNONYM
+TABQUOTAS                                                    SYNONYM
 
 174 rows selected.
 
-SQL> -- system °ü¸®ÀÚ °èÁ¤¿¡¼­ »ç¿ëÀÚ °èÁ¤ »ý¼º
+SQL> -- system ê´€ë¦¬ìž ê³„ì •ì—ì„œ ì‚¬ìš©ìž ê³„ì • ìƒì„±
 SQL> -- id: scott/ password: tiger
 SQL> -- CREATE [USER_ID] IDENTIFIED BY [USER_PASSWORD];
 SQL> create user scott identified by tiger;
 create scott identified by tiger
        *
 ERROR at line 1:
-ORA-00901: invalid CREATE command 
+ORA-00901: invalid CREATE command
 
 
 SQL> create user scott identified by tiger;
@@ -484,7 +484,7 @@ User created.
 
 SQL> spool
 currently spooling to 20170704.sql
-SQL> -- scott »ç¿ëÀÚ ±ÇÇÑ
+SQL> -- scott ì‚¬ìš©ìž ê¶Œí•œ
 SQL> grant connect, resource, create view to scott;
 
 Grant succeeded.
@@ -507,38 +507,38 @@ SQL> show user
 USER is "SCOTT"
 SQL> show spool
 spool ON
-SQL> -- scott °èÁ¤ÀÇ ¸ðµç Å×ÀÌºí ¸ñ·Ï Á¶È¸
+SQL> -- scott ê³„ì •ì˜ ëª¨ë“  í…Œì´ë¸” ëª©ë¡ ì¡°íšŒ
 SQL> select * from tab;
 
 no rows selected
 
-SQL> -- sql ½ºÅ©¸³Æ® ÆÄÀÏ ¼öÇà
-SQL> -- @½ºÅ©¸³Æ®ÆÄÀÏ.sql
-SQL> -- start ½ºÅ©¸³Æ®ÆÄÀÏ.sql
-SQL> 
-SQL> 
-SQL> -- scott ÆÄÀÏ ½ºÅ©¸³Æ® ½ÇÇà
+SQL> -- sql ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ ìˆ˜í–‰
+SQL> -- @ìŠ¤í¬ë¦½íŠ¸íŒŒì¼.sql
+SQL> -- start ìŠ¤í¬ë¦½íŠ¸íŒŒì¼.sql
+SQL>
+SQL>
+SQL> -- scott íŒŒì¼ ìŠ¤í¬ë¦½íŠ¸ ì‹¤í–‰
 SQL> @C:\practice\02.sql\demo_scott\scott.sql
 GRANT CONNECT,RESOURCE,UNLIMITED TABLESPACE TO SCOTT IDENTIFIED BY TIGER
                                                *
 ERROR at line 1:
-ORA-01749: you may not GRANT/REVOKE privileges to/from yourself 
+ORA-01749: you may not GRANT/REVOKE privileges to/from yourself
 
 
 ALTER USER SCOTT DEFAULT TABLESPACE USERS
 *
 ERROR at line 1:
-ORA-01031: insufficient privileges 
+ORA-01031: insufficient privileges
 
 
 ALTER USER SCOTT TEMPORARY TABLESPACE TEMP
 *
 ERROR at line 1:
-ORA-01031: insufficient privileges 
+ORA-01031: insufficient privileges
 
 
 ERROR:
-ORA-01017: invalid username/password; logon denied 
+ORA-01017: invalid username/password; logon denied
 
 
 Warning: You are no longer connected to ORACLE.
@@ -603,23 +603,23 @@ SQL> SET ECHO OFF
 GRANT CONNECT,RESOURCE,UNLIMITED TABLESPACE TO SCOTT IDENTIFIED BY TIGER
                                                *
 ERROR at line 1:
-ORA-01749: you may not GRANT/REVOKE privileges to/from yourself 
+ORA-01749: you may not GRANT/REVOKE privileges to/from yourself
 
 
 ALTER USER SCOTT DEFAULT TABLESPACE USERS
 *
 ERROR at line 1:
-ORA-01031: insufficient privileges 
+ORA-01031: insufficient privileges
 
 
 ALTER USER SCOTT TEMPORARY TABLESPACE TEMP
 *
 ERROR at line 1:
-ORA-01031: insufficient privileges 
+ORA-01031: insufficient privileges
 
 
 ERROR:
-ORA-01017: invalid username/password; logon denied 
+ORA-01017: invalid username/password; logon denied
 
 
 Warning: You are no longer connected to ORACLE.
@@ -693,7 +693,7 @@ Table created.
 DROP TABLE EMP
            *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 
@@ -735,7 +735,7 @@ Table created.
 (7788,'SCOTT','ANALYST',7566,to_date('13-JUL-87')-85,3000,NULL,20)
                                      *
 ERROR at line 2:
-ORA-01858: a non-numeric character was found where a numeric was expected 
+ORA-01858: a non-numeric character was found where a numeric was expected
 
 
 
@@ -747,7 +747,7 @@ ORA-01858: a non-numeric character was found where a numeric was expected
 (7876,'ADAMS','CLERK',7788,to_date('13-JUL-87')-51,1100,NULL,20)
                                    *
 ERROR at line 2:
-ORA-01858: a non-numeric character was found where a numeric was expected 
+ORA-01858: a non-numeric character was found where a numeric was expected
 
 
 
@@ -762,7 +762,7 @@ ORA-01858: a non-numeric character was found where a numeric was expected
 DROP TABLE BONUS
            *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 
@@ -771,7 +771,7 @@ Table created.
 DROP TABLE SALGRADE
            *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 
@@ -799,11 +799,11 @@ SQL> show user
 USER is "SCOTT"
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                   BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------                                                                                                                                                                                                                   BONUS                                                        TABLE
+DEPT                                                         TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> @C:\practice\02.sql\demo_scott\scott.sql
 SQL> Rem Copyright (c) 1990 by Oracle Corporation
@@ -828,7 +828,7 @@ SQL> SET ECHO OFF
 CREATE TABLE DEPT
              *
 ERROR at line 1:
-ORA-00955: name is already used by an existing object 
+ORA-00955: name is already used by an existing object
 
 
 
@@ -840,25 +840,25 @@ Table created.
 INSERT INTO DEPT VALUES
 *
 ERROR at line 1:
-ORA-00001: unique constraint (SCOTT.PK_DEPT) violated 
+ORA-00001: unique constraint (SCOTT.PK_DEPT) violated
 
 
 INSERT INTO DEPT VALUES (20,'RESEARCH','DALLAS')
 *
 ERROR at line 1:
-ORA-00001: unique constraint (SCOTT.PK_DEPT) violated 
+ORA-00001: unique constraint (SCOTT.PK_DEPT) violated
 
 
 INSERT INTO DEPT VALUES
 *
 ERROR at line 1:
-ORA-00001: unique constraint (SCOTT.PK_DEPT) violated 
+ORA-00001: unique constraint (SCOTT.PK_DEPT) violated
 
 
 INSERT INTO DEPT VALUES
 *
 ERROR at line 1:
-ORA-00001: unique constraint (SCOTT.PK_DEPT) violated 
+ORA-00001: unique constraint (SCOTT.PK_DEPT) violated
 
 
 
@@ -885,7 +885,7 @@ ORA-00001: unique constraint (SCOTT.PK_DEPT) violated
 (7788,'SCOTT','ANALYST',7566,to_date('13-JUL-87')-85,3000,NULL,20)
                                      *
 ERROR at line 2:
-ORA-01858: a non-numeric character was found where a numeric was expected 
+ORA-01858: a non-numeric character was found where a numeric was expected
 
 
 
@@ -897,7 +897,7 @@ ORA-01858: a non-numeric character was found where a numeric was expected
 (7876,'ADAMS','CLERK',7788,to_date('13-JUL-87')-51,1100,NULL,20)
                                    *
 ERROR at line 2:
-ORA-01858: a non-numeric character was found where a numeric was expected 
+ORA-01858: a non-numeric character was found where a numeric was expected
 
 
 
@@ -943,17 +943,17 @@ SQL> select * from tabl;
 select * from tabl
               *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+BONUS                                                        TABLE
+DEPT                                                         TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> conn scott/tiger
 Connected.
@@ -963,7 +963,7 @@ SQL> select * from tabl;
 select * from tabl
               *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 SQL> select * from tabl;s
@@ -971,17 +971,17 @@ SQL> select * from tabl;s
 select * from tabl;s
                   *
 ERROR at line 1:
-ORA-00911: invalid character 
+ORA-00911: invalid character
 
 
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+BONUS                                                        TABLE
+DEPT                                                         TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> select * from bonus
   2  ;
@@ -990,29 +990,29 @@ no rows selected
 
 SQL> select * from dept;
 
-    DEPTNO DNAME                        LOC                                                                                                                                                                                                                                                                 
----------- ---------------------------- --------------------------                                                                                                                                                                                                                                          
-        10 ACCOUNTING                   NEW YORK                                                                                                                                                                                                                                                            
-        20 RESEARCH                     DALLAS                                                                                                                                                                                                                                                              
-        30 SALES                        CHICAGO                                                                                                                                                                                                                                                             
-        40 OPERATIONS                   BOSTON                                                                                                                                                                                                                                                              
+    DEPTNO DNAME                        LOC
+---------- ---------------------------- --------------------------
+        10 ACCOUNTING                   NEW YORK
+        20 RESEARCH                     DALLAS
+        30 SALES                        CHICAGO
+        40 OPERATIONS                   BOSTON
 
 SQL> select * from emp;
 
-     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO                                                                                                                                                                                                     
----------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------                                                                                                                                                                                                     
-      7369 SMITH                CLERK                    7902 80/12/17        800                    20                                                                                                                                                                                                     
-      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30                                                                                                                                                                                                     
-      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30                                                                                                                                                                                                     
-      7566 JONES                MANAGER                  7839 81/04/02       2975                    20                                                                                                                                                                                                     
-      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30                                                                                                                                                                                                     
-      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30                                                                                                                                                                                                     
-      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10                                                                                                                                                                                                     
-      7839 KING                 PRESIDENT                     81/11/17       5000                    10                                                                                                                                                                                                     
-      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30                                                                                                                                                                                                     
-      7900 JAMES                CLERK                    7698 81/12/03        950                    30                                                                                                                                                                                                     
-      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20                                                                                                                                                                                                     
-      7934 MILLER               CLERK                    7782 82/01/23       1300                    10                                                                                                                                                                                                     
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7369 SMITH                CLERK                    7902 80/12/17        800                    20
+      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30
+      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30
+      7566 JONES                MANAGER                  7839 81/04/02       2975                    20
+      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30
+      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30
+      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10
+      7839 KING                 PRESIDENT                     81/11/17       5000                    10
+      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20
+      7934 MILLER               CLERK                    7782 82/01/23       1300                    10
 
 12 rows selected.
 
@@ -1020,18 +1020,18 @@ SQL> select * from salary;
 select * from salary
               *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 SQL> select * from salgrade;
 
-     GRADE      LOSAL      HISAL                                                                                                                                                                                                                                                                            
----------- ---------- ----------                                                                                                                                                                                                                                                                            
-         1        700       1200                                                                                                                                                                                                                                                                            
-         2       1201       1400                                                                                                                                                                                                                                                                            
-         3       1401       2000                                                                                                                                                                                                                                                                            
-         4       2001       3000                                                                                                                                                                                                                                                                            
-         5       3001       9999                                                                                                                                                                                                                                                                            
+     GRADE      LOSAL      HISAL
+---------- ---------- ----------
+         1        700       1200
+         2       1201       1400
+         3       1401       2000
+         4       2001       3000
+         5       3001       9999
 
 SQL> show user
 USER is "SCOTT"
@@ -1051,12 +1051,12 @@ SQL> --
 SQL> --  USAGE
 SQL> --    From within SQL*Plus, enter:
 SQL> --        START demo_table.sql
-SQL> 
+SQL>
 SQL> SET TERMOUT ON
 SQL> PROMPT Building demonstration tables.  Please wait.
 Building demonstration tables.  Please wait.
 SQL> SET TERMOUT OFF
-SQL> 
+SQL>
 SQL> DROP TABLE EMP;
 
 Table dropped.
@@ -1077,11 +1077,11 @@ SQL> DROP TABLE DUMMY;
 DROP TABLE DUMMY
            *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
-SQL> 
-SQL> 
+SQL>
+SQL>
 SQL> CREATE TABLE DEPT(
   2  		     DEPTNO NUMBER(2),
   3  	     DNAME VARCHAR2(14),
@@ -1090,13 +1090,13 @@ SQL> CREATE TABLE DEPT(
 
 Table created.
 
-SQL> 
+SQL>
 SQL> ALTER TABLE DEPT
   2  ADD (CONSTRAINT PK_DEPT PRIMARY KEY (DEPTNO));
 
 Table altered.
 
-SQL> 
+SQL>
 SQL> INSERT INTO DEPT VALUES (10, 'ACCOUNTING', 'NEW YORK');
 
 1 row created.
@@ -1113,8 +1113,8 @@ SQL> INSERT INTO DEPT VALUES (40, 'OPERATIONS', 'BOSTON');
 
 1 row created.
 
-SQL> 
-SQL> 
+SQL>
+SQL>
 SQL> CREATE TABLE EMP
   2  	    (EMPNO NUMBER(4) NOT NULL,
   3  	     ENAME VARCHAR2(10),
@@ -1127,19 +1127,19 @@ SQL> CREATE TABLE EMP
 
 Table created.
 
-SQL> 
+SQL>
 SQL> ALTER TABLE EMP
   2  ADD (CONSTRAINT PK_EMP PRIMARY KEY (EMPNO));
 
 Table altered.
 
-SQL> 
+SQL>
 SQL> ALTER TABLE EMP
   2  ADD (CONSTRAINT FK_DEPTNO FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO));
 
 Table altered.
 
-SQL> 
+SQL>
 SQL> INSERT INTO EMP VALUES
   2  	     (7369, 'SMITH',  'CLERK',	   7902,
   3  	     TO_DATE('17-12-1980', 'DD-MM-YYYY'),  800, NULL, 20);
@@ -1224,7 +1224,7 @@ SQL> INSERT INTO EMP VALUES
 
 1 row created.
 
-SQL> 
+SQL>
 SQL> CREATE TABLE BONUS
   2  	     (ENAME VARCHAR2(10),
   3  	      JOB   VARCHAR2(9),
@@ -1233,7 +1233,7 @@ SQL> CREATE TABLE BONUS
 
 Table created.
 
-SQL> 
+SQL>
 SQL> CREATE TABLE SALGRADE
   2  	     (GRADE NUMBER,
   3  	      LOSAL NUMBER,
@@ -1241,7 +1241,7 @@ SQL> CREATE TABLE SALGRADE
 
 Table created.
 
-SQL> 
+SQL>
 SQL> INSERT INTO SALGRADE VALUES (1,  700, 1200);
 
 1 row created.
@@ -1262,64 +1262,64 @@ SQL> INSERT INTO SALGRADE VALUES (5, 3001, 9999);
 
 1 row created.
 
-SQL> 
+SQL>
 SQL> CREATE TABLE DUMMY
   2  	     (DUMMY NUMBER);
 
 Table created.
 
-SQL> 
+SQL>
 SQL> INSERT INTO DUMMY VALUES (0);
 
 1 row created.
 
-SQL> 
+SQL>
 SQL> COMMIT;
 
 Commit complete.
 
-SQL> 
+SQL>
 SQL> SET TERMOUT ON
 SQL> PROMPT Demonstration table build is complete.
 Demonstration table build is complete.
-SQL> 
+SQL>
 SQL> -- EXIT
 SQL> select * from tabl;
 select * from tabl
               *
 ERROR at line 1:
-ORA-00942: table or view does not exist 
+ORA-00942: table or view does not exist
 
 
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-DUMMY                                                        TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+BONUS                                                        TABLE
+DEPT                                                         TABLE
+DUMMY                                                        TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> select * from (select * from tab);
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-DUMMY                                                        TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+BONUS                                                        TABLE
+DEPT                                                         TABLE
+DUMMY                                                        TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> select * from (select * from tab);
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-BONUS                                                        TABLE                                                                                                                                                                                                                                          
-DEPT                                                         TABLE                                                                                                                                                                                                                                          
-DUMMY                                                        TABLE                                                                                                                                                                                                                                          
-EMP                                                          TABLE                                                                                                                                                                                                                                          
-SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+BONUS                                                        TABLE
+DEPT                                                         TABLE
+DUMMY                                                        TABLE
+EMP                                                          TABLE
+SALGRADE                                                     TABLE
 
 SQL> desc bonus;
  Name                                                                                                                                                                          Null?    Type
@@ -1333,32 +1333,32 @@ SQL> select count(*) bonus;
 select count(*) bonus
                     *
 ERROR at line 1:
-ORA-00923: FROM keyword not found where expected 
+ORA-00923: FROM keyword not found where expected
 
 
 SQL> select count(*) from bonus;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-         0                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+         0
 
 SQL> select count(*) from emp;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-        14                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+        14
 
 SQL> select count(*) from salgrade;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-         5                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+         5
 
 SQL> select count(*) from dummy;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-         1                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+         1
 
 SQL> select * from bonus;
 
@@ -1366,60 +1366,60 @@ no rows selected
 
 SQL> select * from emp;
 
-     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO                                                                                                                                                                                                     
----------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------                                                                                                                                                                                                     
-      7369 SMITH                CLERK                    7902 80/12/17        800                    20                                                                                                                                                                                                     
-      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30                                                                                                                                                                                                     
-      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30                                                                                                                                                                                                     
-      7566 JONES                MANAGER                  7839 81/04/02       2975                    20                                                                                                                                                                                                     
-      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30                                                                                                                                                                                                     
-      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30                                                                                                                                                                                                     
-      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10                                                                                                                                                                                                     
-      7788 SCOTT                ANALYST                  7566 82/12/09       3000                    20                                                                                                                                                                                                     
-      7839 KING                 PRESIDENT                     81/11/17       5000                    10                                                                                                                                                                                                     
-      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30                                                                                                                                                                                                     
-      7876 ADAMS                CLERK                    7788 83/01/12       1100                    20                                                                                                                                                                                                     
-      7900 JAMES                CLERK                    7698 81/12/03        950                    30                                                                                                                                                                                                     
-      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20                                                                                                                                                                                                     
-      7934 MILLER               CLERK                    7782 82/01/23       1300                    10                                                                                                                                                                                                     
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7369 SMITH                CLERK                    7902 80/12/17        800                    20
+      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30
+      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30
+      7566 JONES                MANAGER                  7839 81/04/02       2975                    20
+      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30
+      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30
+      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10
+      7788 SCOTT                ANALYST                  7566 82/12/09       3000                    20
+      7839 KING                 PRESIDENT                     81/11/17       5000                    10
+      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30
+      7876 ADAMS                CLERK                    7788 83/01/12       1100                    20
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20
+      7934 MILLER               CLERK                    7782 82/01/23       1300                    10
 
 14 rows selected.
 
 SQL> select * from salgrade;
 
-     GRADE      LOSAL      HISAL                                                                                                                                                                                                                                                                            
----------- ---------- ----------                                                                                                                                                                                                                                                                            
-         1        700       1200                                                                                                                                                                                                                                                                            
-         2       1201       1400                                                                                                                                                                                                                                                                            
-         3       1401       2000                                                                                                                                                                                                                                                                            
-         4       2001       3000                                                                                                                                                                                                                                                                            
-         5       3001       9999                                                                                                                                                                                                                                                                            
+     GRADE      LOSAL      HISAL
+---------- ---------- ----------
+         1        700       1200
+         2       1201       1400
+         3       1401       2000
+         4       2001       3000
+         5       3001       9999
 
 SQL> select * from dummy;
 
-     DUMMY                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-         0                                                                                                                                                                                                                                                                                                  
+     DUMMY
+----------
+         0
 
 SQL> select * from dept;
 
-    DEPTNO DNAME                        LOC                                                                                                                                                                                                                                                                 
----------- ---------------------------- --------------------------                                                                                                                                                                                                                                          
-        10 ACCOUNTING                   NEW YORK                                                                                                                                                                                                                                                            
-        20 RESEARCH                     DALLAS                                                                                                                                                                                                                                                              
-        30 SALES                        CHICAGO                                                                                                                                                                                                                                                             
-        40 OPERATIONS                   BOSTON                                                                                                                                                                                                                                                              
+    DEPTNO DNAME                        LOC
+---------- ---------------------------- --------------------------
+        10 ACCOUNTING                   NEW YORK
+        20 RESEARCH                     DALLAS
+        30 SALES                        CHICAGO
+        40 OPERATIONS                   BOSTON
 
-SQL> -- ºÎ¼­ Á¤º¸ Å×ÀÌºí dept
-SQL> -- ºÎ¼­ Á¤º¸ ÀüÃ¼ Á¶È¸
+SQL> -- ë¶€ì„œ ì •ë³´ í…Œì´ë¸” dept
+SQL> -- ë¶€ì„œ ì •ë³´ ì „ì²´ ì¡°íšŒ
 SQL> select * from dept;
 
-    DEPTNO DNAME                        LOC                                                                                                                                                                                                                                                                 
----------- ---------------------------- --------------------------                                                                                                                                                                                                                                          
-        10 ACCOUNTING                   NEW YORK                                                                                                                                                                                                                                                            
-        20 RESEARCH                     DALLAS                                                                                                                                                                                                                                                              
-        30 SALES                        CHICAGO                                                                                                                                                                                                                                                             
-        40 OPERATIONS                   BOSTON                                                                                                                                                                                                                                                              
+    DEPTNO DNAME                        LOC
+---------- ---------------------------- --------------------------
+        10 ACCOUNTING                   NEW YORK
+        20 RESEARCH                     DALLAS
+        30 SALES                        CHICAGO
+        40 OPERATIONS                   BOSTON
 
 SQL> disconn
 Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
@@ -1427,14 +1427,14 @@ SQL> conn system/admin1004
 Connected.
 SQL> show user;
 USER is "SYSTEM"
-SQL> -- »ç¿ëÀÚ °èÁ¤ Àá±Ý ÇØÁ¦: hr °èÁ¤ ÇØÁ¦
+SQL> -- ì‚¬ìš©ìž ê³„ì • ìž ê¸ˆ í•´ì œ: hr ê³„ì • í•´ì œ
 SQL> -- ALTER USER [user_id] account (un)lock;
 SQL> alter user hr
   2  	account unlock;
 
 User altered.
 
-SQL> -- °èÁ¤ ¾ÏÈ£ º¯°æ
+SQL> -- ê³„ì • ì•”í˜¸ ë³€ê²½
 SQL> -- ALTER USER [user_id] IDENTIFIED BY [user_password];
 SQL> alter user hr identified by tiger;
 
@@ -1444,63 +1444,63 @@ SQL> conn hr/tiger;
 Connected.
 SQL> select * from tab;
 
-TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
------------------------------------------------------------- -------------- ----------                                                                                                                                                                                                                      
-COUNTRIES                                                    TABLE                                                                                                                                                                                                                                          
-DEPARTMENTS                                                  TABLE                                                                                                                                                                                                                                          
-EMPLOYEES                                                    TABLE                                                                                                                                                                                                                                          
-EMP_DETAILS_VIEW                                             VIEW                                                                                                                                                                                                                                           
-JOBS                                                         TABLE                                                                                                                                                                                                                                          
-JOB_HISTORY                                                  TABLE                                                                                                                                                                                                                                          
-LOCATIONS                                                    TABLE                                                                                                                                                                                                                                          
-REGIONS                                                      TABLE                                                                                                                                                                                                                                          
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+COUNTRIES                                                    TABLE
+DEPARTMENTS                                                  TABLE
+EMPLOYEES                                                    TABLE
+EMP_DETAILS_VIEW                                             VIEW
+JOBS                                                         TABLE
+JOB_HISTORY                                                  TABLE
+LOCATIONS                                                    TABLE
+REGIONS                                                      TABLE
 
 8 rows selected.
 
-SQL> -- hr °èÁ¤ÀÇ ÀüÃ¼ Á÷¿ø Á¤º¸ Á¶È¸: employees
+SQL> -- hr ê³„ì •ì˜ ì „ì²´ ì§ì› ì •ë³´ ì¡°íšŒ: employees
 SQL> select count(*) from employees;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-       107                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+       107
 
 SQL> select count(*) from departments;
 
-  COUNT(*)                                                                                                                                                                                                                                                                                                  
-----------                                                                                                                                                                                                                                                                                                  
-        27                                                                                                                                                                                                                                                                                                  
+  COUNT(*)
+----------
+        27
 
 SQL> select * from departments;
 
-DEPARTMENT_ID DEPARTMENT_NAME                                              MANAGER_ID LOCATION_ID                                                                                                                                                                                                           
-------------- ------------------------------------------------------------ ---------- -----------                                                                                                                                                                                                           
-           10 Administration                                                      200        1700                                                                                                                                                                                                           
-           20 Marketing                                                           201        1800                                                                                                                                                                                                           
-           30 Purchasing                                                          114        1700                                                                                                                                                                                                           
-           40 Human Resources                                                     203        2400                                                                                                                                                                                                           
-           50 Shipping                                                            121        1500                                                                                                                                                                                                           
-           60 IT                                                                  103        1400                                                                                                                                                                                                           
-           70 Public Relations                                                    204        2700                                                                                                                                                                                                           
-           80 Sales                                                               145        2500                                                                                                                                                                                                           
-           90 Executive                                                           100        1700                                                                                                                                                                                                           
-          100 Finance                                                             108        1700                                                                                                                                                                                                           
-          110 Accounting                                                          205        1700                                                                                                                                                                                                           
-          120 Treasury                                                                       1700                                                                                                                                                                                                           
-          130 Corporate Tax                                                                  1700                                                                                                                                                                                                           
-          140 Control And Credit                                                             1700                                                                                                                                                                                                           
-          150 Shareholder Services                                                           1700                                                                                                                                                                                                           
-          160 Benefits                                                                       1700                                                                                                                                                                                                           
-          170 Manufacturing                                                                  1700                                                                                                                                                                                                           
-          180 Construction                                                                   1700                                                                                                                                                                                                           
-          190 Contracting                                                                    1700                                                                                                                                                                                                           
-          200 Operations                                                                     1700                                                                                                                                                                                                           
-          210 IT Support                                                                     1700                                                                                                                                                                                                           
-          220 NOC                                                                            1700                                                                                                                                                                                                           
-          230 IT Helpdesk                                                                    1700                                                                                                                                                                                                           
-          240 Government Sales                                                               1700                                                                                                                                                                                                           
-          250 Retail Sales                                                                   1700                                                                                                                                                                                                           
-          260 Recruiting                                                                     1700                                                                                                                                                                                                           
-          270 Payroll                                                                        1700                                                                                                                                                                                                           
+DEPARTMENT_ID DEPARTMENT_NAME                                              MANAGER_ID LOCATION_ID
+------------- ------------------------------------------------------------ ---------- -----------
+           10 Administration                                                      200        1700
+           20 Marketing                                                           201        1800
+           30 Purchasing                                                          114        1700
+           40 Human Resources                                                     203        2400
+           50 Shipping                                                            121        1500
+           60 IT                                                                  103        1400
+           70 Public Relations                                                    204        2700
+           80 Sales                                                               145        2500
+           90 Executive                                                           100        1700
+          100 Finance                                                             108        1700
+          110 Accounting                                                          205        1700
+          120 Treasury                                                                       1700
+          130 Corporate Tax                                                                  1700
+          140 Control And Credit                                                             1700
+          150 Shareholder Services                                                           1700
+          160 Benefits                                                                       1700
+          170 Manufacturing                                                                  1700
+          180 Construction                                                                   1700
+          190 Contracting                                                                    1700
+          200 Operations                                                                     1700
+          210 IT Support                                                                     1700
+          220 NOC                                                                            1700
+          230 IT Helpdesk                                                                    1700
+          240 Government Sales                                                               1700
+          250 Retail Sales                                                                   1700
+          260 Recruiting                                                                     1700
+          270 Payroll                                                                        1700
 
 27 rows selected.
 
@@ -1532,7 +1532,7 @@ SQL> select first_name, last_name department_name from employees, departments wh
 select first_name, last_name department_name from employees, departments where departments.manager_id = employees.employees_id
                                                                                                         *
 ERROR at line 1:
-ORA-00904: "EMPLOYEES"."EMPLOYEES_ID": invalid identifier 
+ORA-00904: "EMPLOYEES"."EMPLOYEES_ID": invalid identifier
 
 
 SQL> desc employees;

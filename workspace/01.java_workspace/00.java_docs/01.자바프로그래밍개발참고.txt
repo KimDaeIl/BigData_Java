@@ -1,83 +1,83 @@
 
-## ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö °³¹ß
+## ìžë°” í”„ë¡œê·¸ëž˜ë° ê°œë°œ
 
-1. °³¹ßÈ¯°æ ±¸Ãà 
+1. ê°œë°œí™˜ê²½ êµ¬ì¶• 
 	(SDK : Software Development Kit, JDK:Java Development Kit)
-	- ´Ù¿î·Îµå : JDK + API Documentation
+	- ë‹¤ìš´ë¡œë“œ : JDK + API Documentation
 		http://java.sun.com
 		http://www.oracle.com
 
-2. ¼³Ä¡Æú´õ : 
+2. ì„¤ì¹˜í´ë” : 
 	c:\jdk1.6 	
 
-3. JDK ¼³Ä¡Æú´õ ±¸Á¶
-	C:\jdk1.6\bin> ÀÚ¹ÙÇÁ·Î±×·¡°ü·Ã ½ÇÇàÆÄÀÏµé À§Ä¡ 
-		ÀÚ¹ÙÄÄÆÄÀÏ·¯ : javac.exe
-		ÀÚ¹Ù½ÇÇà(¹ø¿ª±â) : java.exe
-		ÀÚ¹Ù¹®¼­ÀÛ¼º±â :javadoc.exe
-		ÀÚ¹ÙÅ¬·¡½º¾ÐÃàÇÏ±â: jar.exe
+3. JDK ì„¤ì¹˜í´ë” êµ¬ì¡°
+	C:\jdk1.6\bin> ìžë°”í”„ë¡œê·¸ëž˜ê´€ë ¨ ì‹¤í–‰íŒŒì¼ë“¤ ìœ„ì¹˜ 
+		ìžë°”ì»´íŒŒì¼ëŸ¬ : javac.exe
+		ìžë°”ì‹¤í–‰(ë²ˆì—­ê¸°) : java.exe
+		ìžë°”ë¬¸ì„œìž‘ì„±ê¸° :javadoc.exe
+		ìžë°”í´ëž˜ìŠ¤ì••ì¶•í•˜ê¸°: jar.exe
 	
-	C:\jdk1.6\jre\lib> rt.jar  (Java SE¿¡ ´ëÇÑ Ç¥ÁØ API)
+	C:\jdk1.6\jre\lib> rt.jar  (Java SEì— ëŒ€í•œ í‘œì¤€ API)
 	
-	C:\jdk1.6> src.zip (Java SEÀÇ API¿¡´ëÇÑ ¼Ò½ºÄÚµå)
+	C:\jdk1.6> src.zip (Java SEì˜ APIì—ëŒ€í•œ ì†ŒìŠ¤ì½”ë“œ)
 	
 	C:\jdk1.6\jre\lib\ext > 
-		- ÀÚ¹ÙÄÄÆÄÀÏ·¯, ÀÚ¹Ù½ÇÇà½Ã ÀÚµ¿À¸·Î Ã£¾Æ°¡´Â Å¬·¡½º°æ·Î
-		- °øÅëÀûÀ¸·Î »ç¿ëÇÏ´Â jar ÆÄÀÏµîÀ» º¹»çÇØ³õ°í »ç¿ë 
-		- ¿À¶óÅ¬ÀÇ JDBC µå¶óÀÌ¹ö : ojdbc14.jar 
+		- ìžë°”ì»´íŒŒì¼ëŸ¬, ìžë°”ì‹¤í–‰ì‹œ ìžë™ìœ¼ë¡œ ì°¾ì•„ê°€ëŠ” í´ëž˜ìŠ¤ê²½ë¡œ
+		- ê³µí†µì ìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” jar íŒŒì¼ë“±ì„ ë³µì‚¬í•´ë†“ê³  ì‚¬ìš© 
+		- ì˜¤ë¼í´ì˜ JDBC ë“œë¼ì´ë²„ : ojdbc14.jar 
 		
-3. È¯°æ¼³Á¤	
-	1) JAVA_HOME=C:\jdk1.6  (ÀÚ¹Ù¼³Ä¡ ROOTÆú´õ ¼³Á¤)
+3. í™˜ê²½ì„¤ì •	
+	1) JAVA_HOME=C:\jdk1.6  (ìžë°”ì„¤ì¹˜ ROOTí´ë” ì„¤ì •)
 	
-	2) PATH=%JAVA_HOME%\BIN;±âÁ¸ÆÐ½º	
+	2) PATH=%JAVA_HOME%\BIN;ê¸°ì¡´íŒ¨ìŠ¤	
 	
-4. ¸í·ÉÃ¢ ½ÇÇà ÇØ¼­ È¯°æ¼³Á¤ È®ÀÎ
-	1) À©µµ¿ì => ½ÇÇà => CMD
-	2) À©µµ¿ì => ÇÁ·Î±×·¥ => º¸Á¶ÇÁ·Î±×·¥ => ¸í·ÉÇÁ·ÒÇÁÆ®	
+4. ëª…ë ¹ì°½ ì‹¤í–‰ í•´ì„œ í™˜ê²½ì„¤ì • í™•ì¸
+	1) ìœˆë„ìš° => ì‹¤í–‰ => CMD
+	2) ìœˆë„ìš° => í”„ë¡œê·¸ëž¨ => ë³´ì¡°í”„ë¡œê·¸ëž¨ => ëª…ë ¹í”„ë¡¬í”„íŠ¸	
 	
-	¸í·ÉÃ¢ > SET JAVA_HOME
-	¸í·ÉÃ¢ > PATH
-	¸í·ÉÃ¢>  javac -version  (ÀÚ¹ÙÄÄÆÄÀÏ·¯ ¹öÀü È®ÀÎ)
-	¸í·ÉÃ¢> java -version	 (ÀÚ¹Ù½ÇÇà ¹öÀü È®ÀÎ)
-	¸í·ÉÃ¢>  javac   (ÀÚ¹ÙÄÄÆÄÀÏ·¯ »ç¿ë¹æ¹ý ¹× ¿É¼ÇÈ®ÀÎ)
-	¸í·ÉÃ¢> java 	 (ÀÚ¹Ù½ÇÇà »ç¿ë¹æ¹ý ¹× ¿É¼Ç È®ÀÎ)
+	ëª…ë ¹ì°½ > SET JAVA_HOME
+	ëª…ë ¹ì°½ > PATH
+	ëª…ë ¹ì°½>  javac -version  (ìžë°”ì»´íŒŒì¼ëŸ¬ ë²„ì „ í™•ì¸)
+	ëª…ë ¹ì°½> java -version	 (ìžë°”ì‹¤í–‰ ë²„ì „ í™•ì¸)
+	ëª…ë ¹ì°½>  javac   (ìžë°”ì»´íŒŒì¼ëŸ¬ ì‚¬ìš©ë°©ë²• ë° ì˜µì…˜í™•ì¸)
+	ëª…ë ¹ì°½> java 	 (ìžë°”ì‹¤í–‰ ì‚¬ìš©ë°©ë²• ë° ì˜µì…˜ í™•ì¸)
 
-## ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö °³¹ß ÀýÂ÷
-1. ¼Ò½ºÄÚµå ÀÛ¼º :  HelloWorld.java
-2. ÄÄÆÄÀÏ : ¹æ¹ý)	javac [options] ¼Ò½ºÄÚµåÆÄÀÏ¸í.java 
-	javac HelloWorld.java	==> HelloWorld.class (¹ÙÀÌÆ®ÄÚµå)
+## ìžë°” í”„ë¡œê·¸ëž˜ë° ê°œë°œ ì ˆì°¨
+1. ì†ŒìŠ¤ì½”ë“œ ìž‘ì„± :  HelloWorld.java
+2. ì»´íŒŒì¼ : ë°©ë²•)	javac [options] ì†ŒìŠ¤ì½”ë“œíŒŒì¼ëª….java 
+	javac HelloWorld.java	==> HelloWorld.class (ë°”ì´íŠ¸ì½”ë“œ)
 	
-3. ½ÇÇà
+3. ì‹¤í–‰
 	java HelloWorld
 	
-	(ÁÖÀÇ»çÇ×)
-		1) .class¶ó´Â È®Àå¸¦ Á¦¿Ü½ÃÅ´
-		2) ´ë¼Ò¹®ÀÚ ±¸ºÐ
-		3) ÀÚ¹Ù¾îÇÃ¸®ÄÉÀÌ¼ÇÀÇ ½ÃÀÛ¸Þ¼­µå°¡ ¹Ýµå½Ã Á¸Àç
-		4) ½ÃÀÛ¸Þ¼­µåÇü½Ä:
+	(ì£¼ì˜ì‚¬í•­)
+		1) .classë¼ëŠ” í™•ìž¥ë¥¼ ì œì™¸ì‹œí‚´
+		2) ëŒ€ì†Œë¬¸ìž êµ¬ë¶„
+		3) ìžë°”ì–´í”Œë¦¬ì¼€ì´ì…˜ì˜ ì‹œìž‘ë©”ì„œë“œê°€ ë°˜ë“œì‹œ ì¡´ìž¬
+		4) ì‹œìž‘ë©”ì„œë“œí˜•ì‹:
 			public static void main(String[] args){}
 	
-## ÀÚ¹Ù ±âº» syntax 
-	1. ¼Ò½ºÄÚµå´Â class ´ÜÀ§·Î ÀÛ¼º
-	2. class ¼±¾ðÇü½Ä : public class Å¬·¡½ºÀÌ¸§ { }
-	3. ÀÚ¹Ù class, ¸Þ¼­µå, Á¦¾î¹®ÀÇ ½ÃÀÛÀº {  Á¾·á´Â }, ¹Ýµå½Ã {} Â¦À» ÀÌ·ç¾î¾ßÇÔ
-	4. ÀÚ¹Ù´Â ´ë¼Ò¹®ÀÚ¸¦ ±¸ºÐÇÔ
-	5. ¸ðµç ¸í·É¾îÀÇ ³¡Àº ";" ¼¼¹ÌÄÝ·ÐÀ» ÁöÁ¤ÇØ¾ßÇÔ
-	6. ÀÚ¹ÙÀÇ ½ÃÀÛ¸Þ¼­µå Çü½Ä: public static void main(String[] args){}
+## ìžë°” ê¸°ë³¸ syntax 
+	1. ì†ŒìŠ¤ì½”ë“œëŠ” class ë‹¨ìœ„ë¡œ ìž‘ì„±
+	2. class ì„ ì–¸í˜•ì‹ : public class í´ëž˜ìŠ¤ì´ë¦„ { }
+	3. ìžë°” class, ë©”ì„œë“œ, ì œì–´ë¬¸ì˜ ì‹œìž‘ì€ {  ì¢…ë£ŒëŠ” }, ë°˜ë“œì‹œ {} ì§ì„ ì´ë£¨ì–´ì•¼í•¨
+	4. ìžë°”ëŠ” ëŒ€ì†Œë¬¸ìžë¥¼ êµ¬ë¶„í•¨
+	5. ëª¨ë“  ëª…ë ¹ì–´ì˜ ëì€ ";" ì„¸ë¯¸ì½œë¡ ì„ ì§€ì •í•´ì•¼í•¨
+	6. ìžë°”ì˜ ì‹œìž‘ë©”ì„œë“œ í˜•ì‹: public static void main(String[] args){}
 
 			
-## DOS ¸í·É¾î
+## DOS ëª…ë ¹ì–´
 
-1. Æú´õÀÌµ¿
+1. í´ë”ì´ë™
 
-		CD ÀÌµ¿ÇÒÆú´õ¸í
+		CD ì´ë™í• í´ë”ëª…
 		
-		»ó´ë°æ·Î => ÇöÀçÆú´õ¸¦ ±âÁØÀ¸·Î ÇØ¼­ »óÀ§Æú´õ (..) , ÇÏÀ§Æú´õ(Æú´õ¸í) 
-		Àý´ë°æ·Î => C:\Æú´õ¸í\¼­ºêÆú´õ¸í
+		ìƒëŒ€ê²½ë¡œ => í˜„ìž¬í´ë”ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í•´ì„œ ìƒìœ„í´ë” (..) , í•˜ìœ„í´ë”(í´ë”ëª…) 
+		ì ˆëŒ€ê²½ë¡œ => C:\í´ë”ëª…\ì„œë¸Œí´ë”ëª…
 		
-2. ÇöÀçÆú´õ ¸ñ·Ï Á¶È¸
+2. í˜„ìž¬í´ë” ëª©ë¡ ì¡°íšŒ
 		DIR  
 
-3. µµ½ºÈ­¸é Áö¿ì±â
+3. ë„ìŠ¤í™”ë©´ ì§€ìš°ê¸°
 		cls
 							

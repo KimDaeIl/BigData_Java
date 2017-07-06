@@ -1,10 +1,10 @@
 
-## Eclipse ÇÁ·ÎÁ§Æ® °³¹ß¹æ¹ý 
+## Eclipse í”„ë¡œì íŠ¸ ê°œë°œë°©ë²• 
 
-1. new »õ·Î¿î ÇÁ·ÎÁ§Æ® »ý¼ºÇØ¼­ °³¹ß
+1. new ìƒˆë¡œìš´ í”„ë¡œì íŠ¸ ìƒì„±í•´ì„œ ê°œë°œ
 
-2. eclipse ÇÁ·ÎÁ§Æ®¸¦ import ÇØ¼­ °³¹ß
+2. eclipse í”„ë¡œì íŠ¸ë¥¼ import í•´ì„œ ê°œë°œ
 
-3. workspace ÀüÃ¼¸¦ ¹Þ¾Æ¼­ workspace ÁöÁ¤ÇØ¼­ °³¹ß
+3. workspace ì „ì²´ë¥¼ ë°›ì•„ì„œ workspace ì§€ì •í•´ì„œ ê°œë°œ
 
-4. ÇÁ·ÎÁ§Æ®¿¡ ¿ÜºÎ¿¡¼­ ÀÛ¼ºµÈ Æ¯Á¤ÆÄÀÏÀ» import ÇØ¼­ »ç¿ë°³¹ß
+4. í”„ë¡œì íŠ¸ì— ì™¸ë¶€ì—ì„œ ìž‘ì„±ëœ íŠ¹ì •íŒŒì¼ì„ import í•´ì„œ ì‚¬ìš©ê°œë°œ

@@ -1,0 +1,52 @@
+ 
+ < MEMBERS >
+ Name
+ -------------
+ *MEMBER_ID		
+ *MEMBER_PW
+ *MEMBER_NAME
+ *MOBILE
+ *EMAIL
+ *ENTRY_DATE
+ GRADE
+ MILEAGE
+ MANAGER
+
+ --가입
+INSERT INTO MEMBERS(MEMBER_ID, MEMBER_PWD, MEMBER_NAME, MOBILE, EMAIL, ENTRY_DATE) VALUES({MEMBER_ID}, {MEMBER_PWD}, {MEMBER_NAME}, {MOBILE}, {EMAIL}, TO_CHAR(SYSDATE,"yyyy/mm/dd"));
+
+--업데이트
+UPDATE MEMBERS SET {컬럼1 = 값1, 컬럼2 = 값2, ....} WHERE MEMBER_ID = '{유저 아이디}' AND MEMBER_PW = '{유저 비밀번호}';
+
+--삭제
+DELETE FROM MEMBERS WHERE MEMBER_ID = '{유저 아이디}' AND MEMBER_PW = '{유저 비밀번호}';
+
+
+< 기능 업데이트 코드로 다형성 ㄱㄱ >
+-- 마일리지 업데이트
+UPDATE MEMBER SET MILEAGE = {마일리지 값} WHERE MEMBER_ID = '{유저 아이디}' AND GRADE = 'G' AND MEMBER_PW = '{유저 비밀번호}';
+
+-- 매니저 업데이트
+UPDATE MEMBER SET MANAGER = '{매니저이름}' WHERE MEMBER_ID = '{유저 아이디}' AND GRADE = 'S' AND MEMBER_PW = '{유저 비밀번호}';
+
+-- 직책 업데이트
+UPDATE MEMBER SET MANAGER = '{직책}' WHERE MEMBER_ID = '{유저 아이디}' AND GRADE = 'A' AND MEMBER_PW = '{유저 비밀번호}';
+
+
+
+<SEQUENCE: SEQ_NOTICES_NO>
+< NOTICES >
+Name
+---------
+*TITLE
+*CONTENTS
+*NOTICE_NO
+*HIT_COUNT
+*WRITER
+*REG_DATE
+
+-- 가입
+INSERT INTO NOTICES VALUES({TITLE}, {CONTENTS}, SEQ_NOTICES_NO.NEXTVAL, 0, {MEMBERS.MEMBERS_ID}, SYSDATE);
+
+
+

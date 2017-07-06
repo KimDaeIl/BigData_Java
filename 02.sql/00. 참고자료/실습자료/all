@@ -1,0 +1,4 @@
+@all.ddl
+@all.dml
+
+commit;

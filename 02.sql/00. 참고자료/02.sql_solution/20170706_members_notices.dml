@@ -1,0 +1,37 @@
+SQL> -- 회원 초기화 레코드
+SQL> select * from members;
+
+MEMBER_ID                      MEMBER_PW            MEMBER_NAME          MOBILE        EMAIL                          ENTRY_DATE G    MILEAGE MANAGER                                                                                                                                                       
+------------------------------ -------------------- -------------------- ------------- ------------------------------ ---------- - ---------- ------------------------------                                                                                                                                
+user01                         password01           홍길동               010-1234-1111 user01@work.com                2017/05/10 G       1000                                                                                                                                                               
+user02                         password02           강감찬               010-1234-1112 user02@work.com                2017/05/11 G       2000                                                                                                                                                               
+user03                         password03           이순신               010-1234-1113 user03@work.com                2017/05/12 G       3000                                                                                                                                                               
+suser01                        password01           유관순               010-1111-1111 suser01@work.com               2017/03/01 S            송중기                                                                                                                                                        
+suser02                        password02           김유신               010-1111-1112 suser02@work.com               2017/03/02 S            송혜교                                                                                                                                                        
+auser01                        password01           박재형               010-1111-1234 auser01@work.com               2017/04/21 A                                                                                                                                                                          
+auser02                        password02           손병진               010-1111-1235 auser02@work.com               2017/06/15 A                                                                                                                                                                          
+
+7 rows selected.
+
+SQL> -- 공지 초기화 레코드
+SQL> select * from notices;
+
+ NOTICE_NO TITLE                                              WRITER                         WRITE_DA  HIT_COUNT CONTENT                                                                                                                                                                                    
+---------- -------------------------------------------------- ------------------------------ -------- ---------- ----------------------------------------------------------------------------------------------------                                                                                       
+         1 주말과제안내                                       auser01                        17/07/06          0 주말과제는 팀별 주제 선정 및 벤치마킹하기 바랍니다.                                                                                                                                        
+         2 JDBC 개요                                          auser02                        17/07/06          0 JDBC는 자바와 데이터베이스 연결위한 표준 API입니다.                                                                                                                                        
+         3 시험응시 개요                                      auser02                        17/07/06          0 개인별 시험응시항목에 표기바랍니다                                                                                                                                                         
+         4 주말과제안내                                       auser01                        17/07/06          0 웹화면을 위한 화면설계를 하기 바랍니다                                                                                                                                                     
+         5 프로젝트 주말과제안내                              auser01                        17/07/06          0 프로젝트를 위한 필수 기능을 구현바랍니다.                                                                                                                                                  
+
+
+-- 전체회원수 조회
+select count(*) from members;
+
+
+-- 아이디 중복여부 조회
+select * from members where member_id = 'user01';
+select grade from members where member_id = 'user01';
+
+
+SQL> spool off

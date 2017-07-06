@@ -45,12 +45,17 @@
     
 	ALTER TABLE 테이블명 ADD (컬럼추가정의);
 	ALTER TABLE 테이블명 ADD (CONSTRAINT추가정의);
+		ALTER TABLE {table_name} ADD (CONSTRAINT {pk_제약이름} PRIMARY KEY({column_name}));
+		ALTER TABLE {table_name} ADD (COLUMN {column_name} {type} {column_name});
 	
 	ALTER TABLE 테이블명 DROP COLUMN 삭제할컬럼명;
 	ALTER TABLE 테이블명 DROP CONSTRAINT 삭제할제약이름;
 
 	ALTER TABLE 테이블명 MODIFY (변경컬럼정의);
-
+	
+	col rename
+		ALTER TABLE {table_name} RENAME COLUMN {current_col_name} TO {new_col_name};
+d
 
 ## 제약사항 종류 :
     1. PRIMARY KEY = UNIQUE + NOT NULL

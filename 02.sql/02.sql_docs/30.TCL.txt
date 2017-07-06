@@ -19,8 +19,3 @@ savepoint 포인트명;
 
 -- 저장점 복구 
 rollback to 포인트명;
-
--- 저장점 적용
-commit to 포인트명;
-
-

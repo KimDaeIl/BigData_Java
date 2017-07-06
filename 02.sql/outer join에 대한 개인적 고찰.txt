@@ -1,0 +1,9 @@
+select e1.empno,e1.ename, e1.mgr, e2.empno, e2.ename
+ from emp e1, emp e2
+ where e1.mgr=e2.empno(+) order by e1.empno
+ 
+ 
+e1에는 mgr {null}을 가진 튜플은 있지만,
+이것을 참조하기 위한 튜플이 e2에는 없다.
+
+outer 조인은 참조할거니까 빈튜플을 만들어놔라는 양아치적인 마인드

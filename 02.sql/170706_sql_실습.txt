@@ -1,0 +1,60 @@
+select uc.table_name, uc.constraint_name, uc.constraint_type 
+ from user_constraints uc 
+ where uc.table_name in ('MEMBERS','NOTICES') order by table_name;
+
+ 
+ 
+select uc.table_name, uc.constraint_name, uc.constraint_type 
+ from user_constraints uc 
+ where uc.table_name in (SELECT DISTINCT TABLE_NAME FROM USER_CONSTRAINTS) order by table_name;
+
+ 
+SELECT uc.table_name, uc.constraint_name, uc.constraint_type, ucc.column_name
+ FROM user_constraints uc, user_cons_columns ucc
+ WHERE uc.table_name in ('MEMBERS','NOTICES') and uc.table_name = ucc.table_name
+ ORDER BY table_name;
+
+
+ 
+SELECT uc.table_name, uc.constraint_name, uc.constraint_type, ucc.column_name
+ FROM user_constraints uc, user_cons_columns ucc
+ WHERE uc.table_name in (SELECT TNAME FROM TAB) and uc.table_name = ucc.table_name
+ ORDER BY table_name;
+ 
+ 
+ 
+ 
+SELECT uc.table_name, uc.constraint_name, uc.constraint_type, ucc.column_name
+ FROM user_constraints uc, user_cons_columns ucc, (SELECT TNAME FROM TAB) TAB
+ WHERE uc.table_name = TAB.TNAME and uc.table_name = ucc.table_name
+ ORDER BY table_name;
+
+ 
+ 
+select d.deptno, d.dname, loc, e.empno, e.ename
+ from dept d, emp e
+ where e.deptno(+)=d.deptno;
+
+
+
+
+select d.deptno, d.dname, loc, e.empno, e.ename
+ from dept d, emp e
+ where e.deptno=d.deptno(+);
+ 
+
+
+select d.deptno, d.dname, loc, e.empno, e.ename
+ from dept d, emp e
+ where e.deptno=d.deptno(+)
+union
+select d.deptno, d.dname, loc, e.empno, e.ename
+ from dept d, emp e
+ where e.deptno(+)=d.deptno;
+ 
+ 
+ 
+
+select case when(writer ='user01') then 1 else 0 end as "수정", title, writer, hit_count, reg_date
+ from notices;
+ 

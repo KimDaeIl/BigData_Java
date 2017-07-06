@@ -2,7 +2,7 @@
 ## 시퀀스 (SEQUENCE) Object
 
     - 자동적으로 순차적인 번호를 생성 반환 해주는 객체
-    - 테이블에 종속적이지 않고 DB에서 여러 테이블이 공유사용가능
+    - **테이블에 종속적이지 않고 DB에서 여러 테이블이 공유사용가능
     - 하지만, 보통 특정테이블에 사용하기 위한 시퀀스를 만들어서 사용
  
 	1. 시퀀스 생성방법:
@@ -10,23 +10,33 @@
 		CREATE SEQUENCE 시퀀스명;  
 
 		2) 시퀀스 관련 설정값 부여 생성    
-		CREATE SEQUENCE 시퀀스명
-		START WITH 시작값
-		INCREMENT BY 증감값
-		MAXVALUE 최대값 | NOMAXVALUE
-		MINVALUE 최소값 | NOMINVALUE
-		CYCLE | NOCYCLE
-		CACHE 크기 / NO CACHE
-		;
+			CREATE SEQUENCE 시퀀스명
+			START WITH 시작값
+			INCREMENT BY 증감값
+			MAXVALUE 최대값 | NOMAXVALUE
+			MINVALUE 최소값 | NOMINVALUE
+			CYCLE | NOCYCLE
+			CACHE 크기 / NO CACHE
+			;
+			
+			cycle >> 최대 값되면 시작 값
+			cache
+			추천 시퀀스 작명 컨벤션 >> seq_{table_name}_{col_name}
+			
+			** 생성 후 nextval 호출 전까지 시작 값이 발생하지 않음(null)
+				>> 다음 시퀀스 발생 후 리턴
+			** auto commit
 
 	2. 시퀀스 삭제
 		DROP SEQUENCE 삭제할시퀀스이름
 
 	3. 시퀀스 변경
 		ALTER SEQUENCE 시퀀스명 속성명 변경값 속성명 변경값;]
-
+		**** modify 키워드 없음
+		
+		
 	4. 시퀀스 사용
-		-- 시퀀스명.NEXTVAL => 일련번호 발행
+		-- 시퀀스명.NEXTVAL => 일련번호 발행 //++i >> 증가 후 리턴
 		-- 시퀀스명.CURRVAL => 현재 일련번호 조회
 
 		insert into 테이블명 values(시퀀스명.nextval, aa, bb, cc);

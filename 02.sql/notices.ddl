@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 rem DROP SEQUENCE notice_sequence;
 rem CREATE SEQUENCE notice_sequence
 rem START WITH 1
@@ -6,6 +7,16 @@ rem MAXVALUE 9999
 rem MINVALUE 1;
 
 rem nextval >> 현재 값을 리턴 후 ++1 >> notice_sequence++ 과 같음.
+=======
+DROP SEQUENCE notice_sequence;
+CREATE SEQUENCE notice_sequence
+START WITH 1
+INCREMENT BY 1
+MAXVALUE 9999
+MINVALUE 1;
+
+rem nextval >> 현재 ++ 후 값을 리턴 >> ++notice_sequence 과 같음.
+>>>>>>> d45b50
 
 
 rem CREATE OR REPLACE TRIGGER notices_no_trigger
@@ -31,6 +42,7 @@ REM 제약관련 데이터 사전
 	-- USER_CONS_COLUMNS
 ALTER TABLE notices ADD (CONSTRAINT PK_NOTICES_NO PRIMARY KEY(NOTICE_NO));
 ALTER TABLE notices ADD (CONSTRAINT FK_WRRITER FOREIGN KEY(writer) REFERENCES MEMBERS(MEMBER_ID)  ON DELETE SET null);
+<<<<<<< HEAD
 
 INSERT INTO NOTICES(title, contents, notice_no, writer) VALUES('TITLE1','CONTENTS1', 1, 'user01');
 INSERT INTO NOTICES(title, contents, notice_no, writer) VALUES('TITLE2','CONTENTS2', 2, 'user02');
@@ -40,3 +52,5 @@ INSERT INTO NOTICES(title, contents, notice_no, writer) VALUES('TITLE5','CONTENT
 
 
 SELECT * FROM notices;
+=======
+>>>>>>> d45b50

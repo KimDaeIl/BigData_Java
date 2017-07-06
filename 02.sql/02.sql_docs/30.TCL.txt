@@ -10,18 +10,22 @@ TCL (Transaction Control Languange)
     DML : auto commint OFF 설정, 
               따라서 명시적으로 commit, rollback 지정
               SQL*PLUS 종료시에 auto commit 수행됨
-## ========================
+
+	
+			
+			  ## ========================
 
 /* savepoint */
 
 -- 저장점 지정
-savepoint 포인트명;
+savepoint {포인트명};
 
 <<<<<<< HEAD
 -- ������ ���� 
 rollback to ����Ʈ��;
 =======
 -- 저장점 복구 
+<<<<<<< HEAD
 rollback to 포인트명;
 
 -- 저장점 적용
@@ -29,3 +33,6 @@ commit to 포인트명;
 
 
 >>>>>>> 5df33d80dde8ca73d90f30759f5c5540b47c22d1
+=======
+rollback to {포인트명};
+>>>>>>> d45b50

@@ -25,6 +25,8 @@
 -- EQUI-JOIN의 양측 컬럼값의 NULL 컬럼인 레코드에 대해서도 조회
 -- 컬럼에 대한 값이 존재하지 않는 측에 (+) 기호를 붙임
 -- OUTER-JOIN시에 컬럼의 값은 NULL도 컬럼의 데이터 개념임 
+-- **{table1_name} FULL OUTER JOIN {table2_name} ON {table1_col = table2_col}
+
 
 -- ## 5 :  SELF JOIN
 -- 현재 테이블 자신을 참조하는 JOIN

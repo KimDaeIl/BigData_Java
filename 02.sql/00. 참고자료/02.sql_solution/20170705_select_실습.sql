@@ -1,8 +1,8 @@
 SQL> 
-SQL> -- nvl, º¯È¯ ÇÔ¼ö µîÀ» »ç¿ëÇØ¼­ Á¶È¸
-SQL> -- Á÷¿ø »ç¹ø, ±Ş¿©, ¼ö´ç, Æ¯º°»ó¿©±İ = (±Ş¿© + ¼ö´ç) * 0.32
-SQL> -- ±âº» ÅëÈ­´ÜÀ§ Ç¥±â, Ãµ´ÜÀ§¸¶´Ù ÄÄ¸¶Ç¥±â, ¼Ò¼öÀÌÇÏ ¹İ¿Ã¸²Ã³¸®
-SQL> -- Æ¯º°»ó¿©±İÀÌ ³ôÀº ¼ø¼­´ë·Î Á¶È¸
+SQL> -- nvl, ë³€í™˜ í•¨ìˆ˜ ë“±ì„ ì‚¬ìš©í•´ì„œ ì¡°íšŒ
+SQL> -- ì§ì› ì‚¬ë²ˆ, ê¸‰ì—¬, ìˆ˜ë‹¹, íŠ¹ë³„ìƒì—¬ê¸ˆ = (ê¸‰ì—¬ + ìˆ˜ë‹¹) * 0.32
+SQL> -- ê¸°ë³¸ í†µí™”ë‹¨ìœ„ í‘œê¸°, ì²œë‹¨ìœ„ë§ˆë‹¤ ì»´ë§ˆí‘œê¸°, ì†Œìˆ˜ì´í•˜ ë°˜ì˜¬ë¦¼ì²˜ë¦¬
+SQL> -- íŠ¹ë³„ìƒì—¬ê¸ˆì´ ë†’ì€ ìˆœì„œëŒ€ë¡œ ì¡°íšŒ
 SQL> select empno, sal, comm, (sal + nvl(comm, 0)) * 0.32 from emp;
 
      EMPNO        SAL       COMM (SAL+NVL(COMM,0))*0.32                                                                                                                                                                                                                                                     
@@ -28,20 +28,20 @@ SQL> select empno, sal, comm, to_char((sal + nvl(comm, 0)) * 0.32, 'L999,999') f
 
      EMPNO        SAL       COMM TO_CHAR((SAL+NVL(C                                                                                                                                                                                                                                                         
 ---------- ---------- ---------- ------------------                                                                                                                                                                                                                                                         
-      7369        800                         £Ü256                                                                                                                                                                                                                                                         
-      7499       1600        300              £Ü608                                                                                                                                                                                                                                                         
-      7521       1250        500              £Ü560                                                                                                                                                                                                                                                         
-      7566       2975                         £Ü952                                                                                                                                                                                                                                                         
-      7654       1250       1400              £Ü848                                                                                                                                                                                                                                                         
-      7698       2850                         £Ü912                                                                                                                                                                                                                                                         
-      7782       2450                         £Ü784                                                                                                                                                                                                                                                         
-      7788       3000                         £Ü960                                                                                                                                                                                                                                                         
-      7839       5000                       £Ü1,600                                                                                                                                                                                                                                                         
-      7844       1500          0              £Ü480                                                                                                                                                                                                                                                         
-      7876       1100                         £Ü352                                                                                                                                                                                                                                                         
-      7900        950                         £Ü304                                                                                                                                                                                                                                                         
-      7902       3000                         £Ü960                                                                                                                                                                                                                                                         
-      7934       1300                         £Ü416                                                                                                                                                                                                                                                         
+      7369        800                         ï¿¦256                                                                                                                                                                                                                                                         
+      7499       1600        300              ï¿¦608                                                                                                                                                                                                                                                         
+      7521       1250        500              ï¿¦560                                                                                                                                                                                                                                                         
+      7566       2975                         ï¿¦952                                                                                                                                                                                                                                                         
+      7654       1250       1400              ï¿¦848                                                                                                                                                                                                                                                         
+      7698       2850                         ï¿¦912                                                                                                                                                                                                                                                         
+      7782       2450                         ï¿¦784                                                                                                                                                                                                                                                         
+      7788       3000                         ï¿¦960                                                                                                                                                                                                                                                         
+      7839       5000                       ï¿¦1,600                                                                                                                                                                                                                                                         
+      7844       1500          0              ï¿¦480                                                                                                                                                                                                                                                         
+      7876       1100                         ï¿¦352                                                                                                                                                                                                                                                         
+      7900        950                         ï¿¦304                                                                                                                                                                                                                                                         
+      7902       3000                         ï¿¦960                                                                                                                                                                                                                                                         
+      7934       1300                         ï¿¦416                                                                                                                                                                                                                                                         
 
 14 rows selected.
 
@@ -61,39 +61,39 @@ SQL> select deptno, avg(sal)
         10 2916.66667                                                                                                                                                                                                                                                                                       
         20       2175                                                                                                                                                                                                                                                                                       
 
-SQL> select deptno, avg(sal) Æò±Õ±Ş¿©
+SQL> select deptno, avg(sal) í‰ê· ê¸‰ì—¬
   2  from emp
   3  group by deptno
-  4  having Æò±Õ±Ş¿© >= 2000
-  5  order by Æò±Õ±Ş¿© desc;
-having Æò±Õ±Ş¿© >= 2000
+  4  having í‰ê· ê¸‰ì—¬ >= 2000
+  5  order by í‰ê· ê¸‰ì—¬ desc;
+having í‰ê· ê¸‰ì—¬ >= 2000
        *
 ERROR at line 4:
-ORA-00904: "Æò±Õ±Ş¿©": invalid identifier 
+ORA-00904: "í‰ê· ê¸‰ì—¬": invalid identifier 
 
 
 SQL> cl scr
 
-SQL> select job Á÷¹«, count(job) ÀÎ¿ø¼ö
+SQL> select job ì§ë¬´, count(job) ì¸ì›ìˆ˜
   2  from emp
   3  where deptno in (10, 20)
   4  group by job
   5  order by job
   6  ;
 
-Á÷¹«          ÀÎ¿ø¼ö                                                                                                                                                                                                                                                                                        
+ì§ë¬´          ì¸ì›ìˆ˜                                                                                                                                                                                                                                                                                        
 --------- ----------                                                                                                                                                                                                                                                                                        
 ANALYST            2                                                                                                                                                                                                                                                                                        
 CLERK              3                                                                                                                                                                                                                                                                                        
 MANAGER            2                                                                                                                                                                                                                                                                                        
 PRESIDENT          1                                                                                                                                                                                                                                                                                        
 
-SQL> select job Á÷¹«, count(job) ÀÎ¿ø¼ö
+SQL> select job ì§ë¬´, count(job) ì¸ì›ìˆ˜
   2  from emp
   3  group by job
   4  order by job;
 
-Á÷¹«          ÀÎ¿ø¼ö                                                                                                                                                                                                                                                                                        
+ì§ë¬´          ì¸ì›ìˆ˜                                                                                                                                                                                                                                                                                        
 --------- ----------                                                                                                                                                                                                                                                                                        
 ANALYST            2                                                                                                                                                                                                                                                                                        
 CLERK              4                                                                                                                                                                                                                                                                                        
@@ -101,13 +101,13 @@ MANAGER            3
 PRESIDENT          1                                                                                                                                                                                                                                                                                        
 SALESMAN           4                                                                                                                                                                                                                                                                                        
 
-SQL> -- È¸»ç°¡ Á¶±İ¾¿ »çÁ¤ÀÌ ÁÁ¾ÆÁö°í ÀÖ´Ù.
-SQL> -- »çÀå´Ô²²¼­ ÀüÁ÷¿øÀÇ ±Ş¿©¸¦ ¿Ã·ÁÁÖÁö ¸øÇÏÁö¸¸
-SQL> -- Æò±Õ±Ş¿© ÀÌÇÏÀÇ Á÷¿øµéÀÇ ±Ş¿©¸¦ ¿Ã·ÁÁÖ¶ó°íÇÏ½Å´Ù
-SQL> -- ¸í´ÜÀ» Ãâ·ÂÇØº¸ÀÚ
+SQL> -- íšŒì‚¬ê°€ ì¡°ê¸ˆì”© ì‚¬ì •ì´ ì¢‹ì•„ì§€ê³  ìˆë‹¤.
+SQL> -- ì‚¬ì¥ë‹˜ê»˜ì„œ ì „ì§ì›ì˜ ê¸‰ì—¬ë¥¼ ì˜¬ë ¤ì£¼ì§€ ëª»í•˜ì§€ë§Œ
+SQL> -- í‰ê· ê¸‰ì—¬ ì´í•˜ì˜ ì§ì›ë“¤ì˜ ê¸‰ì—¬ë¥¼ ì˜¬ë ¤ì£¼ë¼ê³ í•˜ì‹ ë‹¤
+SQL> -- ëª…ë‹¨ì„ ì¶œë ¥í•´ë³´ì
 SQL> 
-SQL> -- 1. Æò±Õ±Ş¿© Á¶È¸
-SQL> -- 2. Æò±Õ±Ş¿© ÀÌÇÏÀÎ Á÷¿øÀÇ Á¤º¸ Á¶È¸
+SQL> -- 1. í‰ê· ê¸‰ì—¬ ì¡°íšŒ
+SQL> -- 2. í‰ê· ê¸‰ì—¬ ì´í•˜ì¸ ì§ì›ì˜ ì •ë³´ ì¡°íšŒ
 SQL> 
 SQL> -- 1. avg()
 SQL> select avg(sal) from emp;
@@ -116,8 +116,8 @@ SQL> select avg(sal) from emp;
 ----------                                                                                                                                                                                                                                                                                                  
 2073.21429                                                                                                                                                                                                                                                                                                  
 
-SQL> -- Æò±Õ±Ş¿© °á°ú¸¦ º¸´Ï ¼Ò¼öÀÌ..ÁöÀúºĞÇÏ´Ù. »çÀå´Ô²² º¸°íÇÏ·Á´Ï º°·Î´Ù
-SQL> -- ´ã´çÀÚ ÀÓÀÇµ¥·Î 10¹Ì¸¸ ¹ö¸² Ã³¸®ÇØ¼­ Æò±Õ±Ş¿©¸¦ ÇÏ·Á°íÇÑ´Ù.
+SQL> -- í‰ê· ê¸‰ì—¬ ê²°ê³¼ë¥¼ ë³´ë‹ˆ ì†Œìˆ˜ì´..ì§€ì €ë¶„í•˜ë‹¤. ì‚¬ì¥ë‹˜ê»˜ ë³´ê³ í•˜ë ¤ë‹ˆ ë³„ë¡œë‹¤
+SQL> -- ë‹´ë‹¹ì ì„ì˜ë°ë¡œ 10ë¯¸ë§Œ ë²„ë¦¼ ì²˜ë¦¬í•´ì„œ í‰ê· ê¸‰ì—¬ë¥¼ í•˜ë ¤ê³ í•œë‹¤.
 SQL> select trunc(avg(sal), -1) from emp;
 
 TRUNC(AVG(SAL),-1)                                                                                                                                                                                                                                                                                          
@@ -177,10 +177,10 @@ SQL> select DISTINCT deptno from emp where job in ('SALESMAN', 'ANALYST');
         30                                                                                                                                                                                                                                                                                                  
         20                                                                                                                                                                                                                                                                                                  
 
-SQL> -- 1. Á÷¹«°¡ 'SALESMAN', 'ANALYST' ÀÎ Á÷¿øÁß¿¡¼­ Æò±Õ±Ş¿© ÀÌÇÏÀÇ ±Ş¿©¸¦ ¹Ş´Â
-SQL> -- Á÷¿øÀÇ Á¤º¸ Á¶È¸
+SQL> -- 1. ì§ë¬´ê°€ 'SALESMAN', 'ANALYST' ì¸ ì§ì›ì¤‘ì—ì„œ í‰ê· ê¸‰ì—¬ ì´í•˜ì˜ ê¸‰ì—¬ë¥¼ ë°›ëŠ”
+SQL> -- ì§ì›ì˜ ì •ë³´ ì¡°íšŒ
 SQL> 
-SQL> -- 1. Æò±Õ±Ş¿©
+SQL> -- 1. í‰ê· ê¸‰ì—¬
 SQL> select avg(sal) from emp;
 
   AVG(SAL)                                                                                                                                                                                                                                                                                                  
@@ -237,13 +237,13 @@ ERROR at line 2:
 ORA-01427: single-row subquery returns more than one row 
 
 
-SQL> -- ½Ç½À: È¸»ç°¡ ¾î·Á¿öÁ³´Ù
-SQL> -- ±Ş¿© »óÀ§ 5¸íÀÇ ¸í´ÜÀ» Á¶È¸
-SQL> -- Ãâ·Â Çü½Ä : ¼ø¹ø »ç¹ø ÀÌ¸§ ±Ş¿©
-SQL> -- ÈùÆ®
-SQL> -- select ±¸ºĞ Ã³¸® ¼ø¼­
+SQL> -- ì‹¤ìŠµ: íšŒì‚¬ê°€ ì–´ë ¤ì›Œì¡Œë‹¤
+SQL> -- ê¸‰ì—¬ ìƒìœ„ 5ëª…ì˜ ëª…ë‹¨ì„ ì¡°íšŒ
+SQL> -- ì¶œë ¥ í˜•ì‹ : ìˆœë²ˆ ì‚¬ë²ˆ ì´ë¦„ ê¸‰ì—¬
+SQL> -- íŒíŠ¸
+SQL> -- select êµ¬ë¶„ ì²˜ë¦¬ ìˆœì„œ
 SQL> -- rownum
-SQL> -- sub-query : where, select, from => ÀÓ½Ã°¡»óÅ×ÀÌºí(inline-view)
+SQL> -- sub-query : where, select, from => ì„ì‹œê°€ìƒí…Œì´ë¸”(inline-view)
 SQL> 
 SQL> -- 1.
 SQL> select empno, ename, sal from emp order by sal desc;
@@ -346,7 +346,7 @@ SQL> select rownum from emp order by sal desc;
 14 rows selected.
 
 SQL> 
-SQL> -- 10¹øºÎ¼­¿øÀÇ Á¤º¸¸¦ Á¶È¸
+SQL> -- 10ë²ˆë¶€ì„œì›ì˜ ì •ë³´ë¥¼ ì¡°íšŒ
 SQL> select * from emp where deptno=10;
 
      EMPNO ENAME      JOB              MGR HIREDATE        SAL       COMM     DEPTNO                                                                                                                                                                                                                        
@@ -355,8 +355,8 @@ SQL> select * from emp where deptno=10;
       7839 KING       PRESIDENT            81/11/17       5000                    10                                                                                                                                                                                                                        
       7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                                                        
 
-SQL> -- ±âÁ¸Å×ÀÌºí ±¸Á¶ + 10¹ø ºÎ¼­¿øµéÀÇ Á¤º¸µµ ÇÔ²² ÂüÁ¶ Å×ÀÌºí »ı¼º
-SQL> -- Å×ÀÌºí¸í emp_10
+SQL> -- ê¸°ì¡´í…Œì´ë¸” êµ¬ì¡° + 10ë²ˆ ë¶€ì„œì›ë“¤ì˜ ì •ë³´ë„ í•¨ê»˜ ì°¸ì¡° í…Œì´ë¸” ìƒì„±
+SQL> -- í…Œì´ë¸”ëª… emp_10
 SQL> 
 SQL> create table emp_10
   2  as
@@ -365,7 +365,7 @@ SQL> create table emp_10
 
 Table created.
 
-SQL> -- emp_10 Å×ÀÌºí ±¸Á¶ Á¶È¸
+SQL> -- emp_10 í…Œì´ë¸” êµ¬ì¡° ì¡°íšŒ
 SQL> desc emp_10;
  Name                                                                                                                                                                          Null?    Type
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- --------------------------------------------------------------------------------------------------------------------
@@ -378,7 +378,7 @@ SQL> desc emp_10;
  COMM                                                                                                                                                                                   NUMBER(7,2)
  DEPTNO                                                                                                                                                                                 NUMBER(2)
 
-SQL> -- emp_10 ·¹ÄÚµå Á¶È¸
+SQL> -- emp_10 ë ˆì½”ë“œ ì¡°íšŒ
 SQL> select * from emp_10;
 
      EMPNO ENAME      JOB              MGR HIREDATE        SAL       COMM     DEPTNO                                                                                                                                                                                                                        
@@ -397,9 +397,9 @@ SQL> select * from emp_10;
       7839 KING       PRESIDENT            81/11/17       5000                    10                                                                                                                                                                                                                        
       7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                                                        
 
-SQL> -- Á÷¿øÅ×ÀÌºí ÀÏºÎ ±¸Á¶¸¸ ÂüÁ¶ÇØ¼­ Å×ÀÌºí»ı¼º
-SQL> -- ºÎ¼­¹øÈ£, »ç¹ø, ÀÌ¸§, ±Ş¿© ±¸Á¶¸¸À» °®´Â Å×ÀÌºí »ı¼º
-SQL> -- Å×ÀÌºí¸í : emp_simple
+SQL> -- ì§ì›í…Œì´ë¸” ì¼ë¶€ êµ¬ì¡°ë§Œ ì°¸ì¡°í•´ì„œ í…Œì´ë¸”ìƒì„±
+SQL> -- ë¶€ì„œë²ˆí˜¸, ì‚¬ë²ˆ, ì´ë¦„, ê¸‰ì—¬ êµ¬ì¡°ë§Œì„ ê°–ëŠ” í…Œì´ë¸” ìƒì„±
+SQL> -- í…Œì´ë¸”ëª… : emp_simple
 SQL> 
 SQL> select deptno, empno, ename, sal from emp;
 
@@ -449,7 +449,7 @@ SQL> desc emp_simple;
  ENAME                                                                                                                                                                                  VARCHAR2(10)
  SAL                                                                                                                                                                                    NUMBER(7,2)
 
-SQL> -- ÀüÃ¼Å×ÀÌºí ¸ñ·ÏÁ¶È¸
+SQL> -- ì „ì²´í…Œì´ë¸” ëª©ë¡ì¡°íšŒ
 SQL> select * from tab;
 
 TNAME                          TABTYPE  CLUSTERID                                                                                                                                                                                                                                                           
@@ -486,7 +486,7 @@ SALGRADE                       TABLE
 
 6 rows selected.
 
-SQL> -- È¸¿øÅ×ÀÌºí ±¸Á¶Á¶È¸
+SQL> -- íšŒì›í…Œì´ë¸” êµ¬ì¡°ì¡°íšŒ
 SQL> desc members;
  Name                                                                                                                                                                          Null?    Type
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- --------------------------------------------------------------------------------------------------------------------
@@ -500,8 +500,8 @@ SQL> desc members;
  MILEAGE                                                                                                                                                                                NUMBER(6)
  MANAGER                                                                                                                                                                                VARCHAR2(30)
 
-SQL> -- nickname ÄÃ·³ Ãß°¡ : °¡º¯±æÀÌ 20 Áßº¹ºÒ°¡
-SQL> -- È¸¿øÅ×ÀÌºí
+SQL> -- nickname ì»¬ëŸ¼ ì¶”ê°€ : ê°€ë³€ê¸¸ì´ 20 ì¤‘ë³µë¶ˆê°€
+SQL> -- íšŒì›í…Œì´ë¸”
 SQL> 
 SQL> alter table members
   2  add (nickname varchar2(2) unique);
@@ -522,14 +522,14 @@ SQL> desc members;
  MANAGER                                                                                                                                                                                VARCHAR2(30)
  NICKNAME                                                                                                                                                                               VARCHAR2(2)
 
-SQL> -- nickname ÄÃ·³ÀÇ ±æÀÌ¸¦ 10ÀÚ¸® º¯°æ
+SQL> -- nickname ì»¬ëŸ¼ì˜ ê¸¸ì´ë¥¼ 10ìë¦¬ ë³€ê²½
 SQL> 
 SQL> alter table members
   2  modify (nickname varchar2(10));
 
 Table altered.
 
-SQL> -- ¿¬¶ôÃ³ Á¤º¸¸¦ ±æÀÌ 5ÀÚ¸®·Î º¯°æ
+SQL> -- ì—°ë½ì²˜ ì •ë³´ë¥¼ ê¸¸ì´ 5ìë¦¬ë¡œ ë³€ê²½
 SQL> alter table members
   2  modify (mobile varchar2(5));
 modify (mobile varchar2(5))
@@ -543,13 +543,13 @@ SQL> alter table members
 
 Table altered.
 
-SQL> -- nickname ÄÃ·³ »èÁ¦
+SQL> -- nickname ì»¬ëŸ¼ ì‚­ì œ
 SQL> alter table members
   2  drop column nickname;
 
 Table altered.
 
-SQL> -- Á¦¾à °ü·Ã »ç¿ëÀÚ µñ¼Å³Ê¸® ±¸Á¶ Á¶È¸
+SQL> -- ì œì•½ ê´€ë ¨ ì‚¬ìš©ì ë”•ì…”ë„ˆë¦¬ êµ¬ì¡° ì¡°íšŒ
 SQL> -- user_constraints
 SQL> desc user_constraints;
  Name                                                                                                                                                                          Null?    Type
@@ -575,9 +575,9 @@ SQL> desc user_constraints;
  INVALID                                                                                                                                                                                VARCHAR2(7)
  VIEW_RELATED                                                                                                                                                                           VARCHAR2(14)
 
-SQL> -- ÇöÀç°èÁ¤ÀÇ ¸ğµçÅ×ÀÌºí¿¡ ´ëÇÑ Á¦¾àÁ¶È¸
-SQL> -- Å×ÀÌºíÀÌ¸§, Á¦¾àÅ¸ÀÔ, Á¦¾àÀÌ¸§ Á¶È¸
-SQL> -- Å×ÀÌºí¸í Á¤·Ä Á¶È¸
+SQL> -- í˜„ì¬ê³„ì •ì˜ ëª¨ë“ í…Œì´ë¸”ì— ëŒ€í•œ ì œì•½ì¡°íšŒ
+SQL> -- í…Œì´ë¸”ì´ë¦„, ì œì•½íƒ€ì…, ì œì•½ì´ë¦„ ì¡°íšŒ
+SQL> -- í…Œì´ë¸”ëª… ì •ë ¬ ì¡°íšŒ
 SQL> 
 SQL> select table_name, constraint_type, constraint_name
   2  from user_constraints
@@ -600,7 +600,7 @@ MEMBERS                        C SYS_C007003
 11 rows selected.
 
 SQL> 
-SQL> -- È¸¿øÅ×ÀÌºí »èÁ¦
+SQL> -- íšŒì›í…Œì´ë¸” ì‚­ì œ
 SQL> drop table members;
 
 Table dropped.
@@ -621,8 +621,8 @@ Table created.
 
 SQL> cl scr
 
-SQL> -- È¸¿øÅ×ÀÌºí¿¡ ´ëÇÑ Á¦¾àÁ¶È¸
-SQL> -- Å×ÀÌºí¸í, Á¦¾àÅ¸ÀÔ, Á¦¾àÀÌ¸§
+SQL> -- íšŒì›í…Œì´ë¸”ì— ëŒ€í•œ ì œì•½ì¡°íšŒ
+SQL> -- í…Œì´ë¸”ëª…, ì œì•½íƒ€ì…, ì œì•½ì´ë¦„
 SQL> select table_name, constraint_type, constraint_name
   2  from user_constraints
   3  where table_name = 'members'
@@ -667,8 +667,8 @@ SQL> create table members (
 	                *
 ERROR at line 5:
 ORA-02260: table can have only one primary key 
-=> ¿¡·¯ÀÌÀ¯ : ´ÙÁßÄÃ·³ÀÇ ½Äº°Å° ÁöÁ¤Àº ÄÃ·³·¹º§ ÁöÁ¤ ºÒ°¡
-=> ÇØ°á : Å×ÀÌºí ·¹º§·Î Á¦¾à ÁöÁ¤ÇØ¾ßÇÔ
+=> ì—ëŸ¬ì´ìœ  : ë‹¤ì¤‘ì»¬ëŸ¼ì˜ ì‹ë³„í‚¤ ì§€ì •ì€ ì»¬ëŸ¼ë ˆë²¨ ì§€ì • ë¶ˆê°€
+=> í•´ê²° : í…Œì´ë¸” ë ˆë²¨ë¡œ ì œì•½ ì§€ì •í•´ì•¼í•¨
 
 SQL> create table members (
   2  	member_id varchar2(30),
@@ -706,7 +706,7 @@ SQL> create table members (
 Table created.
 
 SQL> 
-SQL> -- Á¦¾àÃß°¡ Å×ÀÌºíº¯°æ
+SQL> -- ì œì•½ì¶”ê°€ í…Œì´ë¸”ë³€ê²½
 SQL> alter table members
   2  add (constraint pk_members_memberid primary key (member_id));
 

@@ -2,8 +2,8 @@
 public class GugudanTest {
 
 	public static void main(String[] args) {
-		String loopForamt = "### %s ±¸±¸´Ü ###";
-		String danFormat = "%d´Ü\t";
+		String loopForamt = "### %s êµ¬êµ¬ë‹¨ ###";
+		String danFormat = "%dë‹¨\t";
 		String format = "%d*%d=%d\t";
 
 		int maxValue = 9;

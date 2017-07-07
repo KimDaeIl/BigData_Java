@@ -1,4 +1,4 @@
-SQL> -- È¸¿øÅ×ÀÌºí ½ºÅ°¸¶ ±¸Á¶ : ºÎ¸ðÅ×ÀÌºí
+SQL> -- íšŒì›í…Œì´ë¸” ìŠ¤í‚¤ë§ˆ êµ¬ì¡° : ë¶€ëª¨í…Œì´ë¸”
 SQL> desc members;
  Name              Null?    Type
  ----------------- -------- ------------
@@ -12,7 +12,7 @@ SQL> desc members;
  MILEAGE                    NUMBER(6)
  MANAGER                    VARCHAR2(30)
 
-SQL> -- °øÁöÅ×ÀÌºí ½ºÅ°¸¶ ±¸Á¶ : ÀÚ½ÄÅ×ÀÌºí
+SQL> -- ê³µì§€í…Œì´ë¸” ìŠ¤í‚¤ë§ˆ êµ¬ì¡° : ìžì‹í…Œì´ë¸”
 SQL> desc notices;
  Name              Null?    Type
  ----------------- -------- ------------
@@ -25,7 +25,7 @@ SQL> desc notices;
                             )
 
 SQL> spool off
-SQL> -- Á¦¾à Á¶È¸
+SQL> -- ì œì•½ ì¡°íšŒ
 SQL> -- user_constraints
 SQL> -- user_cons_columns
 SQL> 
@@ -38,7 +38,7 @@ SQL> desc user_cons_columns
  COLUMN_NAME                                                                                                                                                                            VARCHAR2(4000)
  POSITION                                                                                                                                                                               NUMBER
 
-SQL> -- È¸¿ø, °øÁöÅ×ÀÌºí Á¦¾àÀÌ¸§, Á¦¾àÄÃ·³ Á¶È¸
+SQL> -- íšŒì›, ê³µì§€í…Œì´ë¸” ì œì•½ì´ë¦„, ì œì•½ì»¬ëŸ¼ ì¡°íšŒ
 SQL> select table_name, constraint_name, column_name
   2  from user_cons_columns
   3  where table_name in ('MEMBERS', 'NOTICES')

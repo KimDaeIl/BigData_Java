@@ -7,16 +7,16 @@ import work.model.dto.SpecialMember;
 import work.model.service.MemberService;
 
 /**
- * ��� �׽�Ʈ Ŭ����
+ * 占쏙옙占?占쌓쏙옙트 클占쏙옙占쏙옙
  *
- * @author �⤿��;�ä�����
+ * @author 占썩ㅏ占쏙옙;占시ㅿ옙占쏙옙占쏙옙
  * @version 1.0.0
  * @since JDK 1.8.0
  */
 public class MemberTest {
 
     /**
-     * ���� �޼ҵ�
+     * 占쏙옙占쏙옙 占쌨소듸옙
      *
      * @param args
      */
@@ -70,7 +70,7 @@ public class MemberTest {
 
         if (ms.deleteMember("user00001", "newPassowrd001")) {
             Member tempMember = ms.getMember("user00001");
-            System.out.println(tempMember == null ? "없음" : tempMember);
+            System.out.println(tempMember == null ? "?놁쓬" : tempMember);
             System.out.println();
         }
         System.out.println();

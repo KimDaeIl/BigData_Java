@@ -1,100 +1,100 @@
 
-SQL> -- ¿¸√º »∏ø¯ ∑πƒ⁄µÂ ªË¡¶
+SQL> -- Ï†ÑÏ≤¥ ÌöåÏõê Î†àÏΩîÎìú ÏÇ≠Ï†ú
 SQL> delete members;
 
 1 row deleted.
 
-SQL> -- »∏ø¯ √ ±‚»≠ ∑πƒ⁄µÂ √ﬂ∞°
+SQL> -- ÌöåÏõê Ï¥àÍ∏∞Ìôî Î†àÏΩîÎìú Ï∂îÍ∞Ä
 SQL> insert into members
-  2  values('user01', 'password01', '»´±Êµø', '010-1234-1111', 'user01@work.com', '2017/05/10', 'G', 1000, null);
+  2  values('user01', 'password01', 'ÌôçÍ∏∏Îèô', '010-1234-1111', 'user01@work.com', '2017/05/10', 'G', 1000, null);
 
 1 row created.
 
 SQL> 
 SQL> insert into members
-  2  values('user02', 'password02', '∞≠∞®¬˘', '010-1234-1112', 'user02@work.com', '2017/05/11', 'G', 2000, null);
+  2  values('user02', 'password02', 'Í∞ïÍ∞êÏ∞¨', '010-1234-1112', 'user02@work.com', '2017/05/11', 'G', 2000, null);
 
 1 row created.
 
 SQL> 
 SQL> insert into members
-  2  values('user03', 'password03', '¿Ãº¯Ω≈', '010-1234-1113', 'user03@work.com', '2017/05/12', 'G', 3000, null);
+  2  values('user03', 'password03', 'Ïù¥ÏàúÏã†', '010-1234-1113', 'user03@work.com', '2017/05/12', 'G', 3000, null);
 
 1 row created.
 
 SQL> 
 SQL> insert into members
-  2  values('suser01', 'password01', '¿Ø∞¸º¯', '010-1111-1111', 'suser01@work.com', '2017/03/01', 'S', null, 'º€¡ﬂ±‚');
+  2  values('suser01', 'password01', 'Ïú†Í¥ÄÏàú', '010-1111-1111', 'suser01@work.com', '2017/03/01', 'S', null, 'ÏÜ°Ï§ëÍ∏∞');
 
 1 row created.
 
 SQL> 
 SQL> insert into members
-  2  values('suser02', 'password02', '±Ë¿ØΩ≈', '010-1111-1112', 'suser02@work.com', '2017/03/02', 'S', null, 'º€«˝±≥');
+  2  values('suser02', 'password02', 'ÍπÄÏú†Ïã†', '010-1111-1112', 'suser02@work.com', '2017/03/02', 'S', null, 'ÏÜ°ÌòúÍµê');
 
 1 row created.
 
 SQL> 
 SQL> insert into members
-  2  values('auser01', 'password01', 'π⁄¿Á«¸', '010-1234-1111', 'Auser01@work.com', '2017/04/21', 'A', null, null);
+  2  values('auser01', 'password01', 'Î∞ïÏû¨Ìòï', '010-1234-1111', 'Auser01@work.com', '2017/04/21', 'A', null, null);
 
 1 row created.
 
 SQL> 
-SQL> -- ¿¸√º √ ±‚»≠ »∏ø¯ ¡∂»∏
+SQL> -- Ï†ÑÏ≤¥ Ï¥àÍ∏∞Ìôî ÌöåÏõê Ï°∞Ìöå
 SQL> select * from members;
 
 MEMBER_ID                                                    MEMBER_PW                                MEMBER_NAME                              MOBILE                     EMAIL                                                        ENTRY_DATE           GR    MILEAGE                                   
 ------------------------------------------------------------ ---------------------------------------- ---------------------------------------- -------------------------- ------------------------------------------------------------ -------------------- -- ----------                                   
 MANAGER                                                                                                                                                                                                                                                                                                     
 ------------------------------------------------------------                                                                                                                                                                                                                                                
-user01                                                       password01                               »´±Êµø                                   010-1234-1111              user01@work.com                                              2017/05/10           G        1000                                   
+user01                                                       password01                               ÌôçÍ∏∏Îèô                                   010-1234-1111              user01@work.com                                              2017/05/10           G        1000                                   
                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                             
-user02                                                       password02                               ∞≠∞®¬˘                                   010-1234-1112              user02@work.com                                              2017/05/11           G        2000                                   
+user02                                                       password02                               Í∞ïÍ∞êÏ∞¨                                   010-1234-1112              user02@work.com                                              2017/05/11           G        2000                                   
                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                             
-user03                                                       password03                               ¿Ãº¯Ω≈                                   010-1234-1113              user03@work.com                                              2017/05/12           G        3000                                   
+user03                                                       password03                               Ïù¥ÏàúÏã†                                   010-1234-1113              user03@work.com                                              2017/05/12           G        3000                                   
                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                             
-suser01                                                      password01                               ¿Ø∞¸º¯                                   010-1111-1111              suser01@work.com                                             2017/03/01           S                                               
-º€¡ﬂ±‚                                                                                                                                                                                                                                                                                                      
+suser01                                                      password01                               Ïú†Í¥ÄÏàú                                   010-1111-1111              suser01@work.com                                             2017/03/01           S                                               
+ÏÜ°Ï§ëÍ∏∞                                                                                                                                                                                                                                                                                                      
                                                                                                                                                                                                                                                                                                             
-suser02                                                      password02                               ±Ë¿ØΩ≈                                   010-1111-1112              suser02@work.com                                             2017/03/02           S                                               
-º€«˝±≥                                                                                                                                                                                                                                                                                                      
+suser02                                                      password02                               ÍπÄÏú†Ïã†                                   010-1111-1112              suser02@work.com                                             2017/03/02           S                                               
+ÏÜ°ÌòúÍµê                                                                                                                                                                                                                                                                                                      
                                                                                                                                                                                                                                                                                                             
-auser01                                                      password01                               π⁄¿Á«¸                                   010-1234-1111              Auser01@work.com                                             2017/04/21           A                                               
+auser01                                                      password01                               Î∞ïÏû¨Ìòï                                   010-1234-1111              Auser01@work.com                                             2017/04/21           A                                               
                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                             
 
 6 rows selected.
 
 SQL> spool off
-SQL> -- ¿¸√º»∏ø¯ æ∆¿Ãµ, ¿Ã∏ß, ø¨∂Ù√≥ ¡∂»∏
+SQL> -- Ï†ÑÏ≤¥ÌöåÏõê ÏïÑÏù¥Îîî, Ïù¥Î¶Ñ, Ïó∞ÎùΩÏ≤ò Ï°∞Ìöå
 SQL> select member_id, member_name, mobile from members;
 
 MEMBER_ID                                                    MEMBER_NAME                              MOBILE                                                                                                                                                                                                
 ------------------------------------------------------------ ---------------------------------------- --------------------------                                                                                                                                                                            
-user01                                                       »´±Êµø                                   010-1234-1111                                                                                                                                                                                         
-user02                                                       ∞≠∞®¬˘                                   010-1234-1112                                                                                                                                                                                         
-user03                                                       ¿Ãº¯Ω≈                                   010-1234-1113                                                                                                                                                                                         
-suser01                                                      ¿Ø∞¸º¯                                   010-1111-1111                                                                                                                                                                                         
-suser02                                                      ±Ë¿ØΩ≈                                   010-1111-1112                                                                                                                                                                                         
-auser01                                                      π⁄¿Á«¸                                   010-1234-1111                                                                                                                                                                                         
+user01                                                       ÌôçÍ∏∏Îèô                                   010-1234-1111                                                                                                                                                                                         
+user02                                                       Í∞ïÍ∞êÏ∞¨                                   010-1234-1112                                                                                                                                                                                         
+user03                                                       Ïù¥ÏàúÏã†                                   010-1234-1113                                                                                                                                                                                         
+suser01                                                      Ïú†Í¥ÄÏàú                                   010-1111-1111                                                                                                                                                                                         
+suser02                                                      ÍπÄÏú†Ïã†                                   010-1111-1112                                                                                                                                                                                         
+auser01                                                      Î∞ïÏû¨Ìòï                                   010-1234-1111                                                                                                                                                                                         
 
 6 rows selected.
 
-SQL> -- ƒ√∑≥ ∫∞∏Ì ªÁøÎ ¡∂»∏
-SQL> select member_id "»∏ø¯ æ∆¿Ãµ", member_name "»∏ø¯ ¿Ã∏ß", mobile ø¨∂Ù√≥ from members;
+SQL> -- Ïª¨Îüº Î≥ÑÎ™Ö ÏÇ¨Ïö© Ï°∞Ìöå
+SQL> select member_id "ÌöåÏõê ÏïÑÏù¥Îîî", member_name "ÌöåÏõê Ïù¥Î¶Ñ", mobile Ïó∞ÎùΩÏ≤ò from members;
 
-»∏ø¯ æ∆¿Ãµ                                                  »∏ø¯ ¿Ã∏ß                                ø¨∂Ù√≥                                                                                                                                                                                                
+ÌöåÏõê ÏïÑÏù¥Îîî                                                  ÌöåÏõê Ïù¥Î¶Ñ                                Ïó∞ÎùΩÏ≤ò                                                                                                                                                                                                
 ------------------------------------------------------------ ---------------------------------------- --------------------------                                                                                                                                                                            
-user01                                                       »´±Êµø                                   010-1234-1111                                                                                                                                                                                         
-user02                                                       ∞≠∞®¬˘                                   010-1234-1112                                                                                                                                                                                         
-user03                                                       ¿Ãº¯Ω≈                                   010-1234-1113                                                                                                                                                                                         
-suser01                                                      ¿Ø∞¸º¯                                   010-1111-1111                                                                                                                                                                                         
-suser02                                                      ±Ë¿ØΩ≈                                   010-1111-1112                                                                                                                                                                                         
-auser01                                                      π⁄¿Á«¸                                   010-1234-1111                                                                                                                                                                                         
+user01                                                       ÌôçÍ∏∏Îèô                                   010-1234-1111                                                                                                                                                                                         
+user02                                                       Í∞ïÍ∞êÏ∞¨                                   010-1234-1112                                                                                                                                                                                         
+user03                                                       Ïù¥ÏàúÏã†                                   010-1234-1113                                                                                                                                                                                         
+suser01                                                      Ïú†Í¥ÄÏàú                                   010-1111-1111                                                                                                                                                                                         
+suser02                                                      ÍπÄÏú†Ïã†                                   010-1111-1112                                                                                                                                                                                         
+auser01                                                      Î∞ïÏû¨Ìòï                                   010-1234-1111                                                                                                                                                                                         
 
 6 rows selected.
 

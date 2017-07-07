@@ -5,25 +5,25 @@ package work.model.dto;
 
 /**
  * <pre>
- * Member Å¬·¡½º¸¦ »ó¼Ó¹ŞÀº ÀÚ½ÄÅ¬·¡½º ÀÏ¹İÈ¸¿ø ¸ğµ¨¸µ Å¬·¡½º
- * -- ÀÏ¹İÈ¸¿ø Ãß°¡¼Ó¼º : ¸¶ÀÏ¸®Áö
+ * Member í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ ìì‹í´ë˜ìŠ¤ ì¼ë°˜íšŒì› ëª¨ë¸ë§ í´ë˜ìŠ¤
+ * -- ì¼ë°˜íšŒì› ì¶”ê°€ì†ì„± : ë§ˆì¼ë¦¬ì§€
  * </pre>
  * @author cse
  *
  */
 public class GeneralMember extends Member {
-	/** ÀÏ¹İÈ¸¿ø ¸¶ÀÏ¸®Áö Á¤º¸ */
+	/** ì¼ë°˜íšŒì› ë§ˆì¼ë¦¬ì§€ ì •ë³´ */
 	private int mileage;
 
 	/**
-	 * ±âº»»ı¼ºÀÚ
+	 * ê¸°ë³¸ìƒì„±ì
 	 */
 	public GeneralMember() {
 		super();
 	}
 
 	/**
-	 * ÇÊ¼ö µ¥ÀÌÅÍ ÃÊ±âÈ­ »ı¼ºÀÚ
+	 * í•„ìˆ˜ ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ì
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName
@@ -36,7 +36,7 @@ public class GeneralMember extends Member {
 	}
 	
 	/**
-	 * ÀÏ¹İÈ¸¿ø ¸ğµç µ¥ÀÌÅÍ ÃÊ±âÈ­ »ı¼ºÀÚ
+	 * ì¼ë°˜íšŒì› ëª¨ë“  ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ì
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName

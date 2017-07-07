@@ -1,10 +1,10 @@
 package work.model.dto;
 /**
  * <pre>
- * È¸¿ø DTO
+ * íšŒì› DTO
  * </pre>
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ê¸°ã…ã…;ã…“ã…‡ë¦¬ã…
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -21,95 +21,95 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ¾ÆÀÌµğ
+	 * íšŒì› ì•„ì´ë””
 	 * type: 	String
 	 * length: 	8-20
 	 * default: DEFAULT_USER_ID
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberId = DEFAULT_USER_ID; // È¸¿ø ¾ÆÀÌµğ
+	private String memberId = DEFAULT_USER_ID; // íšŒì› ì•„ì´ë””
 
 	/**
 	 * <pre>
-	 * È¸¿ø ºñ¹Ğ¹øÈ£
+	 * íšŒì› ë¹„ë°€ë²ˆí˜¸
 	 * type: 	String
 	 * length: 	8-20
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberPw = DEFAULT_STRING; // È¸¿ø ºñ¹Ğ¹øÈ£
+	private String memberPw = DEFAULT_STRING; // íšŒì› ë¹„ë°€ë²ˆí˜¸
 
 	/**
 	 * <pre>
-	 * È¸¿ø ÀÌ¸§
+	 * íšŒì› ì´ë¦„
 	 * type: 	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberName = DEFAULT_STRING; // È¸¿ø ÀÌ¸§
+	private String memberName = DEFAULT_STRING; // íšŒì› ì´ë¦„
 
 	/**
 	 * <pre>
-	 * ¸ğ¹ÙÀÏ ¿¬¶ôÃ³
+	 * ëª¨ë°”ì¼ ì—°ë½ì²˜
 	 * type: 	String
 	 * length: 	13
 	 * default: DEFAULT_STRING
 	 * format: 	"123-1234-1234"
 	 * </pre>
 	 */
-	private String mobile = DEFAULT_STRING; // ¸ğ¹ÙÀÏ ¿¬¶ôÃ³
+	private String mobile = DEFAULT_STRING; // ëª¨ë°”ì¼ ì—°ë½ì²˜
 
 	/**
 	 * <pre>
-	 * ÀÌ¸ŞÀÏ ÁÖ¼Ò
+	 * ì´ë©”ì¼ ì£¼ì†Œ
 	 * type: 	String
 	 * length: 	30
 	 * default: DEFAULT_STRING
 	 * format: 	-@-.[com|co.kr|...]
 	 * </pre>
 	 */
-	private String email = DEFAULT_STRING; // ÀÌ¸ŞÀÏ ÁÖ¼Ò
+	private String email = DEFAULT_STRING; // ì´ë©”ì¼ ì£¼ì†Œ
 
 	/**
 	 * <pre>
-	 * °¡ÀÔ ³¯Â¥
+	 * ê°€ì… ë‚ ì§œ
 	 * type: 	String
 	 * length: 	10
 	 * default: "1900/01/01"
 	 * format: 	"YYYY/MM/DD"
 	 * </pre>
 	 */
-	private String entryDate = DEFAULT_ENTRY_DATE; // °¡ÀÔ ³¯Â¥
+	private String entryDate = DEFAULT_ENTRY_DATE; // ê°€ì… ë‚ ì§œ
 
 	/**
 	 * <pre>
-	 * °í°´ µî±Ş 
+	 * ê³ ê° ë“±ê¸‰ 
 	 * type: 	char
 	 * length: 	1
 	 * default: 'G' 
-	 * format: 	{'G': ÀÏ¹İ, 'S': ¿ì¼ö, 'A': °ü¸®ÀÚ}
+	 * format: 	{'G': ì¼ë°˜, 'S': ìš°ìˆ˜, 'A': ê´€ë¦¬ì}
 	 * </pre>
 	 */
-	private char grade = DEFAULT_GRADE; // µî±Ş
+	private char grade = DEFAULT_GRADE; // ë“±ê¸‰
 
 	/**
 	 * <pre>
-	 * º¸À¯ÇÑ ¸¶ÀÏ¸®Áö 
+	 * ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ 
 	 * type: 	int
 	 * length: 	6
 	 * default: DEFAULT_USER_ID
 	 * format: 	123456
 	 * </pre>
 	 */
-	private int mileage/* = 0 */; // Àû¸³ ¸¶ÀÏ¸®Áö
+	private int mileage/* = 0 */; // ì ë¦½ ë§ˆì¼ë¦¬ì§€
 
 	/**
 	 * <pre>
-	 * ´ã´çÀÚ ÀÌ¸§
+	 * ë‹´ë‹¹ì ì´ë¦„
 	 * type:	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
@@ -174,7 +174,7 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + printInfo(): void
 	 * </pre>
 	 * 
@@ -195,12 +195,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ ÈŞ´ëÀüÈ­ ¹øÈ£¸¦ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ íœ´ëŒ€ì „í™” ë²ˆí˜¸ë¥¼ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setMobile(mobile: String): void
 	 * </pre>
 	 * 
 	 * @param mobile
-	 *            ÀúÀåÇÒ ÈŞ´ëÆù ¹øÈ£
+	 *            ì €ì¥í•  íœ´ëŒ€í° ë²ˆí˜¸
 	 */
 	public void setMobile(String mobile) {
 		if (mobile == null) {
@@ -212,7 +212,7 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ ÈŞ´ëÀüÈ­ ¹øÈ£¸¦ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ íœ´ëŒ€ì „í™” ë²ˆí˜¸ë¥¼ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getMobile(): String
 	 * </pre>
 	 * 
@@ -227,12 +227,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö Á¤º¸ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ ì •ë³´ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setMileage(mileage: int): void
 	 * </pre>
 	 * 
 	 * @param mileage
-	 *            ÀúÀåÇÒ ¸¶ÀÏ¸®Áö Á¤º¸
+	 *            ì €ì¥í•  ë§ˆì¼ë¦¬ì§€ ì •ë³´
 	 */
 	public void setMileage(int mileage) {
 		if (mileage > DEFAULT_INT) {
@@ -244,11 +244,11 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö Á¤º¸ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ ì •ë³´ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getMileage(): int
 	 * </pre>
 	 * 
-	 * @return mileage È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö
+	 * @return mileage íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€
 	 */
 	public int getMileage() {
 		return this.mileage;

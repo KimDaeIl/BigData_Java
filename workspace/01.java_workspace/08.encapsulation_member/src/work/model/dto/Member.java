@@ -4,10 +4,10 @@ import sun.security.util.Length;
 
 /**
  * <pre>
- * È¸¿ø DTO
+ * íšŒì› DTO
  * </pre>
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ê¸°ã…ã…;ã…“ã…‡ë¦¬ã…
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -24,95 +24,95 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ¾ÆÀÌµğ
+	 * íšŒì› ì•„ì´ë””
 	 * type: 	String
 	 * length: 	8-30
 	 * default: DEFAULT_USER_ID
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberId = DEFAULT_USER_ID; // È¸¿ø ¾ÆÀÌµğ
+	private String memberId = DEFAULT_USER_ID; // íšŒì› ì•„ì´ë””
 
 	/**
 	 * <pre>
-	 * È¸¿ø ºñ¹Ğ¹øÈ£
+	 * íšŒì› ë¹„ë°€ë²ˆí˜¸
 	 * type: 	String
 	 * length: 	8-20
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberPw = DEFAULT_STRING; // È¸¿ø ºñ¹Ğ¹øÈ£
+	private String memberPw = DEFAULT_STRING; // íšŒì› ë¹„ë°€ë²ˆí˜¸
 
 	/**
 	 * <pre>
-	 * È¸¿ø ÀÌ¸§
+	 * íšŒì› ì´ë¦„
 	 * type: 	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberName = DEFAULT_STRING; // È¸¿ø ÀÌ¸§
+	private String memberName = DEFAULT_STRING; // íšŒì› ì´ë¦„
 
 	/**
 	 * <pre>
-	 * ¸ğ¹ÙÀÏ ¿¬¶ôÃ³
+	 * ëª¨ë°”ì¼ ì—°ë½ì²˜
 	 * type: 	String
 	 * length: 	13
 	 * default: DEFAULT_STRING
 	 * format: 	"123-1234-1234"
 	 * </pre>
 	 */
-	private String mobile = DEFAULT_STRING; // ¸ğ¹ÙÀÏ ¿¬¶ôÃ³
+	private String mobile = DEFAULT_STRING; // ëª¨ë°”ì¼ ì—°ë½ì²˜
 
 	/**
 	 * <pre>
-	 * ÀÌ¸ŞÀÏ ÁÖ¼Ò
+	 * ì´ë©”ì¼ ì£¼ì†Œ
 	 * type: 	String
 	 * length: 	30
 	 * default: DEFAULT_STRING
 	 * format: 	-@-.[com|co.kr|...]
 	 * </pre>
 	 */
-	private String email = DEFAULT_STRING; // ÀÌ¸ŞÀÏ ÁÖ¼Ò
+	private String email = DEFAULT_STRING; // ì´ë©”ì¼ ì£¼ì†Œ
 
 	/**
 	 * <pre>
-	 * °¡ÀÔ ³¯Â¥
+	 * ê°€ì… ë‚ ì§œ
 	 * type: 	String
 	 * length: 	10
 	 * default: "1900/01/01"
 	 * format: 	"YYYY/MM/DD"
 	 * </pre>
 	 */
-	private String entryDate = DEFAULT_ENTRY_DATE; // °¡ÀÔ ³¯Â¥
+	private String entryDate = DEFAULT_ENTRY_DATE; // ê°€ì… ë‚ ì§œ
 
 	/**
 	 * <pre>
-	 * °í°´ µî±Ş 
+	 * ê³ ê° ë“±ê¸‰ 
 	 * type: 	char
 	 * length: 	1
 	 * default: 'G' 
-	 * format: 	{'G': ÀÏ¹İ, 'S': ¿ì¼ö, 'A': °ü¸®ÀÚ}
+	 * format: 	{'G': ì¼ë°˜, 'S': ìš°ìˆ˜, 'A': ê´€ë¦¬ì}
 	 * </pre>
 	 */
-	private char grade = DEFAULT_GRADE; // µî±Ş
+	private char grade = DEFAULT_GRADE; // ë“±ê¸‰
 
 	/**
 	 * <pre>
-	 * º¸À¯ÇÑ ¸¶ÀÏ¸®Áö 
+	 * ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ 
 	 * type: 	int
 	 * length: 	6
 	 * default: DEFAULT_USER_ID
 	 * format: 	123456
 	 * </pre>
 	 */
-	private int mileage/* = 0 */; // Àû¸³ ¸¶ÀÏ¸®Áö
+	private int mileage/* = 0 */; // ì ë¦½ ë§ˆì¼ë¦¬ì§€
 
 	/**
 	 * <pre>
-	 * ´ã´çÀÚ ÀÌ¸§
+	 * ë‹´ë‹¹ì ì´ë¦„
 	 * type:	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
@@ -178,7 +178,7 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + printInfo(): void
 	 * </pre>
 	 * 
@@ -199,12 +199,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ ÈŞ´ëÀüÈ­ ¹øÈ£¸¦ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ íœ´ëŒ€ì „í™” ë²ˆí˜¸ë¥¼ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setMobile(mobile: String): void
 	 * </pre>
 	 * 
 	 * @param mobile
-	 *            ÀúÀåÇÒ ÈŞ´ëÆù ¹øÈ£
+	 *            ì €ì¥í•  íœ´ëŒ€í° ë²ˆí˜¸
 	 */
 	public void setMobile(String mobile) {
 		if (isNull(mobile)) {
@@ -216,7 +216,7 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÇ ÈŞ´ëÀüÈ­ ¹øÈ£¸¦ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì˜ íœ´ëŒ€ì „í™” ë²ˆí˜¸ë¥¼ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getMobile(): String
 	 * </pre>
 	 * 
@@ -231,12 +231,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö Á¤º¸ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ ì •ë³´ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setMileage(mileage: int): void
 	 * </pre>
 	 * 
 	 * @param mileage
-	 *            ÀúÀåÇÒ ¸¶ÀÏ¸®Áö Á¤º¸
+	 *            ì €ì¥í•  ë§ˆì¼ë¦¬ì§€ ì •ë³´
 	 */
 	public void setMileage(int mileage) {
 		if (mileage > DEFAULT_INT) {
@@ -248,11 +248,11 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö Á¤º¸ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€ ì •ë³´ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getMileage(): int
 	 * </pre>
 	 * 
-	 * @return mileage È¸¿øÀÌ º¸À¯ÇÑ ¸¶ÀÏ¸®Áö
+	 * @return mileage íšŒì›ì´ ë³´ìœ í•œ ë§ˆì¼ë¦¬ì§€
 	 */
 	public int getMileage() {
 		return this.mileage;
@@ -260,11 +260,11 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ºñ¹Ğ¹øÈ£ Á¤º¸ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì› ë¹„ë°€ë²ˆí˜¸ ì •ë³´ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getPw(): String
 	 * </pre>
 	 * 
-	 * @return this.memberPw È¸¿øÀÇ ºñ¹Ğ¹øÈ£
+	 * @return this.memberPw íšŒì›ì˜ ë¹„ë°€ë²ˆí˜¸
 	 */
 	public String getPw() {
 		if (isNull(this.memberPw))
@@ -274,12 +274,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * ºñ¹Ğ¹øÈ£ Á¤º¸ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * ë¹„ë°€ë²ˆí˜¸ ì •ë³´ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setPw(memberPw: String): void
 	 * </pre>
 	 * 
 	 * @param memberPw
-	 *            ÀúÀåÇÒ È¸¿ø ºñ¹Ğ¹øÈ£
+	 *            ì €ì¥í•  íšŒì› ë¹„ë°€ë²ˆí˜¸
 	 */
 	public void setPw(String memberPw) {
 		if (isValidString(memberPw, 8, 20)) {
@@ -289,11 +289,11 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ¾ÆÀÌµğ Á¤º¸ ¿äÃ»ÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì› ì•„ì´ë”” ì •ë³´ ìš”ì²­í•˜ëŠ” ë©”ì†Œë“œ
 	 * + getId(): String
 	 * </pre>
 	 * 
-	 * @return this.memberId È¸¿øÀÇ ºñ¹Ğ¹øÈ£
+	 * @return this.memberId íšŒì›ì˜ ë¹„ë°€ë²ˆí˜¸
 	 */
 	public String getId() {
 		if (isNull(this.memberId))
@@ -303,12 +303,12 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * È¸¿ø ¾ÆÀÌµğ Á¤º¸ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	 * íšŒì› ì•„ì´ë”” ì •ë³´ ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	 * + setId(memberId: String): void
 	 * </pre>
 	 * 
 	 * @param memberId
-	 *            ÀúÀåÇÒ È¸¿ø ¾ÆÀÌµğ
+	 *            ì €ì¥í•  íšŒì› ì•„ì´ë””
 	 */
 	public void setId(String memberId) {
 		if (isValidString(memberId, 8, 30)) {
@@ -318,10 +318,10 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * ¿ÀºêÁ§Æ® °´Ã¼ null Ã¼Å©
+	 * ì˜¤ë¸Œì íŠ¸ ê°ì²´ null ì²´í¬
 	 * </pre>
 	 * 
-	 * @return objÀÇ null ¿©ºÎ ¤Ğ
+	 * @return objì˜ null ì—¬ë¶€ ã… 
 	 */
 	private boolean isNull(Object obj) {
 		return obj == null;
@@ -329,14 +329,14 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * ¹®ÀÚ¿­ÀÇ À¯È¿¼º Ã¼Å©
+	 * ë¬¸ìì—´ì˜ ìœ íš¨ì„± ì²´í¬
 	 * </pre>
 	 * 
 	 * @param str
-	 *            À¯È¿¼º Ã¼Å©ÇÒ String °´Ã¼
+	 *            ìœ íš¨ì„± ì²´í¬í•  String ê°ì²´
 	 * @param length
-	 *            str°´Ã¼ÀÇ À¯È¿ ±æÀÌ °ª
-	 * @return str String °´Ã¼ÀÇ ±æÀÌ¿Í null Ã¼Å©
+	 *            strê°ì²´ì˜ ìœ íš¨ ê¸¸ì´ ê°’
+	 * @return str String ê°ì²´ì˜ ê¸¸ì´ì™€ null ì²´í¬
 	 */
 	private boolean isValidString(String str, int length) {
 		return isValidString(str, length, length);
@@ -344,16 +344,16 @@ public class Member {
 
 	/**
 	 * <pre>
-	 * ¹®ÀÚ¿­ÀÇ À¯È¿¼º Ã¼Å©
+	 * ë¬¸ìì—´ì˜ ìœ íš¨ì„± ì²´í¬
 	 * </pre>
 	 * 
 	 * @param str
-	 *            À¯È¿¼º Ã¼Å©ÇÒ String °´Ã¼
+	 *            ìœ íš¨ì„± ì²´í¬í•  String ê°ì²´
 	 * @param minLen
-	 *            str°´Ã¼ÀÇ À¯È¿ ÃÖ¼Ò ±æÀÌ °ª
+	 *            strê°ì²´ì˜ ìœ íš¨ ìµœì†Œ ê¸¸ì´ ê°’
 	 * @param mamLen
-	 *            str°´Ã¼ÀÇ À¯È¿ ÃÖ´ë ±æÀÌ °ª
-	 * @return str:String °´Ã¼ÀÇ À¯È¿¼º Ã¼Å© °á°ú
+	 *            strê°ì²´ì˜ ìœ íš¨ ìµœëŒ€ ê¸¸ì´ ê°’
+	 * @return str:String ê°ì²´ì˜ ìœ íš¨ì„± ì²´í¬ ê²°ê³¼
 	 */
 	private boolean isValidString(String str, int minLen, int maxLen) {
 		if (!isNull(str)) {

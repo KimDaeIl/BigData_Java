@@ -4,7 +4,7 @@ public class Hello {
 		for(int i=0; i<args.length; i++)
 			System.out.println(args[i]);
 		
-		System.out.println("±è´ëÀÏ´Ô ¹Ý°¡¿ö¿ä^^");
-		System.out.println("ÀÚ¹Ù¼ö¾÷ ¾ÆÁ÷ ½ÃÀÛ ¾ÈÇß¾î¿ä.");
+		System.out.println("ê¹€ëŒ€ì¼ë‹˜ ë°˜ê°€ì›Œìš”^^");
+		System.out.println("ìžë°”ìˆ˜ì—… ì•„ì§ ì‹œìž‘ ì•ˆí–ˆì–´ìš”.");
 	}
 }

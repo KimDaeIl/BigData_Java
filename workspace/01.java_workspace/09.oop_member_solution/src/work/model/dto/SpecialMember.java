@@ -1,20 +1,20 @@
 package work.model.dto;
 
 /**
- * ¿ì¼öÈ¸¿ø
- * -- ´ã´çÀÚ 
+ * ìš°ìˆ˜íšŒì›
+ * -- ë‹´ë‹¹ì 
  * @author cse
  *
  */
 public class SpecialMember extends Member {
 	private String manager;
 	
-	/** ±âº» »ı¼ºÀÚ */
+	/** ê¸°ë³¸ ìƒì„±ì */
 	public SpecialMember() {
 	}
 
 	/** 
-	 * ÇÊ¼öµ¥ÀÌÅÍ ÃÊ±âÈ­ »ı¼ºÀÚ
+	 * í•„ìˆ˜ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ì
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName
@@ -26,7 +26,7 @@ public class SpecialMember extends Member {
 	}
 
 	/**
-	 * ¿ì¼öÈ¸¿ø ÀüÃ¼µ¥ÀÌÅÍ ÃÊ±âÈ­ »ı¼ºÀÚ
+	 * ìš°ìˆ˜íšŒì› ì „ì²´ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ì
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName

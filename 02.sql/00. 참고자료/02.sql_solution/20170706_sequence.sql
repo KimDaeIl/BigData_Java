@@ -1,7 +1,7 @@
-SQL> -- ÇöÀç ºÎ¼­Å×ÀÌºíÀÇ ºÎ¼­¹øÈ£¿¡ »ç¿ëÇÏ±â À§ÇÑ ½ÃÄö½º °´Ã¼ »ý¼º
-SQL> -- ½ÃÀÛ 50
-SQL> -- Áõ°¨ 10
-SQL> -- ÃÖ´ë 90
+SQL> -- í˜„ìž¬ ë¶€ì„œí…Œì´ë¸”ì˜ ë¶€ì„œë²ˆí˜¸ì— ì‚¬ìš©í•˜ê¸° ìœ„í•œ ì‹œí€€ìŠ¤ ê°ì²´ ìƒì„±
+SQL> -- ì‹œìž‘ 50
+SQL> -- ì¦ê° 10
+SQL> -- ìµœëŒ€ 90
 SQL> 
 SQL> create sequence seq_dept_deptno
   2  start with 50
@@ -12,8 +12,8 @@ SQL> create sequence seq_dept_deptno
 
 Sequence created.
 
-SQL> -- ½ÃÄö½º ¹ß±Þ Á¶È¸ : ½ÃÄö½º¸í.nextval
-SQL> -- ÇöÀç ¹ß±Þ ½ÃÄö½º ¹øÈ£ Á¶È¸ : ½ÃÄö½º¸í.currval (¹ß±ÞÈÄ Á¶È¸)
+SQL> -- ì‹œí€€ìŠ¤ ë°œê¸‰ ì¡°íšŒ : ì‹œí€€ìŠ¤ëª….nextval
+SQL> -- í˜„ìž¬ ë°œê¸‰ ì‹œí€€ìŠ¤ ë²ˆí˜¸ ì¡°íšŒ : ì‹œí€€ìŠ¤ëª….currval (ë°œê¸‰í›„ ì¡°íšŒ)
 SQL> 
 SQL> select seq_dept_deptno.nextval from dual;
 
@@ -27,20 +27,20 @@ SQL> select seq_dept_deptno.nextval from dual;
 ----------                                                                                                                                                                                                                                                                                                  
         60                                                                                                                                                                                                                                                                                                  
 
-SQL> -- ½ÃÄö½º ÀÌ¿ëÇØ¼­ ºÎ¼­ 3°³ Ãß°¡ µî·Ï
-SQL> insert into dept(deptno, dname) values(seq_dept_deptno.nextval, '°³¹ßÆÀ');
+SQL> -- ì‹œí€€ìŠ¤ ì´ìš©í•´ì„œ ë¶€ì„œ 3ê°œ ì¶”ê°€ ë“±ë¡
+SQL> insert into dept(deptno, dname) values(seq_dept_deptno.nextval, 'ê°œë°œíŒ€');
 
 1 row created.
 
-SQL> insert into dept(deptno, dname) values(seq_dept_deptno.nextval, '°³¹ßÆÀ2');
+SQL> insert into dept(deptno, dname) values(seq_dept_deptno.nextval, 'ê°œë°œíŒ€2');
 
 1 row created.
 
-SQL> insert into dept values(seq_dept_deptno.nextval, '¿¬±¸½Ç', 'Á¦ÁÖµµ');
+SQL> insert into dept values(seq_dept_deptno.nextval, 'ì—°êµ¬ì‹¤', 'ì œì£¼ë„');
 
 1 row created.
 
-SQL> -- ºÎ¼­ ÀüÃ¼ Á¶È¸
+SQL> -- ë¶€ì„œ ì „ì²´ ì¡°íšŒ
 SQL> select * from dept;
 
     DEPTNO DNAME          LOC                                                                                                                                                                                                                                                                               
@@ -49,15 +49,15 @@ SQL> select * from dept;
         20 RESEARCH       DALLAS                                                                                                                                                                                                                                                                            
         30 SALES          CHICAGO                                                                                                                                                                                                                                                                           
         40 OPERATIONS     BOSTON                                                                                                                                                                                                                                                                            
-        70 °³¹ßÆÀ                                                                                                                                                                                                                                                                                           
-        80 °³¹ßÆÀ2                                                                                                                                                                                                                                                                                          
-        90 ¿¬±¸½Ç         Á¦ÁÖµµ                                                                                                                                                                                                                                                                            
+        70 ê°œë°œíŒ€                                                                                                                                                                                                                                                                                           
+        80 ê°œë°œíŒ€2                                                                                                                                                                                                                                                                                          
+        90 ì—°êµ¬ì‹¤         ì œì£¼ë„                                                                                                                                                                                                                                                                            
 
 7 rows selected.
 
 SQL> 
-SQL> -- ÇöÀç ºÎ¼­Áß¿¡¼­ ºÎ¼­¹øÈ£°¡ °¡ÀåÅ« ºÎ¼­Á¤º¸ Á¶È¸
-SQL> -- ÃÖ´ë°ª : max()
+SQL> -- í˜„ìž¬ ë¶€ì„œì¤‘ì—ì„œ ë¶€ì„œë²ˆí˜¸ê°€ ê°€ìž¥í° ë¶€ì„œì •ë³´ ì¡°íšŒ
+SQL> -- ìµœëŒ€ê°’ : max()
 SQL> select max(deptno) from dept;
 
 MAX(DEPTNO)                                                                                                                                                                                                                                                                                                 
@@ -68,30 +68,30 @@ SQL> select * from dept where deptno = (select max(deptno) from dept);
 
     DEPTNO DNAME          LOC                                                                                                                                                                                                                                                                               
 ---------- -------------- -------------                                                                                                                                                                                                                                                                     
-        90 ¿¬±¸½Ç         Á¦ÁÖµµ                                                                                                                                                                                                                                                                            
+        90 ì—°êµ¬ì‹¤         ì œì£¼ë„                                                                                                                                                                                                                                                                            
 
-SQL> -- ºÎ¼­¹øÈ£ÀÇ ¿¬¼Ó¼ºÀ» º¸ÀåÇÏ¸é¼­ ·¹ÄÚµå Ãß°¡ : max() »ç¿ëÇØ¼­ ºÎ¼­ Ãß°¡
+SQL> -- ë¶€ì„œë²ˆí˜¸ì˜ ì—°ì†ì„±ì„ ë³´ìž¥í•˜ë©´ì„œ ë ˆì½”ë“œ ì¶”ê°€ : max() ì‚¬ìš©í•´ì„œ ë¶€ì„œ ì¶”ê°€
 
-SQL> insert into dept values(max(deptno) + 1, '°æ¸®ÆÀ', 'ºÎ»ê±¤¿ª½Ã');
-insert into dept values(max(deptno) + 1, '°æ¸®ÆÀ', 'ºÎ»ê±¤¿ª½Ã')
+SQL> insert into dept values(max(deptno) + 1, 'ê²½ë¦¬íŒ€', 'ë¶€ì‚°ê´‘ì—­ì‹œ');
+insert into dept values(max(deptno) + 1, 'ê²½ë¦¬íŒ€', 'ë¶€ì‚°ê´‘ì—­ì‹œ')
                         *
 ERROR at line 1:
 ORA-00934: group function is not allowed here 
-=>	±×·ìÇÔ¼ö »ç¿ëºÒ°¡
-=>	sub-query È°¿ë ÇØ°á
+=>	ê·¸ë£¹í•¨ìˆ˜ ì‚¬ìš©ë¶ˆê°€
+=>	sub-query í™œìš© í•´ê²°
 
 SQL> insert into dept
-  2  values((select max(deptno) from dept) + 1, '°æ¸®ÆÀ', 'ºÎ»ê±¤¿ª½Ã');
+  2  values((select max(deptno) from dept) + 1, 'ê²½ë¦¬íŒ€', 'ë¶€ì‚°ê´‘ì—­ì‹œ');
 
 1 row created.
 
 SQL> insert into dept
-  2  values((select max(deptno) from dept) + 1, '°æ¸®ÆÀ', 'ºÎ»ê±¤¿ª½Ã');
+  2  values((select max(deptno) from dept) + 1, 'ê²½ë¦¬íŒ€', 'ë¶€ì‚°ê´‘ì—­ì‹œ');
 
 1 row created.
 
 SQL> insert into dept
-  2  values((select max(deptno) from dept) + 1, '°æ¸®ÆÀ', 'ºÎ»ê±¤¿ª½Ã');
+  2  values((select max(deptno) from dept) + 1, 'ê²½ë¦¬íŒ€', 'ë¶€ì‚°ê´‘ì—­ì‹œ');
 
 1 row created.
 
@@ -103,12 +103,12 @@ SQL> select * from dept;
         20 RESEARCH       DALLAS                                                                                                                                                                                                                                                                            
         30 SALES          CHICAGO                                                                                                                                                                                                                                                                           
         40 OPERATIONS     BOSTON                                                                                                                                                                                                                                                                            
-        70 °³¹ßÆÀ                                                                                                                                                                                                                                                                                           
-        80 °³¹ßÆÀ2                                                                                                                                                                                                                                                                                          
-        90 ¿¬±¸½Ç         Á¦ÁÖµµ                                                                                                                                                                                                                                                                            
-        91 °æ¸®ÆÀ         ºÎ»ê±¤¿ª½Ã                                                                                                                                                                                                                                                                        
-        92 °æ¸®ÆÀ         ºÎ»ê±¤¿ª½Ã                                                                                                                                                                                                                                                                        
-        93 °æ¸®ÆÀ         ºÎ»ê±¤¿ª½Ã                                                                                                                                                                                                                                                                        
+        70 ê°œë°œíŒ€                                                                                                                                                                                                                                                                                           
+        80 ê°œë°œíŒ€2                                                                                                                                                                                                                                                                                          
+        90 ì—°êµ¬ì‹¤         ì œì£¼ë„                                                                                                                                                                                                                                                                            
+        91 ê²½ë¦¬íŒ€         ë¶€ì‚°ê´‘ì—­ì‹œ                                                                                                                                                                                                                                                                        
+        92 ê²½ë¦¬íŒ€         ë¶€ì‚°ê´‘ì—­ì‹œ                                                                                                                                                                                                                                                                        
+        93 ê²½ë¦¬íŒ€         ë¶€ì‚°ê´‘ì—­ì‹œ                                                                                                                                                                                                                                                                        
 
 10 rows selected.
 
@@ -126,7 +126,7 @@ SQL> select * from dept;
         30 SALES          CHICAGO                                                                                                                                                                                                                                                                           
         40 OPERATIONS     BOSTON                                                                                                                                                                                                                                                                            
 
-SQL> -- ÇöÀç ½ÃÄö½º ¹ß±Þ¹øÈ£ Á¶È¸
+SQL> -- í˜„ìž¬ ì‹œí€€ìŠ¤ ë°œê¸‰ë²ˆí˜¸ ì¡°íšŒ
 SQL> select seq_dept_deptno.currval from dual;
 
    CURRVAL                                                                                                                                                                                                                                                                                                  
@@ -138,15 +138,15 @@ select seq_dept_deptno.nextval from dual
 *
 ERROR at line 1:
 ORA-08004: sequence SEQ_DEPT_DEPTNO.NEXTVAL exceeds MAXVALUE and cannot be instantiated 
-=> ¿¡·¯ : ÃÖ´ë°ª ¹øÈ£ ¹ß±Þ Á¾·áµÊ
+=> ì—ëŸ¬ : ìµœëŒ€ê°’ ë²ˆí˜¸ ë°œê¸‰ ì¢…ë£Œë¨
 
 
-SQL> -- ½ÃÄö½º °´Ã¼ º¯°æ : ÃÖ´ë°ª 1000, Áõ°¨°ª 1
+SQL> -- ì‹œí€€ìŠ¤ ê°ì²´ ë³€ê²½ : ìµœëŒ€ê°’ 1000, ì¦ê°ê°’ 1
 SQL> alter sequence seq_dept_deptno maxvalue 1000 increment by 1;
 
 Sequence altered.
 
-SQL> -- ½ÃÄö½º µ¥ÀÌÅÍ»çÀü
+SQL> -- ì‹œí€€ìŠ¤ ë°ì´í„°ì‚¬ì „
 SQL> -- user_sequences
 
 SQL> desc user_sequences;

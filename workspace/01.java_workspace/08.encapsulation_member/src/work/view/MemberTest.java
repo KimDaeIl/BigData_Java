@@ -3,9 +3,9 @@ package work.view;
 import work.model.dto.Member;
 
 /**
- * ¸â¹ö Å×½ºÆ® Å¬·¡½º
+ * ë©¤ë²„ í…ŒìŠ¤íŠ¸ í´ë˜ìŠ¤
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ê¸°ã…ã…;ã…“ã…‡ë¦¬ã…
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -13,7 +13,7 @@ import work.model.dto.Member;
 public class MemberTest {
 
 	/**
-	 * ¸ŞÀÎ ¸Ş¼Òµå
+	 * ë©”ì¸ ë©”ì†Œë“œ
 	 * 
 	 * @param args
 	 */

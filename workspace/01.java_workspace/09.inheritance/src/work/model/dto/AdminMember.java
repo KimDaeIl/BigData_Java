@@ -4,7 +4,7 @@ public class AdminMember extends Member {
 
 	/**
 	 * <pre>
-	 * Á÷Ã¥¸í
+	 * ì§ì±…ëª…
 	 * type: 	String
 	 * length: 	8-30
 	 * default: ""

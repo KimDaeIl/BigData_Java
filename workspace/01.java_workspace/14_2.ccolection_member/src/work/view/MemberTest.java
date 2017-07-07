@@ -15,16 +15,16 @@ import work.model.service.MemberService_map;
 import static work.Util.isNull;
 
 /**
- * ��� �׽�Ʈ Ŭ����
+ * 占쏙옙占?占쌓쏙옙트 클占쏙옙占쏙옙
  *
- * @author �⤿��;�ä�����
+ * @author 占썩ㅏ占쏙옙;占시ㅿ옙占쏙옙占쏙옙
  * @version 1.0.0
  * @since JDK 1.8.0
  */
 public class MemberTest {
 
     /**
-     * ���� �޼ҵ�
+     * 占쏙옙占쏙옙 占쌨소듸옙
      *
      * @param args
      */
@@ -79,9 +79,9 @@ public class MemberTest {
 //        System.out.println();
 //
 //
-//        System.out.println("<< 삭제 >>");
+//        System.out.println("<< ??젣 >>");
 //        if (ms.deleteMember("user00001", "newPassowrd001")) {
-//            System.out.println("user00001>> 삭제");
+//            System.out.println("user00001>> ??젣");
 //            System.out.println();
 //        }
 //
@@ -93,8 +93,8 @@ public class MemberTest {
 //        }
 //        System.out.println();
 
-        Util.print("1. 암호 등의 보안문자정보 출력시 2자리만 보여주고\n" +
-                "\t남은 문자는 *(기호)로 대체 출력위한 메서드");
+        Util.print("1. ?뷀샇 ?깆쓽 蹂댁븞臾몄옄?뺣낫 異쒕젰??2?먮━留?蹂댁뿬二쇨퀬\n" +
+                "\t?⑥? 臾몄옄??*(湲고샇)濡??泥?異쒕젰?꾪븳 硫붿꽌??);
         Util.print(Util.convertSecureString(null));
         Util.print(Util.convertSecureString(""));
         Util.print(Util.convertSecureString("1"));
@@ -104,11 +104,11 @@ public class MemberTest {
         Util.print(Util.convertSecureString("12345"));
         Util.print();
 
-        Util.print("2. 암호 분실시 임시암호 등 임의의 보안문자열 반환 메서드");
+        Util.print("2. ?뷀샇 遺꾩떎???꾩떆?뷀샇 ???꾩쓽??蹂댁븞臾몄옄??諛섑솚 硫붿꽌??);
         Util.print(Util.getSecureString(4));
         Util.print();
 
-        Util.print("3. 현재 날짜를 기본형식의 문자열로 반환하는 메서드");
+        Util.print("3. ?꾩옱 ?좎쭨瑜?湲곕낯?뺤떇??臾몄옄?대줈 諛섑솚?섎뒗 硫붿꽌??);
         Util.print(Util.getCurrentDay(null));
         Util.print();
 

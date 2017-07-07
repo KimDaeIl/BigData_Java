@@ -12,25 +12,25 @@
  MILEAGE
  MANAGER
 
- --°¡ÀÔ
+ --ê°€ìž…
 INSERT INTO MEMBERS(MEMBER_ID, MEMBER_PWD, MEMBER_NAME, MOBILE, EMAIL, ENTRY_DATE) VALUES({MEMBER_ID}, {MEMBER_PWD}, {MEMBER_NAME}, {MOBILE}, {EMAIL}, TO_CHAR(SYSDATE,"yyyy/mm/dd"));
 
---¾÷µ¥ÀÌÆ®
-UPDATE MEMBERS SET {ÄÃ·³1 = °ª1, ÄÃ·³2 = °ª2, ....} WHERE MEMBER_ID = '{À¯Àú ¾ÆÀÌµð}' AND MEMBER_PW = '{À¯Àú ºñ¹Ð¹øÈ£}';
+--ì—…ë°ì´íŠ¸
+UPDATE MEMBERS SET {ì»¬ëŸ¼1 = ê°’1, ì»¬ëŸ¼2 = ê°’2, ....} WHERE MEMBER_ID = '{ìœ ì € ì•„ì´ë””}' AND MEMBER_PW = '{ìœ ì € ë¹„ë°€ë²ˆí˜¸}';
 
---»èÁ¦
-DELETE FROM MEMBERS WHERE MEMBER_ID = '{À¯Àú ¾ÆÀÌµð}' AND MEMBER_PW = '{À¯Àú ºñ¹Ð¹øÈ£}';
+--ì‚­ì œ
+DELETE FROM MEMBERS WHERE MEMBER_ID = '{ìœ ì € ì•„ì´ë””}' AND MEMBER_PW = '{ìœ ì € ë¹„ë°€ë²ˆí˜¸}';
 
 
-< ±â´É ¾÷µ¥ÀÌÆ® ÄÚµå·Î ´ÙÇü¼º ¤¡¤¡ >
--- ¸¶ÀÏ¸®Áö ¾÷µ¥ÀÌÆ®
-UPDATE MEMBER SET MILEAGE = {¸¶ÀÏ¸®Áö °ª} WHERE MEMBER_ID = '{À¯Àú ¾ÆÀÌµð}' AND GRADE = 'G' AND MEMBER_PW = '{À¯Àú ºñ¹Ð¹øÈ£}';
+< ê¸°ëŠ¥ ì—…ë°ì´íŠ¸ ì½”ë“œë¡œ ë‹¤í˜•ì„± ã„±ã„± >
+-- ë§ˆì¼ë¦¬ì§€ ì—…ë°ì´íŠ¸
+UPDATE MEMBER SET MILEAGE = {ë§ˆì¼ë¦¬ì§€ ê°’} WHERE MEMBER_ID = '{ìœ ì € ì•„ì´ë””}' AND GRADE = 'G' AND MEMBER_PW = '{ìœ ì € ë¹„ë°€ë²ˆí˜¸}';
 
--- ¸Å´ÏÀú ¾÷µ¥ÀÌÆ®
-UPDATE MEMBER SET MANAGER = '{¸Å´ÏÀúÀÌ¸§}' WHERE MEMBER_ID = '{À¯Àú ¾ÆÀÌµð}' AND GRADE = 'S' AND MEMBER_PW = '{À¯Àú ºñ¹Ð¹øÈ£}';
+-- ë§¤ë‹ˆì € ì—…ë°ì´íŠ¸
+UPDATE MEMBER SET MANAGER = '{ë§¤ë‹ˆì €ì´ë¦„}' WHERE MEMBER_ID = '{ìœ ì € ì•„ì´ë””}' AND GRADE = 'S' AND MEMBER_PW = '{ìœ ì € ë¹„ë°€ë²ˆí˜¸}';
 
--- Á÷Ã¥ ¾÷µ¥ÀÌÆ®
-UPDATE MEMBER SET MANAGER = '{Á÷Ã¥}' WHERE MEMBER_ID = '{À¯Àú ¾ÆÀÌµð}' AND GRADE = 'A' AND MEMBER_PW = '{À¯Àú ºñ¹Ð¹øÈ£}';
+-- ì§ì±… ì—…ë°ì´íŠ¸
+UPDATE MEMBER SET MANAGER = '{ì§ì±…}' WHERE MEMBER_ID = '{ìœ ì € ì•„ì´ë””}' AND GRADE = 'A' AND MEMBER_PW = '{ìœ ì € ë¹„ë°€ë²ˆí˜¸}';
 
 
 
@@ -45,7 +45,7 @@ Name
 *WRITER
 *REG_DATE
 
--- °¡ÀÔ
+-- ê°€ìž…
 INSERT INTO NOTICES VALUES({TITLE}, {CONTENTS}, SEQ_NOTICES_NO.NEXTVAL, 0, {MEMBERS.MEMBERS_ID}, SYSDATE);
 
 

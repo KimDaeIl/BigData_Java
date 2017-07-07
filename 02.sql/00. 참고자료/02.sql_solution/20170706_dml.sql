@@ -1,11 +1,11 @@
 SQL> cl scr
 
-SQL> -- Å×ÀÌºí »èÁ¦
+SQL> -- í…Œì´ë¸” ì‚­ì œ
 SQL> drop table notices;
 
 
 SQL> 
-SQL> -- Å×ÀÌºí »ý¼º
+SQL> -- í…Œì´ë¸” ìƒì„±
 SQL> create table notices (
   2  	notice_no number(4),
   3  	title varchar2(50) not null,
@@ -18,7 +18,7 @@ SQL> create table notices (
 Table created.
 
 SQL> 
-SQL> -- Á¦¾à Ãß°¡
+SQL> -- ì œì•½ ì¶”ê°€
 SQL> alter table notices
   2  add constraint pk_notices_noticeno primary key (notice_no);
 
@@ -61,9 +61,9 @@ drop table members
            *
 ERROR at line 1:
 ORA-02449: unique/primary keys in table referenced by foreign keys 
-error ¹ß»ýÀÌÀ¯ : 
-=> notices(ÀÚ½Ä) Å×ÀÌºí°ú ÂüÁ¶°ü°è¸¦ ¸Î°íÀÖ¾î¼­ members(ºÎ¸ð) Å×ÀÌºí »èÁ¦ºÒ°¡
-=> ºÎ¸ðÅ×ÀÌºíÀÇ °ü°è¸¦ ²÷À¸¸é¼­ ºÎ¸ðÅ×ÀÌºí¸¸ »èÁ¦
+error ë°œìƒì´ìœ  : 
+=> notices(ìžì‹) í…Œì´ë¸”ê³¼ ì°¸ì¡°ê´€ê³„ë¥¼ ë§ºê³ ìžˆì–´ì„œ members(ë¶€ëª¨) í…Œì´ë¸” ì‚­ì œë¶ˆê°€
+=> ë¶€ëª¨í…Œì´ë¸”ì˜ ê´€ê³„ë¥¼ ëŠìœ¼ë©´ì„œ ë¶€ëª¨í…Œì´ë¸”ë§Œ ì‚­ì œ
 => drop table members cascade constraints;
 
 SQL> cl scr

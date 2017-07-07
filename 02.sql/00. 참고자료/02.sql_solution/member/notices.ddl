@@ -1,26 +1,26 @@
 /*
-	## °øÁö DB ¸ğµ¨¸µ : notices.ddl
-	1. °øÁö¹øÈ£		¼ıÀÚ(4)		PK  ½ÃÄö½º ÀÚµ¿ºÎ¿©
-	2. Á¦¸ñ			¹®ÀÚ(50)	NN	»ç¿ëÀÚ ÀÔ·Â
-	3. ÀÛ¼ºÀÚ		¹®ÀÚ(30)	NN	ÀÚµ¿ºÎ¿©(·Î±×ÀÎ ¾ÆÀÌµğ)
-	4. ÀÛ¼ºÀÏ		³¯Â¥		NN	ÀÚµ¿ºÎ¿©(ÇöÀç³¯Â¥)
-	5. Á¶È¸¼ö		¼ıÀÚ(4)		NN	ÀÚµ¿ºÎ¿©(Á¶È¸½Ã Áõ°¡)
-	6. ³»¿ë			¹®ÀÚ(100)	
+	## ê³µì§€ DB ëª¨ë¸ë§ : notices.ddl
+	1. ê³µì§€ë²ˆí˜¸		ìˆ«ì(4)		PK  ì‹œí€€ìŠ¤ ìë™ë¶€ì—¬
+	2. ì œëª©			ë¬¸ì(50)	NN	ì‚¬ìš©ì ì…ë ¥
+	3. ì‘ì„±ì		ë¬¸ì(30)	NN	ìë™ë¶€ì—¬(ë¡œê·¸ì¸ ì•„ì´ë””)
+	4. ì‘ì„±ì¼		ë‚ ì§œ		NN	ìë™ë¶€ì—¬(í˜„ì¬ë‚ ì§œ)
+	5. ì¡°íšŒìˆ˜		ìˆ«ì(4)		NN	ìë™ë¶€ì—¬(ì¡°íšŒì‹œ ì¦ê°€)
+	6. ë‚´ìš©			ë¬¸ì(100)	
 
-	## °ü°è (Relathionship)
-	-- È¸¿øÅ×ÀÌºí : ºÎ¸ğÅ×ÀÌºí(PK : member_id)
-	-- °øÁöÅ×ÀÌºí : ÀÚ½ÄÅ×ÀÌºí(FK : writer)
+	## ê´€ê³„ (Relathionship)
+	-- íšŒì›í…Œì´ë¸” : ë¶€ëª¨í…Œì´ë¸”(PK : member_id)
+	-- ê³µì§€í…Œì´ë¸” : ìì‹í…Œì´ë¸”(FK : writer)
 
-	## Á¦¾à°ü·Ã µ¥ÀÌÅÍ »çÀü(data dictionary)
+	## ì œì•½ê´€ë ¨ ë°ì´í„° ì‚¬ì „(data dictionary)
 	-- user_constraints
 	-- user_cons_columns
 
 */
 
--- Å×ÀÌºí »èÁ¦
+-- í…Œì´ë¸” ì‚­ì œ
 drop table notices;
 
--- Å×ÀÌºí »ı¼º
+-- í…Œì´ë¸” ìƒì„±
 create table notices (
 	notice_no number(4),
 	title varchar2(50) not null,
@@ -30,7 +30,7 @@ create table notices (
 	content varchar2(100)
 );
 
--- Á¦¾à Ãß°¡
+-- ì œì•½ ì¶”ê°€
 alter table notices
 add constraint pk_notices_noticeno primary key (notice_no);
 
@@ -38,11 +38,11 @@ alter table notices
 add constraint fk_notices_writer foreign key(writer) references members(member_id);
 
 
--- ½ÃÄö½º °´Ã¼ »èÁ¦
+-- ì‹œí€€ìŠ¤ ê°ì²´ ì‚­ì œ
 drop sequence seq_no;
 
--- ½ÃÄö½º °´Ã¼ »ı¼º
--- ½ÃÀÛ 1...5 / 6½ÃÀÛ
+-- ì‹œí€€ìŠ¤ ê°ì²´ ìƒì„±
+-- ì‹œì‘ 1...5 / 6ì‹œì‘
 create sequence seq_no
 start with 6
 maxvalue 1000

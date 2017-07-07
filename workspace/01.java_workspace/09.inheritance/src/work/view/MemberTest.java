@@ -6,9 +6,9 @@ import work.model.dto.Member;
 import work.model.dto.SpecialMember;
 
 /**
- * ¸â¹ö Å×½ºÆ® Å¬·¡½º
+ * ë©¤ë²„ í…ŒìŠ¤íŠ¸ í´ë˜ìŠ¤
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ê¸°ã…ã…;ã…“ã…‡ë¦¬ã…
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -16,19 +16,19 @@ import work.model.dto.SpecialMember;
 public class MemberTest {
 	public static void main(String[] args) {
 
-		GeneralMember user01 = new GeneralMember("user0001", "password01", "È«±æµ¿", "010-1234-1111", "user01@work.com", 1000);
+		GeneralMember user01 = new GeneralMember("user0001", "password01", "í™ê¸¸ë™", "010-1234-1111", "user01@work.com", 1000);
 		user01.setEntryDate("2017/05/10");
-		GeneralMember user02 = new GeneralMember("user0002", "password02", "°­°¨Âù", "010-1234-1112", "user02@work.com", 1000);
+		GeneralMember user02 = new GeneralMember("user0002", "password02", "ê°•ê°ì°¬", "010-1234-1112", "user02@work.com", 1000);
 		user02.setEntryDate("2017/05/11");
-		GeneralMember user03 = new GeneralMember("user0003", "password03", "ÀÌ¼ø½Å", "010-1234-1113", "user03@work.com", 1000);
+		GeneralMember user03 = new GeneralMember("user0003", "password03", "ì´ìˆœì‹ ", "010-1234-1113", "user03@work.com", 1000);
 		user03.setEntryDate("2017/05/12");
 
-		SpecialMember suser01 = new SpecialMember("suser0001", "password01", "À¯°ü¼ø", "010-1111-1111", "suser01@work.com", "¼ÛÁß±â");
+		SpecialMember suser01 = new SpecialMember("suser0001", "password01", "ìœ ê´€ìˆœ", "010-1111-1111", "suser01@work.com", "ì†¡ì¤‘ê¸°");
 		suser01.setEntryDate("2017/03/01");
-		SpecialMember suser02 = new SpecialMember("suser0002", "password02", "±èÀ¯½Å", "010-1111-1112", "suser02@work.com", "¼ÛÇı±³");
+		SpecialMember suser02 = new SpecialMember("suser0002", "password02", "ê¹€ìœ ì‹ ", "010-1111-1112", "suser02@work.com", "ì†¡í˜œêµ");
 		suser02.setEntryDate("2017/03/02");
 
-		AdminMember auser01 = new AdminMember("suser0001", "password01", "¹ÚÀçÇü", "010-111-1234", "auser01@work.com", "°úÀå");
+		AdminMember auser01 = new AdminMember("suser0001", "password01", "ë°•ì¬í˜•", "010-111-1234", "auser01@work.com", "ê³¼ì¥");
 		auser01.setEntryDate("2017/04/21");
 
 		System.out.println(user01.toString());

@@ -3,7 +3,7 @@ package work.model.dto;
 public class SpecialMember extends Member {
 	/**
 	 * <pre>
-	 * ´ã´çÀÚ
+	 * ë‹´ë‹¹ì
 	 * type: 	String
 	 * length: 	10
 	 * default: ""

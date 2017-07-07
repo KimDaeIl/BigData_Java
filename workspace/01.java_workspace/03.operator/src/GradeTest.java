@@ -4,7 +4,7 @@ public class GradeTest {
 
 		char grade = '\0';
 		int score = 79;
-		String resultStr = "### %s Á¶°Ç¹® ###\nÁ¡¼ö: %d\nµî±Ş: %c";
+		String resultStr = "### %s ì¡°ê±´ë¬¸ ###\nì ìˆ˜: %d\në“±ê¸‰: %c";
 
 		// Scanner sc = new Scanner(System.in);
 		// int grade = sc.nextInt();
@@ -12,9 +12,9 @@ public class GradeTest {
 		// sc = null;
 
 		if (score < 0 || 100 < score) {
-			sysout("### Á¡¼ö°¡ ¿Ã¹Ù¸£Áö ¾Ê´Â °æ¿ì ¿À·ùÃ³¸®");
-			sysout("Á¡¼ö: " + score);
-			sysout("Error: Á¡¼ö´Â 0~100Á¡ ÀÌ³»¸¸ °¡´ÉÇÕ´Ï´Ù.");
+			sysout("### ì ìˆ˜ê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠëŠ” ê²½ìš° ì˜¤ë¥˜ì²˜ë¦¬");
+			sysout("ì ìˆ˜: " + score);
+			sysout("Error: ì ìˆ˜ëŠ” 0~100ì  ì´ë‚´ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			return;
 		}
 

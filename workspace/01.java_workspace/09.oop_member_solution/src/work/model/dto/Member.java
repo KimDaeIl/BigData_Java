@@ -2,69 +2,69 @@ package work.model.dto;
 
 /**
  * <pre>
- * È¸¿øµéÀÇ °øÅë ±â´É ¸ðµ¨¸µ ºÎ¸ðÅ¬·¡½º
- * -- ¼Ó¼º : ¾ÆÀÌµð, ºñ¹Ð¹øÈ£, ÀÌ¸§, ¿¬¶ôÃ³, ÀÌ¸ÞÀÏ, °¡ÀÔÀÏ, µî±Þ
+ * íšŒì›ë“¤ì˜ ê³µí†µ ê¸°ëŠ¥ ëª¨ë¸ë§ ë¶€ëª¨í´ëž˜ìŠ¤
+ * -- ì†ì„± : ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸, ì´ë¦„, ì—°ë½ì²˜, ì´ë©”ì¼, ê°€ìž…ì¼, ë“±ê¸‰
  * </pre>
  * 
- * @author ÀÓ°æÇý
+ * @author ìž„ê²½í˜œ
  * @version ver.1.0
  * @since jdk1.4
  */
 public class Member {
 	/**
 	 * <pre>
-	 *  È¸¿ø ¾ÆÀÌµð Á¤º¸
-	 *  ÃÖ¼Ò 8ÀÚ¸®¿¡¼­ ÃÖ´ë 30ÀÚ¸®
-	 *  ÀÌ¸ÞÀÏ »ç¿ë °¡´É
+	 *  íšŒì› ì•„ì´ë”” ì •ë³´
+	 *  ìµœì†Œ 8ìžë¦¬ì—ì„œ ìµœëŒ€ 30ìžë¦¬
+	 *  ì´ë©”ì¼ ì‚¬ìš© ê°€ëŠ¥
 	 * </pre> 
 	 */
 	private String memberId = "Guest";
 	
 	/** 
 	 * <pre>
-	 * È¸¿ø ¾ÏÈ£ Á¤º¸
-	 * ÃÖ¼Ò 8ÀÚ¸®¿¡¼­ ÃÖ´ë 20ÀÚ¸® 
+	 * íšŒì› ì•”í˜¸ ì •ë³´
+	 * ìµœì†Œ 8ìžë¦¬ì—ì„œ ìµœëŒ€ 20ìžë¦¬ 
 	 * </pre>
 	 */
 	private String memberPw;
 	
-	/** È¸¿ø ÀÌ¸§ Á¤º¸ */
+	/** íšŒì› ì´ë¦„ ì •ë³´ */
 	private String memberName;
 	
-	/** È¸¿ø ÈÞ´ëÆù Á¤º¸ */
+	/** íšŒì› íœ´ëŒ€í° ì •ë³´ */
 	private String mobile;
 	
-	/** È¸¿ø ÀÌ¸ÞÀÏ Á¤º¸ */
+	/** íšŒì› ì´ë©”ì¼ ì •ë³´ */
 	private String email;
 	
 	/** 
 	 * <pre>
-	 * È¸¿ø °¡ÀÔÀÏ Á¤º¸
-	 * ±âº» °¡ÀÔÀÏ Çü½Ä : ³âµµ4ÀÚ¸®/¿ù2ÀÚ¸®/ÀÏ2ÀÚ¸®
-	 * ¿¹: 2017/06/28 
+	 * íšŒì› ê°€ìž…ì¼ ì •ë³´
+	 * ê¸°ë³¸ ê°€ìž…ì¼ í˜•ì‹ : ë…„ë„4ìžë¦¬/ì›”2ìžë¦¬/ì¼2ìžë¦¬
+	 * ì˜ˆ: 2017/06/28 
 	 * </pre>
 	 */
 	private String entryDate;
 	
 	/** 
 	 * <pre>
-	 * È¸¿ø µî±Þ Á¤º¸
-	 * ÀÏ¹ÝÈ¸¿ø(G), ¿ì¼öÈ¸¿ø(S), °ü¸®ÀÚÈ¸¿ø(A)
-	 * ÀÏ¹ÝÈ¸¿øÀº ¸¶ÀÏ¸®Áö Á¦°ø, ÀÏÁ¤ ¸¶ÀÏ¸®Áö ´Þ¼º½Ã ¿ì¼öÈ¸¿ø µî¾÷
-	 * ¿ì¼öÈ¸¿øÀº ´ã´çÀÚ ¹èÁ¤ÇÏ°í, ¸¶ÀÏ¸®Áö ÃÊ±âÈ­
+	 * íšŒì› ë“±ê¸‰ ì •ë³´
+	 * ì¼ë°˜íšŒì›(G), ìš°ìˆ˜íšŒì›(S), ê´€ë¦¬ìžíšŒì›(A)
+	 * ì¼ë°˜íšŒì›ì€ ë§ˆì¼ë¦¬ì§€ ì œê³µ, ì¼ì • ë§ˆì¼ë¦¬ì§€ ë‹¬ì„±ì‹œ ìš°ìˆ˜íšŒì› ë“±ì—…
+	 * ìš°ìˆ˜íšŒì›ì€ ë‹´ë‹¹ìž ë°°ì •í•˜ê³ , ë§ˆì¼ë¦¬ì§€ ì´ˆê¸°í™”
 	 * </pre>
 	 */
 	private char grade;
 	
 
 	/**
-	 * ±âº» »ý¼ºÀÚ
+	 * ê¸°ë³¸ ìƒì„±ìž
 	 */
 	public Member() {
 	}
 
 	/**
-	 * »ç¿ëÀÚ ÀÔ·Â ÇÊ¼öµ¥ÀÌÅÍ ÃÊ±âÈ­ »ý¼ºÀÚ
+	 * ì‚¬ìš©ìž ìž…ë ¥ í•„ìˆ˜ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ìž
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName
@@ -80,7 +80,7 @@ public class Member {
 	}
 
 	/**
-	 * ¸ðµç µ¥ÀÌÅÍ ÃÊ±âÈ­ »ý¼ºÀÚ
+	 * ëª¨ë“  ë°ì´í„° ì´ˆê¸°í™” ìƒì„±ìž
 	 * @param memberId
 	 * @param memberPw
 	 * @param memberName

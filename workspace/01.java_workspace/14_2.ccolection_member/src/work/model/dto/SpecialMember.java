@@ -6,7 +6,7 @@ import work.model.dto.Member;
 public class SpecialMember extends Member {
 	/**
 	 * <pre>
-	 * �����
+	 * 占쏙옙占쏙옙占?
 	 * type: 	String
 	 * length: 	10
 	 * default: ""

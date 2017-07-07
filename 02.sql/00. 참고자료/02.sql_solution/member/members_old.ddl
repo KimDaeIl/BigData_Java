@@ -1,29 +1,29 @@
 /*
-	## È¸¿øÅ×ÀÌºí ½ºÅ°¸¶ : members.ddl
+	## íšŒì›í…Œì´ë¸” ìŠ¤í‚¤ë§ˆ : members.ddl
 
-	## Å×ÀÌºí °´Ã¼ »ı¼º¹æ¹ı
-	create table Å×ÀÌºí¸í (
-		ÄÃ·³¸í Å¸ÀÔ(±æÀÌ) [Á¦¾àÁöÁ¤],
-		ÄÃ·³¸í Å¸ÀÔ(±æÀÌ) [Á¦¾àÁöÁ¤],
-		[constraint Á¦¾àÁöÁ¤]
+	## í…Œì´ë¸” ê°ì²´ ìƒì„±ë°©ë²•
+	create table í…Œì´ë¸”ëª… (
+		ì»¬ëŸ¼ëª… íƒ€ì…(ê¸¸ì´) [ì œì•½ì§€ì •],
+		ì»¬ëŸ¼ëª… íƒ€ì…(ê¸¸ì´) [ì œì•½ì§€ì •],
+		[constraint ì œì•½ì§€ì •]
 	);
 
-	## Á¦¾à ÁöÁ¤¹æ¹ı : ¼±¾ğÀ§Ä¡ ºĞ·ù
-	-- ÄÃ·³·¹º§
-	-- Å×ÀÌºí ·¹º§
-	-- Å×ÀÌºí º¯°æ : Á¦¾à Ãß°¡
+	## ì œì•½ ì§€ì •ë°©ë²• : ì„ ì–¸ìœ„ì¹˜ ë¶„ë¥˜
+	-- ì»¬ëŸ¼ë ˆë²¨
+	-- í…Œì´ë¸” ë ˆë²¨
+	-- í…Œì´ë¸” ë³€ê²½ : ì œì•½ ì¶”ê°€
 
-	## Á¦¾à ÁöÁ¤½Ã¿¡ Á¦¾àÀÌ¸§ »ı·«, Á¦¾àÀÌ¸§ º°µµÁöÁ¤
+	## ì œì•½ ì§€ì •ì‹œì— ì œì•½ì´ë¦„ ìƒëµ, ì œì•½ì´ë¦„ ë³„ë„ì§€ì •
 
-	## ½ºÅ©¸³Æ® ÆÄÀÏ ½ÇÇà
+	## ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ ì‹¤í–‰
 
-	## Å×ÀÌºí »èÁ¦ ¹æ¹ı
+	## í…Œì´ë¸” ì‚­ì œ ë°©ë²•
 */
 
--- -- Å×ÀÌºí »èÁ¦
+-- -- í…Œì´ë¸” ì‚­ì œ
 -- drop table members;
 
--- -- Å×ÀÌºí »ı¼º
+-- -- í…Œì´ë¸” ìƒì„±
 -- create table members (
 -- 	member_id varchar2(30) primary key,
 -- 	member_pw varchar2(20) not null,
@@ -37,7 +37,7 @@
 -- );
 -- 
 -- 
--- -- Å×ÀÌºí»ı¼º : Á¦¾àÀÌ¸§ ÁöÁ¤ ºÎ¿©
+-- -- í…Œì´ë¸”ìƒì„± : ì œì•½ì´ë¦„ ì§€ì • ë¶€ì—¬
 -- create table members (
 -- 	member_id varchar2(30) constraint PK_members_memberid primary key,
 -- 	member_pw varchar2(20) constraint NN_MEMBERPW not null,
@@ -51,7 +51,7 @@
 -- );
 -- 
 -- 
--- -- Å×ÀÌºí »ı¼º : ½Äº°Å° ´ÙÁßÄÃ·³ (¾ÆÀÌµğ, ¸ğ¹ÙÀÏ) => ÄÃ·³·¹º§ ½Äº°Å°´Â ´ÙÁßÄÃ·³ ºÒ°¡
+-- -- í…Œì´ë¸” ìƒì„± : ì‹ë³„í‚¤ ë‹¤ì¤‘ì»¬ëŸ¼ (ì•„ì´ë””, ëª¨ë°”ì¼) => ì»¬ëŸ¼ë ˆë²¨ ì‹ë³„í‚¤ëŠ” ë‹¤ì¤‘ì»¬ëŸ¼ ë¶ˆê°€
 -- create table members (
 -- 	member_id varchar2(30) primary key,
 -- 	member_pw varchar2(20) not null,
@@ -65,7 +65,7 @@
 -- );
 -- 
 -- 
--- -- Å×ÀÌºí »ı¼º : ½Äº°Å° ´ÙÁßÄÃ·³ ÁöÁ¤
+-- -- í…Œì´ë¸” ìƒì„± : ì‹ë³„í‚¤ ë‹¤ì¤‘ì»¬ëŸ¼ ì§€ì •
 -- create table members (
 -- 	member_id varchar2(30),
 -- 	member_pw varchar2(20) not null,
@@ -80,7 +80,7 @@
 -- );
 -- 
 
--- Å×ÀÌºí »ı¼º : Å×ÀÌºí »ı¼ºÈÄ Å×ÀÌºíº¯°æÀ» ÅëÇØ¼­ Á¦¾àÃß°¡
+-- í…Œì´ë¸” ìƒì„± : í…Œì´ë¸” ìƒì„±í›„ í…Œì´ë¸”ë³€ê²½ì„ í†µí•´ì„œ ì œì•½ì¶”ê°€
 create table members (
 	member_id varchar2(30),
 	member_pw varchar2(20) not null,
@@ -93,7 +93,7 @@ create table members (
 	manager varchar2(30)
 );
 
--- Á¦¾àÃß°¡ Å×ÀÌºíº¯°æ
+-- ì œì•½ì¶”ê°€ í…Œì´ë¸”ë³€ê²½
 alter table members
 add (constraint pk_members_memberid primary key (member_id));
 
@@ -103,7 +103,7 @@ add (constraint uk_mobile unique (mobile));
 alter table members
 add (constraint uk_email unique (email));
 
--- Á¦¾àÁ¶È¸
+-- ì œì•½ì¡°íšŒ
 select table_name, constraint_type, constraint_name
 from user_constraints
 where table_name in ('MEMBERS')

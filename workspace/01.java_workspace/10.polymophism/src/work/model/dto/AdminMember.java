@@ -6,7 +6,7 @@ public class AdminMember extends Member {
 
 	/**
 	 * <pre>
-	 * ��å��
+	 * 占쏙옙책占쏙옙
 	 * type: 	String
 	 * length: 	8-30
 	 * default: ""

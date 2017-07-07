@@ -1,7 +1,7 @@
 SQL> 
 SQL> -- ## cross join
-SQL> -- Á¶ÀÎÁ¶°ÇÀÌ ¾ø´Â Á¶ÀÎ : Å×½ºÆ®, Á¶ÀÎÁ¶°Ç ´©¶ô
-SQL> -- ¸ðµç Á¶ÀÎ Á¶°Ç °æ¿ìÀÇ ¼ö Á¶È¸ : ·¹ÄÚµåÇà¼ö * ·¹ÄÚµåÇà¼ö °á°ú
+SQL> -- ì¡°ì¸ì¡°ê±´ì´ ì—†ëŠ” ì¡°ì¸ : í…ŒìŠ¤íŠ¸, ì¡°ì¸ì¡°ê±´ ëˆ„ë½
+SQL> -- ëª¨ë“  ì¡°ì¸ ì¡°ê±´ ê²½ìš°ì˜ ìˆ˜ ì¡°íšŒ : ë ˆì½”ë“œí–‰ìˆ˜ * ë ˆì½”ë“œí–‰ìˆ˜ ê²°ê³¼
 SQL> 
 SQL> select *
   2  from dept, emp;
@@ -22,7 +22,7 @@ SQL> select *
         10 ACCOUNTING     NEW YORK            7900 JAMES      CLERK           7698 81/12/03        950                    30                                                                                                                                                                                
         10 ACCOUNTING     NEW YORK            7902 FORD       ANALYST         7566 81/12/03       3000                    20                                                                                                                                                                                
         10 ACCOUNTING     NEW YORK            7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                
-        10 ACCOUNTING     NEW YORK            9000 È«±æµ¿                          17/07/06       4000                                                                                                                                                                                                      
+        10 ACCOUNTING     NEW YORK            9000 í™ê¸¸ë™                          17/07/06       4000                                                                                                                                                                                                      
         20 RESEARCH       DALLAS              7369 SMITH      CLERK           7902 80/12/17        800                    20                                                                                                                                                                                
         20 RESEARCH       DALLAS              7499 ALLEN      SALESMAN        7698 81/02/20       1600        300         30                                                                                                                                                                                
         20 RESEARCH       DALLAS              7521 WARD       SALESMAN        7698 81/02/22       1250        500         30                                                                                                                                                                                
@@ -37,7 +37,7 @@ SQL> select *
         20 RESEARCH       DALLAS              7900 JAMES      CLERK           7698 81/12/03        950                    30                                                                                                                                                                                
         20 RESEARCH       DALLAS              7902 FORD       ANALYST         7566 81/12/03       3000                    20                                                                                                                                                                                
         20 RESEARCH       DALLAS              7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                
-        20 RESEARCH       DALLAS              9000 È«±æµ¿                          17/07/06       4000                                                                                                                                                                                                      
+        20 RESEARCH       DALLAS              9000 í™ê¸¸ë™                          17/07/06       4000                                                                                                                                                                                                      
         30 SALES          CHICAGO             7369 SMITH      CLERK           7902 80/12/17        800                    20                                                                                                                                                                                
         30 SALES          CHICAGO             7499 ALLEN      SALESMAN        7698 81/02/20       1600        300         30                                                                                                                                                                                
         30 SALES          CHICAGO             7521 WARD       SALESMAN        7698 81/02/22       1250        500         30                                                                                                                                                                                
@@ -52,7 +52,7 @@ SQL> select *
         30 SALES          CHICAGO             7900 JAMES      CLERK           7698 81/12/03        950                    30                                                                                                                                                                                
         30 SALES          CHICAGO             7902 FORD       ANALYST         7566 81/12/03       3000                    20                                                                                                                                                                                
         30 SALES          CHICAGO             7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                
-        30 SALES          CHICAGO             9000 È«±æµ¿                          17/07/06       4000                                                                                                                                                                                                      
+        30 SALES          CHICAGO             9000 í™ê¸¸ë™                          17/07/06       4000                                                                                                                                                                                                      
         40 OPERATIONS     BOSTON              7369 SMITH      CLERK           7902 80/12/17        800                    20                                                                                                                                                                                
         40 OPERATIONS     BOSTON              7499 ALLEN      SALESMAN        7698 81/02/20       1600        300         30                                                                                                                                                                                
         40 OPERATIONS     BOSTON              7521 WARD       SALESMAN        7698 81/02/22       1250        500         30                                                                                                                                                                                
@@ -67,16 +67,16 @@ SQL> select *
         40 OPERATIONS     BOSTON              7900 JAMES      CLERK           7698 81/12/03        950                    30                                                                                                                                                                                
         40 OPERATIONS     BOSTON              7902 FORD       ANALYST         7566 81/12/03       3000                    20                                                                                                                                                                                
         40 OPERATIONS     BOSTON              7934 MILLER     CLERK           7782 82/01/23       1300                    10                                                                                                                                                                                
-        40 OPERATIONS     BOSTON              9000 È«±æµ¿                          17/07/06       4000                                                                                                                                                                                                      
+        40 OPERATIONS     BOSTON              9000 í™ê¸¸ë™                          17/07/06       4000                                                                                                                                                                                                      
 
 60 rows selected.
 
 SQL> 
 SQL> 
 SQL> -- ## equi join
-SQL> -- Á¶ÀÎÁ¶°ÇÀ» = ¿¬»êÀÚ »ç¿ë Á¶ÀÎ
-SQL> -- Å×ÀÌºí¿¡ ´ëÇÑ º°¸í ÁöÁ¤ »ç¿ë
-SQL> -- Á¶ÀÎÁ¶°Ç¿¡ ºÎÇÕµÈ ·¹ÄÚµå¸¸ Á¶È¸
+SQL> -- ì¡°ì¸ì¡°ê±´ì„ = ì—°ì‚°ìž ì‚¬ìš© ì¡°ì¸
+SQL> -- í…Œì´ë¸”ì— ëŒ€í•œ ë³„ëª… ì§€ì • ì‚¬ìš©
+SQL> -- ì¡°ì¸ì¡°ê±´ì— ë¶€í•©ëœ ë ˆì½”ë“œë§Œ ì¡°íšŒ
 SQL> 
 SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
   2  from dept d, emp e
@@ -105,12 +105,12 @@ SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
 SQL> 
 SQL> 
 SQL> -- ## outer join
-SQL> -- Á¶ÀÎÁ¶°Ç¿¡ ´©¶ôµÈ ·¹ÄÚµåµµ ÇÔ²² Á¶È¸
-SQL> -- Á¶ÀÎÁ¶°Ç¿¡ ºÎÇÕµÈ ·¹ÄÚµå°¡ ¾ø´Â Á¶ÀÎÁ¶°ÇÀý¿¡ (+) ±âÈ£ Ç¥±â
+SQL> -- ì¡°ì¸ì¡°ê±´ì— ëˆ„ë½ëœ ë ˆì½”ë“œë„ í•¨ê»˜ ì¡°íšŒ
+SQL> -- ì¡°ì¸ì¡°ê±´ì— ë¶€í•©ëœ ë ˆì½”ë“œê°€ ì—†ëŠ” ì¡°ì¸ì¡°ê±´ì ˆì— (+) ê¸°í˜¸ í‘œê¸°
 SQL> 
-SQL> -- [½Ç½À] ºÎ¼­¸¦ ¹èÁ¤¹ÞÁö ¸øÇÑ Á÷¿øÀÇ Á¤º¸µµ ÇÔ²² Á¶È¸
-SQL> -- ºÎ¼­¸¦ ¹èÁ¤¹ÞÁö ¸øÇÑ Á÷¿øÀÇ ºÎ¼­Á¤º¸¿¡´Â null
-SQL> -- ºÎ¼­¹øÈ£ Á¤º¸¿¡ nullÀÌ ¾ø´Â ÃøÀÌ ºÎ¼­Å×ÀÌºíÀÌ¹Ç·Î ºÎ¼­Å×ÀÌºí Á¶°ÇÀý¿¡ (+) Ç¥±â
+SQL> -- [ì‹¤ìŠµ] ë¶€ì„œë¥¼ ë°°ì •ë°›ì§€ ëª»í•œ ì§ì›ì˜ ì •ë³´ë„ í•¨ê»˜ ì¡°íšŒ
+SQL> -- ë¶€ì„œë¥¼ ë°°ì •ë°›ì§€ ëª»í•œ ì§ì›ì˜ ë¶€ì„œì •ë³´ì—ëŠ” null
+SQL> -- ë¶€ì„œë²ˆí˜¸ ì •ë³´ì— nullì´ ì—†ëŠ” ì¸¡ì´ ë¶€ì„œí…Œì´ë¸”ì´ë¯€ë¡œ ë¶€ì„œí…Œì´ë¸” ì¡°ê±´ì ˆì— (+) í‘œê¸°
 SQL> 
 SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
   2  from dept d, emp e
@@ -133,14 +133,14 @@ SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
         30 SALES          CHICAGO             7900 JAMES                                                                                                                                                                                                                                                    
         20 RESEARCH       DALLAS              7902 FORD                                                                                                                                                                                                                                                     
         10 ACCOUNTING     NEW YORK            7934 MILLER                                                                                                                                                                                                                                                   
-                                              9000 È«±æµ¿                                                                                                                                                                                                                                                   
+                                              9000 í™ê¸¸ë™                                                                                                                                                                                                                                                   
 
 15 rows selected.
 
 SQL> 
-SQL> -- [½Ç½À] ºÎ¼­¿øÀÌ ¾ø´Â ºÎ¼­ÀÇ Á¤º¸µµ ÇÔ²² Á¶È¸
-SQL> -- ºÎ¼­¿øÀÌ ¾ø´Â ºÎ¼­ÀÇ ºÎ¼­Á¤º¸¿¡´Â 40
-SQL> -- ºÎ¼­¹øÈ£ Á¤º¸¿¡ 40 ÀÌ ¾ø´Â ÃøÀÌ Á÷¿øÅ×ÀÌºíÀÌ¹Ç·Î Á÷¿øÅ×ÀÌºí Á¶°ÇÀý¿¡ (+) Ç¥±â
+SQL> -- [ì‹¤ìŠµ] ë¶€ì„œì›ì´ ì—†ëŠ” ë¶€ì„œì˜ ì •ë³´ë„ í•¨ê»˜ ì¡°íšŒ
+SQL> -- ë¶€ì„œì›ì´ ì—†ëŠ” ë¶€ì„œì˜ ë¶€ì„œì •ë³´ì—ëŠ” 40
+SQL> -- ë¶€ì„œë²ˆí˜¸ ì •ë³´ì— 40 ì´ ì—†ëŠ” ì¸¡ì´ ì§ì›í…Œì´ë¸”ì´ë¯€ë¡œ ì§ì›í…Œì´ë¸” ì¡°ê±´ì ˆì— (+) í‘œê¸°
 SQL> 
 SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
   2  from dept d, emp e
@@ -168,8 +168,8 @@ SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
 15 rows selected.
 
 SQL> 
-SQL> -- [½Ç½À]
-SQL> -- ºÎ¼­¸¦ ¹èÁ¤¹ÞÁö ¸øÇÑ Á÷¿ø ¹× ºÎ¼­¿øÀÌ ¾ø´Â ºÎ¼­ÀÇ Á¤º¸µµ ÇÔ²² Á¶È¸
+SQL> -- [ì‹¤ìŠµ]
+SQL> -- ë¶€ì„œë¥¼ ë°°ì •ë°›ì§€ ëª»í•œ ì§ì› ë° ë¶€ì„œì›ì´ ì—†ëŠ” ë¶€ì„œì˜ ì •ë³´ë„ í•¨ê»˜ ì¡°íšŒ
 SQL> 
 SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
   2  from dept d, emp e
@@ -182,15 +182,15 @@ ORA-01468: a predicate may reference only one outer-joined table
 
 
 SQL> 
-SQL> -- ¿À·ù¹ß»ý: (+) ±âÈ£´Â Á¶ÀÎÁ¶°Ç ¾çÂÊ ¸ðµÎ¿¡ »ç¿ëºÒ°¡
-SQL> -- ÇØ°á¹æ¹ý: °áÇÕ¿¬»êÀÚ »ç¿ë
+SQL> -- ì˜¤ë¥˜ë°œìƒ: (+) ê¸°í˜¸ëŠ” ì¡°ì¸ì¡°ê±´ ì–‘ìª½ ëª¨ë‘ì— ì‚¬ìš©ë¶ˆê°€
+SQL> -- í•´ê²°ë°©ë²•: ê²°í•©ì—°ì‚°ìž ì‚¬ìš©
 SQL> 
-SQL> -- ## °áÇÕ¿¬»êÀÚ : select °á°ú¿¡ ´ëÇÑ °áÇÕ Á¶È¸
+SQL> -- ## ê²°í•©ì—°ì‚°ìž : select ê²°ê³¼ì— ëŒ€í•œ ê²°í•© ì¡°íšŒ
 SQL> -- union all, union, intersect, minus
-SQL> -- °¢°¢ select °á°ú¿¡ ´ëÇØ »óÈ£ ¸ÅÇÎµÇ¾î¾ß ÇÔ
+SQL> -- ê°ê° select ê²°ê³¼ì— ëŒ€í•´ ìƒí˜¸ ë§¤í•‘ë˜ì–´ì•¼ í•¨
 SQL> 
-SQL> -- [½Ç½À]
-SQL> -- ºÎ¼­¸¦ ¹èÁ¤¹ÞÁö ¸øÇÑ Á÷¿ø ¹× ºÎ¼­¿øÀÌ ¾ø´Â ºÎ¼­ÀÇ Á¤º¸µµ ÇÔ²² Á¶È¸
+SQL> -- [ì‹¤ìŠµ]
+SQL> -- ë¶€ì„œë¥¼ ë°°ì •ë°›ì§€ ëª»í•œ ì§ì› ë° ë¶€ì„œì›ì´ ì—†ëŠ” ë¶€ì„œì˜ ì •ë³´ë„ í•¨ê»˜ ì¡°íšŒ
 SQL> 
 SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
   2  from dept d, emp e
@@ -218,16 +218,16 @@ SQL> select d.deptno, d.dname, d.loc, e.empno, e.ename
         30 SALES          CHICAGO             7844 TURNER                                                                                                                                                                                                                                                   
         30 SALES          CHICAGO             7900 JAMES                                                                                                                                                                                                                                                    
         40 OPERATIONS     BOSTON                                                                                                                                                                                                                                                                            
-                                              9000 È«±æµ¿                                                                                                                                                                                                                                                   
+                                              9000 í™ê¸¸ë™                                                                                                                                                                                                                                                   
 
 16 rows selected.
 
 SQL> 
 SQL> -- ## self join
-SQL> -- ÀÚ±â ÀÚ½Å Å×ÀÌºí ÂüÁ¶ Á¶ÀÎ
-SQL> -- ºÎ¼­Å×ÀÌºí : mgr »ó»ç »ç¹ø
+SQL> -- ìžê¸° ìžì‹  í…Œì´ë¸” ì°¸ì¡° ì¡°ì¸
+SQL> -- ë¶€ì„œí…Œì´ë¸” : mgr ìƒì‚¬ ì‚¬ë²ˆ
 SQL> 
-SQL> -- [½Ç½À] »ç¹ø, ÀÌ¸§, »ó»ç»ç¹ø, »ó»çÀÌ¸§ Á¶ÀÎ Á¶È¸
+SQL> -- [ì‹¤ìŠµ] ì‚¬ë²ˆ, ì´ë¦„, ìƒì‚¬ì‚¬ë²ˆ, ìƒì‚¬ì´ë¦„ ì¡°ì¸ ì¡°íšŒ
 SQL> 
 SQL> select e1.empno, e1.ename, e1.mgr, e2.ename
   2  from emp e1, emp e2

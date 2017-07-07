@@ -1,10 +1,10 @@
-SQL> -- sql ÇÑÁÙ ÁÖ¼®
-SQL> /* sql ¿©·¯ÁÙ ÁÖ¼® */
+SQL> -- sql í•œì¤„ ì£¼ì„
+SQL> /* sql ì—¬ëŸ¬ì¤„ ì£¼ì„ */
 SQL> 
-SQL> -- sql*plus È­¸éÁö¿ì±â
+SQL> -- sql*plus í™”ë©´ì§€ìš°ê¸°
 SQL> cl scr
 
-SQL> -- sql*plus È¯°æ¼³Á¤ Á¶È¸
+SQL> -- sql*plus í™˜ê²½ì„¤ì • ì¡°íšŒ
 SQL> show all
 appinfo is OFF and set to "SQL*Plus"
 arraysize 15
@@ -81,17 +81,17 @@ verify ON
 wrap : lines will be wrapped
 xmloptimizationcheck OFF
 errorlogging is OFF
-SQL> -- sql*plus ¶óÀÎ»çÀÌÁî Á¶È¸
+SQL> -- sql*plus ë¼ì¸ì‚¬ì´ì¦ˆ ì¡°íšŒ
 SQL> show linesize
 linesize 80
-SQL> -- ÆäÀÌÁö»çÀÌÁî Á¶È¸
+SQL> -- íŽ˜ì´ì§€ì‚¬ì´ì¦ˆ ì¡°íšŒ
 SQL> show pagesize
 pagesize 14
-SQL> -- ¶óÀÎ»çÀÌÁî º¯°æ
+SQL> -- ë¼ì¸ì‚¬ì´ì¦ˆ ë³€ê²½
 SQL> set linesize 300
 SQL> set pagesize 300
 SQL> 
-SQL> -- ÀüÃ¼ Å×ÀÌºí Á¶È¸
+SQL> -- ì „ì²´ í…Œì´ë¸” ì¡°íšŒ
 SQL> select * from tab
   2  ;
 
@@ -274,13 +274,13 @@ TABQUOTAS                                                    SYNONYM
 
 174 rows selected.
 
-SQL> -- system °ü¸®ÀÚ °èÁ¤¿¡¼­ »ç¿ëÀÚ °èÁ¤ : scott/tiger
-SQL> -- create user ¾ÆÀÌµð identified by ¾ÏÈ£;
+SQL> -- system ê´€ë¦¬ìž ê³„ì •ì—ì„œ ì‚¬ìš©ìž ê³„ì • : scott/tiger
+SQL> -- create user ì•„ì´ë”” identified by ì•”í˜¸;
 SQL> create user scott identified by tiger;
 
 User created.
 
-SQL> -- scott »ç¿ëÀÚ °èÁ¤¿¡ ±ÇÇÑ ºÎ¿©
+SQL> -- scott ì‚¬ìš©ìž ê³„ì •ì— ê¶Œí•œ ë¶€ì—¬
 SQL> grant connect, resource, create view to scott;
 
 Grant succeeded.
@@ -291,20 +291,20 @@ SQL> show user
 USER is ""
 SQL> cl scr
 
-SQL> -- scott °èÁ¤À¸·Î ¿¬°á
+SQL> -- scott ê³„ì •ìœ¼ë¡œ ì—°ê²°
 SQL> conn scott/tiger
 Connected.
 SQL> show user
 USER is "SCOTT"
 SQL> 
-SQL> -- scott °èÁ¤ÀÇ ¸ðµç Å×ÀÌºí ¸ñ·Ï Á¶È¸
+SQL> -- scott ê³„ì •ì˜ ëª¨ë“  í…Œì´ë¸” ëª©ë¡ ì¡°íšŒ
 SQL> select * from tab;
 
 no rows selected
 
-SQL> -- sql ½ºÅ©¸³Æ® ÆÄÀÏ ¼öÇà
-SQL> -- @½ºÅ©¸³Æ®ÆÄÀÏ¸í.sql
-SQL> -- start ½ºÅ©¸³Æ®ÆÄÀÏ¸í.sql
+SQL> -- sql ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ ìˆ˜í–‰
+SQL> -- @ìŠ¤í¬ë¦½íŠ¸íŒŒì¼ëª….sql
+SQL> -- start ìŠ¤í¬ë¦½íŠ¸íŒŒì¼ëª….sql
 SQL> 
 
 SQL> 
@@ -521,7 +521,7 @@ DUMMY                                                        TABLE
 EMP                                                          TABLE                                                                                                                                                                                                                                          
 SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
 
-SQL> -- scott ÀüÃ¼Å×ÀÌºí Á¶È¸
+SQL> -- scott ì „ì²´í…Œì´ë¸” ì¡°íšŒ
 SQL> select * from tab;
 
 TNAME                                                        TABTYPE         CLUSTERID                                                                                                                                                                                                                      
@@ -532,7 +532,7 @@ DUMMY                                                        TABLE
 EMP                                                          TABLE                                                                                                                                                                                                                                          
 SALGRADE                                                     TABLE                                                                                                                                                                                                                                          
 
-SQL> -- Æ¯Á¤Å×ÀÌºí ÀüÃ¼ ·¹ÄÚµå Á¶È¸
+SQL> -- íŠ¹ì •í…Œì´ë¸” ì „ì²´ ë ˆì½”ë“œ ì¡°íšŒ
 SQL> select * from emp;
 
      EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO                                                                                                                                                                                                     
@@ -554,8 +554,8 @@ SQL> select * from emp;
 
 14 rows selected.
 
-SQL> -- ºÎ¼­Á¤º¸ Å×ÀÌºí dept
-SQL> -- ÀüÃ¼ºÎ¼­ ·¹ÄÚµå Á¶È¸
+SQL> -- ë¶€ì„œì •ë³´ í…Œì´ë¸” dept
+SQL> -- ì „ì²´ë¶€ì„œ ë ˆì½”ë“œ ì¡°íšŒ
 SQL> select * from dept;
 
     DEPTNO DNAME                        LOC                                                                                                                                                                                                                                                                 
@@ -570,13 +570,13 @@ Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Produ
 SQL> conn system/admin1004
 Connected.
 SQL> 
-SQL> -- »ç¿ëÀÚ°èÁ¤Àá±ÝÇØÁ¦ : hr °èÁ¤
-SQL> -- alter user ¾ÆÀÌµð account unlock
+SQL> -- ì‚¬ìš©ìžê³„ì •ìž ê¸ˆí•´ì œ : hr ê³„ì •
+SQL> -- alter user ì•„ì´ë”” account unlock
 SQL> alter user hr account unlock;
 
 User altered.
 
-SQL> -- °èÁ¤¾ÏÈ£ º¯°æ
+SQL> -- ê³„ì •ì•”í˜¸ ë³€ê²½
 SQL> alter user hr identified by tiger;
 
 User altered.
@@ -600,7 +600,7 @@ REGIONS                                                      TABLE
 
 8 rows selected.
 
-SQL> -- hr °èÁ¤ÀÇ ÀüÃ¼ Á÷¿øÁ¤º¸ Å×ÀÌºí : employees
+SQL> -- hr ê³„ì •ì˜ ì „ì²´ ì§ì›ì •ë³´ í…Œì´ë¸” : employees
 SQL> select * from employees;
 
 EMPLOYEE_ID FIRST_NAME                               LAST_NAME                                          EMAIL                                              PHONE_NUMBER                             HIRE_DAT JOB_ID                   SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID                        
@@ -717,7 +717,7 @@ EMPLOYEE_ID FIRST_NAME                               LAST_NAME                  
 
 SQL> cl scr
 
-SQL> -- hr °èÁ¤ÀÇ ÀüÃ¼ ºÎ¼­Á¤º¸ Å×ÀÌºí : departments
+SQL> -- hr ê³„ì •ì˜ ì „ì²´ ë¶€ì„œì •ë³´ í…Œì´ë¸” : departments
 SQL> select * from departments;
 
 DEPARTMENT_ID DEPARTMENT_NAME                                              MANAGER_ID LOCATION_ID                                                                                                                                                                                                           

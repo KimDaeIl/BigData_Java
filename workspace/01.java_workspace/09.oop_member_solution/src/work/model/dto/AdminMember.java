@@ -1,8 +1,8 @@
 package work.model.dto;
 
 /**
- * °ü¸®ÀÚ È¸¿ø
- * -- Á÷Ã¥ : °úÀå ºÎÀå String position
+ * ê´€ë¦¬ì íšŒì›
+ * -- ì§ì±… : ê³¼ì¥ ë¶€ì¥ String position
  * @author cse
  *
  */

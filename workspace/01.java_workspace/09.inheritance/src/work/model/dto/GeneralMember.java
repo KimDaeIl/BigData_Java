@@ -4,7 +4,7 @@ public class GeneralMember extends Member {
 
 	/**
 	 * <pre>
-	 * º¸À¯ ¸¶ÀÏ¸®Áö 
+	 * ë³´ìœ  ë§ˆì¼ë¦¬ì§€ 
 	 * type: 	int
 	 * length: 	6
 	 * default: 0

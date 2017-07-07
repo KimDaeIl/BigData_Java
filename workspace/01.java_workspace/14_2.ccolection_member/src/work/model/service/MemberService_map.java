@@ -17,7 +17,7 @@ import work.model.dto.Member;
 public class MemberService_map {
 
 	/**
-	 * ��� ��ü �迭
+	 * 占쏙옙占?占쏙옙체 占썼열
 	 */
 	private HashMap<String, Member> members;
 
@@ -27,7 +27,7 @@ public class MemberService_map {
 	// private int count;
 
 	/**
-	 * �⺻ ������
+	 * 占썩본 占쏙옙占쏙옙占쏙옙
 	 */
 	public MemberService_map() {
 
@@ -36,19 +36,19 @@ public class MemberService_map {
 	}
 
 	/**
-	 * ��� ���� �Ű������� �޴� ������
+	 * 占쏙옙占?占쏙옙占쏙옙 占신곤옙占쏙옙占쏙옙占쏙옙 占쌨댐옙 占쏙옙占쏙옙占쏙옙
 	 *
 	 * @param memberCount
-	 *            ������ ����� ��
+	 *            占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占?占쏙옙
 	 */
 	public MemberService_map(int memberCount) {
 	}
 
 	/**
-	 * ���ο� ��� �߰� �޼ҵ�
+	 * 占쏙옙占싸울옙 占쏙옙占?占쌩곤옙 占쌨소듸옙
 	 *
 	 * @param member
-	 *            �߰��� ��� ��ü
+	 *            占쌩곤옙占쏙옙 占쏙옙占?占쏙옙체
 	 */
 	// public <T extends work.model.dto.Member> void addMember(T member) {
 	public void addMember(Member member) {
@@ -59,7 +59,7 @@ public class MemberService_map {
 		}
 
 		if (members.containsKey(member.getMemberId())) {
-			System.out.println("있는 멤버");
+			System.out.println("?덈뒗 硫ㅻ쾭");
 			System.out.println();
 			return;
 		}
@@ -71,8 +71,8 @@ public class MemberService_map {
 	 * get member information by index for array.
 	 *
 	 * @param position
-	 *            ��û�� ����� ��ġ
-	 * @return position�� ��ġ�� ��� ��ü ��ȯ
+	 *            占쏙옙청占쏙옙 占쏙옙占쏙옙占?占쏙옙치
+	 * @return position占쏙옙 占쏙옙치占쏙옙 占쏙옙占?占쏙옙체 占쏙옙환
 	 */
 	// public Member getMemberAt(int position) {
 	// if (0 <= position && position < count) {
@@ -219,7 +219,7 @@ public class MemberService_map {
 	/**
 	 * check members to be full.
 	 *
-	 * @return members ���� ����
+	 * @return members 占쏙옙占쏙옙 占쏙옙占쏙옙
 	 */
 	/**
 	 * get count for members array.

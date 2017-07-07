@@ -4,10 +4,10 @@ import work.Util;
 
 /**
  * <pre>
- * ȸ�� DTO
+ * 회占쏙옙 DTO
  * </pre>
  * 
- * @author �⤿��;�ä�����
+ * @author 占썩ㅏ占쏙옙;占시ㅿ옙占쏙옙占쏙옙
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -17,80 +17,80 @@ public abstract class Member {
 
 	/**
 	 * <pre>
-	 * ȸ�� ���̵�
+	 * 회占쏙옙 占쏙옙占싱듸옙
 	 * type: 	String
 	 * length: 	8-30
 	 * default: DEFAULT_USER_ID
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberId = "Guest"; // ȸ�� ���̵�
+	private String memberId = "Guest"; // 회占쏙옙 占쏙옙占싱듸옙
 
 	/**
 	 * <pre>
-	 * ȸ�� ��й�ȣ
+	 * 회占쏙옙 占쏙옙橘占싫?
 	 * type: 	String
 	 * length: 	8-20
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberPw = ""; // ȸ�� ��й�ȣ
+	private String memberPw = ""; // 회占쏙옙 占쏙옙橘占싫?
 
 	/**
 	 * <pre>
-	 * ȸ�� �̸�
+	 * 회占쏙옙 占싱몌옙
 	 * type: 	String
 	 * length: 	10
 	 * default: DEFAULT_STRING
 	 * format:	-
 	 * </pre>
 	 */
-	private String memberName = ""; // ȸ�� �̸�
+	private String memberName = ""; // 회占쏙옙 占싱몌옙
 
 	/**
 	 * <pre>
-	 * ����� ����ó
+	 * 占쏙옙占쏙옙占?占쏙옙占쏙옙처
 	 * type: 	String
 	 * length: 	13
 	 * default: DEFAULT_STRING
 	 * format: 	"123-1234-1234"
 	 * </pre>
 	 */
-	private String mobile = ""; // ����� ����ó
+	private String mobile = ""; // 占쏙옙占쏙옙占?占쏙옙占쏙옙처
 
 	/**
 	 * <pre>
-	 * �̸��� �ּ�
+	 * 占싱몌옙占쏙옙 占쌍쇽옙
 	 * type: 	String
 	 * length: 	30
 	 * default: DEFAULT_STRING
 	 * format: 	-@-.[com|co.kr|...]
 	 * </pre>
 	 */
-	private String email = ""; // �̸��� �ּ�
+	private String email = ""; // 占싱몌옙占쏙옙 占쌍쇽옙
 
 	/**
 	 * <pre>
-	 * ���� ��¥
+	 * 占쏙옙占쏙옙 占쏙옙짜
 	 * type: 	String
 	 * length: 	10
 	 * default: "1900/01/01"
 	 * format: 	"YYYY/MM/DD"
 	 * </pre>
 	 */
-	private String entryDate = "1900/01/01"; // ���� ��¥
+	private String entryDate = "1900/01/01"; // 占쏙옙占쏙옙 占쏙옙짜
 
 	/**
 	 * <pre>
-	 * �� ��� 
+	 * 占쏙옙 占쏙옙占?
 	 * type: 	char
 	 * length: 	1
 	 * default: 'G' 
-	 * format: 	{'G': �Ϲ�, 'S': ���, 'A': ������}
+	 * format: 	{'G': 占싹뱄옙, 'S': 占쏙옙占? 'A': 占쏙옙占쏙옙占쏙옙}
 	 * </pre>
 	 */
-	private char grade = 'G'; // ���
+	private char grade = 'G'; // 占쏙옙占?
 
 	public Member() {
 		this("Guest", "pw", "no named", "num", "email");
@@ -245,7 +245,7 @@ public abstract class Member {
 
 	/**
 	 * <pre>
-	 * �ڽ� Ŭ���� �ʱ�ȭ �� �޼ҵ�
+	 * 占쌘쏙옙 클占쏙옙占쏙옙 占십깍옙화 占쏙옙 占쌨소듸옙
 	 * + init(): void
 	 * </pre>
 	 */

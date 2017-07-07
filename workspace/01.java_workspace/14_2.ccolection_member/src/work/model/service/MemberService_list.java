@@ -15,7 +15,7 @@ import work.model.dto.Member;
 public class MemberService_list {
 
 	/**
-	 * ��� ��ü �迭
+	 * 占쏙옙占?占쏙옙체 占썼열
 	 */
 	private ArrayList<Member> members;
 
@@ -25,7 +25,7 @@ public class MemberService_list {
 	// private int count;
 
 	/**
-	 * �⺻ ������
+	 * 占썩본 占쏙옙占쏙옙占쏙옙
 	 */
 	public MemberService_list() {
 
@@ -34,18 +34,18 @@ public class MemberService_list {
 	}
 
 	/**
-	 * ��� ���� �Ű������� �޴� ������
+	 * 占쏙옙占?占쏙옙占쏙옙 占신곤옙占쏙옙占쏙옙占쏙옙 占쌨댐옙 占쏙옙占쏙옙占쏙옙
 	 *
 	 * @param memberCount
-	 *            ������ ����� ��
+	 *            占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占?占쏙옙
 	 */
 	// public MemberService(int memberCount) {}
 
 	/**
-	 * ���ο� ��� �߰� �޼ҵ�
+	 * 占쏙옙占싸울옙 占쏙옙占?占쌩곤옙 占쌨소듸옙
 	 *
 	 * @param member
-	 *            �߰��� ��� ��ü
+	 *            占쌩곤옙占쏙옙 占쏙옙占?占쏙옙체
 	 */
 	// public <T extends work.model.dto.Member> void addMember(T member) {
 	public void addMember(Member member) {
@@ -55,7 +55,7 @@ public class MemberService_list {
 			return;
 		}
 		// if (isFull()) {
-		// System.out.println("배열 풀");
+		// System.out.println("諛곗뿴 ?");
 		// return;
 		// }
 
@@ -75,8 +75,8 @@ public class MemberService_list {
 	 * get member information by index for array.
 	 *
 	 * @param position
-	 *            ��û�� ����� ��ġ
-	 * @return position�� ��ġ�� ��� ��ü ��ȯ
+	 *            占쏙옙청占쏙옙 占쏙옙占쏙옙占?占쏙옙치
+	 * @return position占쏙옙 占쏙옙치占쏙옙 占쏙옙占?占쏙옙체 占쏙옙환
 	 */
 	public Member getMemberAt(int position) {
 		if (0 <= position && position < members.size()) {
@@ -244,7 +244,7 @@ public class MemberService_list {
 	/**
 	 * check members to be full.
 	 *
-	 * @return members ���� ����
+	 * @return members 占쏙옙占쏙옙 占쏙옙占쏙옙
 	 */
 	// public boolean isFull() {
 	// return this.count == this.members.length;

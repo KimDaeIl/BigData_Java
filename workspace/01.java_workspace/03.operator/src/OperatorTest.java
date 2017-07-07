@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * <pre>
- *  ¿¬»êÀÚ Å×½ºÆ® Å¬·¡½º ¿¬»êÀÚ Á¾·ù: »ê¼ú¿¬»êÀÚ, ºñ±³¿¬»êÀÚ, ´ëÀÔ¿¬»êÀÚ µî
+ *  ì—°ì‚°ì í…ŒìŠ¤íŠ¸ í´ë˜ìŠ¤ ì—°ì‚°ì ì¢…ë¥˜: ì‚°ìˆ ì—°ì‚°ì, ë¹„êµì—°ì‚°ì, ëŒ€ì…ì—°ì‚°ì ë“±
  * </pre>
  * 
  * @author KimDaeil @since JDK 1.8.0_131 @version
@@ -13,14 +13,14 @@ public class OperatorTest {
 	/**
 	 * 
 	 * @param args
-	 *            ÀÚ¹Ù ½ÃÀÛ ½Ã Àü´Ş¹ŞÀº ¹®ÀÚ¿­ ¹è¿­
+	 *            ìë°” ì‹œì‘ ì‹œ ì „ë‹¬ë°›ì€ ë¬¸ìì—´ ë°°ì—´
 	 */
 	public static void main(String[] args) {
 		print("main method println methoda");
 		print();
 
 		/*
-		 * ¼ºÀûÀº 0~100 100~90: A 89~80:B 79~70: C 69~: F
+		 * ì„±ì ì€ 0~100 100~90: A 89~80:B 79~70: C 69~: F
 		 */
 		
 	}

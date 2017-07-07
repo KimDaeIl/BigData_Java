@@ -1,7 +1,7 @@
 /**
- * ¸â¹ö Å×½ºÆ® Å¬·¡½º
+ * ë©¤ë²„ í…ŒìŠ¤íŠ¸ í´ë˜ìŠ¤
  * 
- * @author ±â¤¿¤±;¤Ã¤·¸®¤¿
+ * @author ê¸°ã…ã…;ã…“ã…‡ë¦¬ã…
  * @since JDK 1.8.0
  * @version 1.0.0
  *
@@ -9,12 +9,12 @@
 public class MemberTest {
 
 	/**
-	 * ¸ŞÀÎ ¸Ş¼Òµå
+	 * ë©”ì¸ ë©”ì†Œë“œ
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// dto(Data Transfer Object): ¸ğµ¨ °´Ã¼
+		// dto(Data Transfer Object): ëª¨ë¸ ê°ì²´
 		Member dto = new Member();
 
 		dto.setMileage(100);

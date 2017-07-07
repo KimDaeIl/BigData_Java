@@ -2,6 +2,10 @@
 # -----------------------------------------------
 	## VIEW OBJECT
 
+	DICTIONARY
+		DESC USER_VIEWS
+		SELECT VIEW_NAME, TEXT FROM USER_VIEWS;
+	
 	-- 가상의 테이블
 	-- 장점 : 보안, 사용자 편리성 향상
 
@@ -15,11 +19,6 @@
 	2. 삭제 
 		DROP VIEW 뷰이름;
 
-	3. DICTIONARY
-		DESC USER_VIEWS
-		SELECT VIEW_NAME, TEXT FROM USER_VIEWS;
-
-
 	## VIEW 작성에 따라서 DML 가능 여부 달라짐
 
 	## INLINE VIEW
@@ -30,3 +29,26 @@
 
 # -----------------------------------------------
 
+
+naming convention
+oracle 추천 >> {table_name}_view
+강사님 추천 >> view_{table_name}
+
+
+insert into view, 테이블에 저장
+테이블에 저장 후 select from view >> 테이블 데이터에서 ㅇㅇ
+
+[실습]
+view: view_emp_summary
+부서번호, 부서명, 부서별 인원수, 부서별 최대 급여, 부서별 최소 급여, 부서별 평균급여
+
+create or replace view view_emp_summary
+as
+ select d.deptno dept_no, d.dname dept_name, count(d.deptno) count, max(e.sal) max_sal, min(e.sal)min_sal, round(avg(e.sal), 2) avg_sal
+  from emp e, dept d
+  where e.deptno=d.deptno
+  group by d.dname, d.deptno
+  order by d.deptno
+with read only;
+
+조인된 뷰라서 데이터 수정, 삽입이 불가능 >> with read only

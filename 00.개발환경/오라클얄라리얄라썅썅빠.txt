@@ -1,0 +1,1 @@
+sqlsqldeveloper(oracle)erwinhttps://erwin.comexerdhttps://exerd.com오라클 설치 시 전역 데이터베이스 이름(SID):	-- enterprice edition: 사용자 지정	-- express edition: 자동 지정(xe)	오라클 서비스:	-- 경로: 제어판\시스템 및 보안\관리 도구\서비스	-- 오라클 관련 서비스: 정상 작동해야 ㅇㅇ		1. OracleService+000 = SID		2. OracleXETNSListener

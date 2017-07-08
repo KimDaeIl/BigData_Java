@@ -1,0 +1,128 @@
+NOTICE_NO
+----------
+	 1
+	 2
+	 3
+	 4
+	 5
+	 6
+	 7
+	 8
+	 9
+	10
+
+  1,  2,  3,  4,  5,  6,  7,  8,  9, 10
+
+
+  MEMBER_ID
+------------------------------
+auser01
+suser01
+suser02
+user01
+user02
+user03
+
+auser01,suser01,suser02,user01,user02,user03
+
+
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 1, 'suser02', 'Weissnat and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 2, 'suser02', 'Wisoky-Runte');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 3, 'suser02', 'Rolfson-Kemmer');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 4, 'auser01', 'Champlin and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 5, 'user02', 'Leuschke Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 6, 'user02', 'Lind, Prohaska and Ortiz');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 7, 'suser02', 'Ledner, Runte and Huel');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 8, 'suser01', 'Stiedemann, Brekke and Purdy');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 9, 'suser02', 'Luettgen-Parker');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 10, 'suser02', 'Turcotte and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 11, 'auser01', 'Jerde, Lowe and McLaughlin');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 12, 'user03', 'Emmerich and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 13, 'suser02', 'Schinner and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 14, 'suser02', 'Borer Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 15, 'auser01', 'Beahan, Carter and Glover');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 16, 'auser01', 'Kris LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 17, 'suser01', 'Treutel, Roberts and Gutkowski');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 18, 'suser02', 'Gutmann-Dietrich');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 19, 'suser01', 'Balistreri-Gottlieb');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 20, 'user01', 'Eichmann-Hackett');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 21, 'user03', 'Abshire LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 22, 'suser01', 'Schowalter LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 23, 'user01', 'Gleason, Johnson and Hauck');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 24, 'suser01', 'Gerlach-Champlin');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 25, 'suser02', 'McLaughlin, Berge and Walter');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 26, 'user03', 'Wuckert, Bailey and Hessel');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 27, 'suser01', 'Brakus-Predovic');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 28, 'suser02', 'Stamm, Bins and Wolff');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 29, 'suser01', 'Walker-Kulas');
+insert into notice_replies (notice_id, reply_id, writer, content) values (8, 30, 'suser02', 'Jast, Howe and Schamberger');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 31, 'auser01', 'Kihn Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 32, 'user02', 'Schaefer Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 33, 'auser01', 'Lockman, Pollich and Koelpin');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 34, 'suser02', 'Stoltenberg-Hegmann');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 35, 'user01', 'Jenkins, D''Amore and Reinger');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 36, 'user02', 'Torp Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 37, 'user01', 'Doyle-Boehm');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 38, 'auser01', 'Nicolas-Murphy');
+insert into notice_replies (notice_id, reply_id, writer, content) values (4, 39, 'suser01', 'Powlowski-Bednar');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 40, 'user01', 'Deckow, Koepp and Stracke');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 41, 'suser02', 'Heidenreich Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 42, 'user03', 'Kunde-Johnston');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 43, 'suser01', 'Fisher, Luettgen and O''Kon');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 44, 'user03', 'O''Keefe, Marvin and Zemlak');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 45, 'user03', 'Nikolaus, Feeney and Jerde');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 46, 'user01', 'Konopelski, Oberbrunner and Hyatt');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 47, 'suser01', 'Stehr-Weissnat');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 48, 'suser01', 'Dickinson, Bergnaum and Howe');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 49, 'user03', 'Purdy, Klein and Brakus');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 50, 'suser01', 'Lynch-Hand');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 51, 'user01', 'Mayert and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 52, 'user03', 'Johnston-Gottlieb');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 53, 'suser02', 'Renner LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 54, 'user01', 'Corkery-Muller');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 55, 'user03', 'Mills Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 56, 'user02', 'Swaniawski-Deckow');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 57, 'auser01', 'Kuphal-Hermiston');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 58, 'suser01', 'Ritchie Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 59, 'user01', 'Nolan-Waters');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 60, 'user03', 'Kuhlman LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 61, 'suser01', 'Stiedemann LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 62, 'user03', 'Howe Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 63, 'user01', 'Ziemann, Doyle and Ortiz');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 64, 'suser02', 'Braun-West');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 65, 'user03', 'Aufderhar-Cruickshank');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 66, 'user03', 'Fritsch and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 67, 'auser01', 'Schultz-Simonis');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 68, 'user02', 'Turcotte, Jakubowski and Champlin');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 69, 'auser01', 'Erdman LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 70, 'auser01', 'Osinski Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 71, 'user03', 'Renner, Sauer and Jast');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 72, 'suser01', 'Hansen, Davis and King');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 73, 'auser01', 'Kohler, Crooks and Wisozk');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 74, 'user03', 'Haley, Howell and McDermott');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 75, 'user03', 'Cummings and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 76, 'user03', 'Bednar, Stark and Douglas');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 77, 'suser02', 'Hintz Group');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 78, 'auser01', 'Mills-Towne');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 79, 'user03', 'Kris and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (8, 80, 'suser01', 'Torphy, Hammes and Abernathy');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 81, 'suser01', 'Bechtelar, Gerlach and Abshire');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 82, 'auser01', 'Erdman, Leannon and Wolf');
+insert into notice_replies (notice_id, reply_id, writer, content) values (8, 83, 'suser01', 'Hagenes-Parker');
+insert into notice_replies (notice_id, reply_id, writer, content) values (5, 84, 'user03', 'Lubowitz Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 85, 'suser01', 'Schultz, Kautzer and Wiza');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 86, 'user02', 'Williamson, Doyle and Kozey');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 87, 'auser01', 'Powlowski and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 88, 'auser01', 'Davis, Ratke and Fisher');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 89, 'auser01', 'Heaney and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (6, 90, 'auser01', 'Swift Inc');
+insert into notice_replies (notice_id, reply_id, writer, content) values (3, 91, 'user02', 'Krajcik and Sons');
+insert into notice_replies (notice_id, reply_id, writer, content) values (8, 92, 'user01', 'Kiehn, Tillman and Crist');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 93, 'user03', 'Bergstrom LLC');
+insert into notice_replies (notice_id, reply_id, writer, content) values (1, 94, 'user02', 'DuBuque, White and Franecki');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 95, 'suser02', 'Pollich-Haley');
+insert into notice_replies (notice_id, reply_id, writer, content) values (2, 96, 'suser01', 'Doyle, Cremin and McCullough');
+insert into notice_replies (notice_id, reply_id, writer, content) values (7, 97, 'user02', 'Treutel, Thompson and Schmidt');
+insert into notice_replies (notice_id, reply_id, writer, content) values (9, 98, 'suser02', 'Schmidt-Douglas');
+insert into notice_replies (notice_id, reply_id, writer, content) values (8, 99, 'user03', 'Huel, Sanford and Ruecker');
+insert into notice_replies (notice_id, reply_id, writer, content) values (10, 100, 'user03', 'Shields Group');

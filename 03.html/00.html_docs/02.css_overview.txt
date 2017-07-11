@@ -1,0 +1,91 @@
+Cascading Style Sheet (CSS: 스타일 시트)
+
+1. 스타일 시트란?
+	--  워드등의 스타일과 같은 기능
+	--	html의 속성들(폰트 종류, 폰트 크기, 폰트 색상, 여백, 배경색, 정렬등)을 미리 지정
+	--	여러가지 스타일을 미리 정의해 놓은 후 원하는 곳에 스타일을 지정하여 사용
+	--	홈페이지의 일관성을 손쉽게 유지 가능
+	-- 변경시에도 편리하게 변경 가능
+
+2. 스타일 시트 정의 방식
+	
+	(2.1 : 익스플로러, 넷스케이프)
+		<STYLE TYPE="text/css"> <!-- MIME TYPE 지정 -->
+
+		</STYLE>
+
+	(2.2 : 넷스케이프)
+		<STYLE TYPE="text/javascript">
+
+		</STYLE>
+
+3. CSS 적용 위치
+	3.1	Embedded style sheet		: 
+			- 가장 많이 사용 , 
+			- 	<head>
+					<style>~</style>
+				</head> 태그 사이에 위치
+	3.2	External style sheet			: 
+			- 외부파일로 작성하여 해당 웹사이트의 모든 페이지에서 공유 재사용
+			- 	<head>
+					<LINK type="text/css" REL="stylesheet" HREF="my.css">
+			   </head>
+			   
+	3.3	Inline style sheet				: 
+			- 	<body> 
+					<P style="font-size:12pt; color:magenta"> 
+				</body>
+				
+	3.4	Imported style sheet		: 
+			- Embedded style sheet의 스타일 정의 부분에 외부파일을 importing
+			- 주의사항: <style>~</style>태그에서 가장 먼저 정의되어야 함
+			- 	<head>
+					<style type="text/css">
+						<!--
+						@import url("my.css");	 /* 맨뒤에 세미콜론 반드시 입력해주어야함 */
+						-->
+						
+					</style>
+				</head>
+		
+4. CSS에서의 주석
+	4.1	<!-- CSS를 지원하지 않는 브라우저, CSS에서 에러 발생시 CSS를 적용하지않음 -->	 
+	4.2	 /*  CSS에서의 주석내용 */
+	
+5. CSS의 기본 구성 : 
+	=> 기본형식 : 선택자 {속성명:속성값;}
+
+	=> 선언 위치 : <head>~</head>
+	<HEAD> 
+		<TITLE></TITLE>
+		<STYLE></STYLE>
+	</HEAD>
+	
+	=> css 선언 방법
+	<STYLE TYPE="text/css">
+		P								/* 선택자, 선언자 : HTML TAG명 */
+		{											
+			font-size: 9pt;				/* 선언문==> 속성명 : 값 ; */	
+			font-style: italic;
+			color : blue;
+		}
+	</STYLE>
+	
+## 선택자 종류
+	=> 공통 선택자 : *
+	=> 태그 선택자 : 태그명
+	=> 하위 선택자 : 태그명 자손태그명
+	=> 자식 선택자 : 태그명 > 자식태그명
+	=> 클래스 선택자 : 태그명.클래스명 / .클래스명
+	=> 아이디 선택자 : 태그명#아이디명
+	=> 속성 선택자 : 태그명[속성명="속성값"]
+	=> 다중 선택자 : 태그명, 태그명
+
+
+## 선택자 지정방법:
+	1) p {}			: 해당 모든 태그에 스타일 적용
+	2) p.normal{}	: 해당 태그의 클래스 설정한 태그에 적용
+	3) p.#title {}	: 해당 태그의 아이디에 설정한 태그에 적용
+	4) .normal {}	: 태그와 상관없이 해당 클래스에 적용
+	5) input[type="text"] : 해당태그의 type속성의 속성값에 적용
+	

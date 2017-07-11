@@ -1,0 +1,320 @@
+
+## HTML 문서의 특징	##
+
+1.	태그는 대소문자 구분이 없습니다. 
+	단, 파일 이름은 소문자로 해주는 것이 좋습니다.
+2.	HTML 문자열 사이에 있는 하나 이상의 공백은 무시됩니다. 
+	(***공백문자: &nbsp; )
+3.	태그가 중복(overlap) 되지 않도록 주의합니다.
+4.	HTML 태그를 잘못 사용했다 하더라도 브라우져에서는 에러를 발생시키지 않습니다.
+5.	Tag 형식: 
+	=> <tag_name />  >> 시작 태그가 필요없는 태그 / ex) <br/>
+	=> <tag_name>content</tag_name>
+
+6.	Element		
+		Syntax:		< start_tag >	Document text here. </end_tag>
+		Example:	<H1> Welcome to the Basics of HTML </H1>
+
+7.	 Element Attributes
+		Syntax:		속성명="속성설정값" / 속성명='속성설정값'
+		example:	<H1 align="center">Welcome to the Basics of HTML </H1>
+
+8.	 주석문
+	<!-- 이곳은 주석문을 적는곳입니다 -->
+
+
+##  HTML 문서의 구성 ##
+	>> 계층적 구조 > tree
+	
+<HTML>				:	HTML 문서 시작
+	<HEAD> 			:	시작을 알리는 태그입니다.
+		<TITLE> 	:	문서 제목 정의(브라우저 타이틀바에 표시됨).
+		</TITLE> 	:	문서의 제목 끝.
+	</HEAD> 		:	시작을 알리는 태그 끝. 
+	<BODY> 			:	HTML  문서의 본문 부분 시작태그
+		Hello!!! 	:	본문내용 (브라우저에 보여지는 내용)
+	</BODY> 		:	본문 끝
+</HTML> 			:	HTML 문서 종료
+
+
+
+## HTML 기본 구조 예시 ##
+<HTML>
+<HEAD>
+    <TITLE> 페이지 제목 : HTML 기본형식파일 </TITLE>
+</HEAD>
+
+<BODY>
+	Body content and tags here.
+	우리집 홈페이지에 방문하신것을 환영합니다.
+	^______________^
+</BODY>
+</HTML>
+
+
+## html 태그 종류 ##
+
+## <body> 태그
+
+<body bgcolor="색상"> : 윈도우 배경화면색 지정.
+
+<body background="이미지 주소"> : 배경을 그림으로할때 쓰는 속성.
+
+<body text="색상"> : 표준 글씨색 지정.
+
+<body link="색상"> : 링크 부분의 색 지정.
+
+<body vlink="색상"> : 검색한 링크 부분의 색 지정.
+
+<body alink="색상"> : 링크된 글자를 누르는순간의 색을 지정.
+
+## 크기 단위
+ % >> % 단위
+ px >>pixcel 단위
+ in,cm,mm
+ em: 기본 텍스트 크기 배율 >> 1em == 12px
+## 단락 태그
+<BR> : line feed(line break)
+aaa<br>
+bbb
+
+<P>	: new paragraph > 단락
+aaa<P>
+bbb
+
+## 수평 라인 태그
+<HR> : insert horizontal line
+aaa
+<HR width="80%" size="10" noshade>		// witdh="선의길이지정"   size="선의굵기지정"
+bbb
+
+
+## 글자 태그 
+<B>볼드체</B>
+<I>이탤릭체</I>
+<U>밑줄체</U>
+
+
+## 제목 태그 
+<H1> H1 크기의 글씨로 나타냄 </H1>
+<H2> H2 크기의 글씨로 나타냄 </H2>
+.........
+<H6> H6 크기의 글씨로 나타냄 </H6>
+
+<H1  ALIGN="CENTER"> H1 크기의 글씨로 가운데맞춤으로 하여 보여주세요 </H1>
+
+==> 속성 
+ALIGN : RIGHT, LEFT, CENTER
+
+
+## 폰트 태그
+=> html4.x
+<font color="red" face="굴림체" size="5">굴림체글씨</font>
+<font color="green" face="바탕체" size="10">바탕체글씨</font>
+<font color="blue" face="휴먼옛체" size="15">휴먼옛체글씨</font>
+
+
+## 글자 이동 태그
+<marquee behavior=alternate>글자가 좌우로 왕복*^^* 구시대적 유물이다 ㅋㅋ</marquee>
+글자가 좌우로 왕복*^^*
+
+<marquee direction="left">이건 왼쪽이네요^^ 구시대적 유물이다 ㅋㅋ </marquee> 
+이건 왼쪽이네요^^
+
+<marquee bgcolor=blue><font color=ffffcc>하이~</font></marquee> 
+
+==> 속성 
+direction :	left, right, up, down
+behavior :	alternate
+bgcolor="color"
+scrollamount="30"	
+
+## 특수 문자
+&nbsp;		공백문자
+&copy;		(c)
+&lt;		<
+&gt;		>
+
+
+## 목록 태그
+<UL>	Unordered lists, type= square, disc, circle
+
+		<UL type="square">
+			<LI>	 HTML
+			<LI>	 JavaServerPage
+			<LI>	 Servlet
+		</UL>
+			
+<OL>	Ordered lists, type=A, a, 1, I, i, start=3 
+
+		<OL>
+			<LI>	 HTML
+			<LI>	 JavaServerPage
+			<LI>	 Servlet
+		</OL>
+
+
+## 링크 태그 : 페이지 이동 및 영역 설정 태그
+< A > 태그 속성: 
+	
+	HREF : 이동할 페이지 URL 지정
+	TARGET : 윈도우지정 (프레임이름, _blank, _self, _parent, _top" / 기본 값: _self
+	 
+	NAME : 영역 설정시 이름 지정 
+	
+	(주의: 이동(href) 및 영역설정(name) 속성은 함께 사용할 수 없음
+	
+(1)	Internet상의 다른 페이지로 이동
+		<a href="Http://java.sun.com">자바홈페이지이동</a>
+        <attributes>
+        target="프레임 이름" , "_blank" , "_parent" , "_self", "_top" 
+		
+(2)	나의 홈페이지의 다른페이지로 이동
+		<a href="next.html">next 페이지로 이동</a>
+
+(3)	현재 페이지 또는 다른페이지의 일정영역으로 이동
+		(3-1) 영역 설정
+		<A name="Section1">Section1</A>
+		<A name="Section2">Section2</A>
+
+		(3-2) 특정페이지의 특정 영역으로 이동
+		<A href="#Sesction2>현재페이지 Section2 위치로 이동</A>
+		<A href="이동페이지.html#Sesction2>이동페이지의 Section2 위치로 이동</A>
+
+
+(3)	Mail to
+		<a href="mailto:admin@dreamwiz.com?SUBJECT=메일제목">웹마스터에게 이메일보내기</a>
+		
+		mailto: >> 특정 기능을 정의한 prefix
+		mailto:admin@dreamwiz.com?SUBJECT=메일제목 >>admin@dreamwiz.com 에게 메일작성
+
+## 이미지 태그
+jpg, gif, png, bmp(웹 ㄴㄴ)
+(1)	배경
+		<BODY BACKGROUND="blueMoutine.jpg">
+
+(2)	static / link image
+		<IMG SRC="img01.jpg" align="center" ALT="풍선도움말 또는 이미지보이지않을때 표현글짜">
+		<A href="next.html"><IMG SRC="img01.jpg" align="center"></A>
+
+==> 속성
+ALIGN : TOP, BOTTOM, MIDDLE, RIGHT, LEFT, CENTER
+WIDTH = "100"
+HEIGHT = "120"
+
+
+## 표그리기 태그
+<TABLE BORDER="5" BGCOLOR="GREEN" WIDTH="500" HEIGHT="300">
+	<CAPTION>테이블의 제목 표현</CAPTION>
+	
+	<TR WIDTH="50">
+		<TH>Name</TH> <!-- 테이블 제목글씨 굵게 표현됨 -->
+		<TH>Phone</TH>
+	</TR>
+	<TR WIDTH="50">
+		<TD>김하린</TD>
+		<TD>123-456</TD>
+	</TR>
+</TABLE>
+
+
+## 입력양식 태그
+<FORM ACTION="요청URL" METHOD="http요청방식" NAME="폼이름">
+	<!-- http 요청방식 : GET, POST, PUT, DELETE 등 -->
+	
+	<!-- 입력양식 :INPUT TYPE="TYPE" NAME="양식이름" VALUE="초기값" minlength="입력 최소 길이" maxlength="입력 최대 길이" size="픽셀단위"
+		한줄텍스트(TEXT)
+		암호(PASSWORD) 
+		단일선택(RADIO) 
+		다중선택(CHECKBOX) 
+		전송버튼(SUBMIT) 
+		취소버튼(RESET) 
+		버튼(BUTTON)
+		이미지 버튼(IMAGE) 
+		파일첨부(FILE)
+		숨김데이터(HIDDEN)
+		
+		여러줄텍스트(TEXTAREA)
+		목록나열 단일 선택 또는 다중 선택(SELECT)
+	-->
+
+	<!-- 한줄텍스트 -->
+	아이디: <INPUT TYPE="TEXT" NAME="userid" MAXLENGTH="6" SIZE="20">
+
+	<!-- 암호 -->
+	암호: <INPUT TYPE="PASSWORD" NAME="userpw" MAXLENGTH="6" SIZE="20">
+
+	<!-- 단일선택 : CHECKED - 기본선택 설정 -->
+		***name 속성의 값으로으로 그룹으로 인식
+		chekced >> 기본 선택 >> marked 속성?
+	성별: 
+	남<INPUT TYPE="RADIO" NAME="gender" CHECKED > 
+	여<INPUT TYPE="RADIO" NAME="gender">
+
+	<!-- 다중선택 : CHECKED - 기본선택 설정-->
+	관심분야: 
+	개발 <INPUT TYPE="CHECKBOX" NAME="focus">
+	디비 <INPUT TYPE="CHECKBOX" NAME="focus">
+	여행 <INPUT TYPE="CHECKBOX" NAME="focus">
+	요리 <INPUT TYPE="CHECKBOX" NAME="focus">
+
+	<!-- 여러줄 텍스트 -->
+	<TEXTAREA ROWS="행크기" COLS="열크기">초기 값</TEXTAREA>
+
+	<!-- 드롭다운 선택메뉴 : 다중선택 : MULTIPLE, ***기본선택 : SELECTED, 크기 : SIZE -->
+	선택 방식(marked 속성) 다중선택: multiple / 기본 값: 단일선택 
+	*** 기본선택: selected
+	<SELECT NAME="mobile1" size="한번에 노출되는 옵션 수">
+		<OPTION VALUE="010">010 </OPTION>
+		<OPTION VALUE="011" SELECTED>011</OPTION>
+		<OPTION VALUE="016">016</OPTION>
+		<OPTION VALUE="017">017</OPTION>
+		<OPTION VALUE="019">019</OPTION>
+	</SELECT>
+	
+	<!-- 파일첨부하기 -->
+	<INPUT TYPE="FILE" NAME="myphoto"/>
+	
+	<!-- 숨김데이터(사용자 조작할 필요없는 값) -->
+	<input type="hidden" value="값"/>
+	
+	<!-- 이미지 버튼 -->
+	<input type="image" src="*.gif" />
+	
+	<!-- 전송 -->
+	<input type="submit" value="button label"/>
+	
+	
+</FORM>
+
+
+## 프래임 태그
+1. 하나의 윈도우를 여러개의 프레임 영역으로 나눔
+2. <frameset> : 여러개의 프레임으로 나누기 위한 분할방법 및 크기등을 설정
+3. <frame> : 하나의 윈도우
+
+	- 	<body>~<body> 태그 대신에 <frameset>~</frameset> 태그사용하여 여러개의 프레임으로 분할
+	-   단일 프레임셋
+		<frameset ROWS="150, *" 또는 COLS="100, 50, *" >
+			<frame NAME="target 속성 지정시에 사용할 프레임이름"
+						SRC="해당 프레임에 표시할 html 페이지" >
+		</frameset>
+		
+	-   복합 프레임셋 : 
+		<frameset ROWS="150, *" 또는 COLS="100, 50, *" >
+			<frame NAME="프레임이름" SRC="해당 프레임에 표시할 html 페이지" >
+			
+			<frameset rows="" 또는 cols="">
+				<frame name="" src="">
+				<frame name="" src="">
+			</frameset>
+		</frameset>
+		
+
+## HTML5
+-- <frameset> : 지원하지 않음
+-- <font> : 지원하지 않음, css 대체
+
+## iframe
+	-- inline frame : 즉, 필요시마다 사용하는 frame(틀)
+	-- <iframe src="문서,주소"></iframe>		

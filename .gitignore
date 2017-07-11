@@ -204,5 +204,9 @@ eclipse/
 *.ppt
 *.pptx
 *.ppt
+*/.metadata/
+*/RemoteSystemsTempFiles/
+*/04.html_workspace/Servers
+*/apache-tomcat-8.5.16
 
 # End of https://www.gitignore.io/api/macos,eclipse,windows,intellij,java

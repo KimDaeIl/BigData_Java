@@ -50,8 +50,16 @@ public class StartView {
 		m.setMemberName("name");
 		m.setMobile("010-1234-5678");
 		m.setEmail("email@email.com");
+		m.setMileage(100000);
+		print(ms.updateMileage(m));
+		print();
 
-		print(ms.updateMember(m));
+		title("find id: user01");
+		print(ms.findMemberId("010-1234-5678"));
+		print();
+
+		title("login: user01");
+		print(ms.login("user01", "password"));
 		print();
 
 	}

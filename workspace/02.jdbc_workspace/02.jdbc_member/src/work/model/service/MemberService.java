@@ -32,7 +32,7 @@ public class MemberService {
 
 	public boolean isExists(String id) {
 
-		return false;
+		return getMember(id) != null;
 	}
 
 	// public <T extends work.model.dto.Member> void addMember(T member) {
@@ -56,13 +56,52 @@ public class MemberService {
 	// update member information.
 	public int updateMember(Member member) {
 
+		if (Util.isNull(member)) {
+			System.out.println("member is null");
+			return 0;
+		}
+
 		return memberDao.update(member);
 	}
 
-	// update member pw(id, pw, newPw)
-	private int updateMemberPw(String id, String pw, String newPw) {
+	public int updateMileage(Member member) {
+		// update mileage
+		if (member.getGrade() == 'G') {
+			if (member.getMileage() >= 100000) {
+				member.setMileage(0);
+				member.setGrade('S');
+				member.setManager("manager");
+			}
+		}
 
-		return 0;
+		return memberDao.updateGrade(member);
+	}
+
+	public Member login(String id, String pw) {
+
+		if (Util.isNull(id) || id.isEmpty()) {
+			System.out.println("id is null or empty");
+			return null;
+		}
+
+		if (Util.isNull(pw) || pw.isEmpty()) {
+			System.out.println("pw is null or empty");
+			return null;
+		}
+
+		return memberDao.selectOne(id, pw);
+
+	}
+
+	// findMemberId
+	public String findMemberId(String mobile) {
+		if (Util.isNull(mobile) || mobile.isEmpty()) {
+			System.out.println("id is null or empty");
+			return null;
+		}
+
+		return memberDao.findMemberId(mobile);
+
 	}
 
 	public int deleteMember(String id, String pw) {

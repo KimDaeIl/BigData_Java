@@ -1,0 +1,7 @@
+http://www.brosinski.com/regex/
+
+update site: http://brosinski.com/regex/update
+Unzip it to ECLIPSE_HOME 
+Restart Eclipse 
+In Eclipse, choose Window > Show View > Other > RegEx Tester 
+Configure it in Window > Preferences > RegEx Tester 

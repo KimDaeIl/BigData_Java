@@ -239,6 +239,47 @@ public class MemberDao {
 		return tempMember;
 	}
 
+	public String findMemberId(String mobile) {
+
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement("select * from members where mobile=?");
+			pstmt.setString(1, mobile);
+
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				return rs.getString("member_id");
+			}
+
+		} catch (SQLException e) {
+			System.out.println("error: selectList()");
+			e.printStackTrace();
+
+		} finally {
+			close(rs, pstmt, conn);
+
+		}
+
+		return null;
+	}
+
+	public Member selectOne(String id, String pw) {
+		Member member = selectOne(id);
+
+		if (!Util.isNull(member)) {
+			if (member.getMemberPw().equalsIgnoreCase(pw)) {
+				return member;
+			}
+		}
+
+		return null;
+	}
+
 	public int insert(Member member) {
 
 		Connection conn = null;
@@ -278,7 +319,7 @@ public class MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		StringBuilder sql = new StringBuilder();
-		sql.append("update members set ").append("member_pw=?, member_name=?, mobile=?, email=?")
+		sql.append("update members set ").append("member_pw=?, member_name=?, mobile=?, email=? ")
 				.append("where member_id=?");
 
 		try {
@@ -290,6 +331,45 @@ public class MemberDao {
 			pstmt.setString(3, member.getMobile());
 			pstmt.setString(4, member.getEmail());
 			pstmt.setString(5, member.getMemberId());
+
+			System.out.println(sql.toString());
+			int result = pstmt.executeUpdate();
+
+			conn.commit();
+
+			return result;
+
+		} catch (SQLException e) {
+			System.out.println("error: update");
+			e.printStackTrace();
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				System.out.println("error: rollback in update");
+				e.printStackTrace();
+			}
+		}
+
+		return 0;
+	}
+
+	public int updateGrade(Member member) {
+
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		StringBuilder sql = new StringBuilder();
+		sql.append("update members set ").append("grade=?, mileage=?, manager=? ").append("where member_id=?");
+
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql.toString());
+
+			pstmt.setString(1, String.valueOf(member.getGrade()));
+			pstmt.setInt(2, member.getMileage());
+			pstmt.setString(3, member.getManager());
+			pstmt.setString(4, member.getMemberId());
+			
 
 			int result = pstmt.executeUpdate();
 
@@ -345,13 +425,12 @@ public class MemberDao {
 
 		return 0;
 	}
-	
-	
-//	관리자: 회원 전체 변경
-//	관리자:등급변경
-//	관리자:마일리지볁경
-//	아이디찾기
-//	암호찾기
-//	로그인
-	
+
+	// 관리자: 회원 전체 변경
+	// 관리자:등급변경
+	// 관리자:마일리지볁경
+	// 아이디찾기
+	// 암호찾기
+	// 로그인
+
 }

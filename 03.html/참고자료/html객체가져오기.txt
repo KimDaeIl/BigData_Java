@@ -1,0 +1,1 @@
+## 입력양식 객체 가져오괴document.form_이름.입력항목이름## 입력양식 객체 값 가져오괴document.form_이름.입력항목이름.value >> String 객체로 반환## 문자열 길이String.length >> **메소드가 아닌 변수"ddd".length 

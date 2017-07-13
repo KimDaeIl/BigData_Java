@@ -1,0 +1,438 @@
+### Java Script ##
+
+## Java Script 특징 
+
+-- 사용자의 브라우저에 내장 프로시저 
+-- 동적 페이지 작성 가능
+-- 사용자의 이벤트 처리 : 브라우저 열기, 닫기
+-- 사용자 입력 데이터 검증 : 요청 데이터를 서버에 전송
+-- 사용자 시스템(컴퓨터) 파일 접근 , 데이터 읽기 불가
+-- (단점) 브라우저에 종속적
+
+
+## Java Script 기본구조 
+-- 선언 위치 : Internal(html), External(00.js)
+
+(1) HTML 페이지 문서내에  직접 작성
+<head>
+	<!-- language 생략 ㅇㅇ -->
+    <script language="javascript">
+    <!--
+			 // 소스코드 내용
+
+    //-->	 // 브라우저에서 해당 자바스크립트 지원되지 않을경우 "코드실행 생략부호"
+    </script>
+
+	<noscript>
+		브라우저를 지원하지 않을 경우 보여주기 위한 내용 입력
+	</noscript>
+</head>
+	
+
+(2) 외부파일을 사용
+    <script language="javascript" src="../js/sample.js"></script>
+    
+    // 외부파일 sample.js
+    // 소스코드내용 기술
+    
+(3) Java script 문서내 위치
+    <head> <script></script> </head>  // 권장 : 사용자이벤트가 초기화이전에 브라우저에 의해 점검되기때문
+    <body> <script></script> </body>  
+
+
+## 주석 
+// 한줄 주석
+
+/* 여러줄 주석 */
+
+
+## 변수 설정 : 
+
+    -- 변수타입을 선언할 필요없음 : 변수에 할당된 값이 자동 변수타입이 됨
+    
+    -- 변수이름: 
+        시작 : 영문자, 숫자, _ (한글 사용 못함)
+        예약어 사용할 수 없음 
+
+   	-- 기본 자료형 : 숫자(정수, 실수), 문자열, 논리값(true, false), null  
+   
+    -- 변수 선언
+    		1) 함수 외부에서 선언 : 전역변수
+    		
+    		2) 함수 내부에서 선언
+				var 변수명1 = 값		// 지역변수
+				변수명2 = 값			// 전역변수 : var을 사용하지 않아도 변수명 = 값 하면 자동적으로 변수선언
+        
+        var no1 = 1000
+        var name = "강감찬"
+        var msg = ""			// 공백문자열
+        var result = true
+        var msg1, msg2          // 선언시 기본값은 null
+
+	(예)
+	<head>
+	<script language="javascript">
+	<!--
+		// 변수선언
+		var name="홍길동"
+		age=26
+
+		document.write("이름: ")	// 내용을 브라우저 화면에 출력시키는 명령어
+		document.write(name)		// 변수 출력
+
+		document.write("<br>")
+		document.write("나이: ")
+		document.write(age)
+	//-->
+	</head>
+	
+
+    -- 문자열에 특수 문자 넣는 방법 
+        \n     
+        \b
+        \t
+        \r
+        \\
+        \'
+        \"
+
+
+## 연산자 : 대입 , 산술  
+1. 대입 연산자 
+    =
+    +=
+    -=
+    *=
+    /=
+    %=
+
+2. 산술 연산자 
+    +
+    -
+    *
+    /
+    %
+    ++
+    --
+    - (음수표현)
+
+3. 논리연산자 
+    &&  (and)   : true && true ==> true
+    ||  (or)      : false || false ==> false
+
+
+4. 비교연산자 
+    ==   같음비교
+    !=    다름비고
+    >     
+    <
+    >=
+    <=
+
+5. 조건연산자
+    변수명 = (조건) ? true시 변수에 할당할값 : false시 변수에 할당할 값
+
+    var job = "student"
+    var todo = (job == "student") ? "공부하세요" : "푹쉬세요"
+
+6. 문자열 연산자 : 문자열간 연결 (P418)
+    +
+    +=
+
+
+## 제어문 
+1. 
+    if (조건) {
+
+    }
+
+    if (조건) {
+
+    } else {
+
+    }
+
+    if (조건1) {
+
+    } else if (조건2) {
+
+    } else {
+
+    }
+
+ 2.
+
+    switch (변수명) {
+        case 값1 :                     // 변수명이 문자열인 경우에는 case "문자열값" 
+            수행문
+            break                         // switch 문 빠져나옴
+
+        case 값x : 
+            수행문
+            break
+        
+        default :
+            수행문
+    }
+
+
+3. 
+    for (초기값; 반복조건; 반복식 ) {
+
+
+    }
+
+4. 
+    while (조건) {
+
+    }
+
+5. 
+    do {
+
+    }
+    while (조건) {
+
+    }
+
+ 6.   continue : 반복적인 구조 문장에서 반복실행중에 또다른 조건을 만나는 경우 초기의 조건부분으로 되돌아감
+
+ 7.   break : 반복적인 구조문장에서 또다른 조건을 만나는 경우 반복문장을 빠져나옴
+
+
+//////////////////////////////////////////
+Part 5: 함수
+//////////////////////////////////////////
+1. 함수란 : 일련의 식이나 문장을 하나의 단위로 묶어놓은 집합, 
+            필요시 언제든 반복적으로 호출하여 사용
+
+2. 함수 정의
+    function 함수이름() {  
+        var 지역변수이름    // var를 붙이고 변수를 선언시 지역변수로서 함수내에서만 사용가능 (p452)
+        전역변수이름           // var를 붙이지 않고 변수 선언하면 전역변수로서 스크립트 어디에서든 사용가능
+    }
+
+    function 함수이름(매개변수명1, 매개변수2, ...) {  
+
+    }
+    
+    function 함수이름(매개변수명1, 매개변수2, ...) {  
+			
+			return 반환값;
+    }    
+
+	window.onload = function() {
+		// 브라우저 로드시에 초기화 수행문
+	}
+
+3. 함수 호출
+
+    함수명()
+    함수명(값1, 값2, 값n)
+	변수명 = 함수명()
+	변수명 = 함수명(값1, 값2, 값n)
+
+
+///////////////////////////////////////////////////////////////
+내장함수 (Built-In Function) 
+///////////////////////////////////////////////////////////////
+
+    1. alert("경고 및 공지사항메세지") => 확인 버튼
+
+    2. result = confirm("입력하신내용이 맞습니까") => 확인, 취소 버튼
+
+    3. 데이터 입력 상자 
+    	result1 = prompt("대화상자에나타날문자열", "입력창에나타나게할문자열")
+      result2 = prompt("이름입력하세요", "")      // 입력창에 빈문자열로 표기 
+      result3 = prompt("입력하세요")					// 입력창에 자동으로 "undefined" 라는 기본문자열로 표기됨 
+
+    4. 문자데이터, 숫자데이터 여부 검증
+    	 ==> 문자이면 true, 숫자이면 false를 리턴함..  
+    	 ==> 수치가 아니면(Not a Number) true 
+      
+      result = isNaN(1234)  ==> false
+      result = isNaN("hello") ==> true  
+
+    5. 수식연산 : 문자열을 수식으로 변환하여 연산수행
+		ajax로 비동기 통신 시 json 형태의 문자열을 json 객체로 변환할 때 주로 사용
+    	result = eval("문자열수식")      
+		result = eval("5+10*2") ==> 25 수식연산 결과 반환
+			
+    6. floatValue = parseFloat("문자열실수")
+
+    7. intValue = parseInt("문자열정수")
+
+    8. result = escape("문자열")            // ascii 형식으로 변환
+
+    9. result = unescape("ascii코드")   // 문자로 변환
+
+
+///////////////////////////////////////////////////////////
+Part 6: 객체, 메소드, 이벤트
+///////////////////////////////////////////////////////////
+1. 객체 
+    (1) 생성자 정의하기 : 함수와 동일하게 정의함
+    (2) 객체 생성 :  변수(객체) = new 생성자(arg1, arg2)
+    (3) 객체 멤버 접근 :  변수.member
+
+    (예)
+    // 객체생성자 정의
+    function customer(name, age, address) {
+        this.name = name
+        this.age = age
+        this.address = address
+    }
+
+    // 객체 생성
+    cust1 = new customer("강감찬", 32, "서울시 종로구")
+    document.write("이름: " + cust1.name + "<br>")
+    document.write("나이: " + cust1.age + "<br>")
+    document.write("주소: " + cust1.address + "<br>")
+
+
+2. 메소드 
+
+
+3. 이벤트 / 이벤트 핸들러 
+    -- 이벤트 핸들러는 이벤트이름앞에 " On " 을 붙여 표기
+    -- 태그 명령어의 속성으로 사용
+
+    -- 이벤트 핸들러의 종류 
+    click               OnClick              마우스를 클릭했을경우
+    dbclick          OnDbclick         마우스를 더블클릭했을경우
+    keydown      OnKeydown     키를 입력했을경우
+    focus             OnFocus           대상에 포커스가 들어왔을 경우
+    change         OnChange         입력되어 있던 값이 변경될 경우
+    select            OnSelect            입력양식의 한필드를 선택했을 경우
+    load               OnLoad              대상을 열기 시작할 경우 
+    unload          OnUnload          페이지를 닫거나 다른곳으로 이동하는 경우
+    submit           OnSubmit          입력양식을 서버로 전송할 경우
+    reset              OnReset            재시작했을 경우
+
+
+///////////////////////////////////////////////////////////
+Part 7: 내장 객체 
+///////////////////////////////////////////////////////////
+
+    -- 내장객체란 이미 생성자 함수의 내용을 포함하고 있으므로, 별도의 함수를 정의하지 않고 사용가능
+    
+    --  객체변수명 = new 객체의형식(값)
+
+    -- 내장객체의 종류 
+
+        Array  : 배열을 사용
+        Document : 문서에 관한 정보를 다루는 객체
+        Window : 브라우저 창에 관한 객체
+
+        Form : Form 관련 객체
+        Button : 버튼 입력 양식을 위한 객체
+        Checkbox : 체크박스 입력을 위한 객체
+        ....
+        Date : 날짜와 시간을 위한 객체
+
+        (정적객체 : new 연산자를 사용하지 않는 객체)
+        String, Math
+        변수명 = "문자열"
+        변수명.속성
+        변수명.메소드(값)
+
+        (1) String 객체 
+
+
+        (2) Date 객체 
+
+        
+        (3) Math 객체 
+
+
+        (4) Array 객체 
+            
+            -- 배열을 생성시 사용하는 객체
+
+            -- 배열명 = new Array(배열크기)
+            take = new Array(5)
+            take[0] = 10       // 배열요소 0 부터 시작
+            take[1] = 20
+            take[2] = "강감찬"
+            take[3] = "서울시 강남구"
+            take[4] = 32
+
+            take2 = new Array(10, 20, "강감찬", "서울시 강남구", 32)
+
+
+///////////////////////////////////////////////////////////
+Part 8: 네비게이터 객체 
+///////////////////////////////////////////////////////////
+1. 네비게이터 객체 : 
+    -- document, form등 브라우저가 갖고 있는 정보를 취금하는 객체
+    -- 계층 구조를 갖고 있음
+    -- 계층의 상위부터 "." 로 구분하여 표기
+
+ 2.   네비게이터 객체의 계층 구조 
+
+    Window --> Document --> Form (, Image) --> Button, Checkbox, Text ..
+    
+    window.document.write("Hello")
+    document.write("Hello")       // 가장 최상위 window의 경우 생략가능 (보통 생략)
+
+3. Window 객체  
+    3.1  Window 객체 속성
+        document : 현재 윈도우에 document 객체를 반환
+        status : 브라우저의 상태표시줄을 선택
+        window.status = "상태표시줄에 메세지가 출력됩니다."
+    
+    3.2  Window 객체 메소드 (p558)
+        alert()  : 확인 버튼이 있는 메세지창
+        close() : 브라우저를 닫음
+        open() : 새로운 윈도우를 열음
+        
+        // open() 메소드의 속성 설정값 (p560)
+        window.open("새창파일명", "새창명", "속성")
+
+        <a href="#" onClick="window.open('newwindow.html', '', 'width=475, height=343, scrollbars=no, menubar=no, directories=no, location=yes')">
+
+4. Document 객체 
+    4.1  Document 객체의 속성 (p582)
+        title 
+        URL
+        location
+
+    4.2  Document 객체의 메소드 (p583)
+        clear() : 브라우저의 문서내용을 지움
+        close() : open()으로 열은 문서닫기
+        open() : 문서를 열기
+        write()  : 내용을 출력하기
+        writelen() : 내용을 출력함과 동시에 줄을 변경
+       
+
+5. Document 객체의 하부객체  
+    -- Link, Image, Form etc
+    -- 배열을 사용하여 처음 나오는 객체부터 배열의 [0] 요소에 입력
+
+    5.1  Form 객체 
+        -- Form의 전반적인 정보를 얻어오는데 사용
+        -- document.폼이름.속성명 
+
+        (5.1.1) Form 객체의 속성 (p630)
+        action : action 속성 정보를 나타냄
+        method : Form 태그에서의 method 속성을 나타냄
+        name : Form 태그의 name 속성을 나타냄
+        length : Form 태그에서의 입력양식의 수를 나타냄
+
+        (5.1.2) Form 객체의 메소드와 이벤트 핸들러(p633)
+        reset() / onReset()
+        submit() / onSubmit()
+
+
+    
+///////////////////////////////////////////////////
+## 명령어 
+1. 브라우저에 출력해주는 명령어
+	 -- 출력시 HTML 태그 적용가능함, 동적으로 페이지 작성 가능
+    var msg="Hello Java Script!"
+
+    document.write(msg)
+    document.write(msg + "<br><font color='red' size='9pt'>환경합니다.</font>")    
+    
+
+    

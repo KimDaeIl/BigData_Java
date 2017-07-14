@@ -1,0 +1,112 @@
+
+## JSP Action Tag
+
+-- syntax :
+	1) <jsp:액션태그명 속성명="속성값" 속성명x="속성값" >
+	   </jsp:액션태그명>	
+
+	2) <jsp:액션태그명 속성명="속성값" 속성명x="속성값" />
+
+
+-- Action tag 종류
+
+1. new instance, lookup scope object
+
+	<jsp:useBean id="참조변수명" 
+			class="top.sub.클래스이름"
+			scope="page | request | session | application" />
+
+2. 값 설정
+	<jsp:setProperty name="참조변수명" property="속성명" />
+	<jsp:setProperty name="참조변수명" property="*" />
+
+3. 값 출력
+	<jsp:getProperty name="참조변수명" />
+
+4. 조각페이지 삽입 
+	<jsp:include page="조각페이지url" />
+
+	<jsp:include page="조각페이지url" >
+		<jsp:param name="key" value="값" />
+	</jsp:include>
+
+	<!-- 참고 : jsp directive tag -->
+	<%@ include file="조각페이지url" %>
+
+5. 페이지 이동
+	<jsp:forward page="이동페이지url" />
+
+6. parameter 설정, 
+   <jsp:include>, <jsp:forward> body content사용
+
+	<jsp:param name="key" value="값" />
+
+
+## JavaBean Component 설계규칙
+1. package 선언
+2. no argument constructor
+3. private 멤버변수
+4. public setter/getter 메서드 구현(반드시 이름규칙 준수)
+
+	-- Property를 가지는 entyity(도메인) 클래스
+	-- 작성방법 :
+		1. package 선언
+		2. no argument 생성자
+		3. private 멤버변수(property)
+		4. public setXxx(), getXxx()
+
+
+	-- 객체를 생성하거나, 기존에 만들어진 객체를 리턴한다.
+	<jsp:useBean id="참조변수명" 
+	                       class="자바빈클래스 fully qualified 이름"
+						   scope="page" />
+
+	-- 객체의 속성값을 설정한다.
+	<jsp:setPropertity name="참조변수명" 
+	                               property="[프로퍼티명 | *]" 
+	                              [value="값"] 
+								  [param="엘리먼트명"] />
+
+	-- 객체의 속성값을 반환한다.
+	<jsp:getProperty name="참조변수명" property="프로퍼티명" />
+
+	-- 예제:
+	// login.html
+	<HTML><HEAD><TITLD>useBean 액션태그 예제</TITLE></HEAD><BODY>
+	<FORM action="loginCheck.jsp" method="pose">
+		아이디: <INPUT type="text" name="userid">
+		암호: <INPUT type="text" name="userpw">
+	</FORM>
+	</BODY></HTML>
+	
+	// loginCheck.jsp
+	<jsp:useBean id="login" class="ucamp.domain.UserLogin"/>
+	<jsp:setProperty name="login" property="*" />
+	<jsp:getProperty name="login" property="userid" /> 
+	<jsp:getProperty name="login" property="userpw" />	
+
+
+## 자주 사용되는 조각페이지 include 재사용하기:
+	
+	1. 지시어 include
+
+		<%@ include file="topMenu.jsp" %>
+		
+		-- Translation 시점에 해당페이지가 포함되어 java 코드로 변환
+
+	2. Action tag inclue
+
+		<jsp:include page="todayNews.jsp" />
+		
+		<jsp:include page="todayNews.jsp" >
+			<jsp:param name="news" value="new/hotnews.txt" />
+		</jsp:include>
+
+		-- Run time 시점에 포함되어 수행됨
+		-- 포함시에 파라메터를 부여할 수 있음
+		
+		-- 파라메터트 form 데이터 가져오는 방법과 동일하게 사용함
+
+			String newsMessage = request.getParameter("news");
+			<INPUT TYPE="text" NAME="msg" value='<%= newsMessage %>' size='100'>
+ 

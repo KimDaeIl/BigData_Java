@@ -1,0 +1,53 @@
+
+
+<< 서블릿 url mapping 하는 방법 >>
+
+1.  web.xml 파일을 오픈하여 아래의 내용을 
+    <web-app> </web-app> 태그의 body에 추가한다.
+     그룹 순서중요, 각각 <servlet> 밑에 추가, <servlet-mapping>밑에 추가----->
+
+	<web-app> 
+
+		<servlet>
+			<servlet-name>Hello</servlet-name>
+			<servlet-class>lgcns.test.web.work.control.HelloServlet</servlet-class>
+		</servlet>
+
+		<servlet-mapping>
+			<servlet-name>Hello</servlet-name>
+			<url-pattern>/hi</url-pattern>
+		</servlet-mapping>
+
+	</web-app>
+
+2. build.bat 파일을 수행하여 변경된 내용으로 웹서버에 새로이 deploy(설치) 한다.
+
+3. Tomcat Server를 재구동시킨다.
+
+4.	login.html 파일에서 form의 action에 아래의 url을 참고로하여 동일한 LoginServlet을 
+	다양한 방법으로 요청을 해보자..어떤것이..과연..합리적일까요??
+
+	// Login.html
+	<form action="/sampleContext/servlet/lgcns.test.web.work.LoginServlet" method="post">
+	</form>
+
+	(1) fully qualified :
+		http://localhost:8080/sampleContext/servlet/lgcns.test.web.work.HelloServlet
+	
+	(2) <servlet-name> :	
+		http://localhost:8080/sampleContext/servlet/Hello
+	
+	(3) <url-pattern> :	
+		http://localhost:8080/sampleContext/hi
+
+
+### 서블릿 요청 URL:
+http://host:ip:/컨텍스트이름/servlet/top.sub.클래스이름
+
+### url-pattern mapping에 대한 요청
+http://host:ip:/컨텍스트이름/urlpattern명
+
+### 실습 : 컨텍스트이름 : smpleContext
+
+http://localhost:8080/sampleContext/servlet/ucamp.controller.HelloServlet
+http://localhost:8080/sampleContext/hi

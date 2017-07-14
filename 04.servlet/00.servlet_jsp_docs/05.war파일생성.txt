@@ -1,0 +1,20 @@
+
+## tomcat 서버 구동시 수행 순서
+
+1. %TOMCAT_HOME%\conf> *.xml 메모리 로딩
+2. %TOMCAT_HOME%\webapps\컨텍스트이름\WEB-INF> web.xml
+3. %TOMCAT_HOME%\webapps> 컨텍스트이름.war ==> 압축해제 => 컨텍스트 처리
+4. %TOMCAT_HOME%\webapps\컨텍스트이름> ==> %TOMCAT_HOME%\work\컨텍스트이름 폴더로 복사
+
+## 웹어플리케이션 war 파일 작성방법
+1. eclipse 이용방법
+   프로젝트선택 => 우클릭 => export => war 파일 => 저장폴더 선택 => 000.war 
+
+2. 명령창 jdk\bin\jar.exe 파일 사용 작성방법
+    -- 현재폴더 : %TOMCAT_HOME%\webapps> hello.war 생성
+    
+    -- jar cvfM hello.war -C .\hello . 
+	
+
+
+

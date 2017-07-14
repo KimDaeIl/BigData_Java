@@ -1,0 +1,76 @@
+
+/## 고객관리 시스템 개발 ##/
+
+1. 요구사항 파악
+
+-- 사용자(회원)
+	1. 로그인	login
+	2. 로그아웃	logout
+	3. 회원가입	joinInput / joinSave
+	4. 회원조회(상세) search
+	5. 정보변경	 update / updatSave
+	6. 회원탈퇴	  delete
+	7. 아이디찾기 searchUserid
+	8. 암호찾기  searchUserpw
+	9. 암호변경   changeUserpw
+
+-- 사용자(관리자)	
+	1. 회원전체조회		searchAll
+	2. 등급변경			changeGrade
+	3. 마일리지 변경	chageMileage
+
+2. 분석 및 설계
+	-- OOAD : 클래스 설계, package
+	-- DB Modeling : Customer
+	-- 화면 설계 :
+		시작페이지 : index.jsp
+		페이지 레이아웃, 
+		각 요구사항에 따른 요청/응답 페이지
+
+
+## 웹어플리케이션 개발 ##
+1. 웹컨텍스트 이름 :  
+	=> 기본: 프로젝트명=웹컨텍스트명(eclipse)
+	=> 웹컨텍스트이름 변경 : 컨텍스트 properties => Web Project Settings => context root = > 컨텍스트이름지정
+
+2. 웹프로젝트 생성
+3. web.xml 환경설정
+4. 시작페이지 작성 : 화면 레이아웃(배치) 결정
+
+
+## 회원관리 요청을 위한 FrontController 서블릿 클래스 작성
+1. FrontController 서블릿 작성
+2. 시작페이지 작성
+3. 회원가입 페이지 작성
+4. 로그인 페이지 작성
+
+
+## 웹어플리케이션을 위한 view 페이지 작성
+1) 시작페이지 : index.html
+2) 로그인페이지 : login.html
+3) 회원가입페이지 : customerInput.html
+4) 회원전체조회페이지 : customerList.html
+
+## 회원정보
+1) 아이디 : userid
+2) 암호 : userpw
+3) 이름 : username
+4) 연락처 : phone ( phone1 + phone2 + phone3 )
+5) 이메일 : email (email1 + email2)
+6) 가입일 : entryDate (year + month + day)
+7) .... 추가
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

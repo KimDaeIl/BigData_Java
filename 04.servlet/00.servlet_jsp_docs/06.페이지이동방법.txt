@@ -1,0 +1,21 @@
+
+## 페이지 이동 방법
+
+1. ServletRequest 객체 메서드 이용방법 : RequestDispatcher 인터페이스
+   
+-- 기존 요청, 응답객체 정보를 가지고 다른자원으로 이동
+-- 요청정보를 위한것이므로 HttpServletRequest 객체로 부터 생성
+-- 요청정보를 다른 자원으로 넘기거나, 다른 자원을 포함시키기 위한 클래스
+-- 기존 요청을 가지고 이동하는 것이므로 앞선 요청에서 설정된 것들을 계속 사용할 수있음
+
+RequestDispatcher dispatcher = request.getRequestDispatcher("/Result.jsp");
+dispatcher.forward(request, response);		
+
+2. HttpServletResponse 객체 메서드 이용방법
+
+-- 새로운 요청으로 페이지 이동하는 것이므로 앞선 요청에서 설정된 것들은 모두 사라짐
+   
+   response.sendRedirect("nextView.jsp");
+
+3. <a href="nextView.jsp">페이지이동링크</a>
+

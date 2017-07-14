@@ -1,0 +1,15 @@
+
+## 웹어플리케이션을 위한 view 페이지 작성
+1) 시작페이지 : index.html
+2) 로그인페이지 : login.html
+3) 회원가입페이지 : customerInput.html
+4) 회원전체조회페이지 : customerList.html
+
+## 회원정보
+1) 아이디 : userid
+2) 암호 : userpw
+3) 이름 : username
+4) 연락처 : mobile ( mobile1 + mobile2 + mobile3 )
+5) 이메일 : email (email1 + email2)
+6) 가입일 : entryDate (year + moneth + date)
+7) .... 추가

@@ -1,0 +1,59 @@
+
+## 서블릿 요청 흐름 및 초기 데이터 설정 ##
+
+## 서블릿 요청 흐름 관련 API 관계
+
+Servlet <- GenericServlet <- HttpServlet <- MyServlet
+
+ServletRequest <- HttpServletRequest
+ServletResponse <- HttpServletResponse
+
+init(ServletConfig) => init() { 사용자 초기화 재정의 }
+
+service(ServletRequest, ServletResponse) => 
+service(HttpServletRequest, HttpServletResponse) =>
+	doGet(HttpServletRequest, HttpServletResponse);
+	doPost(HttpServletRequest, HttpServletResponse);
+	doXxx(HttpServletRequest, HttpServletResponse);
+
+destroy();
+
+ServletConfig : web.xml <init-param></init-param>
+ServletContext : web.xml <context-param></context-param>
+
+
+## 서블릿 동적 데이터 설정 방법:
+
+1. web.xml :  서버 구동시에 메모리로딩 설정
+	ServletConfig : <servlet><init-param></></>
+	ServletContext : <context-param><init-param></></>
+	
+2. Runtime시에 데이터 설정 방법:
+	HttpServletReqeust : setAttribute(K, V), getAttribute(K):V
+	ServletContext : setAttribute(K, V), getAttribute(K):V, removeAttribute(K)
+	HttpSession : setAttribute(K, V), getAttribute(K):V, removeAttribute(K)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

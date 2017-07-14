@@ -1,0 +1,97 @@
+
+## 한글 인코딩 처리 방법 ##
+-- euc-kr
+-- utf-8
+
+## 요청 데이터에 대한 한글 인코딩 설정
+
+1. POST 방식
+	request.setCharacterEncoding("euc-kr");
+
+2. GET 방식
+	(1) 
+	String data = request.getParameter("username");
+	String hanData = new String(data.getBytes("8859_1"), "euc-kr");
+
+	String data = Utitlity.toHan(request.getParameter("username"));
+
+	(2) 
+	-- %TOMCAT_HOME%\conf\server.xml 
+	-- URIEncoding="euc-kr" 속성 추가
+
+	 <Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" 
+	       URIEncoding="euc-kr" 
+	       />
+
+3. GET 방식 한글에 대한 인코딩 설정 util method 구현
+private static String toHan(String data) {
+	try {
+		return new String(data.getBytes("8859_1"), "euc-kr");
+	} catch() {
+		System.out.println("한글 인코딩 변환오류 발생");
+	}
+
+	return data;
+}
+
+4. Filter 구현 한글 인코딩 구현 및 설정 
+	-- web.xml에 filter 등록
+	-- Filter 클래스 작성
+
+
+## 응답에 대한 한글 인코딩 설정
+
+
+## 한글 인코딩 filter 설정: web.xml
+
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>work.controller.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>EUC-KR</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
+## EncodingFilter 클래스
+
+public class EncodingFilter implements Filter { //**1. Filter 클래스 구현 
+
+    private FilterConfig config = null;
+    private String targetEncoding = "ASCII";
+    
+    public void init(FilterConfig config) throws ServletException {
+        this.config = config;
+        this.targetEncoding = config.getInitParameter("encoding"); //**2. web.xml 파일에서 config 객체의 초기 파라미터를 읽어 들인다("encoding")
+		System.out.println("EncodingFilter.init() targetEncoding=["+targetEncoding+"]");
+    }
+
+    public  void doFilter(ServletRequest srequest, ServletResponse  sresponse, FilterChain chain)
+        throws IOException, ServletException {
+       
+		HttpServletRequest request = (HttpServletRequest)srequest;
+		HttpServletResponse response = (HttpServletResponse)sresponse;
+		
+		request.setCharacterEncoding(targetEncoding)    ; //**3. targetEncoding의 CharacterEncoding을 셋팅한다.
+		response.setContentType("text/html;charset=euc-kr");
+
+		System.out.println("EncodingFilter.doFilter()");
+		
+		//**4. request, response 객체를 다음 Filter 클래스의 호출로 넘긴다.
+		chain.doFilter(srequest, sresponse); 
+    }
+
+    public void destroy() {
+        config = null;
+        targetEncoding = null;
+		System.out.println("EncodingFilter.destroy()");
+    }
+}

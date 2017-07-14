@@ -1,0 +1,43 @@
+
+## 사용자 요청 parameter 데이터 서블릿에서 사용하기
+	1) form 데이터
+	2) 요청url?key=value&key=value
+
+## ServletRequest / HttpServletRequest
+
+	1) 단일 데이터 : 
+		getParameter("key") : String
+	
+	2) 다중 데이터 , 단일 데이터 :
+		getParameterValues("key") : String[]
+	
+	3) key 이름만 추출 :
+		getParameterNames() : Enumeration
+
+
+## Login.html
+<form action="login" method="post">
+	<input name="userid" type="text" value="USERID">
+	<input name="userpw" type="password" value="PASSWORD">
+	<input type="submit" value="Login">
+</form>
+
+<form action="controller?action=login" method="post">
+	<input name="userid" type="text" value="USERID">
+	<input name="userpw" type="password" value="PASSWORD">
+	<input type="submit" value="Login">
+</form>
+
+## LoginServlet, FrontController
+String action = request.getParameter("action");
+String userid = request.getParameter("userid");
+String userpw = request.getParameter("userpw");
+
+String[] hobbys = request.getParameterValues("hobbys");
+
+Enumeration names = request.getParameterNames();
+while(names.hasMoreElements()) {
+	String name = (String)names.nextElement();
+	String data = request.getParameter(name);
+}
+

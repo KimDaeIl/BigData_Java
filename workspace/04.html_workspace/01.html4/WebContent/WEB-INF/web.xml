@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>fsdfsd</display-name>
+    <servlet-name>fsdfsd</servlet-name>
+    <servlet-class>fsdfsd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fsdfsd</servlet-name>
+    <url-pattern>/fsdfsd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>jhg</display-name>
+    <servlet-name>jhg</servlet-name>
+    <servlet-class>jhg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jhg</servlet-name>
+    <url-pattern>/jhg</url-pattern>
+  </servlet-mapping>
 </web-app>

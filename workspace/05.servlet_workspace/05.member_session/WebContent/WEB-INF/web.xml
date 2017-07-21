@@ -3,18 +3,18 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
-	
+
 	<!-- servlet config -->
 	<servlet>
 		<servlet-name>FrontController</servlet-name>
 		<servlet-class>work.controller.FrontController</servlet-class>
 	</servlet>
-	
+
 	<servlet>
 		<servlet-name>NoticeFrontController</servlet-name>
 		<servlet-class>work.controller.NoticeFrontController</servlet-class>
 	</servlet>
-	
+
 	<!-- url-pattern mapping -->
 	<servlet-mapping>
 		<servlet-name>FrontController</servlet-name>
@@ -25,22 +25,27 @@
 		<servlet-name>NoticeFrontController</servlet-name>
 		<url-pattern>/notice</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- error config -->
 	<error-page>
 		<error-code>404</error-code>
 		<location>/error/404.jsp</location>
 	</error-page>
-	
+
 	<error-page>
 		<exception-type>java.lang.ClassNotFoundException</exception-type>
 		<location>/error/ClassNotFoundException.jsp</location>
 	</error-page>
-	
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsp</location>
+	</error-page>
+
 	<!-- welcome config -->
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-	
+
 </web-app>

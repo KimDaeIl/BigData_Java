@@ -1,3 +1,4 @@
+Expression Language_ JSP Standatd Tag Language
 
 ## 주의사항 : 
 -- jsp 페이지등에 주석가능하면 사용하지말것 
@@ -79,8 +80,10 @@ JSTL	:	 <c:out value="${notice.writer}" default="guest"/>
 
 		${pageContext.request.requestURI}		// 요청 uri
 		${requestScope.msg}					// request scope에서 저장된 msg 이름으로 저장된 객체 <jsp:getProperty name="aa" property="msg" scope="request" />
-		${param.userid}						// userid 라는 이름의 파라메터값
+			>> <%= request.getAttribute("msg")%>
 
+		${param.userid}						// userid 라는 이름의 파라메터값
+			>> request.getParameter("userid")
 5.		sample code : hello_el.jsp
 
 
